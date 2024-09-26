@@ -100,4 +100,4 @@ for pr in pull_requests:
 df = pd.DataFrame(data)
 
 # Optionally, save the DataFrame to an Excel file
-df.to_excel("pull_requests" + state + ".xlsx", index=False)
+df.to_excel("pull_requests_" + state + ".xlsx", index=False)
