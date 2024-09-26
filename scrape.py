@@ -11,6 +11,8 @@ headers = {"Authorization": f"token {TOKEN}"}
 owner = 'home-assistant'
 repo = 'core'
 
+state = 'open'
+
 # Correct GitHub API URL to fetch pull requests
 pulls_url = f'https://api.github.com/repos/{owner}/{repo}/pulls'
 
@@ -20,7 +22,7 @@ def get_pull_requests():
     page = 1
     while True:
         # Fetch each page of pull requests
-        response = requests.get(pulls_url, headers=headers, params={'page': page, 'per_page': 100})
+        response = requests.get(pulls_url, headers=headers, params={'page': page, 'per_page': 100, 'state': state})
         if response.status_code == 200:
             pull_requests = response.json()
             if not pull_requests:
@@ -97,6 +99,5 @@ for pr in pull_requests:
 # Convert the data into a Pandas DataFrame
 df = pd.DataFrame(data)
 
-
 # Optionally, save the DataFrame to an Excel file
-df.to_excel("filtered_pull_requests.xlsx", index=False)
+df.to_excel("pull_requests" + state + ".xlsx", index=False)
