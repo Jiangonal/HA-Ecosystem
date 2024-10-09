@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup
 import concurrent.futures
 
 # Your GitHub personal access token
-TOKEN = '' # Replace with your actual token
+TOKEN = ''  # Replace with your actual token
 
 # Set up headers for the GitHub API request
 headers = {"Authorization": f"token {TOKEN}"}
