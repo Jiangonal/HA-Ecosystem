@@ -42,17 +42,27 @@ def get_pull_requests():
     return all_pull_requests
 
 # Function to get review comments for a specific pull request
-def get_review_comments(pull_number):
-    review_comments_url = f"https://api.github.com/repos/{owner}/{repo}/pulls/{pull_number}/comments"
-    response = requests.get(review_comments_url, headers=headers)
+def get_review_comments(pull_number: int):
+    review_comments_url = f"{pulls_url}/{pull_number}/comments"
+    response = requests.get(review_comments_url, headers=headers, params={'per_page': 100})
     if response.status_code == 200:
         return len(response.json())  # Return the number of review comments
     else:
         print(f"Error: Unable to fetch review comments for PR #{pull_number} (status code: {response.status_code})")
         return 0
+    
+# Function to get number of files changed in PR
+def get_files_changed(pr_number: int) -> int:
+    files_changed_url = f"{pulls_url}/{pr_number}/files"
+    res = requests.get(files_changed_url, headers=headers)
+    if res.status_code == requests.codes.ok:
+        return len(res.json())
+    
+    print(f"Error: Unable to fetch file changes for PR #{pr_number} (status code: {res.status_code})")
+    return 0
 
 # Function to scrape the PR page for checkbox data (e.g., "Type of change")
-def get_pr_checkbox_data(pr_html_url):
+def get_pr_checkbox_data(pr_html_url: str) -> str:
     # Fetch the PR webpage
     response = requests.get(pr_html_url)
     if response.status_code == 200:
@@ -97,6 +107,8 @@ def process_pr(pr):
             # Calculate the total number of comments (issue comments + review comments)
             total_comments = pr.get('comments', 0) + review_comments_count  # Issue comments + Review comments
 
+            files_changed_count = get_files_changed(pr['number'])
+
             # Scrape the PR page for checkbox data (e.g., "Type of change")
             pr_checkbox_data = get_pr_checkbox_data(pr['html_url'])
 
@@ -109,6 +121,7 @@ def process_pr(pr):
                     'Created At': pr['created_at'],
                     'Updated At': pr['updated_at'],
                     'State': pr['state'],
+                    'Files Changed': files_changed_count,
                     'Total Comments': total_comments,
                     'URL': pr['html_url'],
                     'Type of Change': pr_checkbox_data  # Include checkbox data for type of change
@@ -134,7 +147,7 @@ data = [pr_data for pr_data in results if pr_data is not None]
 df = pd.DataFrame(data)
 
 # Select only the columns of interest, including 'Type of Change'
-df_filtered = df[['PR Number', 'Title', 'Labels', 'Created At', 'Updated At', 'State', 'Total Comments', 'Type of Change', 'URL']]
+df_filtered = df[['PR Number', 'Title', 'Labels', 'Created At', 'Updated At', 'State', 'Files Changed', 'Total Comments', 'Type of Change', 'URL']]
 
 print("Writing to Excel")
 
