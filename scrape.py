@@ -1,14 +1,17 @@
+from dotenv import load_dotenv
+from os import environ
 import pandas as pd
 import requests
 import datetime
 from bs4 import BeautifulSoup
 import concurrent.futures
 
-# Your GitHub personal access token
-TOKEN = ''  # Replace with your actual token
+# Import Github token from .env
+load_dotenv()
+TOKEN = environ.get("GITHUB_PAT")
 
 # Set up headers for the GitHub API request
-headers = {"Authorization": f"token {TOKEN}"}
+headers = {"Authorization": f"Bearer {TOKEN}"}
 
 # GitHub repository details
 owner = 'home-assistant'

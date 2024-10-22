@@ -1,10 +1,15 @@
 
+from dotenv import load_dotenv
+from os import environ
 import requests
 import matplotlib.pyplot as plt
 from datetime import datetime, timedelta
 
+# Import Github token from .env
+load_dotenv()
+
 # Configuration
-ACCESS_TOKEN = ''  # Replace with your GitHub access token
+ACCESS_TOKEN = environ.get("GITHUB_PAT") 
 REPO_OWNER = 'home-assistant'  # Organization name
 REPO_NAME = 'core'  # Repository name within the Home Assistant organization
 
