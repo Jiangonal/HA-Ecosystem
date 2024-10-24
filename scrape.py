@@ -17,6 +17,7 @@ headers = {"Authorization": f"Bearer {TOKEN}"}
 owner = 'home-assistant'
 repo = 'core'
 
+# closed state as API query param includes more merged and closed PRs
 STATE = 'closed'
 
 # Correct GitHub API URL to fetch pull requests
@@ -45,12 +46,19 @@ def get_pull_requests():
 
 # Function to get review comments for a specific pull request
 def get_review_comments(pull_number: int):
-    review_comments_url = f"{pulls_url}/{pull_number}/comments"
-    response = requests.get(review_comments_url, headers=headers, params={'per_page': 100})
-    if response.status_code == 200:
-        return len(response.json())  # Return the number of review comments
+    # Note that neither seem to be picking up a comment that accompanies an approval
+    diff_review_comments_url = f"{pulls_url}/{pull_number}/comments"     # this endpoint only gets comments under diff reviews of PR
+    general_comments_url = f"https://api.github.com/repos/{owner}/{repo}/issues/{pull_number}/comments" # this endpoint gets general comments under PR (excluding diff comments)
+
+    review_comments_res = requests.get(diff_review_comments_url, headers=headers, params={'per_page': 100})
+    general_comments_res = requests.get(general_comments_url, headers=headers, params={'per_page': 100})
+
+    if review_comments_res.status_code == 200 and general_comments_res.status_code == 200:
+        review_comments_response = review_comments_res.json()
+        filtered_general_comments_response = [comment for comment in general_comments_res.json() if comment['user']['type'] != 'Bot'] # remove auto-generated comments
+        return len(review_comments_response) + len(filtered_general_comments_response)  # Return the total number of review and general comments
     else:
-        print(f"Error: Unable to fetch review comments for PR #{pull_number} (status code: {response.status_code})")
+        print(f"Error: Unable to fetch review comments for PR #{pull_number} (status code: {max(review_comments_res.status_code, general_comments_res.status_code)})")
         return 0
     
 # Function to get number of files changed in PR
@@ -125,7 +133,7 @@ def process_pr(pr):
                     'Labels': ', '.join(labels),
                     'Created At': pr['created_at'],
                     'Updated At': pr['updated_at'],
-                    'State': pr['state'],
+                    'State': pr['state'] if pr['state'] == 'open' else ('merged' if pr['merged_at'] else 'closed'), # pr['state'] is closed for both closed and merged PRs, so need to differentiate with pr['merged_at']
                     'Files Changed': files_changed_count,
                     'Total Comments': total_comments,
                     'Decision Time': days_to_close if STATE == 'closed' else 'N/A',
@@ -140,13 +148,15 @@ print("Fetching pull requests")
 # Fetch all pull requests
 pull_requests = get_pull_requests()
 
+print("Processing")
+
 # Process the pull requests using multithreading for speed
-with concurrent.futures.ThreadPoolExecutor(max_workers=6) as executor:
+with concurrent.futures.ThreadPoolExecutor(max_workers=8) as executor:
     results = list(executor.map(process_pr, pull_requests))
 
 print("Filtering")
 
-# Filter out None values (PRs that didn't match our criteria)
+# Filter out None values (PRs that didn't match our criteria e.g. weren't integration related)
 data = [pr_data for pr_data in results if pr_data is not None]
 
 # Convert the filtered data into a Pandas DataFrame
