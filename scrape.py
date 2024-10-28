@@ -2,7 +2,7 @@ from dotenv import load_dotenv
 from os import environ
 import pandas as pd
 import requests
-import datetime
+from datetime import datetime
 from bs4 import BeautifulSoup
 import concurrent.futures
 
@@ -17,7 +17,8 @@ headers = {"Authorization": f"Bearer {TOKEN}"}
 owner = 'home-assistant'
 repo = 'core'
 
-state = 'open'
+# closed state as API query param includes more merged and closed PRs
+STATE = 'closed'
 
 # Correct GitHub API URL to fetch pull requests
 pulls_url = f'https://api.github.com/repos/{owner}/{repo}/pulls'
@@ -26,9 +27,11 @@ pulls_url = f'https://api.github.com/repos/{owner}/{repo}/pulls'
 def get_pull_requests():
     all_pull_requests = []
     page = 1
-    while True:
+    # control how many results to fetch 
+    PAGE_LIMIT = 10
+    while page <= PAGE_LIMIT:
         # Fetch each page of pull requests
-        response = requests.get(pulls_url, headers=headers, params={'page': page, 'per_page': 100, 'state': state})
+        response = requests.get(pulls_url, headers=headers, params={'page': page, 'per_page': 100, 'state': STATE})
         if response.status_code == 200:
             pull_requests = response.json()
             if not pull_requests:
@@ -42,14 +45,31 @@ def get_pull_requests():
     return all_pull_requests
 
 # Function to get review comments for a specific pull request
-def get_review_comments(pull_number):
-    review_comments_url = f"https://api.github.com/repos/{owner}/{repo}/pulls/{pull_number}/comments"
-    response = requests.get(review_comments_url, headers=headers)
-    if response.status_code == 200:
-        return len(response.json())  # Return the number of review comments
+def get_review_comments(pull_number: int):
+    # Note that neither seem to be picking up a comment that accompanies an approval
+    diff_review_comments_url = f"{pulls_url}/{pull_number}/comments"     # this endpoint only gets comments under diff reviews of PR
+    general_comments_url = f"https://api.github.com/repos/{owner}/{repo}/issues/{pull_number}/comments" # this endpoint gets general comments under PR (excluding diff comments)
+
+    review_comments_res = requests.get(diff_review_comments_url, headers=headers, params={'per_page': 100})
+    general_comments_res = requests.get(general_comments_url, headers=headers, params={'per_page': 100})
+
+    if review_comments_res.status_code == 200 and general_comments_res.status_code == 200:
+        review_comments_response = review_comments_res.json()
+        filtered_general_comments_response = [comment for comment in general_comments_res.json() if comment['user']['type'] != 'Bot'] # remove auto-generated comments
+        return len(review_comments_response) + len(filtered_general_comments_response)  # Return the total number of review and general comments
     else:
-        print(f"Error: Unable to fetch review comments for PR #{pull_number} (status code: {response.status_code})")
+        print(f"Error: Unable to fetch review comments for PR #{pull_number} (status code: {max(review_comments_res.status_code, general_comments_res.status_code)})")
         return 0
+    
+# Function to get number of files changed in PR
+def get_files_changed(pr_number: int) -> int:
+    files_changed_url = f"{pulls_url}/{pr_number}/files"
+    res = requests.get(files_changed_url, headers=headers)
+    if res.status_code == requests.codes.ok:
+        return len(res.json())
+
+    print(f"Error: Unable to fetch file changes for PR #{pr_number} (status code: {res.status_code})")
+    return 0
 
 # Function to scrape the PR page for checkbox data (e.g., "Type of change")
 def get_pr_checkbox_data(pr_html_url):
@@ -86,16 +106,21 @@ def get_pr_checkbox_data(pr_html_url):
 # Function to process the pull request and extract required data
 def process_pr(pr):
     labels = [label['name'] for label in pr.get('labels', [])]
-    pr_creation_date = datetime.datetime.strptime(pr['created_at'], '%Y-%m-%dT%H:%M:%SZ')
+    created_date = datetime.fromisoformat(pr['created_at']).replace(tzinfo=None)
     
     # Filter by creation date: Only include PRs created from 2021 onwards
-    if pr_creation_date >= datetime.datetime(2021, 1, 1):
+    if created_date >= datetime(2021, 1, 1):
         if any("integration" in label for label in labels):
             # Fetch review comments for this PR
             review_comments_count = get_review_comments(pr['number'])
             
             # Calculate the total number of comments (issue comments + review comments)
             total_comments = pr.get('comments', 0) + review_comments_count  # Issue comments + Review comments
+
+            files_changed_count = get_files_changed(pr['number'])
+
+            closed_date = datetime.fromisoformat(pr['closed_at']).replace(tzinfo=None)
+            days_to_close = (closed_date - created_date).days
 
             # Scrape the PR page for checkbox data (e.g., "Type of change")
             pr_checkbox_data = get_pr_checkbox_data(pr['html_url'])
@@ -108,8 +133,10 @@ def process_pr(pr):
                     'Labels': ', '.join(labels),
                     'Created At': pr['created_at'],
                     'Updated At': pr['updated_at'],
-                    'State': pr['state'],
+                    'State': pr['state'] if pr['state'] == 'open' else ('merged' if pr['merged_at'] else 'closed'), # pr['state'] is closed for both closed and merged PRs, so need to differentiate with pr['merged_at']
+                    'Files Changed': files_changed_count,
                     'Total Comments': total_comments,
+                    'Decision Time': days_to_close if STATE == 'closed' else 'N/A',
                     'URL': pr['html_url'],
                     'Type of Change': pr_checkbox_data  # Include checkbox data for type of change
                 }
@@ -121,24 +148,26 @@ print("Fetching pull requests")
 # Fetch all pull requests
 pull_requests = get_pull_requests()
 
+print("Processing")
+
 # Process the pull requests using multithreading for speed
-with concurrent.futures.ThreadPoolExecutor(max_workers=10) as executor:
+with concurrent.futures.ThreadPoolExecutor(max_workers=8) as executor:
     results = list(executor.map(process_pr, pull_requests))
 
 print("Filtering")
 
-# Filter out None values (PRs that didn't match our criteria)
+# Filter out None values (PRs that didn't match our criteria e.g. weren't integration related)
 data = [pr_data for pr_data in results if pr_data is not None]
 
 # Convert the filtered data into a Pandas DataFrame
 df = pd.DataFrame(data)
 
 # Select only the columns of interest, including 'Type of Change'
-df_filtered = df[['PR Number', 'Title', 'Labels', 'Created At', 'Updated At', 'State', 'Total Comments', 'Type of Change', 'URL']]
+df_filtered = df[['PR Number', 'Title', 'Labels', 'Created At', 'Updated At', 'State', 'Files Changed', 'Total Comments'] + ['Decision Time' if STATE == 'closed' else []]+ ['Type of Change', 'URL']]
 
 print("Writing to Excel")
 
 # Optionally, save the DataFrame to an Excel file
-df_filtered.to_excel("pull_requests_" + state + "_test.xlsx", index=False)
+df_filtered.to_excel("pull_requests_" + STATE + "_test.xlsx", index=False)
 
 
