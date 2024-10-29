@@ -61,12 +61,13 @@ def get_review_comments(pull_number: int):
         print(f"Error: Unable to fetch review comments for PR #{pull_number} (status code: {max(review_comments_res.status_code, general_comments_res.status_code)})")
         return 0
     
-# Function to get number of files changed in PR
-def get_files_changed(pr_number: int) -> int:
+# Function to get number of files and lines of code changed in PR, returned as a tuple
+def get_files_and_lines_changed(pr_number: int) -> int:
     files_changed_url = f"{pulls_url}/{pr_number}/files"
     res = requests.get(files_changed_url, headers=headers)
+    data = res.json()
     if res.status_code == requests.codes.ok:
-        return len(res.json())
+        return (len(data), sum([file['changes'] for file in data]))
 
     print(f"Error: Unable to fetch file changes for PR #{pr_number} (status code: {res.status_code})")
     return 0
@@ -117,7 +118,7 @@ def process_pr(pr):
             # Calculate the total number of comments (issue comments + review comments)
             total_comments = pr.get('comments', 0) + review_comments_count  # Issue comments + Review comments
 
-            files_changed_count = get_files_changed(pr['number'])
+            files_changed_count, lines_changed = get_files_and_lines_changed(pr['number'])
 
             closed_date = datetime.fromisoformat(pr['closed_at']).replace(tzinfo=None)
             days_to_close = (closed_date - created_date).days
@@ -135,6 +136,7 @@ def process_pr(pr):
                     'Updated At': pr['updated_at'],
                     'State': pr['state'] if pr['state'] == 'open' else ('merged' if pr['merged_at'] else 'closed'), # pr['state'] is closed for both closed and merged PRs, so need to differentiate with pr['merged_at']
                     'Files Changed': files_changed_count,
+                    'LOC Changed': lines_changed,
                     'Total Comments': total_comments,
                     'Decision Time': days_to_close if STATE == 'closed' else 'N/A',
                     'URL': pr['html_url'],
@@ -163,7 +165,7 @@ data = [pr_data for pr_data in results if pr_data is not None]
 df = pd.DataFrame(data)
 
 # Select only the columns of interest, including 'Type of Change'
-df_filtered = df[['PR Number', 'Title', 'Labels', 'Created At', 'Updated At', 'State', 'Files Changed', 'Total Comments'] + ['Decision Time' if STATE == 'closed' else []]+ ['Type of Change', 'URL']]
+df_filtered = df[['PR Number', 'Title', 'Labels', 'Created At', 'Updated At', 'State', 'Files Changed', 'LOC Changed', 'Total Comments'] + ['Decision Time' if STATE == 'closed' else []]+ ['Type of Change', 'URL']]
 
 print("Writing to Excel")
 
