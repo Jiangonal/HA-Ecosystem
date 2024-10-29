@@ -28,7 +28,7 @@ def get_pull_requests():
     all_pull_requests = []
     page = 1
     # control how many results to fetch 
-    PAGE_LIMIT = 2
+    PAGE_LIMIT = 10
     while page <= PAGE_LIMIT:
         # Fetch each page of pull requests
         response = requests.get(pulls_url, headers=headers, params={'page': page, 'per_page': 100, 'state': STATE})
@@ -54,9 +54,9 @@ def get_review_comments(pull_number: int):
     general_comments_res = requests.get(general_comments_url, headers=headers, params={'per_page': 100})
 
     if review_comments_res.status_code == 200 and general_comments_res.status_code == 200:
-        review_comments_response = review_comments_res.json()
-        filtered_general_comments_response = [comment for comment in general_comments_res.json() if comment['user']['type'] != 'Bot'] # remove auto-generated comments
-        return len(review_comments_response) + len(filtered_general_comments_response)  # Return the total number of review and general comments
+        review_comments_data = review_comments_res.json()
+        filtered_general_comments_data = [comment for comment in general_comments_res.json() if comment['user']['type'] != 'Bot'] # remove auto-generated comments
+        return len(review_comments_data) + len(filtered_general_comments_data)  # Return the total number of review and general comments
     else:
         print(f"Error: Unable to fetch review comments for PR #{pull_number} (status code: {max(review_comments_res.status_code, general_comments_res.status_code)})")
         return 0
@@ -70,7 +70,7 @@ def get_files_and_lines_changed(pr_number: int) -> int:
         return (len(data), sum([file['changes'] for file in data]))
 
     print(f"Error: Unable to fetch file changes for PR #{pr_number} (status code: {res.status_code})")
-    return 0
+    return (0,0)
 
 # Function to scrape the PR page for checkbox data (e.g., "Type of change")
 def get_pr_checkbox_data(pr_html_url):
@@ -153,7 +153,7 @@ pull_requests = get_pull_requests()
 print("Processing")
 
 # Process the pull requests using multithreading for speed
-with concurrent.futures.ThreadPoolExecutor(max_workers=8) as executor:
+with concurrent.futures.ThreadPoolExecutor(max_workers=6) as executor:
     results = list(executor.map(process_pr, pull_requests))
 
 print("Filtering")
@@ -171,10 +171,10 @@ print("Writing to Excel")
 
 if STATE == 'closed':
     grouped = df_filtered.groupby(['State'])
-    grouped.get_group('merged').to_excel("pull_requests_merged_test.xlsx", index=False)
-    grouped.get_group('closed').to_excel("pull_requests_closed_test.xlsx", index=False)
+    grouped.get_group('merged').to_excel("pull_requests_merged_temp.xlsx", index=False)
+    grouped.get_group('closed').to_excel("pull_requests_closed_temp.xlsx", index=False)
 else:
-    df_filtered.to_excel("pull_requests_open_test.xlsx", index=False)
+    df_filtered.to_excel("pull_requests_open_temp.xlsx", index=False)
 
 
 
