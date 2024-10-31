@@ -4,7 +4,7 @@ import os
 import json
 import pandas as pd
 import requests
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 from bs4 import BeautifulSoup
 import concurrent.futures
 from time import sleep
@@ -43,12 +43,35 @@ def save_progress(last_page):
     with open(PROGRESS_FILE, "w") as f:
         json.dump({"last_page": last_page}, f)
 
+# Check rate limit and return reset time if limit is reached
+def check_rate_limit():
+    response = session.get("https://api.github.com/rate_limit", headers=headers)
+    rate_limit_info = response.json()
+    remaining = rate_limit_info['resources']['core']['remaining']
+    reset_timestamp = rate_limit_info['resources']['core']['reset']
+    reset_time = datetime.utcfromtimestamp(reset_timestamp)
+    return remaining, reset_time
+
+# Wait until rate limit resets, then resume
+def wait_until_reset():
+    remaining, reset_time = check_rate_limit()
+    if remaining == 0:
+        wait_seconds = (reset_time - datetime.now(timezone.utc)).total_seconds()
+        print(f"Rate limit reached. Waiting until {reset_time} (in {wait_seconds} seconds).")
+        sleep(wait_seconds + 1)  # Wait until limit resets
+    else:
+        print(f"Remaining requests: {remaining}")
+
 # Fetch pull requests with no page limit (until all pages are retrieved)
 def get_pull_requests(start_page=1):
     all_pull_requests = []
     page = start_page
     while True:
         print(f"Fetching page {page}")
+        remaining, reset_time = check_rate_limit()
+        if remaining == 0:
+            wait_until_reset()
+        
         response = session.get(
             pulls_url,
             headers=headers,
@@ -56,10 +79,8 @@ def get_pull_requests(start_page=1):
         )
         if response.status_code == 200:
             pull_requests = response.json()
-            # Stop if there are no more pull requests
             if not pull_requests:
                 break
-            
             # Filter to keep pull requests created from 2021 onward
             all_pull_requests.extend([pr for pr in pull_requests if datetime.fromisoformat(pr['created_at']).replace(tzinfo=timezone.utc) >= datetime(2021, 1, 1, tzinfo=timezone.utc)])
             page += 1
@@ -69,7 +90,6 @@ def get_pull_requests(start_page=1):
             print(f"Error fetching page {page}: {response.status_code}")
             break
     return all_pull_requests
-
 
 # Fetch additional data for each PR (e.g., files changed, comments, decision time, type of change)
 def fetch_pr_details(pr):
@@ -135,58 +155,9 @@ def main():
     print(f"Resuming from page {start_page}")
     pull_requests = get_pull_requests(start_page=start_page)
     process_and_save_data(pull_requests)
-
-
     print(f"Data saved to {TEMP_DATA_FILE}.")
 
-# Supporting functions to get comments and file changes
-def get_review_comments(pr_number):
-    urls = [
-        f"{pulls_url}/{pr_number}/comments",
-        f"https://api.github.com/repos/{owner}/{repo}/issues/{pr_number}/comments"
-    ]
-    total_comments = 0
-    for url in urls:
-        response = session.get(url, headers=headers)
-        if response.status_code == 200:
-            comments = response.json()
-            if "issues" in url:
-                total_comments += sum(1 for comment in comments if comment['user']['type'] != 'Bot')
-            else:
-                total_comments += len(comments)
-        sleep(0.2)
-    return total_comments
 
-def get_files_changed(pr_number: int) -> int:
-    files_changed_url = f"{pulls_url}/{pr_number}/files"
-    total_files_changed = 0
-    page = 1
-
-    while True:
-        res = requests.get(files_changed_url, headers=headers, params={'page': page, 'per_page': 100})
-        if res.status_code == requests.codes.ok:
-            files = res.json()
-            total_files_changed += len(files)
-            if len(files) < 100:
-                break
-            page += 1
-            sleep(0.2)
-        else:
-            print(f"Error: Unable to fetch file changes for PR #{pr_number} (status code: {res.status_code})")
-            break
-
-    return total_files_changed
-
-def get_pr_checkbox_data(pr_html_url):
-    response = session.get(pr_html_url)
-    if response.status_code == 200:
-        soup = BeautifulSoup(response.text, 'html.parser')
-        section = soup.find('ul', class_='contains-task-list')
-        if section:
-            checked_items = [li.text.strip() for li in section.find_all('li') if li.find('input', checked=True)]
-            if any('New integration' in item or 'New feature' in item for item in checked_items):
-                return ", ".join(checked_items)
-    return None
 
 # Run the main function
 main()
