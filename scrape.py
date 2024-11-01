@@ -8,7 +8,7 @@ import concurrent.futures
 
 # Import Github token from .env
 load_dotenv()
-TOKEN = environ.get("GITHUB_PAT")
+TOKEN = ''
 
 # Set up headers for the GitHub API request
 headers = {"Authorization": f"Bearer {TOKEN}"}
@@ -28,7 +28,7 @@ def get_pull_requests():
     all_pull_requests = []
     page = 1
     # control how many results to fetch 
-    PAGE_LIMIT = 10
+    PAGE_LIMIT = 2
     while page <= PAGE_LIMIT:
         # Fetch each page of pull requests
         response = requests.get(pulls_url, headers=headers, params={'page': page, 'per_page': 100, 'state': STATE})
@@ -168,6 +168,6 @@ df_filtered = df[['PR Number', 'Title', 'Labels', 'Created At', 'Updated At', 'S
 print("Writing to Excel")
 
 # Optionally, save the DataFrame to an Excel file
-df_filtered.to_excel("pull_requests_" + STATE + "_test.xlsx", index=False)
+df_filtered.to_excel("temp_pull_requests_" + STATE + "_test.xlsx", index=False)
 
 
