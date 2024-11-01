@@ -1,11 +1,10 @@
 import csv
 from github import Github
 import time
-from datetime import datetime
+from datetime import datetime, timezone
 
 # List of tokens for rotation
 tokens = []
-
 current_token_index = 0
 
 # Initialize GitHub instance
@@ -26,7 +25,7 @@ def handle_rate_limit(g):
     rate_limit = g.get_rate_limit().core
     if rate_limit.remaining == 0:
         reset_time = rate_limit.reset
-        wait_time = (reset_time - datetime.now()).total_seconds()
+        wait_time = (reset_time - datetime.now(timezone.utc)).total_seconds()  # Ensure timezone awareness
         print(f"Token {current_token_index + 1} rate limit exceeded. Remaining reset wait time: {wait_time:.2f} seconds.")
 
         # Rotate to the next token or wait if all tokens are exhausted
@@ -40,7 +39,7 @@ def handle_rate_limit(g):
 
 # Main function to collect PR metadata
 def collect_pr_metadata():
-    start_date = datetime(2021, 1, 1)
+    start_date = datetime(2021, 1, 1, tzinfo=timezone.utc)  # Set start date as timezone-aware in UTC
     g = get_github_instance()
     repo = g.get_repo("home-assistant/core")
 
