@@ -63,7 +63,7 @@ def check_rate_limit():
     rate_limit_info = response.json()
     remaining = rate_limit_info['resources']['core']['remaining']
     reset_timestamp = rate_limit_info['resources']['core']['reset']
-    reset_time = datetime.utcfromtimestamp(reset_timestamp)
+    reset_time = datetime.fromtimestamp(reset_timestamp, timezone.utc)  # Updated line
     return remaining, reset_time
 
 # Wait until rate limit resets, then resume
