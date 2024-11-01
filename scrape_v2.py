@@ -145,46 +145,54 @@ def get_pull_requests(start_page=1):
     all_pull_requests = []
     page = start_page
     save_interval = 50  # Checkpoint interval: save every 50 pages
-    
+
     while True:
         print(f"Fetching page {page}")
         remaining, reset_time = check_rate_limit()
-        if remaining == 0:
-            wait_until_reset()
-        
+
+        # Fetch PRs with rate limit handling only if needed
         response = fetch_with_rate_limit(
             pulls_url,
             params={'state': STATE, 'sort': 'created', 'direction': 'desc', 'per_page': 100, 'page': page}
         )
-        
+
+        # Process response if successful
         if response.status_code == 200:
             pull_requests = response.json()
             if not pull_requests:
                 break
-            
+
             # Filter pull requests based on the creation date and "integration" label
             for pr in pull_requests:
                 created_date = datetime.fromisoformat(pr['created_at']).replace(tzinfo=None)
                 labels = [label['name'] for label in pr.get('labels', [])]
-                
+
                 if created_date >= datetime(2021, 1, 1) and any("integration" in label.lower() for label in labels):
                     all_pull_requests.append(pr)
-            
+
+            # Save progress every 50 pages
             if page % save_interval == 0:
                 save_progress(page)
                 process_and_save_data(all_pull_requests)
                 all_pull_requests = []
-            
+
             page += 1
             sleep(0.5)  # Short delay to avoid hitting rate limits
+
+        elif response.status_code == 403:
+            # Wait only if rate limit is hit
+            print(f"Rate limit hit at page {page}. Waiting until reset...")
+            wait_until_reset()
         else:
             print(f"Error fetching page {page}: {response.status_code}")
             break
 
+    # Save remaining PRs if any
     if all_pull_requests:
         process_and_save_data(all_pull_requests)
 
     return all_pull_requests
+
 
 # Fetch additional data for each PR (e.g., files changed, comments, decision time, type of change)
 def fetch_pr_details(pr):
