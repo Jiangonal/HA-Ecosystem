@@ -48,15 +48,21 @@ def load_last_pr():
         with open("pull_requests_metadata.csv", "r", encoding="utf-8") as f:
             last_row = list(csv.reader(f))[-1]
             last_pr_number = int(last_row[0])
-            print(f"Resuming from PR #{last_pr_number + 1}")
-            return last_pr_number + 1
+            print(f"Resuming from PR #{last_pr_number - 1}")
+            return last_pr_number - 1
     return None  # No file exists, start fresh
 
 # Save buffered data to CSV
 def save_buffered_data():
-    print("Checkpoint reached (every", BATCH_SIZE, "PRs)")
+    mode = ""
+    print("Checkpoint reached.")
     if buffer:
-        mode = "a" if os.path.exists("pull_requests_metadata.csv") else "w"
+        if os.path.exists("pull_requests_metadata.csv"):
+            mode = "a" 
+            print("Found existing file.")
+        else: 
+            mode = "w"
+            print("Creating new file.")
         with open("pull_requests_metadata.csv", mode, newline="", encoding="utf-8") as file:
             writer = csv.writer(file)
             if mode == "w":
@@ -76,6 +82,7 @@ def collect_pr_metadata():
     
     try:
         for pr in repo.get_pulls(state='closed', sort='created', direction='desc'):
+            
             # Rotate token or wait if rate limit is exceeded
             g = handle_rate_limit(g)
             
@@ -85,7 +92,7 @@ def collect_pr_metadata():
                 return  # Exit function once we reach PRs created before 2021
             
             # Skip already processed PRs
-            if pr.number <= current_pr_number:
+            if (pr.number >= current_pr_number) and current_pr_number != 0:
                 continue
             
             # Gather PR data
@@ -101,11 +108,11 @@ def collect_pr_metadata():
                 pr.html_url
             ]
             
-            buffer.append(pr_data)  # Add PR data to buffer
-            
+            buffer.append(pr_data)  # Add PR data to buffer                
             # Save buffer if it reaches the BATCH_SIZE
             if len(buffer) >= BATCH_SIZE:
                 save_buffered_data()
+
 
             # print(f"Processed PR #{pr.number}")
             current_pr_number = pr.number  # Update last processed PR
