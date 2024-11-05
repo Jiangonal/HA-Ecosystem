@@ -9,7 +9,7 @@ import os
 tokens = []
 current_token_index = 0
 buffer = []  # Buffer for batching PR data
-BATCH_SIZE = 100  # Save every x PRs
+BATCH_SIZE = 10  # Save every x PRs
 
 # Get authorization headers for requests
 def get_headers():
@@ -85,25 +85,53 @@ def get_pr_checkbox_data(pr_html_url, pr_number):
         print(f"Failed to retrieve {pr_html_url}. Status code: {response.status_code}")
         return None
 
-# Load last PR number from progress file if it exists
+
+# Load last PR number from output CSV if it exists, otherwise fallback to progress file
 def get_last_processed_pr():
-    try:
-        with open("progress_checkbox.txt", "r") as file:
-            return int(file.read().strip())
-    except FileNotFoundError:
-        return None
+    last_pr = None
+    
+    # Check if the output CSV exists and get the last PR number if it does
+    if os.path.exists("pull_requests_with_checkbox_data.csv"):
+        with open("pull_requests_with_checkbox_data.csv", mode="r", encoding="utf-8") as outfile:
+            reader = csv.DictReader(outfile)
+            rows = list(reader)
+            if rows:
+                last_pr = int(rows[-1]["PR Number"])  # Get the PR Number from the last row in the CSV
+
+    # Fallback to progress file if output CSV doesn't exist
+    if last_pr is None:
+        try:
+            with open("progress_checkbox.txt", "r") as file:
+                last_pr = int(file.read().strip())
+        except FileNotFoundError:
+            last_pr = None
+
+    return last_pr
+
 
 # Process PRs and add checkbox data
 def add_checkbox_data():
     last_pr = get_last_processed_pr()
-
+    
+    # Read the CSV into a list and sort in descending order of PR numbers
     with open("pull_requests_metadata.csv", mode="r", encoding="utf-8") as infile:
-        reader = csv.DictReader(infile)
+        reader = list(csv.DictReader(infile))
+        reader.sort(key=lambda row: int(row["PR Number"]), reverse=True)
 
-        for row in reader:
-            pr_number = int(row["PR Number"])
-            if last_pr and pr_number <= last_pr:
-                continue
+    start_processing = False
+
+    for row in reader:
+        pr_number = int(row["PR Number"])
+
+        # Find the next smallest PR after `last_pr` to start processing
+        if not last_pr:
+            last_pr = pr_number  # Set last_pr if it's not set
+        else:
+            if pr_number < last_pr:
+                start_processing = True
+
+        # Start processing from the next smallest PR after `last_pr`
+        if start_processing:
 
             # Collect PR data and checkbox data
             try:
@@ -126,15 +154,15 @@ def add_checkbox_data():
                 if len(buffer) >= BATCH_SIZE:
                     save_buffered_data()
 
-                #print(f"Processed PR #{pr_number}: {type_of_change}")
-                save_progress(pr_number)  # Save progress after each PR
-                time.sleep(1)
+                # Save progress after each PR
+                save_progress(pr_number)
+                time.sleep(0.5)
             
             except Exception as e:
                 print(f"Error occurred: {e}")
                 save_progress(pr_number)
                 rotate_token()
-                time.sleep(1)
+                time.sleep(0.5)
 
     # Final save after all processing
     save_buffered_data()
