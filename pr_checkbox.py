@@ -25,9 +25,14 @@ def rotate_token():
 
 # Save buffered data to CSV
 def save_buffered_data():
-    print("Checkpoint reached (every", BATCH_SIZE, "PRs)")
+    print("Checkpoint reached")
+    mode = ""
     if buffer:
-        mode = "a" if os.path.exists("pull_requests_with_checkbox_data.csv") else "w"
+        if os.path.exists("pull_requests_with_checkbox_data.csv"):
+            mode = "a"  
+            print("Found existing file.")
+        else:
+            mode = "w"
         with open("pull_requests_with_checkbox_data.csv", mode, newline="", encoding="utf-8") as file:
             writer = csv.writer(file)
             if mode == "w":
@@ -43,13 +48,14 @@ def save_progress(pr_number):
 
 # Handle rate limits by rotating tokens or waiting
 def handle_rate_limit(pr_number):
+    global current_token_index
     save_progress(pr_number)  # Save progress on token exhaustion
     if current_token_index == len(tokens) - 1:
         reset_time = datetime.now(timezone.utc) + timedelta(hours=1)
         wait_time = (reset_time - datetime.now(timezone.utc)).total_seconds()
         print(f"All tokens exhausted. Waiting {wait_time:.2f} seconds for reset.")
         time.sleep(wait_time)
-        global current_token_index
+
         current_token_index = 0  # Reset token rotation
     else:
         rotate_token()
@@ -120,7 +126,7 @@ def add_checkbox_data():
                 if len(buffer) >= BATCH_SIZE:
                     save_buffered_data()
 
-                print(f"Processed PR #{pr_number}: {type_of_change}")
+                #print(f"Processed PR #{pr_number}: {type_of_change}")
                 save_progress(pr_number)  # Save progress after each PR
                 time.sleep(1)
             
