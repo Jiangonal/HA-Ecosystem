@@ -9,7 +9,7 @@ import os
 tokens = []
 current_token_index = 0
 buffer = []  # Buffer for batching PR data
-BATCH_SIZE = 10  # Save every x PRs
+BATCH_SIZE = 100  # Save every x PRs
 
 # Get authorization headers for requests
 def get_headers():
