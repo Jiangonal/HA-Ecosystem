@@ -1,13 +1,15 @@
 
+from dotenv import load_dotenv
 import csv
 from github import Github
 import time
 from datetime import datetime, timezone
 import os
 
+load_dotenv()
+
 # List of tokens for rotation
-tokens = [
-]
+tokens = [os.environ.get("GITHUB_PAT_1"), os.environ.get("GITHUB_PAT_2")]
 current_token_index = 0
 buffer = []  # Buffer for batching PR data
 BATCH_SIZE = 100  # Save every x PRs
@@ -27,20 +29,18 @@ def rotate_token():
     return get_github_instance()
 
 # Function to handle rate limits by rotating tokens or waiting if all are exhausted
-def handle_rate_limit(g):
+def handle_rate_limit(g: Github):
     rate_limit = g.get_rate_limit().core
     if rate_limit.remaining == 0:
         reset_time = rate_limit.reset
         wait_time = (reset_time - datetime.now(timezone.utc)).total_seconds()
-        print(f"Token {current_token_index + 1} rate limit exceeded. Waiting {wait_time:.2f} seconds.")
+        print(f"Token {current_token_index + 1} rate limit exceeded.")
         
         # Rotate to the next token or wait if all tokens are exhausted
         if current_token_index == len(tokens) - 1:
             print(f"All tokens exhausted. Waiting {wait_time:.2f} seconds for reset.")
             time.sleep(wait_time)
-            return get_github_instance()
-        else:
-            return rotate_token()
+        return rotate_token()
     return g
 
 # Load last PR number from CSV if it exists, otherwise start from the beginning
@@ -68,7 +68,7 @@ def save_buffered_data():
             writer = csv.writer(file)
             if mode == "w":
                 writer.writerow(["PR Number", "Title", "Created At", "Updated At", "State", 
-                                 "Files Changed", "Total Comments", "Decision Time", "URL"])
+                                 "Files Changed", "LOC Changed", "Total Comments", "Decision Time", "URL"])
             writer.writerows(buffer)  # Write all buffered rows at once
         buffer.clear()  # Clear buffer after writing
 
@@ -103,8 +103,9 @@ def collect_pr_metadata():
                 pr.created_at, 
                 pr.updated_at, 
                 "merged" if pr.merged else "closed", 
-                pr.changed_files, 
-                len([comment for comment in pr.get_comments() if comment.user.type != "Bot"]), 
+                pr.changed_files,
+                sum([file.changes for file in pr.get_files()]),
+                len([comment for comment in pr.get_comments() + pr.get_issue_comments() if comment.user.type != "Bot"]), 
                 (pr.closed_at - pr.created_at).days, 
                 pr.html_url
             ]
