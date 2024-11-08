@@ -1,8 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
-from pprint import pprint
 
-merged_df = pd.read_excel('pull_requests_merged_temp.xlsx')
+merged_df = pd.read_csv('pull_requests_filtered_merged.csv')
 
 # get two possible column values to make grouping easier (remove permutations with 'Bugfix' or 'Dependency' along with 'New feature')
 merged_df['Type of Change'] = merged_df['Type of Change'].apply(lambda value: 'New feature' if 'New feature' in value else 'New integration')
@@ -11,7 +10,8 @@ merged_df = merged_df.groupby('Type of Change')
 fig, axes = plt.subplots(2, 2, figsize=(9, 9))
 axes = axes.ravel()
 
-for i, col_name in enumerate(['Files Changed', 'Decision Time', 'Total Comments', 'LOC Changed']):
+# for i, col_name in enumerate(['Files Changed', 'Decision Time', 'Total Comments', 'LOC Changed']):    don't have LOC Changed currently
+for i, col_name in enumerate(['Files Changed', 'Decision Time', 'Total Comments']):
     axes[i].hist(merged_df.get_group('New integration')[col_name], bins=20, color='salmon', edgecolor='black', alpha=0.5, label='New integration')
     axes[i].hist(merged_df.get_group('New feature')[col_name], bins=20, color='skyblue', edgecolor='black', alpha=0.5, label='New feature')
 

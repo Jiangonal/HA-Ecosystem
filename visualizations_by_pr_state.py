@@ -1,14 +1,15 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-merged_df = pd.read_excel('pull_requests_merged_temp.xlsx')
-closed_df = pd.read_excel('pull_requests_closed_temp.xlsx')
+merged_df = pd.read_csv('pull_requests_filtered_merged.csv')
+closed_df = pd.read_csv('pull_requests_filtered_closed.csv')
 
 fig, axes = plt.subplots(2, 2, figsize=(9, 9))
 axes = axes.ravel()
 fig.suptitle('Distributions of Integration-Related PR Characteristics')
 
-for i, col_name in enumerate(['Files Changed', 'Decision Time', 'Total Comments', 'LOC Changed']):
+# for i, col_name in enumerate(['Files Changed', 'Decision Time', 'Total Comments', 'LOC Changed']):    currently don't have LOC changed
+for i, col_name in enumerate(['Files Changed', 'Decision Time', 'Total Comments']):
     axes[i].hist(merged_df[col_name], bins=20, color='skyblue', edgecolor='black', alpha=0.5, label='Merged PRs')
     axes[i].hist(closed_df[col_name], bins=20, color='salmon', edgecolor='black', alpha=0.5, label='Closed PRs')
 

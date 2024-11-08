@@ -6,6 +6,3 @@
 
 .env
 .venv
-
-# don't track new output each time script is run: if want output to be maintained, delete old xlsx file and remove '_test" prefix
-pull_requests_*_temp.xlsx
