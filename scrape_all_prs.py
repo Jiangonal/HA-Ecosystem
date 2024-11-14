@@ -1,11 +1,14 @@
 
 import csv
+from dotenv import load_dotenv
 from github import Github
 import time
 from datetime import datetime, timezone
 import os
 
-# List of tokens for rotation
+load_dotenv()
+
+# List of tokens for rotation- can use `[os.environ.get("GITHUB_PAT_1"), os.environ.get("GITHUB_PAT_2"),...]` if using env variables
 tokens = [
 ]
 current_token_index = 0
@@ -29,24 +32,24 @@ def rotate_token():
 # Function to handle rate limits by rotating tokens or waiting if all are exhausted
 def handle_rate_limit(g):
     rate_limit = g.get_rate_limit().core
+
     if rate_limit.remaining == 0:
         reset_time = rate_limit.reset
         wait_time = (reset_time - datetime.now(timezone.utc)).total_seconds()
-        print(f"Token {current_token_index + 1} rate limit exceeded. Waiting {wait_time:.2f} seconds.")
+        print(f"Token {current_token_index + 1} rate limit exceeded.")
         
         # Rotate to the next token or wait if all tokens are exhausted
         if current_token_index == len(tokens) - 1:
             print(f"All tokens exhausted. Waiting {wait_time:.2f} seconds for reset.")
             time.sleep(wait_time)
-            return get_github_instance()
-        else:
-            return rotate_token()
+        
+        return rotate_token()
     return g
 
 # Load last PR number from CSV if it exists, otherwise start from the beginning
 def load_last_pr():
-    if os.path.exists("pull_requests_metadata.csv"):
-        with open("pull_requests_metadata.csv", "r", encoding="utf-8") as f:
+    if os.path.exists("pull_requests_all.csv"):
+        with open("pull_requests_all.csv", "r", encoding="utf-8") as f:
             last_row = list(csv.reader(f))[-1]
             last_pr_number = int(last_row[0])
             print(f"Resuming from PR #{last_pr_number - 1}")
@@ -58,17 +61,17 @@ def save_buffered_data():
     mode = ""
     print("Checkpoint reached.")
     if buffer:
-        if os.path.exists("pull_requests_metadata.csv"):
+        if os.path.exists("pull_requests_all.csv"):
             mode = "a" 
             print("Found existing file.")
         else: 
             mode = "w"
             print("Creating new file.")
-        with open("pull_requests_metadata.csv", mode, newline="", encoding="utf-8") as file:
+        with open("pull_requests_all.csv", mode, newline="", encoding="utf-8") as file:
             writer = csv.writer(file)
             if mode == "w":
                 writer.writerow(["PR Number", "Title", "Created At", "Updated At", "State", 
-                                 "Files Changed", "Total Comments", "Decision Time", "URL"])
+                                 "Files Changed", "LOC Changed", "Total Comments", "Decision Time", "Closed Date", "URL"])
             writer.writerows(buffer)  # Write all buffered rows at once
         buffer.clear()  # Clear buffer after writing
 
@@ -76,6 +79,7 @@ def save_buffered_data():
 def collect_pr_metadata():
     global current_pr_number
     start_date = datetime(2021, 1, 1, tzinfo=timezone.utc)  # Set start date as timezone-aware in UTC
+    end_date = datetime(2024, 10, 31, tzinfo=timezone.utc)  # Set end date as timezone-aware in UTC
     g = get_github_instance()
     repo = g.get_repo("home-assistant/core")
     
@@ -86,6 +90,10 @@ def collect_pr_metadata():
             
             # Rotate token or wait if rate limit is exceeded
             g = handle_rate_limit(g)
+
+            # Skip PRs created after October 2024
+            if pr.created_at > end_date:
+                return
             
             # Skip PRs created before 2021
             if pr.created_at < start_date:
@@ -104,8 +112,10 @@ def collect_pr_metadata():
                 pr.updated_at, 
                 "merged" if pr.merged else "closed", 
                 pr.changed_files, 
-                len([comment for comment in pr.get_comments() if comment.user.type != "Bot"]), 
+                sum([file.changes for file in pr.get_files()]),
+                len([comment for comment in pr.get_comments() + pr.get_issue_comments() if comment.user.type != "Bot"]), 
                 (pr.closed_at - pr.created_at).days, 
+                pr.closed_at,
                 pr.html_url
             ]
             
@@ -126,4 +136,4 @@ def collect_pr_metadata():
 if __name__ == "__main__":
     print("Starting data collection...")
     collect_pr_metadata()
-    print("Data collection complete. Results saved to pull_requests_metadata.csv.")
+    print("Data collection complete. Results saved to pull_requests_all.csv.")

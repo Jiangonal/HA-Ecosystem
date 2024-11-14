@@ -1,7 +1,7 @@
 import pandas as pd
 import requests
 
-df = pd.read_csv("filtered_prs.csv")
+df = pd.read_csv("pull_requests_filtered.csv")
 
 # List of GitHub personal access tokens
 GITHUB_TOKENS = []
@@ -27,9 +27,7 @@ def fetch_data_with_token_cycle(pr_url):
         api_url = f"https://api.github.com/repos/{owner}/{repo}/pulls/{pr_number}"
 
         # Headers for authentication using the next token in the cycle
-        headers = {
-            "Authorization": f"token {get_next_token()}"
-        }
+        headers = {"Authorization": f"token {get_next_token()}"}
 
         # Make the request
         response = requests.get(api_url, headers=headers)
@@ -39,23 +37,22 @@ def fetch_data_with_token_cycle(pr_url):
             additions = pr_data.get("additions", 0)
             deletions = pr_data.get("deletions", 0)
             loc = additions + deletions
-            close =pr_data.get("closed_at", None)
+            close = pr_data.get("closed_at", None)
             return loc, close
         else:
             return None
     except Exception as e:
         return None
 
+
 # Apply the function to the 'URL' column and add a new 'Closed Date (API)' column
-df[['Lines of Code Changed', 'Closed Date (API)']] = pd.DataFrame(
-    df['URL'].apply(fetch_data_with_token_cycle).tolist(), index=df.index)
-
-
+df[["LOC Changed", "Closed Date"]] = pd.DataFrame(
+    df["URL"].apply(fetch_data_with_token_cycle).tolist(), index=df.index
+)
 
 print(df.head())
 
-#add lines of code
+# add lines of code
 
 
-
-df.to_csv("filtered_prs_1.csv", index=False)
+df.to_csv("pull_requests_filtered_1.csv", index=False)
