@@ -1,4 +1,4 @@
-PR Number,Title,Created At,Updated At,State,Files Changed,Total Comments,Decision Time,URL,Type of Change,Lines of Code Changed,Closed Date (API)
+PR Number,Title,Created At,Updated At,State,Files Changed,Total Comments,Decision Time,URL,Type of Change,LOC Changed,Closed Date
 129755,Add HassRespond intent,2024-11-03 21:07:40+00:00,2024-11-04 00:15:25+00:00,merged,3,1,0,https://github.com/home-assistant/core/pull/129755,New feature (which adds functionality to an existing integration),16.0,2024-11-03T22:38:52Z
 129733,Add issue/repair on corrupt database rebuild,2024-11-03 16:04:56+00:00,2024-11-03 20:43:45+00:00,closed,3,0,0,https://github.com/home-assistant/core/pull/129733,New feature (which adds functionality to an existing integration),51.0,2024-11-03T16:07:47Z
 129675,Add DHCP discovery to lamarzocco,2024-11-02 11:36:32+00:00,2024-11-03 09:49:59+00:00,merged,5,7,0,https://github.com/home-assistant/core/pull/129675,New feature (which adds functionality to an existing integration),113.0,2024-11-03T09:44:35Z

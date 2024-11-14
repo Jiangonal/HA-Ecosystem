@@ -45,8 +45,8 @@ def handle_rate_limit(g):
 
 # Load last PR number from CSV if it exists, otherwise start from the beginning
 def load_last_pr():
-    if os.path.exists("pull_requests_metadata.csv"):
-        with open("pull_requests_metadata.csv", "r", encoding="utf-8") as f:
+    if os.path.exists("pull_requests_all.csv"):
+        with open("pull_requests_all.csv", "r", encoding="utf-8") as f:
             last_row = list(csv.reader(f))[-1]
             last_pr_number = int(last_row[0])
             print(f"Resuming from PR #{last_pr_number + 1}")
@@ -57,8 +57,8 @@ def load_last_pr():
 def save_buffered_data():
     print("Checkpoint reached (every", BATCH_SIZE, "PRs)")
     if buffer:
-        mode = "a" if os.path.exists("pull_requests_metadata.csv") else "w"
-        with open("pull_requests_metadata.csv", mode, newline="", encoding="utf-8") as file:
+        mode = "a" if os.path.exists("pull_requests_all.csv") else "w"
+        with open("pull_requests_all.csv", mode, newline="", encoding="utf-8") as file:
             writer = csv.writer(file)
             if mode == "w":
                 writer.writerow(["PR Number", "Title", "Created At", "Updated At", "State", 
@@ -130,4 +130,4 @@ def collect_pr_metadata():
 if __name__ == "__main__":
     print("Starting data collection...")
     collect_pr_metadata()
-    print("Data collection complete. Results saved to pull_requests_metadata.csv.")
+    print("Data collection complete. Results saved to pull_requests_all.csv.")
