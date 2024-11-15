@@ -93,7 +93,7 @@ def collect_pr_metadata():
 
             # Skip PRs created after October 2024
             if pr.created_at > end_date:
-                return
+                continue
             
             # Skip PRs created before 2021
             if pr.created_at < start_date:
