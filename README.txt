@@ -11,4 +11,4 @@ e.g. GITHUB_PAT="my_access_token"
 3. Usage:
    --> Run `python scrape_all_prs.py` to get all pull requests (can take multiple hours)
    --> Run `python scrape_pr_checkbox_data.py` to get associated checked boxes for each pull request (can take multiple hours)
-   --> Run `python filter_integration_prs.py` to filter down to integration related PRs
+   --> Run `python filter_prs.py` to filter down to integration related PRs
