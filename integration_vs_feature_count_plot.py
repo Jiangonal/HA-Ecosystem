@@ -4,8 +4,8 @@ import pandas as pd
 df = pd.read_csv("pull_requests_filtered.csv")
 
 # Filter rows based on "Type of Change"
-new_integration_prs = df[df['Type of Change'].str.contains('New integration', case=False, na=False)].copy()
-new_feature_prs = df[df['Type of Change'].str.contains('New feature', case=False, na=False)].copy()
+new_integration_prs = df[df['Type of Change'].str.contains('New integration')]
+new_feature_prs = df[df['Type of Change'].str.contains('New feature')]
 
 # Extract the year from the "Created At" column
 new_integration_prs['Year'] = pd.to_datetime(new_integration_prs['Created At']).dt.year
