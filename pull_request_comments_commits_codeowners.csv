@@ -1,0 +1,2002 @@
+Comment Type,User,Comment,Date,Is Code Owner,Pull Request URL,Author,Author Is Code Owner,Commit SHA,Commit Message
+Issue,home-assistant[bot],"<!-- ReviewDrafterComment -->
+Please take a look at the requested changes, and use the **Ready for review** button when you are done, thanks :+1:
+
+[_Learn more about our pull request process._](https://developers.home-assistant.io/docs/review-process#prs-are-being-drafted-when-changes-are-needed)
+",2024-10-21T14:34:44Z,False,https://github.com/home-assistant/core/pull/126721,Lektrico,False,,
+Review,joostlek,Can we bump this in a separate PR?,2024-10-21T14:34:00Z,True,https://github.com/home-assistant/core/pull/126721,Lektrico,False,,
+Review,joostlek,Please wrap multiline lambdas in parenthesis,2024-10-21T14:34:26Z,True,https://github.com/home-assistant/core/pull/126721,Lektrico,False,,
+Review,Lektrico,"I created a separate PR here:  https://github.com/home-assistant/core/pull/128979
+Thank you.",2024-10-22T13:42:47Z,False,https://github.com/home-assistant/core/pull/126721,Lektrico,False,,
+Review,Lektrico,"I added the parenthesis, thank you.",2024-10-23T08:26:25Z,False,https://github.com/home-assistant/core/pull/126721,Lektrico,False,,
+,,,2024-09-24T09:37:33Z,,https://github.com/home-assistant/core/pull/126721,Lektrico,False,163f1b57f9cdea7c56f8d76d2f5711717367fb27,Add switch platform.
+,,,2024-10-23T08:00:12Z,,https://github.com/home-assistant/core/pull/126721,Lektrico,False,d9e4f66241a442be38b8ea95f65e47ec903c2b2f,Wrap multiline lambdas in parenthesis.
+Issue,probot-home-assistant[bot],"Hey there @home-assistant/cloud, @ochlocracy, mind taking a look at this pull request as it has been labeled with an integration (`alexa`) you are listed as a [code owner](https://github.com/home-assistant/core/blob/dev/CODEOWNERS#L36) for? Thanks!
+<sub><sup>(message by CodeOwnersMention)</sup></sub>",2021-11-28T14:01:32Z,False,https://github.com/home-assistant/core/pull/60489,RomRider,False,,
+Issue,emontnemery,This change is not supported by the documentation: https://developer.amazon.com/en-US/docs/alexa/device-apis/list-of-interfaces.html,2021-11-29T13:53:06Z,True,https://github.com/home-assistant/core/pull/60489,RomRider,False,,
+Issue,RomRider,"@emontnemery but it works, I have tested it. The native Sonos integration supports those commands in French also for exemple 🤷
+
+Without this PR, volume up/down, set, mute/unmute do not work in French and with, it does work.
+
+If this is not getting through, because it's not in the alexa dev documentation, it would be ridiculous... Maybe it's missing there also... ",2021-12-04T08:26:00Z,False,https://github.com/home-assistant/core/pull/60489,RomRider,False,,
+Issue,frenck,Tag for beta?,2021-12-04T09:32:32Z,True,https://github.com/home-assistant/core/pull/60489,RomRider,False,,
+Issue,RomRider,Thanks @emontnemery !,2021-12-04T10:01:34Z,False,https://github.com/home-assistant/core/pull/60489,RomRider,False,,
+Issue,Quentame,@frenck I think we can add it to the beta,2021-12-06T14:20:18Z,True,https://github.com/home-assistant/core/pull/60489,RomRider,False,,
+Review,emontnemery,"```suggestion
+        ""fr-FR"",  # Not documented as of 2021-12-04, see PR #60489
+```",2021-12-04T08:33:49Z,True,https://github.com/home-assistant/core/pull/60489,RomRider,False,,
+Review,emontnemery,"```suggestion
+        ""fr-FR"",  # Not documented as of 2021-12-04, see PR #60489
+```",2021-12-04T08:33:57Z,True,https://github.com/home-assistant/core/pull/60489,RomRider,False,,
+,,,2021-11-28T13:59:23Z,,https://github.com/home-assistant/core/pull/60489,RomRider,False,27b31fde10db3d26f67fd7dfa949a0898089b5c1,media player volume control in `fr-FR` with Alexa
+,,,2021-12-04T08:37:49Z,,https://github.com/home-assistant/core/pull/60489,RomRider,False,f4189539fceff22cb2128c72289710cf063c6f06,Apply suggestions from code review
+Issue,home-assistant[bot],"<!-- ReviewDrafterComment -->
+Please take a look at the requested changes, and use the **Ready for review** button when you are done, thanks :+1:
+
+[_Learn more about our pull request process._](https://developers.home-assistant.io/docs/review-process#prs-are-being-drafted-when-changes-are-needed)
+",2024-08-02T07:50:21Z,False,https://github.com/home-assistant/core/pull/123048,krzysdabro,False,,
+Issue,home-assistant[bot],"
+Hey there @pschmitt, @cyr-ius, @shenxn, @xitee1, @orhideous, mind taking a look at this pull request as it has been labeled with an integration (`roomba`) you are listed as a [code owner](https://github.com/home-assistant/core/blob/dev/CODEOWNERS#L1217) for? Thanks!
+
+<details>
+<summary>Code owner commands</summary>
+
+
+Code owners of `roomba` can trigger bot actions by commenting:
+
+- `@home-assistant close` Closes the pull request.
+- `@home-assistant rename Awesome new title` Renames the pull request.
+- `@home-assistant reopen` Reopen the pull request.
+- `@home-assistant unassign roomba` Removes the current integration label and assignees on the pull request, add the integration domain after the command.
+- `@home-assistant add-label needs-more-information` Add a label (needs-more-information, problem in dependency, problem in custom component) to the pull request.
+- `@home-assistant remove-label needs-more-information` Remove a label (needs-more-information, problem in dependency, problem in custom component) on the pull request.
+
+</details>
+
+",2024-08-02T07:50:24Z,False,https://github.com/home-assistant/core/pull/123048,krzysdabro,False,,
+Review,joostlek,I think you need to use `dt_util.async_get_time_zone` to get a ZoneInfo object. For more info check <https://developers.home-assistant.io/blog/2024/05/19/fix_zoneinfo_blocking_io>,2024-09-08T09:54:28Z,True,https://github.com/home-assistant/core/pull/123048,krzysdabro,False,,
+Review,krzysdabro,Thanks for the feedback. I've updated this line to use `dt_util.async_get_time_zone`.,2024-09-08T21:29:17Z,False,https://github.com/home-assistant/core/pull/123048,krzysdabro,False,,
+,,,2024-05-24T20:30:45Z,,https://github.com/home-assistant/core/pull/123048,krzysdabro,False,f22396512e0f73468af35d09ee75e65827c77b61,Roomba: add last mission sensor
+,,,2024-09-07T11:01:10Z,,https://github.com/home-assistant/core/pull/123048,krzysdabro,False,26dfdb7c39b107f7b08e8d296e6e1f8e137a32ab,"Set sensor as unavailable if last mission timestamp is 0
+
+Previously, if the `mssnStrtTm` was 0, the function would return a 1970-01-01 (Unix epoch start date). With this change, the function will return None if the timestamp is 0 and the sensor will become unavailable."
+,,,2024-09-08T21:27:55Z,,https://github.com/home-assistant/core/pull/123048,krzysdabro,False,fd14bc7a46822ecdfcfadfa29c7d3a9f10ae1ccb,Update last_mission property to use dt_util.utc_from_timestamp
+Issue,home-assistant[bot],"
+Hey there @thecode, mind taking a look at this pull request as it has been labeled with an integration (`switcher_kis`) you are listed as a [code owner](https://github.com/home-assistant/core/blob/dev/CODEOWNERS#L1439) for? Thanks!
+
+<details>
+<summary>Code owner commands</summary>
+
+
+Code owners of `switcher_kis` can trigger bot actions by commenting:
+
+- `@home-assistant close` Closes the pull request.
+- `@home-assistant rename Awesome new title` Renames the pull request.
+- `@home-assistant reopen` Reopen the pull request.
+- `@home-assistant unassign switcher_kis` Removes the current integration label and assignees on the pull request, add the integration domain after the command.
+- `@home-assistant add-label needs-more-information` Add a label (needs-more-information, problem in dependency, problem in custom component) to the pull request.
+- `@home-assistant remove-label needs-more-information` Remove a label (needs-more-information, problem in dependency, problem in custom component) on the pull request.
+
+</details>
+
+",2024-10-02T09:54:15Z,False,https://github.com/home-assistant/core/pull/127277,YogevBokobza,True,,
+Issue,YogevBokobza,"@thecode 
+The last changes requested caused issues with the tests and lining. How to proceed?",2024-10-06T09:10:59Z,True,https://github.com/home-assistant/core/pull/127277,YogevBokobza,True,,
+Issue,thecode,"@YogevBokobza please go over https://developers.home-assistant.io/docs/core/entity/#entity-naming and make sure entity names are correct. Before this PR there where only single cover device or dual light devices, you now add single and dual to both classes.
+Entity names should not include an ID for a single light/cover device and include if there are multiple.
+",2024-10-06T12:36:24Z,True,https://github.com/home-assistant/core/pull/127277,YogevBokobza,True,,
+Issue,YogevBokobza,"> @YogevBokobza please go over https://developers.home-assistant.io/docs/core/entity/#entity-naming and make sure entity names are correct. Before this PR there where only single cover device or dual light devices, you now add single and dual to both classes. Entity names should not include an ID for a single light/cover device and include if there are multiple.
+
+I am not sure I got your point.. Can you show me which lines of code you are referring to?",2024-10-06T13:09:01Z,True,https://github.com/home-assistant/core/pull/127277,YogevBokobza,True,,
+Issue,YogevBokobza,"> @YogevBokobza please go over https://developers.home-assistant.io/docs/core/entity/#entity-naming and make sure entity names are correct. Before this PR there where only single cover device or dual light devices, you now add single and dual to both classes. Entity names should not include an ID for a single light/cover device and include if there are multiple.
+
+I think I understand now.. Please see the recent code if this is what you mean..",2024-10-06T14:54:38Z,True,https://github.com/home-assistant/core/pull/127277,YogevBokobza,True,,
+Issue,YogevBokobza,"This is what S11 looks like:
+![s11](https://github.com/user-attachments/assets/d7cadd20-b2fd-459a-85ae-8b6051cec8f3)
+IDS:
+cover.switcher_runner_6cf5
+light.switcher_runner_6cf5_light_1
+light.switcher_runner_6cf5_light_2
+
+This is what S12 looks like:
+![S12](https://github.com/user-attachments/assets/752faf90-f8fb-45b8-b324-37274fc42739)
+light.switcher_run_plus_a9be_light
+cover.switcher_run_plus_a9be
+cover.switcher_run_plus_a9be_2
+
+@thecode Looks ok?",2024-10-06T15:02:45Z,True,https://github.com/home-assistant/core/pull/127277,YogevBokobza,True,,
+Issue,YogevBokobza,Rebased to get this [change](https://github.com/home-assistant/core/pull/128750),2024-10-19T19:03:57Z,True,https://github.com/home-assistant/core/pull/127277,YogevBokobza,True,,
+Issue,YogevBokobza,"@thecode Should we go and merge this PR and afterwards bump aioswitcher to align position, direction and light to array or we pause this PR and make that bump and afterwards rebase this PR?",2024-10-24T12:42:21Z,True,https://github.com/home-assistant/core/pull/127277,YogevBokobza,True,,
+Issue,thecode,"> @thecode Should we go and merge this PR and afterwards bump aioswitcher to align position, direction and light to array or we pause this PR and make that bump and afterwards rebase this PR?
+
+Lets first bump aioswitcher and rebase this PR",2024-10-24T16:39:46Z,True,https://github.com/home-assistant/core/pull/127277,YogevBokobza,True,,
+Issue,thecode,"> This is what S11 looks like: ![s11](https://private-user-images.githubusercontent.com/22839127/373956912-d7cadd20-b2fd-459a-85ae-8b6051cec8f3.PNG?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Mjk5NDc3NTcsIm5iZiI6MTcyOTk0NzQ1NywicGF0aCI6Ii8yMjgzOTEyNy8zNzM5NTY5MTItZDdjYWRkMjAtYjJmZC00NTlhLTg1YWUtOGI2MDUxY2VjOGYzLlBORz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDEwMjYlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQxMDI2VDEyNTczN1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTY1MzgyNzY3OTFjZDhjOWEwYjFiZmRhYTc4Nzk1OWMzZDg0NDk3M2ZhYmU5NzJjYmZjZDcwN2I3NzBmYzE5MzYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.jKt8pMNpMjfeGmnSveiLNglAIqAnbqQMeuImNACf8EM) 
+IDS: 
+cover.switcher_runner_6cf5 
+light.switcher_runner_6cf5_light_1 
+light.switcher_runner_6cf5_light_2
+> 
+> This is what S12 looks like: ![S12](https://private-user-images.githubusercontent.com/22839127/373956954-752faf90-f8fb-45b8-b324-37274fc42739.PNG?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Mjk5NDc3NTcsIm5iZiI6MTcyOTk0NzQ1NywicGF0aCI6Ii8yMjgzOTEyNy8zNzM5NTY5NTQtNzUyZmFmOTAtZjhmYi00NWI4LWIzMjQtMzcyNzRmYzQyNzM5LlBORz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDEwMjYlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQxMDI2VDEyNTczN1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTcxODZlOGYwYmE3NmQwZjI5OTY5YTE1ZGMwNWRlNTkwZGU2Njg0NGUwMjA1MWQwNjIwZDdhNDlkYTlkNDg2NTAmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.pzcyi9Gk88mJlhyB2b4LpF3SNa6q26tt_XJ3V165cbM) 
+light.switcher_run_plus_a9be_light 
+cover.switcher_run_plus_a9be 
+cover.switcher_run_plus_a9be_2
+> 
+> @thecode Looks ok?
+
+No, first something is wrong with the entities IDs although I didn't directly see in the implementation why, maybe you should remove the device and add it again to generate new entity IDs. The cover on the 2nd example should be:
+`light.switcher_run_plus_a9be_light`
+`cover.switcher_run_plus_a9be_runner_1`
+`cover.switcher_run_plus_a9be_runner_2`
+
+I also suggest to change the name from ""Runner"" to ""Shutter"" or ""Cover"" as ""Runner"" is the device name by the manufacture and a ""Runner"" device may have both shutter control and light control.
+
+Please fix and rebase so we can finish the review.",2024-10-26T13:02:51Z,True,https://github.com/home-assistant/core/pull/127277,YogevBokobza,True,,
+Issue,YogevBokobza,"> > This is what S11 looks like: ![s11](https://private-user-images.githubusercontent.com/22839127/373956912-d7cadd20-b2fd-459a-85ae-8b6051cec8f3.PNG?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Mjk5NDc3NTcsIm5iZiI6MTcyOTk0NzQ1NywicGF0aCI6Ii8yMjgzOTEyNy8zNzM5NTY5MTItZDdjYWRkMjAtYjJmZC00NTlhLTg1YWUtOGI2MDUxY2VjOGYzLlBORz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDEwMjYlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQxMDI2VDEyNTczN1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTY1MzgyNzY3OTFjZDhjOWEwYjFiZmRhYTc4Nzk1OWMzZDg0NDk3M2ZhYmU5NzJjYmZjZDcwN2I3NzBmYzE5MzYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.jKt8pMNpMjfeGmnSveiLNglAIqAnbqQMeuImNACf8EM)
+> > IDS:
+> > cover.switcher_runner_6cf5
+> > light.switcher_runner_6cf5_light_1
+> > light.switcher_runner_6cf5_light_2
+> > This is what S12 looks like: ![S12](https://private-user-images.githubusercontent.com/22839127/373956954-752faf90-f8fb-45b8-b324-37274fc42739.PNG?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Mjk5NDc3NTcsIm5iZiI6MTcyOTk0NzQ1NywicGF0aCI6Ii8yMjgzOTEyNy8zNzM5NTY5NTQtNzUyZmFmOTAtZjhmYi00NWI4LWIzMjQtMzcyNzRmYzQyNzM5LlBORz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDEwMjYlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQxMDI2VDEyNTczN1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTcxODZlOGYwYmE3NmQwZjI5OTY5YTE1ZGMwNWRlNTkwZGU2Njg0NGUwMjA1MWQwNjIwZDdhNDlkYTlkNDg2NTAmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.pzcyi9Gk88mJlhyB2b4LpF3SNa6q26tt_XJ3V165cbM)
+> > light.switcher_run_plus_a9be_light
+> > cover.switcher_run_plus_a9be
+> > cover.switcher_run_plus_a9be_2
+> > @thecode Looks ok?
+> 
+> No, first something is wrong with the entities IDs although I didn't directly see in the implementation why, maybe you should remove the device and add it again to generate new entity IDs. The cover on the 2nd example should be: `light.switcher_run_plus_a9be_light` `cover.switcher_run_plus_a9be_runner_1` `cover.switcher_run_plus_a9be_runner_2`
+> 
+> I also suggest to change the name from ""Runner"" to ""Shutter"" or ""Cover"" as ""Runner"" is the device name by the manufacture and a ""Runner"" device may have both shutter control and light control.
+> 
+> Please fix and rebase so we can finish the review.
+
+Sure will do.
+Rebase is harder because all the conflicts. I am trying to solve it..",2024-10-26T14:22:32Z,True,https://github.com/home-assistant/core/pull/127277,YogevBokobza,True,,
+Issue,YogevBokobza,"@thecode 
+So right now after rebase and fix we have those cases:
+Normal Runner(Normal, Mini etc) - will look like this:
+![image](https://github.com/user-attachments/assets/f245fe28-0fe4-488a-9825-4c12aac9b9cb)
+
+IDs:
+cover.balcony_runner
+NOTE1: The name here comes from the Switcher App setup.
+NOTE2: Leave it as it was before
+
+Runner S11 - will look like this:
+![image](https://github.com/user-attachments/assets/1edf2da5-4393-472b-995b-f96868785d5f)
+
+IDs:
+cover.switcher_runner_6cf5
+light.switcher_runner_6cf5_light_1
+light.switcher_runner_6cf5_light_2
+
+Runner S12 - will look like this:
+![image](https://github.com/user-attachments/assets/58f02527-59d1-402b-883a-4b7ccdd696ba)
+
+IDs:
+cover.switcher_run_plus_a9be_cover_1
+cover.switcher_run_plus_a9be_cover_2
+light.switcher_run_plus_a9be_light
+
+I think that:
+1. We should rename ""DualCover"" and ""DualLight"" to ""ComplexCover"" and ""ComplexLight"" so this will support the later 3 lights modules
+2. I didn't like the S11 cover to get the actual device name (which is not what it is on the Switcher App), instead, I think that S11 should move to the ""ComplexCover"" and name it Cover
+
+
+What do you think?
+
+",2024-10-27T11:03:07Z,True,https://github.com/home-assistant/core/pull/127277,YogevBokobza,True,,
+Issue,YogevBokobza,"> @thecode So right now after rebase and fix we have those cases: Normal Runner(Normal, Mini etc) - will look like this: ![image](https://private-user-images.githubusercontent.com/22839127/380488716-f245fe28-0fe4-488a-9825-4c12aac9b9cb.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MzAwMzAyNDEsIm5iZiI6MTczMDAyOTk0MSwicGF0aCI6Ii8yMjgzOTEyNy8zODA0ODg3MTYtZjI0NWZlMjgtMGZlNC00ODhhLTk4MjUtNGMxMmFhYzliOWNiLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDEwMjclMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQxMDI3VDExNTIyMVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWQ0YzI2ZGNlOTViY2RmMmExYmNkOGRmZjM2NjBmYjE5ZmEyZDgwZjFhN2Q1NDY0NjQ0ZTZlZTU3OWY4MzdkYTkmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.vnI44t337DhFjOOEbKmGW8oKy5XafkXHRSpPphLMk_Y)
+> 
+> IDs: cover.balcony_runner NOTE1: The name here comes from the Switcher App setup. NOTE2: Leave it as it was before
+> 
+> Runner S11 - will look like this: ![image](https://private-user-images.githubusercontent.com/22839127/380488780-1edf2da5-4393-472b-995b-f96868785d5f.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MzAwMzAyNDEsIm5iZiI6MTczMDAyOTk0MSwicGF0aCI6Ii8yMjgzOTEyNy8zODA0ODg3ODAtMWVkZjJkYTUtNDM5My00NzJiLTk5NWItZjk2ODY4Nzg1ZDVmLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDEwMjclMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQxMDI3VDExNTIyMVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPThiYTNlYWU1YWY1NDY0YzQ4OTU3NTc3NDkxYTk2ZDEyYWFlYTcyMjM0MmRiMjlkZjJjNjM4MjY1Y2JjMjI3MmYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.qdyIBqkZwZEXmqvZG7r-awh0czbQ5iqO8HBURWPYkA0)
+> 
+> IDs: cover.switcher_runner_6cf5 light.switcher_runner_6cf5_light_1 light.switcher_runner_6cf5_light_2
+> 
+> Runner S12 - will look like this: ![image](https://private-user-images.githubusercontent.com/22839127/380488857-58f02527-59d1-402b-883a-4b7ccdd696ba.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MzAwMzAyNDEsIm5iZiI6MTczMDAyOTk0MSwicGF0aCI6Ii8yMjgzOTEyNy8zODA0ODg4NTctNThmMDI1MjctNTlkMS00MDJiLTg4M2EtNGI3Y2NkZDY5NmJhLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDEwMjclMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQxMDI3VDExNTIyMVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTI3ODhjNDNiNGE3OTgxZTFhZTBlOGJhYjk0NDBhNGIxNWI4YWMwMzU0ZjQyYzVjMWQ5YTcxZTIwZmZlOGU2OGQmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.cDcT3BoygPfibGtyZx8u9HLYoWTguMQStrSFP1XVe1U)
+> 
+> IDs: cover.switcher_run_plus_a9be_cover_1 cover.switcher_run_plus_a9be_cover_2 light.switcher_run_plus_a9be_light
+> 
+> I think that:
+> 
+> 1. We should rename ""DualCover"" and ""DualLight"" to ""ComplexCover"" and ""ComplexLight"" so this will support the later 3 lights modules
+> 2. I didn't like the S11 cover to get the actual device name (which is not what it is on the Switcher App), instead, I think that S11 should move to the ""ComplexCover"" and name it Cover
+> 
+> What do you think?
+
+Regarding that, After some testing, I think that if we want to accomplish (1) and (2) we need to change to:
+`class SwitcherDualCoverEntity` will be split into 2:  `class SwitcherComplexSingleCoverEntity` and `class SwitcherComplexMultiCoverEntity` (Same will go for light)
+
+So creating the entities will look like this:
+```
+        if coordinator.data.device_type.category == DeviceCategory.SHUTTER:
+            async_add_entities([SwitcherSingleCoverEntity(coordinator, 0)])
+        if (
+            coordinator.data.device_type.category
+            == DeviceCategory.SINGLE_SHUTTER_DUAL_LIGHT
+        ):
+            async_add_entities([SwitcherComplexSingleCoverEntity(coordinator, 0)])
+        if (
+            coordinator.data.device_type.category
+            == DeviceCategory.DUAL_SHUTTER_SINGLE_LIGHT
+        ):
+            async_add_entities([SwitcherComplexMultiCoverEntity(coordinator, 0)])
+            async_add_entities([SwitcherComplexMultiCoverEntity(coordinator, 1)])
+```
+Also adding `single_cover` to strings..
+
+@thecode  What do you think?",2024-10-27T12:12:23Z,True,https://github.com/home-assistant/core/pull/127277,YogevBokobza,True,,
+Issue,thecode,"> @thecode What do you think?
+
+Lets try to finish this PR and not start from scratch. Please address the requested changes. We can rename classes or add changes later or in future PRs.",2024-10-27T18:56:38Z,True,https://github.com/home-assistant/core/pull/127277,YogevBokobza,True,,
+Issue,YogevBokobza,"> > @thecode What do you think?
+> 
+> Lets try to finish this PR and not start from scratch. Please address the requested changes. We can rename classes or add changes later or in future PRs.
+
+I already did address the requested changes here: https://github.com/home-assistant/core/pull/127277#issuecomment-2439968294",2024-10-27T19:13:33Z,True,https://github.com/home-assistant/core/pull/127277,YogevBokobza,True,,
+Issue,home-assistant[bot],"<!-- ReviewDrafterComment -->
+Please take a look at the requested changes, and use the **Ready for review** button when you are done, thanks :+1:
+
+[_Learn more about our pull request process._](https://developers.home-assistant.io/docs/review-process#prs-are-being-drafted-when-changes-are-needed)
+",2024-10-27T19:29:53Z,False,https://github.com/home-assistant/core/pull/127277,YogevBokobza,True,,
+Review,thecode,"It would be better to have a base class with the common functionality and two subclasses, similar to:
+https://github.com/home-assistant/core/blob/e54031e318ff7af281ae399d6de9743411bf31a9/homeassistant/components/switcher_kis/switch.py#L80
+
+So you would end up with
+- `SwitcherBaseCoverEntity`
+- `SwitcherSingleCoverEntity`
+- `SwitcherDualCoverEntity`
+
+The subclass will only implement changed parts",2024-10-05T13:19:28Z,True,https://github.com/home-assistant/core/pull/127277,YogevBokobza,True,,
+Review,YogevBokobza,It is done.. I tried to separate __init__ as well but it did make issues..,2024-10-05T17:10:01Z,True,https://github.com/home-assistant/core/pull/127277,YogevBokobza,True,,
+Review,thecode,"Please submit the separate init and we will fix the issues in the PR review.
+",2024-10-05T17:22:59Z,True,https://github.com/home-assistant/core/pull/127277,YogevBokobza,True,,
+Review,thecode,"Update method should be moved from the base class to here as it is not common for both classes:
+https://github.com/home-assistant/core/blob/b84ce69ab4254f28c0a0f146eced8bb0e5198004/homeassistant/components/switcher_kis/cover.py#L104-L110
+",2024-10-05T17:23:42Z,True,https://github.com/home-assistant/core/pull/127277,YogevBokobza,True,,
+Review,YogevBokobza,It is done.,2024-10-05T17:44:05Z,True,https://github.com/home-assistant/core/pull/127277,YogevBokobza,True,,
+Review,YogevBokobza,It is done. You can see current issue.,2024-10-05T17:44:22Z,True,https://github.com/home-assistant/core/pull/127277,YogevBokobza,True,,
+Review,thecode,"```suggestion
+    _cover_id: int
+```
+If you add it to the base class it will resolve the warning",2024-10-05T18:54:24Z,True,https://github.com/home-assistant/core/pull/127277,YogevBokobza,True,,
+Review,thecode,"Add empty method:
+```python
+    def _update_data(self) -> None:
+        """"""Update data from device.""""""
+```",2024-10-05T18:54:28Z,True,https://github.com/home-assistant/core/pull/127277,YogevBokobza,True,,
+Review,thecode,Please move this to `SwitcherSingleLightEntity` class,2024-10-05T18:56:00Z,True,https://github.com/home-assistant/core/pull/127277,YogevBokobza,True,,
+Review,thecode,"```suggestion
+        """"""Return True if entity is on.""""""
+          super().is_on()
+```",2024-10-05T18:57:42Z,True,https://github.com/home-assistant/core/pull/127277,YogevBokobza,True,,
+Review,thecode,"```python
+    @property
+    def is_on(self) -> bool:
+        """"""Return True if entity is on.""""""
+        super().is_on
+        data = cast(SwitcherDualShutterSingleLight, self.coordinator.data)
+        return bool(data.lights == DeviceState.ON)
+```",2024-10-05T18:59:22Z,True,https://github.com/home-assistant/core/pull/127277,YogevBokobza,True,,
+Review,YogevBokobza,It is done.,2024-10-06T09:09:17Z,True,https://github.com/home-assistant/core/pull/127277,YogevBokobza,True,,
+Review,YogevBokobza,It is done.,2024-10-06T09:09:20Z,True,https://github.com/home-assistant/core/pull/127277,YogevBokobza,True,,
+Review,YogevBokobza,It is done.,2024-10-06T09:09:28Z,True,https://github.com/home-assistant/core/pull/127277,YogevBokobza,True,,
+Review,YogevBokobza,It is done.,2024-10-06T09:09:40Z,True,https://github.com/home-assistant/core/pull/127277,YogevBokobza,True,,
+Review,YogevBokobza,It is done.,2024-10-06T09:09:45Z,True,https://github.com/home-assistant/core/pull/127277,YogevBokobza,True,,
+Review,thecode,"This was just an example not something you should commit (should be something like `return super().is_on() or ...`, however looking at the final result I think it would be better to remove this from the base class and add it in the subclasses.",2024-10-06T12:24:21Z,True,https://github.com/home-assistant/core/pull/127277,YogevBokobza,True,,
+Review,YogevBokobza,It is done.,2024-10-06T13:08:00Z,True,https://github.com/home-assistant/core/pull/127277,YogevBokobza,True,,
+Review,thecode,"Please look at the logic used in the cover, you don't need to translate the light for a single entity.",2024-10-27T19:26:31Z,True,https://github.com/home-assistant/core/pull/127277,YogevBokobza,True,,
+Review,thecode,"```suggestion
+```",2024-10-27T19:28:47Z,True,https://github.com/home-assistant/core/pull/127277,YogevBokobza,True,,
+Review,thecode,"```suggestion
+        light_id: int,
+```",2024-10-27T19:29:06Z,True,https://github.com/home-assistant/core/pull/127277,YogevBokobza,True,,
+Review,thecode,"```suggestion
+        light_id: int,
+```",2024-10-27T19:29:22Z,True,https://github.com/home-assistant/core/pull/127277,YogevBokobza,True,,
+Review,thecode,"```suggestion
+        cover_id: int,
+```",2024-10-27T19:29:32Z,True,https://github.com/home-assistant/core/pull/127277,YogevBokobza,True,,
+Review,thecode,"```suggestion
+        cover_id: int,
+```",2024-10-27T19:29:40Z,True,https://github.com/home-assistant/core/pull/127277,YogevBokobza,True,,
+Review,YogevBokobza,"It is done, but now the light will get the device name which is not what is shown in the Switcher App. (Just like the cover in the S11 device)
+
+Now it will be like this:
+Runner S11:
+cover.switcher_runner_6cf5 (Actual name: Switcher Runner 6CF5)
+light.switcher_runner_6cf5_light_1 (Actual name: Light 1)
+light.switcher_runner_6cf5_light_2 (Actual name: Light 2)
+
+Runner S12:
+cover.switcher_run_plus_a9be_cover_1 (Actual name: Cover 1)
+cover.switcher_run_plus_a9be_cover_2 (Actual name: Cover 2)
+light.switcher_run_plus_a9be  (Actual name: Switcher Runner 6CF5)",2024-10-27T20:27:09Z,True,https://github.com/home-assistant/core/pull/127277,YogevBokobza,True,,
+Review,YogevBokobza,It is done.,2024-10-27T20:27:28Z,True,https://github.com/home-assistant/core/pull/127277,YogevBokobza,True,,
+Review,YogevBokobza,It is done.,2024-10-27T20:27:31Z,True,https://github.com/home-assistant/core/pull/127277,YogevBokobza,True,,
+Review,YogevBokobza,It is done.,2024-10-27T20:27:34Z,True,https://github.com/home-assistant/core/pull/127277,YogevBokobza,True,,
+Review,YogevBokobza,It is done.,2024-10-27T20:27:38Z,True,https://github.com/home-assistant/core/pull/127277,YogevBokobza,True,,
+Review,YogevBokobza,It is done.,2024-10-27T20:27:42Z,True,https://github.com/home-assistant/core/pull/127277,YogevBokobza,True,,
+,,,2024-10-27T09:25:09Z,,https://github.com/home-assistant/core/pull/127277,YogevBokobza,True,814493087cf03cb31143e816c58b7d06c0fb7b16,"switcher add s12 support
+# Conflicts:
+#	homeassistant/components/switcher_kis/cover.py
+#	homeassistant/components/switcher_kis/light.py
+#	homeassistant/components/switcher_kis/manifest.json
+#	requirements_all.txt
+#	requirements_test_all.txt
+#	tests/components/switcher_kis/consts.py
+#	tests/components/switcher_kis/test_cover.py
+#	tests/components/switcher_kis/test_light.py"
+,,,2024-10-27T09:25:44Z,,https://github.com/home-assistant/core/pull/127277,YogevBokobza,True,c9fd080c1c2c2645bb481d234352d935a360bd49,"bump aioswitcher to 4.1.0
+# Conflicts:
+#	homeassistant/components/switcher_kis/manifest.json
+#	requirements_all.txt
+#	requirements_test_all.txt"
+,,,2024-10-27T09:26:11Z,,https://github.com/home-assistant/core/pull/127277,YogevBokobza,True,11b4cee8b806ea7792372f2b9be9dd7661d6cad9,"fix based on requested changes
+# Conflicts:
+#	homeassistant/components/switcher_kis/cover.py"
+,,,2024-10-27T09:26:26Z,,https://github.com/home-assistant/core/pull/127277,YogevBokobza,True,b62d5f2d9315d0fb13b346317e95d02fce1ecd43,"fix linting
+# Conflicts:
+#	homeassistant/components/switcher_kis/light.py"
+,,,2024-10-27T09:26:49Z,,https://github.com/home-assistant/core/pull/127277,YogevBokobza,True,ac15068b9256278adff532a7e29463cdb3e5a35d,"fix linting issue
+# Conflicts:
+#	homeassistant/components/switcher_kis/cover.py
+#	homeassistant/components/switcher_kis/light.py"
+,,,2024-10-27T09:27:33Z,,https://github.com/home-assistant/core/pull/127277,YogevBokobza,True,dd4e037b62c2531df4506977c8180f7598f5861b,"fix based on requested changes
+# Conflicts:
+#	homeassistant/components/switcher_kis/cover.py"
+,,,2024-10-27T09:28:04Z,,https://github.com/home-assistant/core/pull/127277,YogevBokobza,True,8635b84f2ba686290830017eba37894918b965b4,"fix based on requested changes
+# Conflicts:
+#	homeassistant/components/switcher_kis/light.py"
+,,,2024-10-27T09:28:23Z,,https://github.com/home-assistant/core/pull/127277,YogevBokobza,True,23cbdd7a889349feabd12794de1fb68a58adf008,"fix light.py
+# Conflicts:
+#	homeassistant/components/switcher_kis/light.py"
+,,,2024-10-06T14:53:50Z,,https://github.com/home-assistant/core/pull/127277,YogevBokobza,True,c25cae5a0ca962f9f6ad64f46927aa1634fdb5e9,switcher fix for dual and single
+,,,2024-10-06T15:07:14Z,,https://github.com/home-assistant/core/pull/127277,YogevBokobza,True,a8d872f4c69d5d2c5e5b00c3ac85b8ef7587857c,Update light.py
+,,,2024-10-27T09:36:35Z,,https://github.com/home-assistant/core/pull/127277,YogevBokobza,True,cb15d0e8372275b86a5f9d8014098e93317cc29c,fix after rebase
+,,,2024-10-27T10:12:07Z,,https://github.com/home-assistant/core/pull/127277,YogevBokobza,True,456198f4b0d149659cd6dff58b1c6abe3f3d1617,"Update cover.py, strings.json, and test_cover.py"
+,,,2024-10-27T20:23:52Z,,https://github.com/home-assistant/core/pull/127277,YogevBokobza,True,7c946b87a36d2b1592bffed1627e3745a941adcc,fix based on requested changes
+,,,2024-10-28T15:29:07Z,,https://github.com/home-assistant/core/pull/127277,YogevBokobza,True,a487b9b79b196e3ae047b31ee7ea60b9107be64e,Fix latest things
+,,,2024-10-28T15:31:12Z,,https://github.com/home-assistant/core/pull/127277,YogevBokobza,True,826a2ee789b52dcecff7d35f8abfcda087d462fd,Fix latest things
+,,,2024-10-28T15:42:27Z,,https://github.com/home-assistant/core/pull/127277,YogevBokobza,True,baf7d9bd2e01821346cf606565a4997b29a65b08,Merge branch 'dev' into switcher-add-s12-support
+Issue,home-assistant[bot],"
+Hey there @cgarwood, mind taking a look at this pull request as it has been labeled with an integration (`fully_kiosk`) you are listed as a [code owner](https://github.com/home-assistant/core/blob/dev/CODEOWNERS#L405) for? Thanks!
+
+<details>
+<summary>Code owner commands</summary>
+
+
+Code owners of `fully_kiosk` can trigger bot actions by commenting:
+
+- `@home-assistant close` Closes the pull request.
+- `@home-assistant rename Awesome new title` Renames the pull request.
+- `@home-assistant reopen` Reopen the pull request.
+- `@home-assistant unassign fully_kiosk` Removes the current integration label and assignees on the pull request, add the integration domain after the command.
+
+</details>
+
+",2023-03-12T17:25:37Z,False,https://github.com/home-assistant/core/pull/89592,r01k,False,,
+Issue,home-assistant[bot],"<!-- ReviewDrafterComment -->
+Please take a look at the requested changes, and use the **Ready for review** button when you are done, thanks :+1:
+
+[_Learn more about our pull request process._](https://developers.home-assistant.io/docs/review-process#prs-are-being-drafted-when-changes-are-needed)
+",2023-03-13T08:52:13Z,False,https://github.com/home-assistant/core/pull/89592,r01k,False,,
+Issue,github-actions[bot],"There hasn't been any activity on this pull request recently. This pull request has been automatically marked as stale because of that and will be closed if no further activity occurs within 7 days.
+Thank you for your contributions.",2023-08-02T16:05:29Z,False,https://github.com/home-assistant/core/pull/89592,r01k,False,,
+Issue,edenhaus,Reopening as this PR waits on a review.,2023-08-09T16:43:01Z,True,https://github.com/home-assistant/core/pull/89592,r01k,False,,
+Review,emontnemery,"This file is no longer included in the git repository, please remove it",2023-03-13T08:44:37Z,True,https://github.com/home-assistant/core/pull/89592,r01k,False,,
+Review,emontnemery,"If the SSL settings are incorrect, what error will be raised when calling `fully.getDeviceInfo` below?",2023-03-13T08:52:07Z,True,https://github.com/home-assistant/core/pull/89592,r01k,False,,
+Review,r01k,"Without it the integration setup dialog has no text and the generic error messages lose the user-friendly verbiage. @cgarwood? 
+
+![image](https://user-images.githubusercontent.com/19595786/225502890-0b60a354-9507-471c-ab8c-624d7bbb944c.png)
+",2023-03-16T03:10:06Z,False,https://github.com/home-assistant/core/pull/89592,r01k,False,,
+Review,r01k,"If `use_ssl` is wrong, meaning that it is set to `True` but the Fully app is not configured for SSL, the error will be ""Failed to connect"" (""cannot_connect"" with the translations folder removed) regardless of the state of `verify_ssl`.
+
+If `use_ssl` is correct, meaning that it is set to `True` and the Fully app is configured for SSL; but `verify_ssl` is wrong, meaning that HA has not been loaded with the CA to verify the certificate, there will be an SSL error from the backend library.",2023-03-16T03:16:07Z,False,https://github.com/home-assistant/core/pull/89592,r01k,False,,
+Review,emontnemery,"You need to run `python3 -m script.translations develop --all` in your local testing.
+Again, please remove the file from this PR.
+
+You may be basing your work on an old dev branch; the translations were removed from the core repo a couple of months ago.",2023-03-16T14:50:49Z,True,https://github.com/home-assistant/core/pull/89592,r01k,False,,
+Review,emontnemery,"> there will be an SSL error from the backend library
+
+OK, and how is that shown to the user?",2023-03-16T14:52:29Z,True,https://github.com/home-assistant/core/pull/89592,r01k,False,,
+Review,r01k,Got it. Removed. `script.translations` generated the en.json file locally.,2023-03-16T17:17:18Z,False,https://github.com/home-assistant/core/pull/89592,r01k,False,,
+Review,r01k,"On the frontend the user gets ""Failed to connect"" as caught by 
+`
+            except (
+            ClientConnectorError,
+            FullyKioskError,
+            asyncio.TimeoutError,
+        ) as  error:
+`
+![image](https://user-images.githubusercontent.com/19595786/225700835-4dc708f9-0a73-43cd-8010-8b16f178419b.png)
+
+And the debug log registers:
+aiohttp.client_exceptions.ClientConnectorCertificateError: Cannot connect to host 192.168.1.30:2323 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:997)')]
+",2023-03-16T17:22:05Z,False,https://github.com/home-assistant/core/pull/89592,r01k,False,,
+Review,emontnemery,"OK, in that case I'd suggest to set the error to something more detailed than `cannot_connect` to help the user distinguish between the different errors.",2023-03-28T08:04:01Z,True,https://github.com/home-assistant/core/pull/89592,r01k,False,,
+Review,r01k,"That was my intention originally but there's nothing for ssl errors in homeassistant/strings.json. I guess the general expectation is that the user will check the logs for the specific failure when getting ""Failed to connect"", specially if he is advanced enough to be setting up ssl with the integration.",2023-03-29T20:59:40Z,False,https://github.com/home-assistant/core/pull/89592,r01k,False,,
+Review,r01k,"@emontnemery, thoughts? ",2023-04-12T19:00:30Z,False,https://github.com/home-assistant/core/pull/89592,r01k,False,,
+Review,emontnemery,"I'd suggest to include the the exception error message in the `description_placeholders` since the error message is likely to aid the user if they made a mistake in the SSL configuration.
+
+",2023-09-28T15:17:52Z,True,https://github.com/home-assistant/core/pull/89592,r01k,False,,
+Review,r01k,"Now the exception message is shown to the user on the frontend, as recommended.
+
+![image](https://github.com/home-assistant/core/assets/19595786/e439fbcd-6930-4868-b15a-db986e27e456)
+",2023-11-01T07:06:28Z,False,https://github.com/home-assistant/core/pull/89592,r01k,False,,
+,,,2022-12-01T04:58:58Z,,https://github.com/home-assistant/core/pull/89592,r01k,False,4d100d4c7a150f915c035356f2c65d0b5691ab7c,Add HTTPS support for Fully Kiosk with optional certificate verification.
+,,,2022-12-02T01:08:16Z,,https://github.com/home-assistant/core/pull/89592,r01k,False,17278e4524201e4c77b5462c5f9cd6edba29e5f3,All pytests passing.
+,,,2023-02-02T17:51:11Z,,https://github.com/home-assistant/core/pull/89592,r01k,False,109a40438a95f261efb12f9fed736f8b90686b74,Better readability for url parameter of DeviceInfo
+,,,2023-03-12T17:12:33Z,,https://github.com/home-assistant/core/pull/89592,r01k,False,6971eefdc96b9572ad912e62492e0d618394c85f,All pytests passing with latest fixes from upstream
+,,,2023-03-16T17:15:23Z,,https://github.com/home-assistant/core/pull/89592,r01k,False,51608b788f22365743d031c6d38a9de6fb2e5a38,Removing fully_kiosk/translations
+,,,2023-10-29T15:38:27Z,,https://github.com/home-assistant/core/pull/89592,r01k,False,9f828ce1ad31be6ba247c4897e65dadd0ed64d25,Rebasing
+,,,2023-10-29T18:20:09Z,,https://github.com/home-assistant/core/pull/89592,r01k,False,9b24007bc37f33bfde275554d0ebd20650e89697,Added extra error detail when the integration config flow fails
+,,,2023-11-13T15:57:52Z,,https://github.com/home-assistant/core/pull/89592,r01k,False,cadf37814d2b979f7136895c114c23da83940aab,Merge branch 'dev' into https_support
+Issue,home-assistant[bot],"
+Hey there @gerard33, mind taking a look at this pull request as it has been labeled with an integration (`bmw_connected_drive`) you are listed as a [code owner](https://github.com/home-assistant/core/blob/dev/CODEOWNERS#L161) for? Thanks!
+
+<details>
+<summary>Code owner commands</summary>
+
+
+Code owners of `bmw_connected_drive` can trigger bot actions by commenting:
+
+- `@home-assistant close` Closes the pull request.
+- `@home-assistant rename Awesome new title` Renames the pull request.
+- `@home-assistant reopen` Reopen the pull request.
+- `@home-assistant unassign bmw_connected_drive` Removes the current integration label and assignees on the pull request, add the integration domain after the command.
+
+</details>
+
+",2023-04-11T21:27:18Z,False,https://github.com/home-assistant/core/pull/91248,rikroe,True,,
+Issue,home-assistant[bot],"<!-- ReviewDrafterComment -->
+Please take a look at the requested changes, and use the **Ready for review** button when you are done, thanks :+1:
+
+[_Learn more about our pull request process._](https://developers.home-assistant.io/docs/review-process#prs-are-being-drafted-when-changes-are-needed)
+",2023-06-27T06:39:35Z,False,https://github.com/home-assistant/core/pull/91248,rikroe,True,,
+Issue,rikroe,"The other PR is sufficient, thanks for asking! ",2023-06-27T07:56:03Z,True,https://github.com/home-assistant/core/pull/91248,rikroe,True,,
+Issue,joostlek,Oops! Did not knew this PR existed. I am sorry for doing double work 🙏🏻 ,2023-06-27T07:57:59Z,True,https://github.com/home-assistant/core/pull/91248,rikroe,True,,
+,,,2023-04-11T20:56:51Z,,https://github.com/home-assistant/core/pull/91248,rikroe,True,cb24071962e7b19f201406ac6a3e83248152b1b7,Add entity translations to bmw_connected_drive
+,,,2023-04-12T15:11:15Z,,https://github.com/home-assistant/core/pull/91248,rikroe,True,a7dd23b8a471947b81f162a4adf6003727bf93b8,"Keep old entity names, fix tests"
+,,,2023-04-12T15:35:40Z,,https://github.com/home-assistant/core/pull/91248,rikroe,True,091a652a6023263d56d457f7cac180a3d51e3d3a,Enfore entity name style guide
+,,,2023-04-12T15:50:53Z,,https://github.com/home-assistant/core/pull/91248,rikroe,True,e5422c27c6e7a6ac3968544360866751da940195,Update snapshots
+Issue,homeassistant,"Hi @prokon, 
+
+It seems you haven't yet signed a CLA. Please do so [here](https://home-assistant.io/developers/cla_sign_start/?pr=home-assistant&#x2F;core#70375).
+
+Once you do that we will be able to review and accept this pull request.
+
+Thanks!
+",2022-04-21T16:46:30Z,True,https://github.com/home-assistant/core/pull/70375,prokon,False,,
+Issue,probot-home-assistant[bot],"Hey there @frenck, mind taking a look at this pull request as it has been labeled with an integration (`verisure`) you are listed as a [code owner](https://github.com/home-assistant/core/blob/dev/CODEOWNERS#L1094) for? Thanks!
+<sub><sup>(message by CodeOwnersMention)</sup></sub>",2022-04-21T16:46:33Z,False,https://github.com/home-assistant/core/pull/70375,prokon,False,,
+Issue,prokon,Forgot to mention that I have the Yale Doorman V2 lock - unsure if other Verisure locks would have different states?,2022-04-21T17:40:13Z,False,https://github.com/home-assistant/core/pull/70375,prokon,False,,
+Issue,prokon,"> Thanks!
+
+Thank you for good help, this will HA more useful to me",2022-05-03T06:56:18Z,False,https://github.com/home-assistant/core/pull/70375,prokon,False,,
+Issue,MartinHjelmare,"We should probably mention the new state attribute in the user docs for Verisure:
+https://www.home-assistant.io/integrations/verisure/#alarm-control-panel
+
+Please link a docs PR here.",2022-05-03T07:17:58Z,True,https://github.com/home-assistant/core/pull/70375,prokon,False,,
+Issue,prokon,"> We should probably mention the new state attribute in the user docs for Verisure: https://www.home-assistant.io/integrations/verisure/#alarm-control-panel
+> 
+> Please link a docs PR here.
+
+https://github.com/home-assistant/home-assistant.io/pull/22612",2022-05-03T07:43:17Z,False,https://github.com/home-assistant/core/pull/70375,prokon,False,,
+Issue,MartinHjelmare,Thanks!,2022-05-03T07:47:05Z,True,https://github.com/home-assistant/core/pull/70375,prokon,False,,
+Review,MartinHjelmare,Nothing seems to use this property.,2022-04-22T05:38:32Z,True,https://github.com/home-assistant/core/pull/70375,prokon,False,,
+Review,prokon,"Thank you for your review. This is the first time I look at the HA code, som my inexperience is exposed. I thought the properties would automatically be exposed as attributes to the lock entity. Then the ""method"" attribute could be used in automations.
+
+Any pointers on how to expose ""change_method"" as an attributes to the lock entity?",2022-04-22T05:54:36Z,False,https://github.com/home-assistant/core/pull/70375,prokon,False,,
+Review,MartinHjelmare,Extra state attributes can be set by implementing the property `extra_state_attributes`. A codeowner should approve the addition of new state attributes.,2022-04-22T06:26:58Z,True,https://github.com/home-assistant/core/pull/70375,prokon,False,,
+Review,frenck,I think it's ok to add it as a state attribute 👍  ,2022-04-22T06:48:28Z,True,https://github.com/home-assistant/core/pull/70375,prokon,False,,
+Review,prokon,"Thanks both, updated the code with the extra state attribute, please review ",2022-04-22T10:47:46Z,False,https://github.com/home-assistant/core/pull/70375,prokon,False,,
+Review,MartinHjelmare,Can the method item be missing in the dict or is it always present?,2022-04-22T21:45:46Z,True,https://github.com/home-assistant/core/pull/70375,prokon,False,,
+Review,prokon,"Good point. I don't have access any other installations than mine, and the API seems undocumented. In my tests in my system ""method"" have always been present, but of course I cannot know for sure for other installations. If it is not present changed_method will return None.
+
+If changed_method is None, extra_state_attributes will return {'method': None} I assume HA will handle attributes with NoneType? Or would it be better if extra_state_attributes returned an empty dict if ""method"" is not present?
+
+
+",2022-05-02T10:35:29Z,False,https://github.com/home-assistant/core/pull/70375,prokon,False,,
+Review,MartinHjelmare,The entity can handle a `None` value for a state attribute. It would be good to know the possible return values here so we can type it as narrow as possible.,2022-05-02T11:35:18Z,True,https://github.com/home-assistant/core/pull/70375,prokon,False,,
+Review,frenck,"I would make it narrow and widen if needed (this part is simply not documented, so no way to know).",2022-05-02T11:46:22Z,True,https://github.com/home-assistant/core/pull/70375,prokon,False,,
+Review,prokon,"I'm not sure if I fully understand what you mean by narrow? 'method' will be a string if present or `None` if not present. I listed the possible values of ""method"" I have found in my installation in the description of the pull request, but I have no way of knowing if it can return other values.
+
+""method"": ""THUMB"",
+""method"": ""STAR"",
+""method"": ""CODE"",
+""method"": ""REMOTE"",
+""method"": ""AUTO"",
+",2022-05-02T13:18:09Z,False,https://github.com/home-assistant/core/pull/70375,prokon,False,,
+Review,MartinHjelmare,"If we think it will always be present, we can change it like so:
+```suggestion
+        return self.coordinator.data[""locks""][self.serial_number][""method""]
+```
+And update the return value type to just `str`.",2022-05-02T13:34:45Z,True,https://github.com/home-assistant/core/pull/70375,prokon,False,,
+Review,prokon,"To me that seems a bit risky since the Verisure interface is not documented. If the ""method"" is not present there will be an exception with your proposed edit. To me it seems better to get `None` if it is not present in some installations. I only have access to mine which is only one of the 722 active Verisure HA installations, so I have no way of knowing that ""method"" will always be present in all intergrations. But like I'm said I'm new to HA so I respect the decision of the more experienced than me.",2022-05-02T13:51:42Z,False,https://github.com/home-assistant/core/pull/70375,prokon,False,,
+Review,frenck,"> To me that seems a bit risky since the Verisure interface is not documented.
+
+We'll be able to patch it out quickly enough if this is an issue. It is easier to loosing later than to make it more strict later...
+",2022-05-02T14:06:49Z,True,https://github.com/home-assistant/core/pull/70375,prokon,False,,
+Review,MartinHjelmare,"```suggestion
+
+```",2022-05-03T06:44:58Z,True,https://github.com/home-assistant/core/pull/70375,prokon,False,,
+Review,MartinHjelmare,"```suggestion
+
+```",2022-05-03T06:45:16Z,True,https://github.com/home-assistant/core/pull/70375,prokon,False,,
+Review,MartinHjelmare,"```suggestion
+
+        @property
+```",2022-05-03T06:46:09Z,True,https://github.com/home-assistant/core/pull/70375,prokon,False,,
+Review,MartinHjelmare,"```suggestion
+
+        @property
+```",2022-05-03T06:46:25Z,True,https://github.com/home-assistant/core/pull/70375,prokon,False,,
+Review,MartinHjelmare,"```suggestion
+    @property
+```",2022-05-03T06:46:59Z,True,https://github.com/home-assistant/core/pull/70375,prokon,False,,
+Review,MartinHjelmare,"```suggestion
+    @property
+```",2022-05-03T06:47:07Z,True,https://github.com/home-assistant/core/pull/70375,prokon,False,,
+,,,2022-04-21T16:45:58Z,,https://github.com/home-assistant/core/pull/70375,prokon,False,56cfa41481d4d9e29d18e1a536e882bae15dbbbe,"Update lock.py
+
+Get method of change. Use to see if door was locked/unlocked from inside our outside. Usable to arm/disarm alarms, turn on/off lights, heating and so on.
+
+From Raw debug file:
+
+Locked from inside
+ ""method"": ""THUMB"",
+  ""lockedState"": ""LOCKED"",
+
+Unlocked from inside:
+""method"": ""THUMB"",
+""lockedState"": ""UNLOCKED"",
+
+Locked from outside:
+""method"": ""STAR"",
+""lockedState"": ""LOCKED"",
+
+Unlocked from outside:
+""method"": ""CODE"",
+""lockedState"": ""UNLOCKED"","
+,,,2022-04-22T10:46:00Z,,https://github.com/home-assistant/core/pull/70375,prokon,False,15953ac8af82b61c896f3146b6846432b065875d,"Update lock.py
+
+Added state attribute based on comments"
+,,,2022-05-02T14:34:33Z,,https://github.com/home-assistant/core/pull/70375,prokon,False,2d76f3024173c59f59804b1ec329c33beb52c7f7,"Update homeassistant/components/verisure/lock.py
+
+Co-authored-by: Martin Hjelmare <marhje52@gmail.com>"
+,,,2022-05-02T14:38:28Z,,https://github.com/home-assistant/core/pull/70375,prokon,False,ea19c661d8fcb4ce6421a54b9ba1ae0817198969,"Update lock.py
+
+Changed type of property changed_method to str only (from str | None)"
+,,,2022-05-03T06:45:43Z,,https://github.com/home-assistant/core/pull/70375,prokon,False,7109b5c65e8d599af571ed61ca209ffe3fd18da2,Clean whitespace
+,,,2022-05-03T06:46:46Z,,https://github.com/home-assistant/core/pull/70375,prokon,False,67b40994237fb9f09146b791c7933833b6e10fa4,Fix blank lines
+,,,2022-05-03T06:47:44Z,,https://github.com/home-assistant/core/pull/70375,prokon,False,bacb7e2798f040e62940f0e71a2783e7db4d33af,Fix indentation
+Issue,probot-home-assistant[bot],"Hey there @briis, @angellusmortis, @bdraco, mind taking a look at this pull request as it has been labeled with an integration (`unifiprotect`) you are listed as a [code owner](https://github.com/home-assistant/core/blob/dev/CODEOWNERS#L1049) for? Thanks!
+<sub><sup>(message by CodeOwnersMention)</sup></sub>",2022-03-03T19:22:29Z,False,https://github.com/home-assistant/core/pull/67570,balloob,True,,
+Issue,AngellusMortis,Coverage is still failing.,2022-03-04T16:43:56Z,False,https://github.com/home-assistant/core/pull/67570,balloob,True,,
+Issue,balloob,@AngellusMortis anything else needed to move this forward?,2022-03-14T19:14:44Z,True,https://github.com/home-assistant/core/pull/67570,balloob,True,,
+Issue,AngellusMortis,"The PR itself looks good to me, but I have not had the time to test it since I am pretty busy with work. Do you have UniFi Protect and/or have you tested it? It should be testable with a G4 Dome, G3/G4 Instance or a G4 Doorbell (Pro)?. 
+
+If I get the time I can test it this week sometime, but maybe @bdraco has a chance to test it?",2022-03-14T19:19:07Z,False,https://github.com/home-assistant/core/pull/67570,balloob,True,,
+Issue,bdraco,I'll give it a shot when I get done with my next call,2022-03-14T20:07:19Z,True,https://github.com/home-assistant/core/pull/67570,balloob,True,,
+Review,AngellusMortis,"The media is actually played by HA in a separate thread and streamed directly to the UniFi Protect camera using ffmpeg. The cameras cannot actually play media. They just have a UDP server running that you can send audio packets to.
+
+So, the URL should be one that HA can resolve internally. It does not look like `async_process_play_media_url` makes it an external URL, but that is something to keep in mind. If it is a local path, that is actually preferred so it does not try to stream it through HA and just reads it from disk.",2022-03-04T16:37:47Z,False,https://github.com/home-assistant/core/pull/67570,balloob,True,,
+Review,balloob,"this turns relative URLs into full URLs and adds authentication. If it's not necessary, we can skip it. ",2022-03-04T22:29:10Z,True,https://github.com/home-assistant/core/pull/67570,balloob,True,,
+Review,AngellusMortis,"Yeah, it should not be necessary since ffmpeg is ran directly on HA. ",2022-03-04T22:30:59Z,False,https://github.com/home-assistant/core/pull/67570,balloob,True,,
+Review,balloob,"The relative URLs are still URLs, they are not local paths. Would that still be ok? 
+
+Note that media sources _can_ resolve to a relative URL, but also to a full URL. ",2022-03-05T07:57:02Z,True,https://github.com/home-assistant/core/pull/67570,balloob,True,,
+Review,AngellusMortis,"Well, how to do differentate between a relative URL and a file path? If they both start with `/`, you would not be able to tell the difference. 
+
+I guess you would `Path().exists()` it. If it is a file on disk pass it into `pyunifiprotect` directly, if it does not, convert it to a hass URL. ",2022-03-05T14:22:18Z,False,https://github.com/home-assistant/core/pull/67570,balloob,True,,
+Review,balloob,"that's not how media source works, it always resolves to a URL.",2022-03-06T07:54:01Z,True,https://github.com/home-assistant/core/pull/67570,balloob,True,,
+Review,AngellusMortis,But it may not always be a media source. If the user enters the value manually without the media browser it could be a file path. ,2022-03-06T12:54:09Z,False,https://github.com/home-assistant/core/pull/67570,balloob,True,,
+Review,balloob,"ok I will apply this only when resolving media sources.
+
+If it can be a local path, the path needs to be checked that it's allowed to be streamed from using `hass.core.is_allowed_path`",2022-03-06T20:23:24Z,True,https://github.com/home-assistant/core/pull/67570,balloob,True,,
+,,,2022-03-03T19:21:43Z,,https://github.com/home-assistant/core/pull/67570,balloob,True,14aaf302fca13c02ebc2970868c883cfd8dbf8d7,Add media source support to unifiprotect
+,,,2022-03-03T19:37:52Z,,https://github.com/home-assistant/core/pull/67570,balloob,True,728297d63a261249510a5f36a583f4a95d98cbad,Fix tests
+,,,2022-03-06T20:20:30Z,,https://github.com/home-assistant/core/pull/67570,balloob,True,8c02bb4d2bb57691f61280e3d4f6c706837a3bf1,Add test
+Issue,Noltari,Same as https://github.com/home-assistant/core/pull/124566 for the Cloud integration.,2024-09-13T17:30:19Z,True,https://github.com/home-assistant/core/pull/125918,Noltari,True,,
+Issue,Noltari,Thanks @joostlek!,2024-10-21T15:14:11Z,True,https://github.com/home-assistant/core/pull/125918,Noltari,True,,
+Review,joostlek,"```suggestion
+    entities.extend(
+```",2024-10-21T14:32:16Z,True,https://github.com/home-assistant/core/pull/125918,Noltari,True,,
+Review,joostlek,"```suggestion
+    )
+```",2024-10-21T14:32:22Z,True,https://github.com/home-assistant/core/pull/125918,Noltari,True,,
+,,,2024-09-13T17:26:55Z,,https://github.com/home-assistant/core/pull/125918,Noltari,True,7a5ddb04125a81e7d2a70f9f9ae396ad988d47b9,"Add Airzone Cloud main zone mode select
+
+Signed-off-by: Álvaro Fernández Rojas <noltari@gmail.com>"
+,,,2024-10-21T14:32:44Z,,https://github.com/home-assistant/core/pull/125918,Noltari,True,7d4c7ae8ada42f80e2377dad127ecc8aa8f6cd19,Apply suggestions from code review
+,,,2024-09-08T19:14:09Z,,https://github.com/home-assistant/core/pull/125530,gjohansson-ST,True,c9237c41cf0bad2b25d78fd9d661411ee5b570b0,Add preview to mold_indicator
+,,,2024-09-11T15:44:49Z,,https://github.com/home-assistant/core/pull/125530,gjohansson-ST,True,d10ac80b8ef724ea017b61ab2d163bcb173052f5,Fix preview
+Issue,home-assistant[bot],"
+Hey there @dl2080, mind taking a look at this pull request as it has been labeled with an integration (`airq`) you are listed as a [code owner](https://github.com/home-assistant/core/blob/dev/CODEOWNERS#L46) for? Thanks!
+
+<details>
+<summary>Code owner commands</summary>
+
+
+Code owners of `airq` can trigger bot actions by commenting:
+
+- `@home-assistant close` Closes the pull request.
+- `@home-assistant rename Awesome new title` Renames the pull request.
+- `@home-assistant reopen` Reopen the pull request.
+- `@home-assistant unassign airq` Removes the current integration label and assignees on the pull request, add the integration domain after the command.
+- `@home-assistant add-label needs-more-information` Add a label (needs-more-information, problem in dependency, problem in custom component) to the pull request.
+- `@home-assistant remove-label needs-more-information` Remove a label (needs-more-information, problem in dependency, problem in custom component) on the pull request.
+
+</details>
+
+",2024-02-01T22:45:44Z,False,https://github.com/home-assistant/core/pull/109337,Sibgatulin,True,,
+Issue,home-assistant[bot],"<!-- ReviewDrafterComment -->
+Please take a look at the requested changes, and use the **Ready for review** button when you are done, thanks :+1:
+
+[_Learn more about our pull request process._](https://developers.home-assistant.io/docs/review-process#prs-are-being-drafted-when-changes-are-needed)
+",2024-02-02T08:50:40Z,False,https://github.com/home-assistant/core/pull/109337,Sibgatulin,True,,
+Issue,github-actions[bot],"There hasn't been any activity on this pull request recently. This pull request has been automatically marked as stale because of that and will be closed if no further activity occurs within 7 days.
+If you are the author of this PR, please leave a comment if you want to keep it open. Also, please rebase your PR onto the latest dev branch to ensure that it's up to date with the latest changes.
+Thank you for your contribution!",2024-04-03T15:04:35Z,False,https://github.com/home-assistant/core/pull/109337,Sibgatulin,True,,
+Review,joostlek,What do we use this for?,2024-02-02T08:50:05Z,True,https://github.com/home-assistant/core/pull/109337,Sibgatulin,True,,
+Review,joostlek,"```suggestion
+        if user_input:
+```
+",2024-02-02T08:50:28Z,True,https://github.com/home-assistant/core/pull/109337,Sibgatulin,True,,
+Review,ludeeus,"You can utilize the `homeassistant.helpers.schema_config_entry_flow.SchemaOptionsFlowHandler` class for these simple schema flows.
+An example of how that can be implemented can be found here <https://github.com/home-assistant/core/blob/dev/homeassistant/components/traccar_server/config_flow.py#L196-L202>",2024-02-02T08:51:48Z,True,https://github.com/home-assistant/core/pull/109337,Sibgatulin,True,,
+Review,Sibgatulin,"thanks for spotting, it is indeed a remnant from the previous pattern, you have rightfully discouraged. Removing it.",2024-02-02T12:27:42Z,True,https://github.com/home-assistant/core/pull/109337,Sibgatulin,True,,
+Review,Sibgatulin,Looks like I can skip the entire `OptionsFlowHandler` class,2024-02-02T12:29:43Z,True,https://github.com/home-assistant/core/pull/109337,Sibgatulin,True,,
+Review,Sibgatulin,"Brilliant, thanks!",2024-02-02T12:34:25Z,True,https://github.com/home-assistant/core/pull/109337,Sibgatulin,True,,
+,,,2024-02-01T18:18:06Z,,https://github.com/home-assistant/core/pull/109337,Sibgatulin,True,d433aad803257f9e92532faaaa5d960ce603fb4e,"Add support for options to airq integration
+
+Expose to the user the following configuration:
+1. A choice between fetching from the device either:
+    a. the averaged (previous and the new default behaviour) or
+    b. noisy momentary sensor reading
+2. A toggle to clip (spuriously) negative sensor values (default
+    functionality, previously unexposed)
+
+To those ends:
+- Introduce an `OptionsFlowHandler` alongside with a listener
+  `AirQCoordinator.async_set_options`
+- Introduce constants to handle represent options
+- Add tests and strings"
+,,,2024-02-02T12:31:34Z,,https://github.com/home-assistant/core/pull/109337,Sibgatulin,True,8262bae83b68ca1f909f96276947d5ef30286d6a,"Drop OptionsFlowHandler in favour of SchemaOptionsFlowHandler
+
+Modify `AirQCoordinator.__init__` to accommodate the change in option
+handling, and drop `async_set_options` which slipped through the
+previous commit."
+,,,2024-05-14T20:56:36Z,,https://github.com/home-assistant/core/pull/109337,Sibgatulin,True,7161339808f16090c55af67e40515918a7a8f4e1,Ruff formatting
+,,,2024-05-14T21:01:47Z,,https://github.com/home-assistant/core/pull/109337,Sibgatulin,True,05dfdd3a9cafb730eb692f3c3b981a7bbce7a5b9,Merge branch 'dev' into airq_add_option_flow
+Issue,home-assistant[bot],"
+Hi @jscarlett5
+
+It seems you haven't yet signed a CLA. Please do so [here](https://home-assistant.io/developers/cla_sign_start/?pr=home-assistant/core#93289).
+
+Once you do that we will be able to review and accept this pull request.
+
+Thanks!
+",2023-05-19T21:14:25Z,False,https://github.com/home-assistant/core/pull/93289,jscarlett5,False,,
+Issue,home-assistant[bot],"
+Hey there @tuya, @zlinoliver, @frenck, mind taking a look at this pull request as it has been labeled with an integration (`tuya`) you are listed as a [code owner](https://github.com/home-assistant/core/blob/dev/CODEOWNERS#L1278) for? Thanks!
+
+<details>
+<summary>Code owner commands</summary>
+
+
+Code owners of `tuya` can trigger bot actions by commenting:
+
+- `@home-assistant close` Closes the pull request.
+- `@home-assistant rename Awesome new title` Renames the pull request.
+- `@home-assistant reopen` Reopen the pull request.
+- `@home-assistant unassign tuya` Removes the current integration label and assignees on the pull request, add the integration domain after the command.
+
+</details>
+
+",2023-05-19T21:14:28Z,False,https://github.com/home-assistant/core/pull/93289,jscarlett5,False,,
+Issue,home-assistant[bot],"<!-- ReviewDrafterComment -->
+Please take a look at the requested changes, and use the **Ready for review** button when you are done, thanks :+1:
+
+[_Learn more about our pull request process._](https://developers.home-assistant.io/docs/review-process#prs-are-being-drafted-when-changes-are-needed)
+",2023-05-23T12:55:58Z,False,https://github.com/home-assistant/core/pull/93289,jscarlett5,False,,
+Issue,jscarlett5,"Hi @frenck 
+Is this still waiting on me for something? I don't do a lot of pull requests so I may be missing a step here. I believe I addressed the items you pointed out. Thanks for your help. ",2023-06-08T19:11:20Z,False,https://github.com/home-assistant/core/pull/93289,jscarlett5,False,,
+Issue,kl4ver,@frenck this would be really nice to have! Can it be merged?,2023-06-24T17:01:06Z,False,https://github.com/home-assistant/core/pull/93289,jscarlett5,False,,
+Issue,kl4ver,"@jscarlett5 see the comment of Frenck, can you fix this?",2023-06-28T17:23:20Z,False,https://github.com/home-assistant/core/pull/93289,jscarlett5,False,,
+Issue,brainexe,"here is the same change also waiting for review, bit more advanced: #95053 ",2023-07-13T06:04:53Z,False,https://github.com/home-assistant/core/pull/93289,jscarlett5,False,,
+Issue,frenck,"Because there hasn't been any activity on this PR for quite some time now, I've decided to close it for being stale.
+
+Feel free to re-open this PR when you are ready to pick up work on it again 👍
+
+../Frenck",2023-10-06T07:35:35Z,True,https://github.com/home-assistant/core/pull/93289,jscarlett5,False,,
+Review,frenck,Entity names are not made for instructions.,2023-05-23T12:55:34Z,True,https://github.com/home-assistant/core/pull/93289,jscarlett5,False,,
+Review,frenck,Does this entity count down while running?,2023-05-23T12:55:54Z,True,https://github.com/home-assistant/core/pull/93289,jscarlett5,False,,
+Review,jscarlett5,Understood. I'll make the change and re-commit.,2023-05-23T13:02:05Z,False,https://github.com/home-assistant/core/pull/93289,jscarlett5,False,,
+Review,jscarlett5,"Yes it does. It's set, then counts down once switch is set to true. Should this be setup elsewhere? ",2023-05-23T13:03:31Z,False,https://github.com/home-assistant/core/pull/93289,jscarlett5,False,,
+Review,frenck,"We down allow number entities to be used for countdowns.
+
+../Frenck",2023-06-25T17:12:03Z,True,https://github.com/home-assistant/core/pull/93289,jscarlett5,False,,
+,,,2023-05-19T20:35:32Z,,https://github.com/home-assistant/core/pull/93289,jscarlett5,False,569a926d67e1d9d92efb6f353b8db0fa466d80a4,"Adding support for Smart Water Timer
+
+Countdown Entity"
+,,,2023-05-19T20:36:18Z,,https://github.com/home-assistant/core/pull/93289,jscarlett5,False,7dec2169e4a43800f7fcbcebfbf68a9d07c6a2f4,"Adding support for Smart Water Timer
+
+Entity for Battery"
+,,,2023-05-19T20:38:46Z,,https://github.com/home-assistant/core/pull/93289,jscarlett5,False,79f67bef02ea0baa718e9bd76c03aa87b06ca7d3,"Adding Support for Smart Water Timer
+
+Water Valve switch entity"
+,,,2023-05-23T12:33:15Z,,https://github.com/home-assistant/core/pull/93289,jscarlett5,False,cbed8ed6ca43f28dbb0a9be50b64b6c3c3cb3d65,Merge branch 'dev' into dev
+,,,2023-05-23T13:05:11Z,,https://github.com/home-assistant/core/pull/93289,jscarlett5,False,da632ed5fb6ed823d9edfd83e56de4ea7450c38d,Remove instructions in entity name
+,,,2023-05-25T15:46:01Z,,https://github.com/home-assistant/core/pull/93289,jscarlett5,False,008589dd931a56c1f8702f87bbdf31cd6a956d06,Merge branch 'dev' into dev
+,,,2023-05-30T14:45:26Z,,https://github.com/home-assistant/core/pull/93289,jscarlett5,False,77f4a6a0420c3aa810d635ab0efabf48e7b8b6ce,Merge branch 'home-assistant:dev' into dev
+Review,joostlek,"When receiving a new token, do we extract data out of it?",2024-02-09T08:16:20Z,True,https://github.com/home-assistant/core/pull/109930,Thomas55555,True,,
+Review,Thomas55555,We did. But it's actually not necessary. I changed it.,2024-02-09T13:20:44Z,True,https://github.com/home-assistant/core/pull/109930,Thomas55555,True,,
+Review,joostlek,"```suggestion
+```
+I'd remove this logger as the config entry contains data like the token etc, that makes it harder for people to share logs and it's unsafe",2024-02-09T13:31:58Z,True,https://github.com/home-assistant/core/pull/109930,Thomas55555,True,,
+Review,joostlek,"```suggestion
+```",2024-02-09T13:32:19Z,True,https://github.com/home-assistant/core/pull/109930,Thomas55555,True,,
+Review,joostlek,"There is a new helper for this, but I don't know which one it is (I think `co2signal` uses it)",2024-02-09T13:37:13Z,True,https://github.com/home-assistant/core/pull/109930,Thomas55555,True,,
+,,,2024-02-07T23:13:09Z,,https://github.com/home-assistant/core/pull/109930,Thomas55555,True,7b11db1752c6cd1f7d6022563594858f30f7a808,Add reauthentication for husqvarna_automower
+,,,2024-02-08T20:48:09Z,,https://github.com/home-assistant/core/pull/109930,Thomas55555,True,b966119b48cecfcc9b96ed53c1ece4c815cd190f,Remove unneded lines
+,,,2024-02-09T07:10:14Z,,https://github.com/home-assistant/core/pull/109930,Thomas55555,True,30b5ff96d977e997112bb761b499408d685c7672,Merge branch 'dev' into patch2
+,,,2024-02-09T13:19:39Z,,https://github.com/home-assistant/core/pull/109930,Thomas55555,True,a4d242f40f270bf9ae997a9c0441b3b8343449c3,Don't extract token on reauth
+,,,2024-02-09T13:30:37Z,,https://github.com/home-assistant/core/pull/109930,Thomas55555,True,77f684d2ddeb9e11a2b2984923d57750bd96835f,Merge branch 'dev' into patch2
+,,,2024-02-09T13:35:46Z,,https://github.com/home-assistant/core/pull/109930,Thomas55555,True,55e42a86adc1aada1254467d4c99857022837bb6,"Update homeassistant/components/husqvarna_automower/config_flow.py
+
+Co-authored-by: Joost Lekkerkerker <joostlek@outlook.com>"
+,,,2024-02-09T13:35:55Z,,https://github.com/home-assistant/core/pull/109930,Thomas55555,True,580f30f7e68b60dc0e58ffe6d72de3a02996f12b,"Update tests/components/husqvarna_automower/conftest.py
+
+Co-authored-by: Joost Lekkerkerker <joostlek@outlook.com>"
+,,,2024-02-09T14:08:11Z,,https://github.com/home-assistant/core/pull/109930,Thomas55555,True,645f59947f384bf25eff4a40d290ee427db254a0,Use helper
+,,,2024-02-09T14:22:40Z,,https://github.com/home-assistant/core/pull/109930,Thomas55555,True,c845862631a34aa173d26f9b628db389c9f1bf4b,Test if authentication is done with the right account
+,,,2024-03-05T14:53:15Z,,https://github.com/home-assistant/core/pull/109930,Thomas55555,True,32a892b0af2e678d45d41c5b81f2b57db176d6ce,Merge branch 'dev' into patch2
+,,,2024-03-05T14:56:05Z,,https://github.com/home-assistant/core/pull/109930,Thomas55555,True,d4fb06dff756b9955d2f5703c66e27a3a7552555,switch to ConfigFlowResult
+Issue,homeassistant,"Hi @rautesamtr, 
+
+It seems you haven't yet signed a CLA. Please do so [here](https://home-assistant.io/developers/cla_sign_start/?pr=home-assistant&#x2F;core#58596).
+
+Once you do that we will be able to review and accept this pull request.
+
+Thanks!
+",2021-10-28T11:16:37Z,True,https://github.com/home-assistant/core/pull/58596,rautesamtr,False,,
+Issue,LeoCal,"Good job, Gabriel!
+When are you planning to merge this in?",2021-12-09T16:47:20Z,False,https://github.com/home-assistant/core/pull/58596,rautesamtr,False,,
+Issue,trivi,Thanks a lot! I was missing this configuration option too.,2022-01-02T23:58:56Z,False,https://github.com/home-assistant/core/pull/58596,rautesamtr,False,,
+Issue,epenet,"Note: in the future, please avoid squashing commits",2022-01-03T10:45:11Z,True,https://github.com/home-assistant/core/pull/58596,rautesamtr,False,,
+Issue,frenck,"Hmm... isn't this violating ADR-0007 @epenet?
+
+<https://github.com/home-assistant/architecture/blob/master/adr/0007-integration-config-yaml-structure.md#decision>
+
+",2022-01-03T10:46:33Z,True,https://github.com/home-assistant/core/pull/58596,rautesamtr,False,,
+Issue,epenet,"Oh - I missed that part of ADR-0007!
+@rautesamtr we may need to revert this PR.
+Could you please take a look at the ADR and maybe work on refactoring the `command_line` integration?",2022-01-03T11:05:12Z,True,https://github.com/home-assistant/core/pull/58596,rautesamtr,False,,
+Issue,rautesamtr,"> Note: in the future, please avoid squashing commits
+
+Sorry for the forced rebase push, i didn't know this would make problems i will refrain from it in the future.
+
+> Could you please take a look at the ADR and maybe work on refactoring the command_line integration?
+
+So it's basically what has already been done to the `template` integration? Should be doable if i can use that as a guide.",2022-01-03T11:41:13Z,False,https://github.com/home-assistant/core/pull/58596,rautesamtr,False,,
+Issue,frenck,"We have discussed it, and while it violates ADR-0007, we think it is OK to exempt.
+Reasoning: It is not breaking, it helps with the UI progress and is relatively small.
+
+TL;DR: We accept this change.
+
+Thanks @rautesamtr 👍 ",2022-01-03T14:09:49Z,True,https://github.com/home-assistant/core/pull/58596,rautesamtr,False,,
+Issue,epenet,"Great, thanks @frenck
+@rautesamtr if you have the will and the energy to refactor the integration, then yes I think you can use template integration as a guide.",2022-01-03T14:12:08Z,True,https://github.com/home-assistant/core/pull/58596,rautesamtr,False,,
+Review,epenet,Could you use `_attr_unique_id`?,2021-10-28T11:32:08Z,True,https://github.com/home-assistant/core/pull/58596,rautesamtr,False,,
+Review,rautesamtr,Done,2021-10-28T13:24:15Z,False,https://github.com/home-assistant/core/pull/58596,rautesamtr,False,,
+,,,2021-10-28T10:23:11Z,,https://github.com/home-assistant/core/pull/58596,rautesamtr,False,78092cdcd866ff812feceb627a124d7708a22d64,command_line: add unique_id configuration variable
+Issue,jschlyter,cc @bbrendon @manuel-jrs @aque0us who has committed to this integration in the past,2024-05-13T15:53:31Z,True,https://github.com/home-assistant/core/pull/117320,jschlyter,True,,
+Issue,jschlyter,Will resolve minor changes in separate PRs before moving ahead with this one.,2024-06-09T11:33:25Z,True,https://github.com/home-assistant/core/pull/117320,jschlyter,True,,
+Issue,jschlyter,Waiting for #119198,2024-06-18T18:35:42Z,True,https://github.com/home-assistant/core/pull/117320,jschlyter,True,,
+,,,2024-05-12T18:10:39Z,,https://github.com/home-assistant/core/pull/117320,jschlyter,True,ac097936fe38ea75bb48f643de7400e6369c0370,update list of AWS regions
+,,,2024-05-12T18:23:24Z,,https://github.com/home-assistant/core/pull/117320,jschlyter,True,c53ffbd9e1d8ce29d662b77c2c5d9b8609ff39c4,"Update list of voices via:
+
+```
+aws polly describe-voices --output json --region us-east-1 |
+jq -r '.Voices[] | ( ""\"""" + .Name + ""\"",  # "" + .LanguageName)'
+```"
+,,,2024-05-12T18:27:02Z,,https://github.com/home-assistant/core/pull/117320,jschlyter,True,703e31d56d96c0e232b384d257c7f983439082d0,add generative and long-form engines
+,,,2024-05-12T18:58:46Z,,https://github.com/home-assistant/core/pull/117320,jschlyter,True,7caa1677aedc34b87edd788a459c995e3ce66515,allow setting engine and region in Amazon Polly options
+,,,2024-05-12T19:24:20Z,,https://github.com/home-assistant/core/pull/117320,jschlyter,True,7f93611431eaa2ed37a31168362cf38fb03b4b9d,region not possible in options
+,,,2024-05-12T19:24:35Z,,https://github.com/home-assistant/core/pull/117320,jschlyter,True,750aef87ef9dab2eaa86d972d7e4abfc08ac101c,add dictionary of per engine voice_id and allow engine in options
+,,,2024-05-12T19:26:10Z,,https://github.com/home-assistant/core/pull/117320,jschlyter,True,6342c6c55f2b02978759748743e7b867ccbffca5,reformat
+,,,2024-05-12T19:28:23Z,,https://github.com/home-assistant/core/pull/117320,jschlyter,True,705bfbb2eceb57166277a40f9e71140a5523a982,Merge branch 'dev' into polly_generative
+,,,2024-05-12T19:30:12Z,,https://github.com/home-assistant/core/pull/117320,jschlyter,True,31152a877e714c3ab79500fa8e0d447e769f5ecf,add default engine to default options
+,,,2024-05-12T19:34:38Z,,https://github.com/home-assistant/core/pull/117320,jschlyter,True,249245c8ad5ba180f845017a66bbdbee2f36690f,sort import
+,,,2024-05-13T05:49:02Z,,https://github.com/home-assistant/core/pull/117320,jschlyter,True,63af4c6ea0ed535bf46cc762c42883cc3d618700,move statement
+,,,2024-05-13T06:29:16Z,,https://github.com/home-assistant/core/pull/117320,jschlyter,True,1199f437af3ed7e2fac1c8a56b6973a0aa42c567,update list of voices using voices.py script
+,,,2024-05-13T06:36:16Z,,https://github.com/home-assistant/core/pull/117320,jschlyter,True,8a47c99c4c1d371f530964ea868fd0a08fee8d74,also parse AdditionalLanguageCodes
+,,,2024-05-13T06:44:28Z,,https://github.com/home-assistant/core/pull/117320,jschlyter,True,864056ce1d6915fe2ced4643cbf6b2006e7b4462,please ruff
+,,,2024-05-13T06:58:57Z,,https://github.com/home-assistant/core/pull/117320,jschlyter,True,ab1ae33e2b6efeee1dc1f154bb71108f4574b48a,lint
+,,,2024-05-13T18:20:34Z,,https://github.com/home-assistant/core/pull/117320,jschlyter,True,f02289ddc64fbd3a71ecf53f22135d61bfc630da,generate SUPPORTED_REGIONS and SUPPORTED_VOICES using script
+,,,2024-05-13T18:46:05Z,,https://github.com/home-assistant/core/pull/117320,jschlyter,True,be37c271a28b07073da70179e0f379027b20e460,sort voices
+,,,2024-05-13T18:49:16Z,,https://github.com/home-assistant/core/pull/117320,jschlyter,True,60eb69d3243b74c59c22a2170e51b456bfe9c11d,remove typo
+,,,2024-05-14T05:50:39Z,,https://github.com/home-assistant/core/pull/117320,jschlyter,True,112b556b23dbaee450c1ec482713268482102304,use sets where possible
+,,,2024-05-19T18:39:11Z,,https://github.com/home-assistant/core/pull/117320,jschlyter,True,ee4d91d8b420147fffa92b760d901326736ddb8c,Merge branch 'dev' into polly_generative
+,,,2024-05-22T06:40:32Z,,https://github.com/home-assistant/core/pull/117320,jschlyter,True,cf246114cc665019171c954c48de4b738a32ffa7,Merge branch 'dev' into polly_generative
+,,,2024-05-22T06:41:25Z,,https://github.com/home-assistant/core/pull/117320,jschlyter,True,eca91c08b391c834edeeea91f4a7165955d0a3c6,add Final
+,,,2024-05-22T06:44:42Z,,https://github.com/home-assistant/core/pull/117320,jschlyter,True,56c9bc847860bf878b0f351be81336bfcf3d47cb,regen
+,,,2024-05-25T07:04:22Z,,https://github.com/home-assistant/core/pull/117320,jschlyter,True,3656403b33d7cb12e3eea0916b381e2d990abe56,Merge branch 'dev' into polly_generative
+,,,2024-05-30T16:35:30Z,,https://github.com/home-assistant/core/pull/117320,jschlyter,True,2e9a2d85c3ef553b3578e8f19a32c7db0780a9e5,Merge branch 'dev' into polly_generative
+,,,2024-06-09T10:15:13Z,,https://github.com/home-assistant/core/pull/117320,jschlyter,True,2784e8af223e76ec40256dee60035c91c8f0dc04,Merge branch 'dev' into polly_generative
+,,,2024-06-09T10:27:52Z,,https://github.com/home-assistant/core/pull/117320,jschlyter,True,c72423aba2d6b8ed48e80035b10db4d6a226a9ae,Automatically generate list of voices and regions. Requires AWS credentials.
+,,,2024-06-09T10:39:45Z,,https://github.com/home-assistant/core/pull/117320,jschlyter,True,5cf055e0fb0aacc525b94b4cc34cfa056d6094e0,add missing commit
+,,,2024-06-09T10:52:25Z,,https://github.com/home-assistant/core/pull/117320,jschlyter,True,761f2c8db09d4dde5ef9d666a8795ecc4c60a19f,replace pydantic with dataclass
+,,,2024-06-09T10:54:42Z,,https://github.com/home-assistant/core/pull/117320,jschlyter,True,12618bc32e139fb8778627e6d5b3e3441a3a3692,dictionary values are strings or list of strings
+Issue,probot-home-assistant[bot],"Hey there @rytilahti, @syssi, mind taking a look at this pull request as its been labeled with an integration (`xiaomi_miio`) you are listed as a [codeowner](https://github.com/home-assistant/core/blob/dev/CODEOWNERS#L541) for? Thanks!
+<sub><sup>(message by CodeOwnersMention)</sup></sub>",2021-03-15T17:34:14Z,False,https://github.com/home-assistant/core/pull/47955,starkillerOG,True,,
+Issue,starkillerOG,"Alright I have tested the code on my dev enviroment and everything seems to work.
+This schould enable EU_gateways to use subdevices because the connected subdevices can now be obtained through the cloud.
+
+For anyone who want to test this code (with an EU gateway), just download the `homeassistant/components/xiaomi_miio` folder from https://github.com/starkillerOG/home-assistant/tree/Miio_eu_gateway and place that folder in your homeassistant `config/custom_components` folder.",2021-03-15T22:30:58Z,True,https://github.com/home-assistant/core/pull/47955,starkillerOG,True,,
+Issue,starkillerOG,"@syssi, @rytilahti could you revieuw this PR?
+I think a lot of users have been waiting for this a long time (to get there EU gateways working)",2021-03-15T22:33:37Z,True,https://github.com/home-assistant/core/pull/47955,starkillerOG,True,,
+Issue,starkillerOG,"The code of this PR has already been tested by 4 diffrent people owning a EU gateway (see https://github.com/rytilahti/python-miio/issues/728) and it seems to work.
+
+All tests pass, so I think this is ready for merging after a quick review.",2021-03-17T10:00:16Z,True,https://github.com/home-assistant/core/pull/47955,starkillerOG,True,,
+Issue,starkillerOG,@syssi could you review this?,2021-03-25T12:58:03Z,True,https://github.com/home-assistant/core/pull/47955,starkillerOG,True,,
+Issue,marioskamperis,"Hello and thank you so much for your amazing job.
+I followed the instructions in: https://github.com/home-assistant/core/pull/47955#issuecomment-799798564 but there was no country support for my gateway region ""GR"" (Greece).
+
+Do you think you will support more regions as well? If so, I can help with the testing.
+
+Cheers and thanks again!",2021-03-25T19:21:55Z,False,https://github.com/home-assistant/core/pull/47955,starkillerOG,True,,
+Issue,starkillerOG,"@marioskamperis I dont think xiaomi has servers in greece, greece accounts seem to be using the german servers ""de""
+see: https://www.openhab.org/addons/bindings/miio/#country-servers",2021-03-25T19:50:02Z,True,https://github.com/home-assistant/core/pull/47955,starkillerOG,True,,
+Issue,marioskamperis,"@starkillerOG you are right.
+Tried it. My Gateway and temperature/humidity sensors were recognised successfully!
+I am waiting as well for the other supported but not yet implemented devices listed [here](https://github.com/home-assistant/home-assistant.io/blob/next/source/_integrations/xiaomi_miio.markdown#supported-subdevices) as I have door magnets and motion sensors. 
+
+I read your comment [here](https://github.com/rytilahti/python-miio/issues/728#issuecomment-800495172). Should I subscribe to that thread for updates and to help with testing?
+
+Excellent job, thank you again!",2021-03-25T20:12:04Z,False,https://github.com/home-assistant/core/pull/47955,starkillerOG,True,,
+Issue,starkillerOG,"@marioskamperis yes please follow further progress there.
+Than we can keep this focused on code revieuw to get it merged as soon as possible.",2021-03-25T20:49:06Z,True,https://github.com/home-assistant/core/pull/47955,starkillerOG,True,,
+Issue,marioskamperis,"Hi again. 
+After installing the package (manually as @starkillerOG commented above)
+After some restarts, I started getting this error:
+
+> 2021-03-25 23:18:35 ERROR (MainThread) [homeassistant.setup] Setup failed for xiaomi_miio: Unable to import component: No module named 'miio.gateway.gateway'; 'miio.gateway' is not a package
+2021-03-25 23:18:48 ERROR (MainThread) [homeassistant.config_entries] Error occurred loading configuration flow for integration xiaomi_miio: No module named 'miio.gateway.gateway'; 'miio.gateway' is not a package
+2021-03-25 23:18:48 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved
+Traceback (most recent call last):
+File ""/usr/src/homeassistant/homeassistant/config_entries.py"", line 561, in async_create_flow
+integration.get_platform(""config_flow"")
+File ""/usr/src/homeassistant/homeassistant/loader.py"", line 499, in get_platform
+cache[full_name] = self._import_platform(platform_name)
+File ""/usr/src/homeassistant/homeassistant/loader.py"", line 504, in _import_platform
+return importlib.import_module(f""{self.pkg_path}.{platform_name}"")
+File ""/usr/local/lib/python3.8/importlib/__init__.py"", line 127, in import_module
+return _bootstrap._gcd_import(name[level:], package, level)
+File ""<frozen importlib._bootstrap>"", line 1014, in _gcd_import
+File ""<frozen importlib._bootstrap>"", line 991, in _find_and_load
+File ""<frozen importlib._bootstrap>"", line 961, in _find_and_load_unlocked
+File ""<frozen importlib._bootstrap>"", line 219, in _call_with_frames_removed
+File ""<frozen importlib._bootstrap>"", line 1014, in _gcd_import
+File ""<frozen importlib._bootstrap>"", line 991, in _find_and_load
+File ""<frozen importlib._bootstrap>"", line 975, in _find_and_load_unlocked
+File ""<frozen importlib._bootstrap>"", line 671, in _load_unlocked
+File ""<frozen importlib._bootstrap_external>"", line 783, in exec_module
+File ""<frozen importlib._bootstrap>"", line 219, in _call_with_frames_removed
+File ""/config/custom_components/xiaomi_miio/__init__.py"", line 6, in <module>
+from miio.gateway.gateway import GatewayException
+ModuleNotFoundError: No module named 'miio.gateway.gateway'; 'miio.gateway' is not a package
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+File ""/usr/src/homeassistant/homeassistant/data_entry_flow.py"", line 122, in async_init
+flow = await self.async_create_flow(handler, context=context, data=data)
+File ""/usr/src/homeassistant/homeassistant/config_entries.py"", line 568, in async_create_flow
+raise data_entry_flow.UnknownHandler
+homeassistant.data_entry_flow.UnknownHandler
+2021-03-25 23:18:48 ERROR (MainThread) [homeassistant.config_entries] Error occurred loading configuration flow for integration xiaomi_miio: No module named 'miio.gateway.gateway'; 'miio.gateway' is not a package
+2021-03-25 23:18:48 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved
+
+Some time later the gateway (and thus the gateway functions) seem to have been discovered again. But after last restart the entity is disabled.
+
+[EDIT]: After yet another restart. Gateway and temp-humidity sensors were picked up again.",2021-03-25T21:30:56Z,False,https://github.com/home-assistant/core/pull/47955,starkillerOG,True,,
+Issue,starkillerOG,@rytilahti could you review/approve this PR?,2021-04-02T09:04:50Z,True,https://github.com/home-assistant/core/pull/47955,starkillerOG,True,,
+Issue,starkillerOG,@MartinHjelmare could you maybe revieuw this PR?,2021-04-23T12:38:40Z,True,https://github.com/home-assistant/core/pull/47955,starkillerOG,True,,
+Issue,starkillerOG,"@MartinHjelmare thank you for your revieuw, I processed all feedback, can you revieuw again?",2021-04-29T12:02:28Z,True,https://github.com/home-assistant/core/pull/47955,starkillerOG,True,,
+Issue,frenck,"So, I've been looking at this from the sidelines and discussed this a bit with @MartinHjelmare (and in the past with @bramkragten as well), and I think this PR is close but should take a different approach.
+
+## Taking a step back first
+
+One of the biggest issues (IMHO) for end-users, in general, is: Getting the tokens!
+There are many ways to get the tokens, but most are not straightforward and is often way to complicated for users.
+
+There is now a program that uses the cloud to get the tokens, but it triggers some virus scanners on Windows and on Mac is refuses to run initially (because unsigned and untrusted).
+
+## This PR
+
+This PR actually brings in the cloud to fetch information, but only in a specific use case.
+
+## Suggestion
+
+So, as for my suggestion, based on the above 2 things; I would like to propose a solution that makes the integration easier to set up for users, uses the cloud when needed, but still allows to use without.
+
+Config flow:
+
+- Ask to add devices via the cloud OR manually via IP/Token (make sure to mark the cloud as easier / default/recommend for easy set up)
+- Selected: Cloud
+  - Ask for login
+  - List devices so a user can choose the device to add (filtered by devices that are already added).
+  - Create a local entry with a token from the cloud as usual. If an EU gateway is chosen, store cloud credentials additionally, so the functionality in this PR works as expected.
+- Select: Manual
+  - Follows the current config flow.
+  - If an EU gateway is chosen, ask for cloud credentials, so the functionality in this PR works as expected.
+  
+
+Additionally: Using this process, if a config entry needs the  cloud (e.g., in case of the EU gateway), re-auth can be triggered as needed as well.
+
+This would remove the need to stuff it into the options flow as well.
+
+Result: Happy end-user. We made integrating Xiaomi devices more easy, still control them locally. No weirdness to get a token and the cases that do need the cloud, are handled just like any other integration.",2021-05-17T07:52:42Z,True,https://github.com/home-assistant/core/pull/47955,starkillerOG,True,,
+Issue,starkillerOG,"@frenck thank you for your input and clear story.
+I have been thinking about this for a while too since the cloud would indeed allow much easier integration for users (instead of the tokens).
+
+Through the cloud a list of all Miio devices can be retrieved with all there connection details (also local IP of the device).
+Therefore we could make it such that a user needs to setup the integration only once with it's Cloud credentials and that all Miio devices are then added automatically. As opposed to setting up one integration per device (and having to supply the same cloud credentials each time.
+
+The only problem I see with that aproach are the unique_ids, If you setup all devices using one cloud integration you only set one unique ID (based on the username of the cloud probably), A user could then also setup a device manually and the unique ID would then be set based on the individual device ending up with 2x the same device (one through the cloud and one configured manually). So bassically mixing manual and cloud setup would then be a problem.
+Furthermore if the Miio device list is obtained from the Cloud, that would mean the integration will be reliant on a internet connection and the Miio cloud servers during integration init (each time the integration is started). If we make an integration per device we can store all relevant information locally and are only reliant on internet/cloud during config flow setup.
+
+@frenck What do you think: 1 integration per device or one central integration with all devices using cloud.
+
+
+
+
+",2021-05-17T15:12:12Z,True,https://github.com/home-assistant/core/pull/47955,starkillerOG,True,,
+Issue,frenck,"> What do you think: 1 integration per device or one central integration with all devices using cloud.
+
+I would stick to the 1 device per config entry at this point. It keeps the cloud out (and uses it only for initial setup/handshake). It is also close to what is there already and avoids major overhauls.",2021-05-17T15:19:58Z,True,https://github.com/home-assistant/core/pull/47955,starkillerOG,True,,
+Issue,starkillerOG,"To do:
+- ~update string.json and en.json~
+- ~test and debug the new config flow~
+- ~write tests for new config flow~
+- ~add re-auth flow and trigger re-auth whenever cloud credentials/new tokens are needed~",2021-05-27T20:39:13Z,True,https://github.com/home-assistant/core/pull/47955,starkillerOG,True,,
+Issue,starkillerOG,@frenck / @MartinHjelmare this is ready for revieuw/merge,2021-06-05T12:09:08Z,True,https://github.com/home-assistant/core/pull/47955,starkillerOG,True,,
+Issue,frenck,"> @frenck / @MartinHjelmare this is ready for revieuw/merge
+
+Almost 😉 ",2021-06-05T12:10:29Z,True,https://github.com/home-assistant/core/pull/47955,starkillerOG,True,,
+Issue,starkillerOG,"Finally all tests pass, sorry about that.",2021-06-05T13:33:29Z,True,https://github.com/home-assistant/core/pull/47955,starkillerOG,True,,
+Issue,starkillerOG,"@MartinHjelmare I processed all comments, any more feedback?",2021-06-06T15:25:29Z,True,https://github.com/home-assistant/core/pull/47955,starkillerOG,True,,
+Issue,starkillerOG,@frenck could you also revieuw/merge?,2021-06-06T22:04:57Z,True,https://github.com/home-assistant/core/pull/47955,starkillerOG,True,,
+Issue,frenck,Taking a look now!,2021-06-14T21:48:17Z,True,https://github.com/home-assistant/core/pull/47955,starkillerOG,True,,
+Review,ntilley905,"I would return from each `if` block instead of nesting here. Then just return `None` at the end in case none of the blocks are met.
+
+```suggestion
+
+    if flow_type == CONF_GATEWAY:
+        return GATEWAY_PLATFORMS
+    if flow_type == CONF_DEVICE:
+        if model in MODELS_SWITCH:
+            return SWITCH_PLATFORMS
+        if model in MODELS_FAN:
+            return FAN_PLATFORMS
+        if model in MODELS_LIGHT:
+            return LIGHT_PLATFORMS
+        for vacuum_model in MODELS_VACUUM:
+            if model.startswith(vacuum_model):
+                return VACUUM_PLATFORMS
+        for air_monitor_model in MODELS_AIR_MONITOR:
+            if model.startswith(air_monitor_model):
+                return AIR_MONITOR_PLATFORMS
+                
+    return None
+```",2021-03-15T21:01:00Z,True,https://github.com/home-assistant/core/pull/47955,starkillerOG,True,,
+Review,starkillerOG,Thanks for the sugestion,2021-03-15T22:04:23Z,True,https://github.com/home-assistant/core/pull/47955,starkillerOG,True,,
+Review,ntilley905,"Should the IoT class be adjusted to `CLOUD_POLL` instead of `LOCAL_POLL` with this change? I know it can now be either/or, not sure which should be reflected in the integration as a result. ",2021-03-16T13:28:26Z,True,https://github.com/home-assistant/core/pull/47955,starkillerOG,True,,
+Review,starkillerOG,"I don't think so because even when the cloud credentials are used, the cloud is only accesed once on startup of the integration to get the subdevice list. All other communication also getting the status of the subdevices uses local communication (local polling).",2021-03-16T14:06:04Z,True,https://github.com/home-assistant/core/pull/47955,starkillerOG,True,,
+Review,MartinHjelmare,"We can probably use `entry.async_on_unload` to take care of the undo listener callback.
+```suggestion
+    entry.async_on_unload(entry.add_update_listener(update_listener))
+```",2021-04-27T09:58:38Z,True,https://github.com/home-assistant/core/pull/47955,starkillerOG,True,,
+Review,MartinHjelmare,"```suggestion
+    entry.async_on_unload(entry.add_update_listener(update_listener))
+```",2021-04-27T09:59:10Z,True,https://github.com/home-assistant/core/pull/47955,starkillerOG,True,,
+Review,MartinHjelmare,"```suggestion
+    unload_ok = await hass.config_entries.async_unload_platforms(
+        config_entry, platforms
+    )
+```",2021-04-27T10:02:51Z,True,https://github.com/home-assistant/core/pull/47955,starkillerOG,True,,
+Review,MartinHjelmare,"```suggestion
+    hass.config_entries.async_setup_platforms(entry, platforms)
+```",2021-04-27T10:04:01Z,True,https://github.com/home-assistant/core/pull/47955,starkillerOG,True,,
+Review,MartinHjelmare,"```suggestion
+```",2021-04-27T10:04:21Z,True,https://github.com/home-assistant/core/pull/47955,starkillerOG,True,,
+Review,MartinHjelmare,"```suggestion
+```",2021-04-27T10:06:05Z,True,https://github.com/home-assistant/core/pull/47955,starkillerOG,True,,
+Review,MartinHjelmare,We need to have defaults here unless we set defaults in the entry options during config entry setup. The options flow won't be run by default on entry setup.,2021-04-27T10:09:06Z,True,https://github.com/home-assistant/core/pull/47955,starkillerOG,True,,
+Review,MartinHjelmare,We also need to check credentials in the options flow.,2021-04-27T10:11:16Z,True,https://github.com/home-assistant/core/pull/47955,starkillerOG,True,,
+Review,MartinHjelmare,Why are these options part of an options flow? Normally connection details are part of the main config flow. Shouldn't we ask the user to choose what kind of connection to use when creating the entry?,2021-04-27T10:13:16Z,True,https://github.com/home-assistant/core/pull/47955,starkillerOG,True,,
+Review,starkillerOG,"The cloud settings/credentials are all optional, if they are not specified this gives None and that means the cloud is not used and only local commands are used. The default is therefore None which is now handeld, but I will make the default False, which makes it a bit more clear.",2021-04-28T10:25:17Z,True,https://github.com/home-assistant/core/pull/47955,starkillerOG,True,,
+Review,starkillerOG,"It is not really chosing, currently the local connection details are nessesary and suffiecient to set up the gateway.
+The cloud credentials are optional and not needed, but the local connection details are always needed.
+
+If cloud credentials are specified, the cloud is used to get the list of subdevices which can also be obtained by local control for most models of gateways, except for the EU gateway model (it lacks the required local command), the EU gateway itself can be controlled through local commands, only the list of subdevices cannot be optained (they can be controlled localy).
+So the cloud credentials are currently an option to get subdevices for the EU gateway. ",2021-04-28T10:40:31Z,True,https://github.com/home-assistant/core/pull/47955,starkillerOG,True,,
+Review,MartinHjelmare,Do all country gateway types support the cloud option or only the EU gateway? Do the other countries benefit from using the cloud option? Maybe we should only ask for the cloud option when the user configures an EU gateway?,2021-04-28T10:46:16Z,True,https://github.com/home-assistant/core/pull/47955,starkillerOG,True,,
+Review,starkillerOG,I added checks with proper errors in the options flow.,2021-04-28T10:59:20Z,True,https://github.com/home-assistant/core/pull/47955,starkillerOG,True,,
+Review,starkillerOG,"All gateway types do support the cloud option (that is the way the xiaomi miio home app works).
+
+It is not really about the country but the model of the gateway (I call it EU gateway because that model has an EU power plug and it ment to be sold in the EU but obviously you can also use it outside the EU countries or use a diffrent model gateway inside the EU, the diffrent models are listed here https://www.home-assistant.io/integrations/xiaomi_miio/#supported-xiaomi-gateway-models).
+
+At the moment other gateway models don't really benefit from using the cloud option, although I have seen some issues where localy retrieving the device list gives errors (related to max message size in miio local portecol) if large amounts of subdevices are connected (40+), users experiancing such problems cloud probably use the cloud option to get it working, but that has not been tested.
+Besides for the future there are things that can be done with the cloud which is locally not possible (such as retrieving the last time (timestamp) a motion sensor has seen motion)
+",2021-04-28T11:12:39Z,True,https://github.com/home-assistant/core/pull/47955,starkillerOG,True,,
+Review,MartinHjelmare,We can raise `ConfigEntryAuthFailed` to have the ConfigEntry start the re-auth flow for us automatically.,2021-06-05T11:29:49Z,True,https://github.com/home-assistant/core/pull/47955,starkillerOG,True,,
+Review,starkillerOG,@MartinHjelmare will that also include the config_entry data?,2021-06-05T11:59:11Z,True,https://github.com/home-assistant/core/pull/47955,starkillerOG,True,,
+Review,starkillerOG,"Already tested it, it works.
+Thanks for the hint!",2021-06-05T12:07:42Z,True,https://github.com/home-assistant/core/pull/47955,starkillerOG,True,,
+Review,MartinHjelmare,Can we combine the sync calls inside a function that we schedule once on the executor? Context switches are expensive.,2021-06-05T14:27:57Z,True,https://github.com/home-assistant/core/pull/47955,starkillerOG,True,,
+Review,MartinHjelmare,"```suggestion
+        ""description"": ""The Xiaomi Miio integration needs to re-authenticate your account in order to update the tokens or add missing cloud credentials."",
+```",2021-06-05T14:29:23Z,True,https://github.com/home-assistant/core/pull/47955,starkillerOG,True,,
+Review,MartinHjelmare,"```suggestion
+        select_schema = vol.Schema(
+```",2021-06-05T14:36:42Z,True,https://github.com/home-assistant/core/pull/47955,starkillerOG,True,,
+Review,MartinHjelmare,"```suggestion
+            {vol.Required(""select_device""): vol.In(list(self.cloud_devices))}
+```",2021-06-05T14:37:53Z,True,https://github.com/home-assistant/core/pull/47955,starkillerOG,True,,
+Review,MartinHjelmare,"```suggestion
+            step_id=""select"", data_schema=select_schema, errors=errors
+```",2021-06-05T14:38:06Z,True,https://github.com/home-assistant/core/pull/47955,starkillerOG,True,,
+Review,MartinHjelmare,Don't pass errors from outside a step method. The errors are specific to the form of the step.,2021-06-05T14:43:10Z,True,https://github.com/home-assistant/core/pull/47955,starkillerOG,True,,
+Review,MartinHjelmare,We could merge this step with the connect step. Then we wouldn't need to pass errors around.,2021-06-05T14:47:44Z,True,https://github.com/home-assistant/core/pull/47955,starkillerOG,True,,
+Review,starkillerOG,done,2021-06-06T15:04:16Z,True,https://github.com/home-assistant/core/pull/47955,starkillerOG,True,,
+Review,starkillerOG,"Done, I merged the two",2021-06-06T15:14:13Z,True,https://github.com/home-assistant/core/pull/47955,starkillerOG,True,,
+,,,2021-03-15T17:31:59Z,,https://github.com/home-assistant/core/pull/47955,starkillerOG,True,91f4502db27a93c37776362038ff60fd19fa4309,Add EU gateway support
+,,,2021-03-15T20:21:16Z,,https://github.com/home-assistant/core/pull/47955,starkillerOG,True,9ccd753228fead120257a018869da2e9f31800b3,add options flow translations
+,,,2021-03-15T21:02:55Z,,https://github.com/home-assistant/core/pull/47955,starkillerOG,True,14ae84ab4257e5a79b5739c7fda6267271291dd8,fix options flow
+,,,2021-03-15T21:07:07Z,,https://github.com/home-assistant/core/pull/47955,starkillerOG,True,72d8414c7ec35437de974cb98d8a7ee3999ef4c1,fix missing import
+,,,2021-03-15T21:17:19Z,,https://github.com/home-assistant/core/pull/47955,starkillerOG,True,208c0da687069f295c3b9849ba59972684dbf074,try to fix async_add_executor_job
+,,,2021-03-15T21:19:26Z,,https://github.com/home-assistant/core/pull/47955,starkillerOG,True,b9234e6cfc5e5da748cb16e0a39ffea0bb8898f8,try to fix async_add_executor_job
+,,,2021-03-15T21:23:00Z,,https://github.com/home-assistant/core/pull/47955,starkillerOG,True,cd156850492bc1906bd90339780233e4f86e155f,fix unload
+,,,2021-03-15T21:28:17Z,,https://github.com/home-assistant/core/pull/47955,starkillerOG,True,096bb3393c055594c73edc62667ab62224af5d98,check for login succes
+,,,2021-03-15T21:41:11Z,,https://github.com/home-assistant/core/pull/47955,starkillerOG,True,941cfdf47b460222dd261754cd369afb4926d715,fix not reloading
+,,,2021-03-15T21:53:37Z,,https://github.com/home-assistant/core/pull/47955,starkillerOG,True,e5deb237ebc89e904eee9e7775a5617444a49844,use cloud option
+,,,2021-03-15T22:01:57Z,,https://github.com/home-assistant/core/pull/47955,starkillerOG,True,adec981643e4c140d09b4de9651246b174eae019,fix styling
+,,,2021-03-15T22:03:59Z,,https://github.com/home-assistant/core/pull/47955,starkillerOG,True,b7385e2a700e7f346caf5e5e4dcf715fd9489326,"Return after if
+
+Co-authored-by: Nathan Tilley <nathan@tilley.xyz>"
+,,,2021-03-15T22:06:31Z,,https://github.com/home-assistant/core/pull/47955,starkillerOG,True,625f677c8f90e6036d1288c5e1760076dd823892,cleanup
+,,,2021-03-15T22:18:00Z,,https://github.com/home-assistant/core/pull/47955,starkillerOG,True,a7bf9236df1b8778b10d3d7043395bf342061840,add options flow tests
+,,,2021-03-15T22:23:52Z,,https://github.com/home-assistant/core/pull/47955,starkillerOG,True,de117ff717eb3129775b366afc1c820e26f46741,fix new tests
+,,,2021-03-15T22:26:06Z,,https://github.com/home-assistant/core/pull/47955,starkillerOG,True,c9a7824b794d66fc58a49adfca688a79e22cde3c,fix typo in docstring
+,,,2021-03-16T08:15:29Z,,https://github.com/home-assistant/core/pull/47955,starkillerOG,True,13f2faa3d1e1259e8cbe6bb4d78b0c7c39bef7f9,add missing blank line
+,,,2021-04-02T09:04:07Z,,https://github.com/home-assistant/core/pull/47955,starkillerOG,True,da44e81e9ea88d93484c8c89d0a6553d63e597be,Merge branch 'dev' into Miio_eu_gateway
+,,,2021-04-28T09:17:16Z,,https://github.com/home-assistant/core/pull/47955,starkillerOG,True,63b8660751a10a078713e7760a390ab4d2834f04,"Use async_on_unload
+
+Co-authored-by: Martin Hjelmare <marhje52@gmail.com>"
+,,,2021-04-28T09:17:49Z,,https://github.com/home-assistant/core/pull/47955,starkillerOG,True,7c90f4626b52f411a84a637f152176de5b8be428,"Use async_on_unload
+
+Co-authored-by: Martin Hjelmare <marhje52@gmail.com>"
+,,,2021-04-28T09:19:34Z,,https://github.com/home-assistant/core/pull/47955,starkillerOG,True,b15ca992f671fdfa5a1515885227d0f1e829b4d5,"Use async_setup_platforms
+
+Co-authored-by: Martin Hjelmare <marhje52@gmail.com>"
+,,,2021-04-28T09:20:15Z,,https://github.com/home-assistant/core/pull/47955,starkillerOG,True,6575b2fd64ddb6cf1987148f6ebbf561354f2379,"Use async_unload_platforms
+
+Co-authored-by: Martin Hjelmare <marhje52@gmail.com>"
+,,,2021-04-28T09:21:00Z,,https://github.com/home-assistant/core/pull/47955,starkillerOG,True,91d7675d8225c194d04e25705689575ecbefabb9,"Update homeassistant/components/xiaomi_miio/__init__.py
+
+Co-authored-by: Martin Hjelmare <marhje52@gmail.com>"
+,,,2021-04-28T09:21:19Z,,https://github.com/home-assistant/core/pull/47955,starkillerOG,True,15f0d6b32c45a079e912388154225c921911bae4,"Update homeassistant/components/xiaomi_miio/const.py
+
+Co-authored-by: Martin Hjelmare <marhje52@gmail.com>"
+,,,2021-04-28T10:35:05Z,,https://github.com/home-assistant/core/pull/47955,starkillerOG,True,bf37d488bae18fa47533624a203f1d11426b3f6b,default use_cloud False
+,,,2021-04-28T10:58:57Z,,https://github.com/home-assistant/core/pull/47955,starkillerOG,True,0911afe70f59d8575c415aab628c049c3496ff98,add options flow checks
+,,,2021-04-28T12:19:07Z,,https://github.com/home-assistant/core/pull/47955,starkillerOG,True,9724ee69165aad73624c8da34f1e51b260008041,fix styling
+,,,2021-04-28T12:19:40Z,,https://github.com/home-assistant/core/pull/47955,starkillerOG,True,a4e90d7d6f2ed122871d9f9c010743efb780f745,fix issort
+,,,2021-04-28T15:35:13Z,,https://github.com/home-assistant/core/pull/47955,starkillerOG,True,f1c70b438177fadf97a6096f315e789a935d5fd4,add MiCloud check tests
+,,,2021-04-28T17:16:36Z,,https://github.com/home-assistant/core/pull/47955,starkillerOG,True,8d097ee7df0cfc8819ab1bbcee655427098d447a,fix indent
+Issue,homeassistant,"Hi @Sjoerdfc, 
+
+It seems you haven't yet signed a CLA. Please do so [here](https://home-assistant.io/developers/cla_sign_start/?pr=home-assistant&#x2F;core#66114).
+
+Once you do that we will be able to review and accept this pull request.
+
+Thanks!
+",2022-02-08T21:45:06Z,True,https://github.com/home-assistant/core/pull/66114,Sjoerdfc,False,,
+Issue,Sjoerdfc,"The documentation PR: 
+
+https://github.com/home-assistant/home-assistant.io/pull/21739",2022-02-22T09:50:57Z,False,https://github.com/home-assistant/core/pull/66114,Sjoerdfc,False,,
+,,,2022-02-08T19:53:01Z,,https://github.com/home-assistant/core/pull/66114,Sjoerdfc,False,dfa41e639b3ef8a1a684243deb1641c26aaa780b,"Update sensor.py
+
+Add the ICAO 24-bit address to the exit and entry events"
+Issue,home-assistant[bot],"
+Hey there @ctalkington, mind taking a look at this pull request as it has been labeled with an integration (`jellyfin`) you are listed as a [code owner](https://github.com/home-assistant/core/blob/dev/CODEOWNERS#L626) for? Thanks!
+
+<details>
+<summary>Code owner commands</summary>
+
+
+Code owners of `jellyfin` can trigger bot actions by commenting:
+
+- `@home-assistant close` Closes the pull request.
+- `@home-assistant rename Awesome new title` Renames the pull request.
+- `@home-assistant reopen` Reopen the pull request.
+- `@home-assistant unassign jellyfin` Removes the current integration label and assignees on the pull request, add the integration domain after the command.
+
+</details>
+
+",2023-07-29T08:34:44Z,False,https://github.com/home-assistant/core/pull/97442,j-stienstra,True,,
+Issue,home-assistant[bot],"<!-- ReviewDrafterComment -->
+Please take a look at the requested changes, and use the **Ready for review** button when you are done, thanks :+1:
+
+[_Learn more about our pull request process._](https://developers.home-assistant.io/docs/review-process#prs-are-being-drafted-when-changes-are-needed)
+",2023-07-29T11:14:03Z,False,https://github.com/home-assistant/core/pull/97442,j-stienstra,True,,
+Issue,frenck,"👋  @j-stienstra Small and friendly notification. It seems like this PR is almost done! Did you maybe miss the last review comment? 
+
+Don't forget to mark this PR ready for review once the last one has been solved.
+
+../Frenck",2023-10-09T06:57:23Z,True,https://github.com/home-assistant/core/pull/97442,j-stienstra,True,,
+Issue,j-stienstra,Thanks @frenck for the reminder. I did see the comment a while back but then promptly forgot all about it ;),2023-10-10T19:06:08Z,True,https://github.com/home-assistant/core/pull/97442,j-stienstra,True,,
+Review,gjohansson-ST,Why do we need this?,2023-07-29T11:12:45Z,True,https://github.com/home-assistant/core/pull/97442,j-stienstra,True,,
+Review,gjohansson-ST,I suggest you have another DATA_SCHEMA without the url so the user doesn't have to fill it (I assume it doesn't change),2023-07-29T11:13:21Z,True,https://github.com/home-assistant/core/pull/97442,j-stienstra,True,,
+Review,j-stienstra,"I'm not sure what you are referring to. If you mean the casting to a dict, that is required in order to be able to update the entry data in the next step.",2023-07-29T19:55:21Z,True,https://github.com/home-assistant/core/pull/97442,j-stienstra,True,,
+Review,j-stienstra,"Yes, good suggestion! I made the change.",2023-07-29T19:55:48Z,True,https://github.com/home-assistant/core/pull/97442,j-stienstra,True,,
+Review,ctalkington,"I think this is different from the typical/suggested way of doing things is why he raised it as question.
+
+https://developers.home-assistant.io/docs/config_entries_config_flow_handler?_highlight=reauth#reauthentication
+
+notably you likely want to store the entry",2023-07-30T00:14:02Z,True,https://github.com/home-assistant/core/pull/97442,j-stienstra,True,,
+Review,gjohansson-ST,"See [here](https://github.com/home-assistant/core/blob/dev/homeassistant/components/sensibo/config_flow.py#L32-L75) as example which is quite similar to what you want to achieve.
+Not sure if it's possible to change the username or if that should also be removed from the schema?",2023-07-30T10:38:55Z,True,https://github.com/home-assistant/core/pull/97442,j-stienstra,True,,
+Review,j-stienstra,"Okay, I'm not sure why entry_data is passed into async_step_reauth if we are not supposed to use it.
+But anyway, I reconfigured the reauth flow to use the example code.
+",2023-07-30T19:07:13Z,True,https://github.com/home-assistant/core/pull/97442,j-stienstra,True,,
+Review,elupus,"This should be a string, not the ex object.",2023-07-30T19:32:51Z,True,https://github.com/home-assistant/core/pull/97442,j-stienstra,True,,
+Review,elupus,"This should be possible to write as:
+```python
+new_input = self.entry.data | user_input
+```",2023-07-30T19:35:36Z,True,https://github.com/home-assistant/core/pull/97442,j-stienstra,True,,
+Review,j-stienstra,"I believe this is exactly as the documentation describes: 
+https://developers.home-assistant.io/docs/config_entries_config_flow_handler#reauthentication",2023-07-31T18:07:07Z,True,https://github.com/home-assistant/core/pull/97442,j-stienstra,True,,
+Review,elupus,"Indeed, it works. I didn't think it would str:ify the sub exception.",2023-07-31T18:45:17Z,True,https://github.com/home-assistant/core/pull/97442,j-stienstra,True,,
+Review,gjohansson-ST,"```suggestion
+        vol.Required(CONF_PASSWORD): str,
+```
+I guess it's required to have a password which can't be """"?",2023-08-03T10:51:45Z,True,https://github.com/home-assistant/core/pull/97442,j-stienstra,True,,
+Review,gjohansson-ST,"```suggestion
+          ""password"": ""[%key:common::config_flow::data::password%]""
+```",2023-08-03T10:52:37Z,True,https://github.com/home-assistant/core/pull/97442,j-stienstra,True,,
+Review,j-stienstra,"It is actually possible to remove a password from a user entirely and authenticate with just a username. Not very safe of course, but possible in Jellyfin.",2023-08-08T18:33:17Z,True,https://github.com/home-assistant/core/pull/97442,j-stienstra,True,,
+Review,gjohansson-ST,😱 ,2023-08-08T19:33:30Z,True,https://github.com/home-assistant/core/pull/97442,j-stienstra,True,,
+Review,j-stienstra,Done!,2023-08-09T18:03:25Z,True,https://github.com/home-assistant/core/pull/97442,j-stienstra,True,,
+Review,j-stienstra,Thanks. That's very Pythonic indeed. The assert is still needed though to satisfy type checks.,2023-08-09T18:04:13Z,True,https://github.com/home-assistant/core/pull/97442,j-stienstra,True,,
+Review,gjohansson-ST,"```suggestion
+```
+Don't think this adds anything right?",2023-08-09T19:58:29Z,True,https://github.com/home-assistant/core/pull/97442,j-stienstra,True,,
+Review,j-stienstra,I suppose we can indeed do without. I removed these lines.,2023-10-10T19:05:08Z,True,https://github.com/home-assistant/core/pull/97442,j-stienstra,True,,
+Review,gjohansson-ST,All these tests that ends with an error should be continued so they end with an abort.,2023-10-12T18:19:00Z,True,https://github.com/home-assistant/core/pull/97442,j-stienstra,True,,
+Review,j-stienstra,Done!,2023-10-21T14:08:38Z,True,https://github.com/home-assistant/core/pull/97442,j-stienstra,True,,
+,,,2023-03-05T13:29:37Z,,https://github.com/home-assistant/core/pull/97442,j-stienstra,True,a48b3716eb10b9cec64c770e16aa4edc63678271,Add reauth to Jellyfin
+,,,2023-07-27T18:56:27Z,,https://github.com/home-assistant/core/pull/97442,j-stienstra,True,d5841d95113223d448bae5f40acf0048722ecebc,Fix test coverage
+,,,2023-07-28T18:34:59Z,,https://github.com/home-assistant/core/pull/97442,j-stienstra,True,056be15ca83cecb7d9ee582e1cb099bdaaf9e98b,Incorporate feedback from earlier PR
+,,,2023-07-29T18:58:17Z,,https://github.com/home-assistant/core/pull/97442,j-stienstra,True,8f66d77f9f59417e29752992da173097e721991a,Use dedicated reauth data schema
+,,,2023-07-29T19:17:25Z,,https://github.com/home-assistant/core/pull/97442,j-stienstra,True,d32364f7d828d28c92568b16cca0e6fc506960e4,Fix tests with reauth input
+,,,2023-07-30T18:41:17Z,,https://github.com/home-assistant/core/pull/97442,j-stienstra,True,5f6b1042eafd8cc50ca10584fe4e109b03532ab7,Store entire config entry on reauth
+,,,2023-07-30T18:56:53Z,,https://github.com/home-assistant/core/pull/97442,j-stienstra,True,2059c8966fbded7f4b3c987161e589413178d0b9,Fix ruff issue after rebase
+,,,2023-08-09T17:52:48Z,,https://github.com/home-assistant/core/pull/97442,j-stienstra,True,7c4e7ffe2534fc42678accd382786a94b27d2ebe,Minor fixes
+,,,2023-10-10T18:42:17Z,,https://github.com/home-assistant/core/pull/97442,j-stienstra,True,5c37573bce0f6a4040ad656bf3002a0f90901fce,Remove title and description from strings
+,,,2023-10-21T13:39:42Z,,https://github.com/home-assistant/core/pull/97442,j-stienstra,True,7db9492bbaf836d8cbd36a0dcc6cb024f4a29c3b,Complete all test flows until abort
+Issue,home-assistant[bot],"
+Hey there @vangorra, mind taking a look at this pull request as it has been labeled with an integration (`withings`) you are listed as a [code owner](https://github.com/home-assistant/core/blob/dev/CODEOWNERS#L1441) for? Thanks!
+
+<details>
+<summary>Code owner commands</summary>
+
+
+Code owners of `withings` can trigger bot actions by commenting:
+
+- `@home-assistant close` Closes the pull request.
+- `@home-assistant rename Awesome new title` Renames the pull request.
+- `@home-assistant reopen` Reopen the pull request.
+- `@home-assistant unassign withings` Removes the current integration label and assignees on the pull request, add the integration domain after the command.
+
+</details>
+
+",2023-10-15T17:47:08Z,False,https://github.com/home-assistant/core/pull/102058,joostlek,True,,
+Review,joostlek,"One problem I am experiencing with this setup is that this is fired at every update, thus creating more entities. I can't really find a nice way to remove this listener after we added the sensor",2023-10-15T17:48:28Z,True,https://github.com/home-assistant/core/pull/102058,joostlek,True,,
+Review,joostlek,"Gave it a shot, curious if this is what we want",2023-10-15T17:55:32Z,True,https://github.com/home-assistant/core/pull/102058,joostlek,True,,
+Review,bdraco,"```suggestion
+        async_add_entities([WithingsBinarySensor(coordinator)])
+```",2023-10-23T02:54:42Z,True,https://github.com/home-assistant/core/pull/102058,joostlek,True,,
+Review,bdraco,"You have this pattern in a few other places, it might be possible to make it a function",2023-10-23T02:55:49Z,True,https://github.com/home-assistant/core/pull/102058,joostlek,True,,
+Review,joostlek,I'll look into this for a follow up,2023-10-23T07:02:16Z,True,https://github.com/home-assistant/core/pull/102058,joostlek,True,,
+Review,MartinHjelmare,Please break long strings around max 88 characters per line.,2023-10-23T07:10:31Z,True,https://github.com/home-assistant/core/pull/102058,joostlek,True,,
+,,,2023-10-15T17:43:59Z,,https://github.com/home-assistant/core/pull/102058,joostlek,True,0b7019ec4c7df6cc52c3c6a8f99d4a7f7fd47c2c,Make Withings bed presence sensor dynamic
+,,,2023-10-15T17:54:51Z,,https://github.com/home-assistant/core/pull/102058,joostlek,True,06953161d0406d7e7ee141c3f99aee19fd72cf94,Make Withings bed presence sensor dynamic
+,,,2023-10-21T19:59:52Z,,https://github.com/home-assistant/core/pull/102058,joostlek,True,9ddb9ed05868d9bb38a785778557db27ffb2cf7d,Merge branch 'dev' into withings_dynamic_bed_presence
+,,,2023-10-23T02:54:13Z,,https://github.com/home-assistant/core/pull/102058,joostlek,True,421e909cff7a3c25eb1105c36d690e2c665b1135,Merge branch 'dev' into withings_dynamic_bed_presence
+,,,2023-10-23T06:54:08Z,,https://github.com/home-assistant/core/pull/102058,joostlek,True,e210b10e3072847043bc4ef134b37a19ff87554e,"Update homeassistant/components/withings/binary_sensor.py
+
+Co-authored-by: J. Nick Koston <nick@koston.org>"
+Issue,homeassistant,"Hi @qistoph, 
+
+It seems you haven't yet signed a CLA. Please do so [here](https://home-assistant.io/developers/cla_sign_start/?pr=home-assistant&#x2F;core#45751).
+
+Once you do that we will be able to review and accept this pull request.
+
+Thanks!
+",2021-01-30T18:14:58Z,True,https://github.com/home-assistant/core/pull/45751,qistoph,False,,
+Issue,probot-home-assistant[bot],"Hey there @home-assistant/core, @emontnemery, mind taking a look at this pull request as its been labeled with an integration (`mqtt`) you are listed as a [codeowner](https://github.com/home-assistant/core/blob/dev/CODEOWNERS#L286) for? Thanks!
+<sub><sup>(message by CodeOwnersMention)</sup></sub>",2021-01-30T18:15:57Z,False,https://github.com/home-assistant/core/pull/45751,qistoph,False,,
+Issue,emontnemery,"I think this is a good idea, but please add or extend tests to verify the `entity_id` variable is present and working as intended.
+Also, it would be good to get it done for all MQTT components, for example it's still missing from MQTT light, basic schema.
+Finally, we need a documentation PR also.",2021-02-01T12:18:10Z,True,https://github.com/home-assistant/core/pull/45751,qistoph,False,,
+Issue,frenck,I wonder if we implement this if people would expect this to work in other places as well?,2021-02-01T12:23:10Z,True,https://github.com/home-assistant/core/pull/45751,qistoph,False,,
+Issue,qistoph,"> I think this is a good idea, but please add or extend tests to verify the `entity_id` variable is present and working as intended.
+> Also, it would be good to get it done for all MQTT components, for example it's still missing from MQTT light, basic schema.
+> Finally, we need a documentation PR also.
+
+Thanks for the feedback I'll try to work everything out and update my progress here.
+
+> I wonder if we implement this if people would expect this to work in other places as well?
+
+I was also wondering about that. Actually I was, at first, already under the impression variables such as `entity_id` would be available and then had to figure out the work around.
+
+Then again, the MQTT component is probably a component that is used for customization more than most others. As such it might be a good place to start and work it out from there to other components.",2021-02-02T17:09:44Z,False,https://github.com/home-assistant/core/pull/45751,qistoph,False,,
+Issue,emontnemery,"`entity_id` is already available as a template variable in other places where it makes sense, for example as part of trigger data.",2021-02-02T19:11:08Z,True,https://github.com/home-assistant/core/pull/45751,qistoph,False,,
+Issue,emontnemery,Would it make sense to provide the `entity_id` as a variable also to the command templates?,2021-02-02T19:17:13Z,True,https://github.com/home-assistant/core/pull/45751,qistoph,False,,
+Issue,emontnemery,@qistoph do you plan to finish this PR?,2021-02-17T08:24:44Z,True,https://github.com/home-assistant/core/pull/45751,qistoph,False,,
+Issue,qistoph,"> @qistoph do you plan to finish this PR?
+
+Yes, though I've been a little busy lately and unable to give you an eta
+
+Feel free to close it if that helps you keep an overview. I'll re-open it (can I?) when updates are pushed",2021-02-17T09:27:49Z,False,https://github.com/home-assistant/core/pull/45751,qistoph,False,,
+Issue,github-actions[bot],"There hasn't been any activity on this pull request recently. This pull request has been automatically marked as stale because of that and will be closed if no further activity occurs within 7 days.
+Thank you for your contributions.",2021-03-19T10:22:53Z,False,https://github.com/home-assistant/core/pull/45751,qistoph,False,,
+Review,emontnemery,"The implication here is that you want to be notified each time an issue is reported on the MQTT integration and help out to fix bugs and review PRs, is that your intention?
+
+Whichever the case, open a separate PR for that.",2021-02-01T12:06:59Z,True,https://github.com/home-assistant/core/pull/45751,qistoph,False,,
+Review,emontnemery,Same,2021-02-01T12:08:05Z,True,https://github.com/home-assistant/core/pull/45751,qistoph,False,,
+Review,emontnemery,"You need to update the default lambda when there is no template, see the failing CI test.",2021-02-01T12:12:39Z,True,https://github.com/home-assistant/core/pull/45751,qistoph,False,,
+Review,qistoph,"Thanks for the feedback. That was indeed not my intention, but done because of an error suggesting I had to in the `pre-commit` hook. I'll remove myself from codeowners in a PR update.",2021-02-02T16:35:11Z,False,https://github.com/home-assistant/core/pull/45751,qistoph,False,,
+Review,qistoph,Same,2021-02-02T16:35:18Z,False,https://github.com/home-assistant/core/pull/45751,qistoph,False,,
+Review,qistoph,Added in 2c70b7a87c.,2021-02-02T17:20:27Z,False,https://github.com/home-assistant/core/pull/45751,qistoph,False,,
+,,,2021-01-30T18:01:57Z,,https://github.com/home-assistant/core/pull/45751,qistoph,False,3ddbd1bb98b67a8d407d9295674c0bd2d891252a,Make entity_id available in MQTT component templates
+,,,2021-02-02T16:33:54Z,,https://github.com/home-assistant/core/pull/45751,qistoph,False,1581dc59819a49d99304aa524d9ff6f510754f9e,Remove myself from codeowners
+,,,2021-02-02T16:58:01Z,,https://github.com/home-assistant/core/pull/45751,qistoph,False,2c70b7a87c42eed113aa20c81bf6b2bbdf53c634,Fix climate default lambda
+,,,2021-02-02T16:58:23Z,,https://github.com/home-assistant/core/pull/45751,qistoph,False,7d4c33001d07a3443e59ea45245f7680ff51f435,"Add missing MQTT light, basic_schema"
+Issue,probot-home-assistant[bot],"Hey there @tuya, @zlinoliver, @metisu, @frenck, mind taking a look at this pull request as it has been labeled with an integration (`tuya`) you are listed as a [code owner](https://github.com/home-assistant/core/blob/dev/CODEOWNERS#L551) for? Thanks!
+<sub><sup>(message by CodeOwnersMention)</sup></sub>",2021-11-05T10:04:51Z,False,https://github.com/home-assistant/core/pull/59144,iMarkus,False,,
+Issue,frenck,Closing this PR as it has been running stale. Feel free to re-open when ready to work in it again. 👍 ,2022-02-07T10:02:46Z,True,https://github.com/home-assistant/core/pull/59144,iMarkus,False,,
+Review,frenck,Is this a measurement or a setting?,2021-11-05T12:37:39Z,True,https://github.com/home-assistant/core/pull/59144,iMarkus,False,,
+Review,frenck,"This counts down the number of seconds. We don't allow that in sensors, instead calculate the datetime of when the timer finishes and use that (give it the `timestamp` device class as well).
+
+Additionally, this isn't a measurement?",2021-11-05T12:38:49Z,True,https://github.com/home-assistant/core/pull/59144,iMarkus,False,,
+Review,frenck,"Missing temperature, humidity, water quantity, rain sensor information, total water consumption?",2021-11-05T12:39:35Z,True,https://github.com/home-assistant/core/pull/59144,iMarkus,False,,
+Review,frenck,"I don't see the child lock in the specifications, nor in your provided data dump?",2021-11-05T12:40:34Z,True,https://github.com/home-assistant/core/pull/59144,iMarkus,False,,
+Review,iMarkus,Absolutely correct this is a setting.,2021-11-07T07:24:56Z,False,https://github.com/home-assistant/core/pull/59144,iMarkus,False,,
+Review,frenck,"Than it shouldn't be marked as measurement...
+
+Instead mark it as an config category entity",2021-11-07T07:41:03Z,True,https://github.com/home-assistant/core/pull/59144,iMarkus,False,,
+Review,iMarkus,"Correct, removed.",2021-11-07T07:43:43Z,False,https://github.com/home-assistant/core/pull/59144,iMarkus,False,,
+Review,frenck,"Look at this again, countdown is actually a function as well, not just a status. Because of that reason, it should be a number entity, not a sensor.",2021-11-07T07:53:40Z,True,https://github.com/home-assistant/core/pull/59144,iMarkus,False,,
+Review,frenck,It could be start as well?,2021-11-07T07:54:46Z,True,https://github.com/home-assistant/core/pull/59144,iMarkus,False,,
+Review,iMarkus,Yes,2021-11-07T07:57:13Z,False,https://github.com/home-assistant/core/pull/59144,iMarkus,False,,
+Review,iMarkus,Haven't added this because I cannot test and verify. Mine is just supporting battery and countdown.,2021-11-07T09:00:19Z,False,https://github.com/home-assistant/core/pull/59144,iMarkus,False,,
+Review,frenck,"We can use the docs to add them, and create a virtual device in the cloud platform to test that ",2021-11-07T09:01:39Z,True,https://github.com/home-assistant/core/pull/59144,iMarkus,False,,
+Review,frenck,"In that case, we need to support that, as right now, it only handles the switch ",2021-11-07T09:02:52Z,True,https://github.com/home-assistant/core/pull/59144,iMarkus,False,,
+Review,iMarkus,As mine is also not supporting start I need to add a virtual device as proposed by you and test it.,2021-11-07T09:10:03Z,False,https://github.com/home-assistant/core/pull/59144,iMarkus,False,,
+Review,iMarkus,Are you able to find an Irrigator as virtual device. I cannot find one here: https://iot.tuya.com/pmg/solution,2021-11-10T08:49:51Z,False,https://github.com/home-assistant/core/pull/59144,iMarkus,False,,
+Review,frenck,"😧 What the heck?
+Ok, lets implement what you have in this point in that case, but lets add it as a note/comment to the entity descriptions that not all from the spec is implemented.",2021-11-10T09:48:11Z,True,https://github.com/home-assistant/core/pull/59144,iMarkus,False,,
+Review,iMarkus,"Actually it counts down the minutes left.
+
+countdown_left | Remaining time of countdown | Integer | {“unit”:“min”,“min”:0,“max”:1440,“scale”:0,“step”:1}
+
+I am not sure how to add this one correctly.",2021-11-10T10:18:26Z,False,https://github.com/home-assistant/core/pull/59144,iMarkus,False,,
+Review,iMarkus,@frenck can you give me a hint or support on calculation of the datetime when the timer finishes? Currently I am using it as a sensor and it updates every minute until 0. Indeed it is not bad to see how much minutes are left instead of a timestamp.,2021-11-11T08:26:12Z,False,https://github.com/home-assistant/core/pull/59144,iMarkus,False,,
+Review,frenck,Calculate a datetime instead and return that :),2021-11-29T16:21:14Z,True,https://github.com/home-assistant/core/pull/59144,iMarkus,False,,
+,,,2021-11-05T07:35:08Z,,https://github.com/home-assistant/core/pull/59144,iMarkus,False,2edfa45c051f8816c9f6d503776380df3a40ffd7,Add support for Irrigator (ggq) in Tuya
+,,,2021-11-05T07:37:41Z,,https://github.com/home-assistant/core/pull/59144,iMarkus,False,f65176a179d30e864ba02f0bed307e9095cee6f1,Add support for Irrigator (ggq) in Tuya
+,,,2021-11-05T09:25:18Z,,https://github.com/home-assistant/core/pull/59144,iMarkus,False,6c93dd82af427a5e57aefc3549294ab39dcfeb3a,Add support for Irrigator (ggq) in Tuya
+,,,2021-11-05T09:28:31Z,,https://github.com/home-assistant/core/pull/59144,iMarkus,False,e2de16fc266fb20a0a06457dbd9475da50ec0391,Add support for Irrigator (ggq) in Tuya
+,,,2021-11-05T10:15:20Z,,https://github.com/home-assistant/core/pull/59144,iMarkus,False,2957f24154d6d4d20fffe1173f4051a0fc10f7fc,Removed trailing whitespace
+,,,2021-11-07T07:43:09Z,,https://github.com/home-assistant/core/pull/59144,iMarkus,False,b6895eed03aa2ab985d7559bc9779c0198517e11,Removed Child Lock
+,,,2021-11-09T12:30:18Z,,https://github.com/home-assistant/core/pull/59144,iMarkus,False,f514f36ebcdff3a72df950ab6f2d42a17279185b,Added Start
+,,,2021-11-09T12:38:37Z,,https://github.com/home-assistant/core/pull/59144,iMarkus,False,a1d3688e35e21152678e549ffbf9278b5673a0dd,Update switch.py
+,,,2021-11-10T10:20:48Z,,https://github.com/home-assistant/core/pull/59144,iMarkus,False,fd6959b29720c4347526a41c64c4ebca2d6dc5c6,Add support for Irrigator (ggq) in Tuya
+,,,2021-11-10T11:08:54Z,,https://github.com/home-assistant/core/pull/59144,iMarkus,False,beb79e391dbd666ae1e039a1e9cfa5526db5c7b1,Countdown moved to number.py
+Issue,home-assistant[bot],"
+Hey there @home-assistant/core, mind taking a look at this pull request as it has been labeled with an integration (`media_player`) you are listed as a [code owner](https://github.com/home-assistant/core/blob/dev/CODEOWNERS#L758) for? Thanks!
+
+<details>
+<summary>Code owner commands</summary>
+
+
+Code owners of `media_player` can trigger bot actions by commenting:
+
+- `@home-assistant close` Closes the pull request.
+- `@home-assistant rename Awesome new title` Renames the pull request.
+- `@home-assistant reopen` Reopen the pull request.
+- `@home-assistant unassign media_player` Removes the current integration label and assignees on the pull request, add the integration domain after the command.
+- `@home-assistant add-label needs-more-information` Add a label (needs-more-information, problem in dependency, problem in custom component) to the pull request.
+- `@home-assistant remove-label needs-more-information` Remove a label (needs-more-information, problem in dependency, problem in custom component) on the pull request.
+
+</details>
+
+",2023-12-18T18:56:08Z,False,https://github.com/home-assistant/core/pull/105999,mib1185,True,,
+Issue,mib1185,- draft to wait for #106005,2023-12-18T19:45:07Z,True,https://github.com/home-assistant/core/pull/105999,mib1185,True,,
+Review,MartinHjelmare,Taking the difference between two constants gives another constant. Define that constant at the module level.,2023-12-30T02:02:56Z,True,https://github.com/home-assistant/core/pull/105999,mib1185,True,,
+Review,mib1185,"```python
+SIGNIFICANT_ATTRIBUTES: set[str] = {
+    ATTR_ENTITY_PICTURE_LOCAL,
+    ATTR_GROUP_MEMBERS,
+    *ATTR_TO_PROPERTY,
+} ^ {ATTR_MEDIA_POSITION, ATTR_MEDIA_POSITION_UPDATED_AT}
+```
+
+would this be ok to just have `SIGNIFICANT_ATTRIBUTES`? if yes, i'll create a PR",2023-12-30T14:39:56Z,True,https://github.com/home-assistant/core/pull/105999,mib1185,True,,
+Review,mib1185,"or maybe this one (_imo looks more readable_)🤔 
+```python
+INSIGNIFICANT_ATTRIBUTES: set[str] = {
+    ATTR_MEDIA_POSITION,
+    ATTR_MEDIA_POSITION_UPDATED_AT,
+}
+
+SIGNIFICANT_ATTRIBUTES: set[str] = {
+    ATTR_ENTITY_PICTURE_LOCAL,
+    ATTR_GROUP_MEMBERS,
+    *ATTR_TO_PROPERTY,
+} ^ INSIGNIFICANT_ATTRIBUTES
+```",2023-12-30T14:41:08Z,True,https://github.com/home-assistant/core/pull/105999,mib1185,True,,
+Review,MartinHjelmare,"Yes, but note that the difference is not the same as the symmetric difference of two sets.",2023-12-30T14:44:11Z,True,https://github.com/home-assistant/core/pull/105999,mib1185,True,,
+Review,mib1185,"uhhh ... good to known 👍 
+
+```python
+Python 3.11.4 (main, Jun  7 2023, 18:32:58) [GCC 10.2.1 20210110] on linux
+Type ""help"", ""copyright"", ""credits"" or ""license"" for more information.
+>>> a = {1,2,3,4,5,6}
+>>> b = {3,5,7}
+>>> a - b
+{1, 2, 4, 6}
+>>> a ^ b
+{1, 2, 4, 6, 7}
+```
+
+than it should be like this, right?
+
+```
+INSIGNIFICANT_ATTRIBUTES: set[str] = {
+    ATTR_MEDIA_POSITION,
+    ATTR_MEDIA_POSITION_UPDATED_AT,
+}
+
+SIGNIFICANT_ATTRIBUTES: set[str] = {
+    ATTR_ENTITY_PICTURE_LOCAL,
+    ATTR_GROUP_MEMBERS,
+    *ATTR_TO_PROPERTY,
+} - INSIGNIFICANT_ATTRIBUTES
+```",2023-12-30T14:52:00Z,True,https://github.com/home-assistant/core/pull/105999,mib1185,True,,
+Review,MartinHjelmare,Yes. 👍 ,2023-12-30T15:22:40Z,True,https://github.com/home-assistant/core/pull/105999,mib1185,True,,
+Review,mib1185,- #106727 ✅ ,2023-12-30T15:42:30Z,True,https://github.com/home-assistant/core/pull/105999,mib1185,True,,
+,,,2023-12-18T18:55:04Z,,https://github.com/home-assistant/core/pull/105999,mib1185,True,7e7e851e018d2c4030e6a96e77e4c520943a3527,add significant change support
+,,,2023-12-18T21:10:59Z,,https://github.com/home-assistant/core/pull/105999,mib1185,True,8cbea018ab0f262114cb041e5f7b339c4cb3b84b,use check_valid_float helper
+Issue,home-assistant[bot],"<!-- ReviewDrafterComment -->
+Please take a look at the requested changes, and use the **Ready for review** button when you are done, thanks :+1:
+
+[_Learn more about our pull request process._](https://developers.home-assistant.io/docs/review-process#prs-are-being-drafted-when-changes-are-needed)
+",2023-10-18T09:55:17Z,False,https://github.com/home-assistant/core/pull/102217,iliessens,False,,
+Issue,iliessens,"Hi!
+
+I created a new PR #105796 with the media playback changes. I will try finishing up the audio part (and take out the media playback) next week in this PR.",2023-12-15T11:29:13Z,False,https://github.com/home-assistant/core/pull/102217,iliessens,False,,
+Issue,emontnemery,@iliessens please mark the PR as ready for review when you're finished with your changes.,2023-12-18T15:46:24Z,True,https://github.com/home-assistant/core/pull/102217,iliessens,False,,
+Issue,github-actions[bot],"There hasn't been any activity on this pull request recently. This pull request has been automatically marked as stale because of that and will be closed if no further activity occurs within 7 days.
+If you are the author of this PR, please leave a comment if you want to keep it open. Also, please rebase your PR onto the latest dev branch to ensure that it's up to date with the latest changes.
+Thank you for your contribution!",2024-02-16T17:11:24Z,False,https://github.com/home-assistant/core/pull/102217,iliessens,False,,
+,,,2023-12-15T11:37:19Z,,https://github.com/home-assistant/core/pull/102217,iliessens,False,027ef10d831cae9881caa4948420104ce7d7a401,Add volume control and bump pdunehd version
+Issue,koying,Thanks for the review 🥇 ,2021-10-28T18:11:44Z,False,https://github.com/home-assistant/core/pull/57536,koying,False,,
+Issue,frenck,@koying There is a merge conflict on this PR. Could you resolve this by git rebasing this PR onto the latest `dev` branch?,2022-01-03T14:39:41Z,True,https://github.com/home-assistant/core/pull/57536,koying,False,,
+Issue,emontnemery,Looks like a rebase went wrong,2022-01-03T17:31:21Z,True,https://github.com/home-assistant/core/pull/57536,koying,False,,
+Issue,koying,When you have `git rebase upstream/master` in your fingers 🙄,2022-01-03T17:56:13Z,False,https://github.com/home-assistant/core/pull/57536,koying,False,,
+Issue,bdraco,I didn't merge this because I wanted to review it against the changes in #61296 but haven't had time to come back and validate if additional adjustments will be needed or not.,2022-01-20T20:57:48Z,True,https://github.com/home-assistant/core/pull/57536,koying,False,,
+Issue,koying,"No clue what's the intent, but only the first *word* is prevented to to be templatized, currently.
+
+If it's a ""security"" measure, it's so easily bypassed that it's just an hindrance for legit usage.",2022-01-20T23:39:45Z,False,https://github.com/home-assistant/core/pull/57536,koying,False,,
+Issue,balloob,"We have similar code here: https://github.com/home-assistant/core/blob/dev/homeassistant/components/shell_command/__init__.py#L61-L71
+
+If it can be bypassed I suggest we fix that?",2022-01-21T05:06:38Z,True,https://github.com/home-assistant/core/pull/57536,koying,False,,
+Issue,koying,"There is no ""fixing it"" as far as I can see. The concept is flawed as a safety measure.
+How would you prevent this?
+
+```
+- platform: command_line
+  name: template_test
+  command: ""true && {{ 'my_dirty_command' }}""
+```
+
+and I can see plenty of other ways.
+
+If it's supposed to be a security measure, maybe start by not running HA as root in the container and use permissions ;)",2022-01-21T07:51:39Z,False,https://github.com/home-assistant/core/pull/57536,koying,False,,
+Issue,github-actions[bot],"There hasn't been any activity on this pull request recently. This pull request has been automatically marked as stale because of that and will be closed if no further activity occurs within 7 days.
+Thank you for your contributions.",2022-04-24T21:05:33Z,False,https://github.com/home-assistant/core/pull/57536,koying,False,,
+Review,bdraco,"If a ternary spans multiple lines, our standard is to convert it to an if/else block.",2021-10-27T17:46:12Z,True,https://github.com/home-assistant/core/pull/57536,koying,False,,
+Review,bdraco,"If a ternary spans multiple lines, our standard is to convert it to an if/else block.
+
+",2021-10-27T17:46:50Z,True,https://github.com/home-assistant/core/pull/57536,koying,False,,
+Review,bdraco,"It looks like `switch.py` was intentionally suppressing the logging
+
+`call_shell_with_timeout(command, self._timeout, log_return_code=False) == 0`
+
+It looks like its going to go through the `call_shell_with_value` path now so it shouldn't be an issue.  
+
+Please add a test to verify that we don't get any unexpected logging with turning on/off the switch with a non-zero return code using the `caplog` fixture.
+",2021-10-27T17:51:15Z,True,https://github.com/home-assistant/core/pull/57536,koying,False,,
+Review,bdraco,"```suggestion
+async def test_state_off_without_log(caplog: pytest.LogCaptureFixture, hass: HomeAssistant) -> None:
+```",2021-10-28T18:40:59Z,True,https://github.com/home-assistant/core/pull/57536,koying,False,,
+,,,2021-10-11T16:08:43Z,,https://github.com/home-assistant/core/pull/57536,koying,False,2bb9cbcd7faa5d991011634541d29bcda14c9c3f,Rationalize command_line templates
+,,,2021-10-28T18:07:26Z,,https://github.com/home-assistant/core/pull/57536,koying,False,0e9f06541fe9a870210b9aa1d22fc4c067c1bb40,assert no logging with retcode <> 0
+,,,2021-10-28T18:09:19Z,,https://github.com/home-assistant/core/pull/57536,koying,False,d1585631ee553346260324f68843caab9ef29159,ternary -> if/else when no default
+,,,2021-10-28T18:51:24Z,,https://github.com/home-assistant/core/pull/57536,koying,False,156180f5d1c211b55324a6639a4c5a0fcaaba172,"Update tests/components/command_line/test_switch.py
+
+Co-authored-by: J. Nick Koston <nick@koston.org>"
+,,,2021-10-29T10:29:39Z,,https://github.com/home-assistant/core/pull/57536,koying,False,cefdd5459c8f1038c278d0bb9802be3c9eb87af3,fixup
+Issue,probot-home-assistant[bot],"Hey there @home-assistant/core, mind taking a look at this pull request as it has been labeled with an integration (`file_upload`) you are listed as a [code owner](https://github.com/home-assistant/core/blob/dev/CODEOWNERS#L332) for? Thanks!
+<sub><sup>(message by CodeOwnersMention)</sup></sub>",2022-08-21T21:21:49Z,False,https://github.com/home-assistant/core/pull/77117,marvin-w,True,,
+Issue,pvizeli,"another way for not jump 100x times into a thread is to use deque from functiontools which is none blocking, and write each junk into queue and write it inside the thread. So there would be only 1 context switch
+
+or:
+https://github.com/aio-libs/janus",2022-09-01T07:58:40Z,True,https://github.com/home-assistant/core/pull/77117,marvin-w,True,,
+Issue,marvin-w,"> another way for not jump 100x times into a thread is to use deque from functiontools which is none blocking, and write each junk into queue and write it inside the thread. So there would be only 1 context switch
+> 
+> or: https://github.com/aio-libs/janus
+
+The point of a streaming file upload is to not write the whole content to RAM first. Yes, we could do this but it will increase the RAM usage for larger files and then we might as well just revert the whole streaming approach.",2022-09-01T08:09:11Z,True,https://github.com/home-assistant/core/pull/77117,marvin-w,True,,
+Issue,pvizeli,"Correct, with Janus you stream it into the thread, so you don't have a context switch and waiting for a thread after each junk. You can also limit the buffer and it get wait on the async part until the thread processed the buffer",2022-09-01T09:23:23Z,True,https://github.com/home-assistant/core/pull/77117,marvin-w,True,,
+Issue,balloob,"@marvin-w you can still achieve that with janus by calling `join()` on the Janus queue when it gets too full before adding more files.
+
+https://github.com/aio-libs/janus/blob/master/janus/__init__.py#L602",2022-10-14T14:01:11Z,True,https://github.com/home-assistant/core/pull/77117,marvin-w,True,,
+Issue,marvin-w,"> @marvin-w you can still achieve that with janus by calling `join()` on the Janus queue when it gets too full before adding more files.
+> 
+> https://github.com/aio-libs/janus/blob/master/janus/__init__.py#L602
+
+I gave it a shot, it is working. However, I'm not 100% sure if it is correct like that. Especially the future handling looks kind of dirty. Open for suggestions :).",2022-10-14T19:09:04Z,True,https://github.com/home-assistant/core/pull/77117,marvin-w,True,,
+Review,balloob,Since you only use it to track first. Why not make it a boolean?,2022-08-22T21:32:38Z,True,https://github.com/home-assistant/core/pull/77117,marvin-w,True,,
+Review,balloob,It feels so dirty. Is there any way we can use [`shutil.copyfileobj`](https://docs.python.org/3/library/shutil.html#shutil.copyfileobj) ? I guess we can't because aiohttp is async.,2022-08-22T21:33:49Z,True,https://github.com/home-assistant/core/pull/77117,marvin-w,True,,
+Review,balloob,"Instead of including a large file in the repo, generate one on the fly in the test. You can use [`StringIO`](https://docs.python.org/3/library/io.html#io.StringIO)",2022-08-22T21:38:39Z,True,https://github.com/home-assistant/core/pull/77117,marvin-w,True,,
+Review,balloob,I think that you can even just implement BaseIO and generate the string on the fly.,2022-08-22T21:39:14Z,True,https://github.com/home-assistant/core/pull/77117,marvin-w,True,,
+Review,bdraco,Open the file in the executor and keep it open. Then do each write in the executor. Make sure you close the file handle if anything fails in a finally,2022-08-31T03:53:14Z,True,https://github.com/home-assistant/core/pull/77117,marvin-w,True,,
+Review,marvin-w,Why not completely remove it instead yiha!,2022-08-31T21:23:32Z,True,https://github.com/home-assistant/core/pull/77117,marvin-w,True,,
+Review,marvin-w,As far as I know we can't...,2022-08-31T21:23:54Z,True,https://github.com/home-assistant/core/pull/77117,marvin-w,True,,
+Review,marvin-w,I used `tempfile` for it and made it a fixture. Same result without a checked in file.,2022-08-31T21:24:19Z,True,https://github.com/home-assistant/core/pull/77117,marvin-w,True,,
+Review,marvin-w,Thanks! Implemented it like that and it actually makes everything look much cleaner.,2022-08-31T21:24:44Z,True,https://github.com/home-assistant/core/pull/77117,marvin-w,True,,
+Review,balloob,"Don't assign to `self`, this view could be invoked multiple times. Instead use `nonlocal`",2022-09-01T02:39:10Z,True,https://github.com/home-assistant/core/pull/77117,marvin-w,True,,
+Review,balloob,Move the dir creation code to when you set file handle. That saves a trip to the executor.,2022-09-01T02:39:31Z,True,https://github.com/home-assistant/core/pull/77117,marvin-w,True,,
+Review,balloob,The problem is that this does a lot of I/O. At least uploading we should be able to use a virtual file. ,2022-09-01T02:40:51Z,True,https://github.com/home-assistant/core/pull/77117,marvin-w,True,,
+Review,marvin-w,"Good point, adjusted",2022-09-01T07:57:42Z,True,https://github.com/home-assistant/core/pull/77117,marvin-w,True,,
+Review,marvin-w,Adjusted,2022-09-01T07:57:52Z,True,https://github.com/home-assistant/core/pull/77117,marvin-w,True,,
+Review,balloob,doesn't have to be nonlocal anymore.,2022-10-14T20:20:59Z,True,https://github.com/home-assistant/core/pull/77117,marvin-w,True,,
+Review,balloob,"You should call [`task_done`](https://github.com/aio-libs/janus/blob/master/janus/__init__.py#L290-L298)
+
+```suggestion
+                while _chunk := sync_q.get():
+                    file_handle.write(_chunk)
+                    sync_q.task_done()
+```",2022-10-14T20:22:32Z,True,https://github.com/home-assistant/core/pull/77117,marvin-w,True,,
+Review,balloob,"instead of using an actual file to upload, can we just pass a TextIO https://docs.python.org/3/library/io.html#text-i-o",2022-10-14T20:24:18Z,True,https://github.com/home-assistant/core/pull/77117,marvin-w,True,,
+Review,marvin-w,"Oh upps, you mentioned that earlier, should be fine now!",2022-10-14T20:49:56Z,True,https://github.com/home-assistant/core/pull/77117,marvin-w,True,,
+Review,balloob,"Instead of doing an `open` like this with a finally, use a with statement:
+
+```python
+with (file_dir / _file_name).open(""wb"") as file_handle:
+    ...
+```
+
+it will automatically close when you're done. ",2022-10-14T20:52:40Z,True,https://github.com/home-assistant/core/pull/77117,marvin-w,True,,
+Review,balloob,it's always none.,2022-10-14T20:52:46Z,True,https://github.com/home-assistant/core/pull/77117,marvin-w,True,,
+Review,balloob,an empty byte chunk will now stop it too. Not sure if that can happen. Better to test for `None` ? ,2022-10-14T20:53:30Z,True,https://github.com/home-assistant/core/pull/77117,marvin-w,True,,
+Review,marvin-w,Dont think this will happen but I tested for `None` now anyway,2022-10-14T20:59:43Z,True,https://github.com/home-assistant/core/pull/77117,marvin-w,True,,
+Review,balloob,"Don't really need a fixture for this, it's only used once. You can do btw:
+```suggestion
+@pytest.fixture
+def large_file_io() -> StringIO:
+    """"""Generate a large file on the fly.""""""
+    return StringIO(
+            1000 *
+            ""Home Assistant is awesome. Open source home automation that puts local control and privacy first.""
+        )
+```
+
+I actually am thinking if we really need to write such a big file. Instead, can we patch out `ONE_MEGABYTE` and so read out smaller chunks to test out all the queue stuff ? That way we avoid memory jumping and huge I/O during tests",2022-10-15T18:16:09Z,True,https://github.com/home-assistant/core/pull/77117,marvin-w,True,,
+Review,balloob,This puts the whole file in memory twice. Should we do this streaming ? ,2022-10-15T18:16:54Z,True,https://github.com/home-assistant/core/pull/77117,marvin-w,True,,
+Review,marvin-w,"Was on vacay, will have a look this week :).",2022-10-25T18:33:33Z,True,https://github.com/home-assistant/core/pull/77117,marvin-w,True,,
+Review,marvin-w,"Brilliant idea, that works flawlessly!",2022-10-26T08:54:23Z,True,https://github.com/home-assistant/core/pull/77117,marvin-w,True,,
+Review,marvin-w,With the file now being really small anyway I would assume we can ignore this?,2022-10-26T08:54:53Z,True,https://github.com/home-assistant/core/pull/77117,marvin-w,True,,
+Review,marvin-w,"MQTT  also depends on file_upload, which now has janus as an additional dependency",2022-11-29T18:49:23Z,True,https://github.com/home-assistant/core/pull/77117,marvin-w,True,,
+,,,2022-08-21T20:03:40Z,,https://github.com/home-assistant/core/pull/77117,marvin-w,True,9e7ae474e02fe3df218a618e53404f9ab6bf9c2e,Increase file upload limit to 100 MB
+,,,2022-08-21T20:12:10Z,,https://github.com/home-assistant/core/pull/77117,marvin-w,True,0a483ec8542fe82f1f8e1fd51f6cc6eb3f453356,Remove comment
+,,,2022-08-21T21:20:27Z,,https://github.com/home-assistant/core/pull/77117,marvin-w,True,970367d2c9cf8ceffabd38516b576d954a68082f,Add test and fix chunk processing
+,,,2022-08-21T21:35:34Z,,https://github.com/home-assistant/core/pull/77117,marvin-w,True,ec88588f6787f44cbcc2af63f42d1d323c80bca5,Add test for wrong field
+,,,2022-08-31T21:19:47Z,,https://github.com/home-assistant/core/pull/77117,marvin-w,True,0fc9b61dc61f40f4abb76a33a90f7cdb3124e29c,Add review suggestions
+,,,2022-09-01T07:57:30Z,,https://github.com/home-assistant/core/pull/77117,marvin-w,True,669b8e25b0c481e8ebbc7ab66a0c1191803c32f6,Use nonlocal and remove unneeded executor task
+,,,2022-10-14T19:02:25Z,,https://github.com/home-assistant/core/pull/77117,marvin-w,True,3f139e52f755147b89fff15b6f4bad7c9afb1ce9,Use Janus to process chunk uploading
+,,,2022-10-14T20:48:58Z,,https://github.com/home-assistant/core/pull/77117,marvin-w,True,a0fe9072c52b5ddfe6906e5874d5fd16648bf300,Address review comments
+,,,2022-10-14T20:59:02Z,,https://github.com/home-assistant/core/pull/77117,marvin-w,True,a4f94e176af28572e2e199250b289b0b6fd1b6f2,Address review comments #2
+,,,2022-10-26T08:53:57Z,,https://github.com/home-assistant/core/pull/77117,marvin-w,True,6bf0022da8afe88c93c361da78a72f3d4e66b876,Improve tests
+,,,2022-10-28T17:17:31Z,,https://github.com/home-assistant/core/pull/77117,marvin-w,True,943b3abcbbe581cfaa13eb8b112a2950ffe9f008,Merge branch 'dev' into feat/increase_max_size_upload
+,,,2022-11-29T18:05:16Z,,https://github.com/home-assistant/core/pull/77117,marvin-w,True,4eb3a790c91d0aa752aedcb912f179a7fe4eddc4,Merge branch 'dev' into feat/increase_max_size_upload
+,,,2022-11-29T18:48:15Z,,https://github.com/home-assistant/core/pull/77117,marvin-w,True,4346cd40b8f470d9708b04a7b4b5814dc1a5bb67,Fix discovery test
+,,,2022-11-29T23:26:16Z,,https://github.com/home-assistant/core/pull/77117,marvin-w,True,c39b80e974492a8989df9263bdfface6d03210a3,Merge branch 'dev' into feat/increase_max_size_upload
+,,,2022-11-29T23:51:07Z,,https://github.com/home-assistant/core/pull/77117,marvin-w,True,a6c34ef58464f947ace2622ee3bfb53d04f1f01f,Fix tests
+Issue,home-assistant[bot],"
+Hi @gmsoft-tuxicoman
+
+It seems you haven't yet signed a CLA. Please do so [here](https://home-assistant.io/developers/cla_sign_start/?pr=home-assistant/core#87546).
+
+Once you do that we will be able to review and accept this pull request.
+
+Thanks!
+",2023-02-06T14:23:24Z,False,https://github.com/home-assistant/core/pull/87546,gmsoft-tuxicoman,False,,
+Issue,home-assistant[bot],"
+Hey there @dmulcahey, @adminiuga, @puddly, mind taking a look at this pull request as it has been labeled with an integration (`zha`) you are listed as a [code owner](https://github.com/home-assistant/core/blob/dev/CODEOWNERS#L1394) for? Thanks!
+
+<details>
+<summary>Code owner commands</summary>
+
+
+Code owners of `zha` can trigger bot actions by commenting:
+
+- `@home-assistant close` Closes the issue.
+- `@home-assistant rename Awesome new title` Change the title of the issue.
+- `@home-assistant reopen` Reopen the issue.
+- `@home-assistant unassign zha` Removes the current integration label and assignees on the issue, add the integration domain after the command.
+
+</details>
+
+",2023-02-06T14:23:30Z,False,https://github.com/home-assistant/core/pull/87546,gmsoft-tuxicoman,False,,
+Issue,MattWestb,"Is it possible doing the same here so not need adding devices in ZHA every time new TRVs is showing up ?
+https://github.com/home-assistant/core/blob/746afb70badb8772648d49c912f83719fcbc30f7/homeassistant/components/zha/climate.py#L760-L774",2023-02-06T16:32:01Z,False,https://github.com/home-assistant/core/pull/87546,gmsoft-tuxicoman,False,,
+Issue,javicalle,"> Is it possible doing the same here so not need adding devices in ZHA every time new TRVs is showing up ?
+
+Not the same case.
+There can be (and will be) a lot of devices with the `channel_names=CHANNEL_THERMOSTAT` that wouldn't have the ZONNSMART presets, at least all the not quirked devices.
+
+@gmsoft-tuxicoman code points to `channel_names=""tuya_manufacturer""` devices. Not sure if only the quirked ones will match here and that is a question that I will ask to him.
+Have you tested the PR against devices with the matching signature (`channel_names=""tuya_manufacturer"", models={""TS0601""}`) but without a quirk applied? ",2023-02-06T17:00:17Z,True,https://github.com/home-assistant/core/pull/87546,gmsoft-tuxicoman,False,,
+Issue,MattWestb,"@javicalle Is it possible overriding the manufacture ""TS0601"" in the quirk to somthing like ""TS0601-TRVZS"" and using it in ZHA ?
+Then is only quirked devices that is using it.",2023-02-06T17:17:46Z,False,https://github.com/home-assistant/core/pull/87546,gmsoft-tuxicoman,False,,
+Issue,jacekk015,This will probably break all TS0601 devices. Any problems in this area will touch all HA users.,2023-02-06T19:48:59Z,False,https://github.com/home-assistant/core/pull/87546,gmsoft-tuxicoman,False,,
+Issue,javicalle,"Not sure if the current approach will break `TS0601` devices or just give some errors in the logs, but IMHO is a too much generic definition.
+
+> @javicalle Is it possible overriding the manufacture ""TS0601"" in the quirk to somthing like ""TS0601-TRVZS"" and using it in ZHA ? Then is only quirked devices that is using it.
+
+I would prefer my other approach: to overwrite the `ep_attribute` for that devices like that:
+```python
+class SiterwellManufCluster(TuyaManufClusterAttributes):
+    """"""Manufacturer Specific Cluster of some thermostatic valves.""""""
+
+    ep_attribute = ""tuya_trv""
+
+    attributes = TuyaManufClusterAttributes.attributes.copy()
+    attributes.update(
+        {
+            .../...
+    )
+```
+
+This way you can ensure that all the `channel_names=""tuya_trv""` are quirked and are of type TRV (`TS0601` is plenty of diferents device types).
+
+But this approach has not been approved and not sure if is the way to go.
+
+In any case, I'll be against any approach that involves keeping the list of `manufacturers` on both sides (ZHA and the quirks).",2023-02-06T21:03:05Z,True,https://github.com/home-assistant/core/pull/87546,gmsoft-tuxicoman,False,,
+Issue,MattWestb,"> In any case, I'll be against any approach that involves keeping the list of `manufacturers` on both sides (ZHA and the quirks).
+
+Most of tuya MCU devices is first coming one and later its coming more versions with the same functionality and its one PITA patching quirks and ZHA.
+If getting one ""master"" quirk and one handle in ZHA for the device type /class and only need updating the quirk is being much better then today.
+
+Sadly we was not knowing what was coming then tuya was starting falling down on us and we shall have doing this much earlier.",2023-02-06T21:29:35Z,False,https://github.com/home-assistant/core/pull/87546,gmsoft-tuxicoman,False,,
+Issue,gmsoft-tuxicoman,"From my testing, the additional entities only show up when the corresponding zcl attribute exists.
+This means that other TS0601 devices without the attributes I'm creating entitites for will be left untouched.
+
+I currently create entities for the folliowing attributes:
+ - window_detection
+ - online_set
+ - temperature_calibration
+ - opened_window_temperature
+ - child_lock
+ - boost_duration_seconds
+
+TRVs with the same model as ZonnsmartTV01_ZG :
+ - SiterwellGS361_Type2
+ - MoesHY368_Type1
+ - MoesHY368_Type1new
+
+Right now it seems that the new components would benefit the other TRV as well but the window_detection component.
+The window_detection attribute is an array for the Moes TRVand it would definitely break.
+
+So I can update my zha-device-handler PR and add zonnsmart_trv as the ep_attribute as it seems like a sensible approach but other TRVs will not benefit from the new components.
+
+There is also another approach. We could modify HA to be able to match the quirk_class. Maybe it would be best and solve the matching even for different devices.
+@javicalle I can probably work on a PR in that way if you feel like it would be beneficial.
+
+Let me know what you think.",2023-02-07T13:16:58Z,False,https://github.com/home-assistant/core/pull/87546,gmsoft-tuxicoman,False,,
+Issue,javicalle,"> This means that other TS0601 devices without the attributes I'm creating entitites for will be left untouched.
+
+But this generates error logs?
+I think that some issues had been made because of something similar.
+
+> There is also another approach. We could modify HA to be able to match the quirk_class.
+
+That would be an alternative approach to my `ep_attribute` overwrite with the same benefits (or even more).
+@dmulcahey any thoughts on this topic?
+Let me know if you need more context. ",2023-02-07T13:31:14Z,True,https://github.com/home-assistant/core/pull/87546,gmsoft-tuxicoman,False,,
+Issue,gmsoft-tuxicoman,"> > This means that other TS0601 devices without the attributes I'm creating entitites for will be left untouched.
+> 
+> But this generates error logs? I think that some issues had been made because of something similar.
+
+None that I can see.",2023-02-07T13:39:27Z,False,https://github.com/home-assistant/core/pull/87546,gmsoft-tuxicoman,False,,
+Issue,MattWestb,"We need getting it working  for the first  gen TRVs with the old Zigbee module ` _TYST11_ ` or we is loosing support for 1/4 of all TRVs.
+
+If possible using the device class of the quirk its shall not being any problems.
+Also adding new devices in the quirk its getting all the function in ZHA without adding devices in ZHA =  +++.",2023-02-07T14:40:47Z,False,https://github.com/home-assistant/core/pull/87546,gmsoft-tuxicoman,False,,
+Issue,gmsoft-tuxicoman,I created the PR anyway : https://github.com/home-assistant/core/pull/87653,2023-02-07T18:54:59Z,False,https://github.com/home-assistant/core/pull/87546,gmsoft-tuxicoman,False,,
+Issue,MattWestb,"If that working OK i think its the best we have done for getting better support for strange tuya MCU devices !!!
+Also easy adding more versions of one device with different EP / cluster setting in one new class its only adding the class in ZHA and it working OK.
+
+Also if some like doing one complete new device in ZHA its only making one quirk with one device class and piping all tuya MCU commands to ZHA that is using the new device type in ZHA..
+
+## Great work !!!",2023-02-07T19:09:34Z,False,https://github.com/home-assistant/core/pull/87546,gmsoft-tuxicoman,False,,
+Issue,TheJulianJES,"> But this generates error logs?
+I think that some issues had been made because of something similar.
+
+Warnings should only show up when you try to initialize an attribute that does not exist.
+If it returns ""unsupported attribute"" (but the attribute can be found), no warning is printed.",2023-02-08T21:52:40Z,True,https://github.com/home-assistant/core/pull/87546,gmsoft-tuxicoman,False,,
+Issue,gmsoft-tuxicoman,"If PR https://github.com/home-assistant/core/pull/87653 gets approved, I will probably change the names of the component's class I created to something more generic like SwitchTuyaTRVChildLock() and apply that to the ZonnSmart TRV. Then people who have the Moes or other TRV might just add their quirk class there after confirming it works.
+",2023-02-13T15:14:39Z,False,https://github.com/home-assistant/core/pull/87546,gmsoft-tuxicoman,False,,
+Issue,javicalle,"> I will probably change the names of the component's class I created to something more generic
+
+Yes please. This way we can match the same HA entity just with the attribute name, the cluster and the quirk class. I believe that this would be a much more versatile approach.
+
+Thanks for your work.",2023-02-13T20:27:44Z,True,https://github.com/home-assistant/core/pull/87546,gmsoft-tuxicoman,False,,
+Issue,gmsoft-tuxicoman,"PR https://github.com/home-assistant/core/pull/87653 has been merged !
+
+I""ve updated this one to use quirk_classes and it works flawlessly. I wasn't confident about merging all the child lock switch for examples so I didn't do that. I'd rather someone who owns those devices to add the right quirk_class.
+
+This PR should be merged alongside https://github.com/zigpy/zha-device-handlers/pull/1961 as they both depend on each other.",2023-03-03T10:17:08Z,False,https://github.com/home-assistant/core/pull/87546,gmsoft-tuxicoman,False,,
+Issue,gmsoft-tuxicoman,"This PR along with https://github.com/zigpy/zha-device-handlers/pull/1961 are both ready to be merged. I can rebase them if needed.
+
+The failing codecov issue can be fixed but that means writing really long unit test for a just a few lines of trivial code. Let me know what you think.",2023-03-27T18:01:08Z,False,https://github.com/home-assistant/core/pull/87546,gmsoft-tuxicoman,False,,
+Issue,gmsoft-tuxicoman,"The failure for the test above is because I specify ""ts0601_trv.ZonnsmartTV01_ZG"" for the quirk class while the unit test expects ""zhaquirks.tuya.ts0601_trv.ZonnsmartTV01_ZG"". However, if I use that last value, the elements don't match and don't appear in the UI.
+
+Has https://github.com/home-assistant/core/pull/90140 been tested correctly while checking that the elements appear in the UI ?",2023-04-28T16:05:39Z,False,https://github.com/home-assistant/core/pull/87546,gmsoft-tuxicoman,False,,
+Issue,gmsoft-tuxicoman,I have used the full path for the quirk_class and it works provided https://github.com/home-assistant/core/pull/93268 is merged I can test it with custom quirks.,2023-05-21T08:19:38Z,False,https://github.com/home-assistant/core/pull/87546,gmsoft-tuxicoman,False,,
+Issue,home-assistant[bot],"<!-- ReviewDrafterComment -->
+Please take a look at the requested changes, and use the **Ready for review** button when you are done, thanks :+1:
+
+[_Learn more about our pull request process._](https://developers.home-assistant.io/docs/review-process#prs-are-being-drafted-when-changes-are-needed)
+",2023-08-09T12:02:31Z,False,https://github.com/home-assistant/core/pull/87546,gmsoft-tuxicoman,False,,
+Issue,gmsoft-tuxicoman,"I fixed the unit test issue. pylint seems to have timed out because of a network issue in github,",2023-08-13T19:53:10Z,False,https://github.com/home-assistant/core/pull/87546,gmsoft-tuxicoman,False,,
+Issue,puddly,"CI is currently failing because the patch doesn't have 100% coverage. Once https://github.com/home-assistant/core/pull/98421 is merged you can remove all of the `try` blocks, attribute writing `SUCCESS` checks, and then add a quick test for the 10x attribute scaling. It should be good to merge after that. Thanks!",2023-08-15T14:21:25Z,True,https://github.com/home-assistant/core/pull/87546,gmsoft-tuxicoman,False,,
+Issue,edenhaus,Converting this PR to draft as it requires #98421 to be merged first.,2023-08-21T08:18:10Z,True,https://github.com/home-assistant/core/pull/87546,gmsoft-tuxicoman,False,,
+Issue,TheJulianJES,"For reference, my comment in the quirk PR: https://github.com/zigpy/zha-device-handlers/pull/1961#issuecomment-1777734802
+So, I'd wait until quirk IDs have replaced quirk class path matching, then merge the quirks PR, bump quirks in HA, then update this, then merge this finally.
+
+This PR should **not be merged** until the quirks PR is merged. (so, should not be merged for 2023.11.x)",2023-10-24T17:53:44Z,True,https://github.com/home-assistant/core/pull/87546,gmsoft-tuxicoman,False,,
+Issue,emontnemery,@gmsoft-tuxicoman please [respond to the review](https://github.com/home-assistant/core/pull/87546#discussion_r1370793937) by @TheJulianJES and mark the PR as ready for review when done 👍 ,2023-11-23T08:28:55Z,True,https://github.com/home-assistant/core/pull/87546,gmsoft-tuxicoman,False,,
+Issue,gmsoft-tuxicoman,"Unfortunately there is no way the checks will work until https://github.com/zigpy/zha-device-handlers/pull/1961 is merged.
+It requires the quirk_id from the new quirks.
+
+For the rest, the translations are now working.
+All the components are added correctly when adding the device.",2023-12-04T13:37:22Z,False,https://github.com/home-assistant/core/pull/87546,gmsoft-tuxicoman,False,,
+Issue,gmsoft-tuxicoman,Rebased. Still pending on https://github.com/zigpy/zha-device-handlers/pull/1961 for the self tests to pass.,2024-01-22T13:18:41Z,False,https://github.com/home-assistant/core/pull/87546,gmsoft-tuxicoman,False,,
+Issue,TheJulianJES,"As a note, [quirks v2](https://github.com/zigpy/zigpy/discussions/1312#discussioncomment-8191961) is currently being worked on and should hopefully land relatively soon.
+If everything works out as expected, we're able to expose enough metadata from zha-quirks to have ZHA automatically create the correct custom/configuration entities (without them needing to be defined in ZHA).
+
+Since this PR has been stuck for quite some time, we could still merge this probably (as soon as reviewed/approved + quirks bumped), but we eventually want to move all/most custom entities to quirks directly.
+That should also make it way easier to maintain stuff like this without having to jump between quirks and ZHA all the time.",2024-02-21T01:32:35Z,True,https://github.com/home-assistant/core/pull/87546,gmsoft-tuxicoman,False,,
+Review,javicalle,homeassistant/components/zha/switch.py:509:0: I0023: 'W0237' is cryptic: use '# pylint: disable=arguments-renamed',2023-02-06T17:02:36Z,True,https://github.com/home-assistant/core/pull/87546,gmsoft-tuxicoman,False,,
+Review,puddly,"This doesn't belong in `zha/core/device.py`, us `unittest.mock within the unit test or directly overwrite the attribute on the object within the test.",2023-05-27T23:53:11Z,True,https://github.com/home-assistant/core/pull/87546,gmsoft-tuxicoman,False,,
+Review,TheJulianJES,"Due to https://github.com/home-assistant/core/pull/93268, this would need to be updated to `ts0601_trv.ZonnsmartTV01_ZG` everywhere, right? ",2023-09-27T18:42:59Z,True,https://github.com/home-assistant/core/pull/87546,gmsoft-tuxicoman,False,,
+Review,TheJulianJES,"I think you can set `_attr_multiplier` to `0.1` and then remove this entire method.
+(It's named ""multiplier"" because it goes from ZCl -> ZHA IIRC)",2023-09-27T18:45:39Z,True,https://github.com/home-assistant/core/pull/87546,gmsoft-tuxicoman,False,,
+Review,TheJulianJES,I think you can set `_attr_multiplier` to `0.1` and then remove this entire method.,2023-09-27T18:45:41Z,True,https://github.com/home-assistant/core/pull/87546,gmsoft-tuxicoman,False,,
+Review,TheJulianJES,Same as above: should be possible to use `_attr_multiplier`,2023-09-27T18:46:30Z,True,https://github.com/home-assistant/core/pull/87546,gmsoft-tuxicoman,False,,
+Review,TheJulianJES,Same as above: should be possible to use `_attr_multiplier`,2023-09-27T18:46:34Z,True,https://github.com/home-assistant/core/pull/87546,gmsoft-tuxicoman,False,,
+Review,gmsoft-tuxicoman,Thanks ! That simplifies the code a lot and get rid of the tests. I didn't see that multiplier.,2023-10-06T07:08:28Z,False,https://github.com/home-assistant/core/pull/87546,gmsoft-tuxicoman,False,,
+Review,gmsoft-tuxicoman,"No, the change in #93268 will compare only the 2 last tokens from both the component's quirk_class and the match definition. Everything else is not taken into account.",2023-10-06T07:15:12Z,False,https://github.com/home-assistant/core/pull/87546,gmsoft-tuxicoman,False,,
+Review,TheJulianJES,"Is this entity even created when freshly pairing a TRV? (So, delete the TRV completely, then pair it again)
+`window_detection` is not initialized from what I can see.
+
+It should likely be initialized here from what I can see: https://github.com/home-assistant/core/blob/dev/homeassistant/components/zha/core/cluster_handlers/manufacturerspecific.py",2023-10-24T20:47:43Z,True,https://github.com/home-assistant/core/pull/87546,gmsoft-tuxicoman,False,,
+Review,TheJulianJES,"For the Aqara TRV, we use the ""window"" device class and thus don't need a separate translation key:
+https://github.com/home-assistant/core/blob/60057a175ff5485a583fa287e716fa204b6eefb2/homeassistant/components/zha/binary_sensor.py#L300-L306
+
+I suggest we do the same here.",2024-02-21T00:48:55Z,True,https://github.com/home-assistant/core/pull/87546,gmsoft-tuxicoman,False,,
+Review,TheJulianJES,"This is not needed, since it's already set by `ZHANumberConfigurationEntity`.
+(Just fix it here/in the added code. Seems like the existing code needs to be cleaned up in another PR.)",2024-02-21T00:54:11Z,True,https://github.com/home-assistant/core/pull/87546,gmsoft-tuxicoman,False,,
+Review,TheJulianJES,"Assuming the offset is in Celsius, we should set that:
+```python
+_attr_native_unit_of_measurement: str = UnitOfTemperature.CELSIUS
+```",2024-02-21T00:54:52Z,True,https://github.com/home-assistant/core/pull/87546,gmsoft-tuxicoman,False,,
+Review,TheJulianJES,"It's not optimal that attribute name, unique id suffix differ, and translation key all differ.
+For upcoming [quirks v2](https://github.com/zigpy/zigpy/discussions/1312#discussioncomment-8191961) (""expose entities via quirks""), we can still define them individually, but by default, they're the same as the attribute name.
+
+IMO, `online_set` is not a great attribute name in the first place, but this might be because some other Tuya TRV quirks use the same?",2024-02-21T00:56:14Z,True,https://github.com/home-assistant/core/pull/87546,gmsoft-tuxicoman,False,,
+Review,TheJulianJES,"Assuming the offset is in Celsius, we should set that:
+```python
+_attr_native_unit_of_measurement: str = UnitOfTemperature.CELSIUS
+```",2024-02-21T00:56:33Z,True,https://github.com/home-assistant/core/pull/87546,gmsoft-tuxicoman,False,,
+Review,TheJulianJES,"Not sure about this yet, but should this include for how long its being boosted?
+So ""30 second boost"" for example?",2024-02-21T00:58:33Z,True,https://github.com/home-assistant/core/pull/87546,gmsoft-tuxicoman,False,,
+Review,TheJulianJES,"I think this can use `local_temperature_calibration` as the translation key.
+(that's the ZCL attribute that seems to be equivalent to this)",2024-02-21T00:59:42Z,True,https://github.com/home-assistant/core/pull/87546,gmsoft-tuxicoman,False,,
+Review,gmsoft-tuxicoman,"Yes I agree, not the best name. I can update the quirks and this PR is you want with ""update"" or ""update_attrs"".",2024-03-03T16:22:45Z,False,https://github.com/home-assistant/core/pull/87546,gmsoft-tuxicoman,False,,
+,,,2023-02-04T18:09:09Z,,https://github.com/home-assistant/core/pull/87546,gmsoft-tuxicoman,False,f584b75cd74ade13abc0fd76757be22e254bd79a,"Add child lock button.
+
+Add window open sensor to ZonnSmart TRV.
+
+Add temperature calibration component to ZonnSmart TRV.
+
+Add the update attributes button.
+
+Add boost switch for ZonnSmart TRV.
+
+Add open window temperature for ZonnSmart TRV.
+
+Fix linting.
+
+Use uppercases to make it consistent with the other settings.
+
+Update pylint disable statement.
+
+Use quirk_classes.
+
+Fix unit test for ZonSmart TRV.
+
+Add unit test for the TRVBoost component.
+
+Use full quirk class path.
+
+Use full quirk path for TRVBoostQuirk.
+
+Don't try to register an entity if the platform is not registered (happens during testing).
+
+ZonnSmartWindowOpened is a BinarySensor not an Opening."
+,,,2023-08-13T15:56:53Z,,https://github.com/home-assistant/core/pull/87546,gmsoft-tuxicoman,False,724571fb830139bc1841e8304296a1001a9947e0,Add quirk_class parameter to zigpy_device_mock().
+,,,2023-08-13T19:20:42Z,,https://github.com/home-assistant/core/pull/87546,gmsoft-tuxicoman,False,a529156adc5f574a0c274a11d7318b4df0f92a37,Add pylint disable-next=hass-invalid-inheritance.
+,,,2023-09-04T08:37:15Z,,https://github.com/home-assistant/core/pull/87546,gmsoft-tuxicoman,False,7304da067eaaa9bd13b34cc6d7147156a7847343,Use write_attributes_safe().
+,,,2023-09-04T08:47:05Z,,https://github.com/home-assistant/core/pull/87546,gmsoft-tuxicoman,False,9215d78e59975de27dd297904faa3339db165bd1,Remove unused parameter.
+,,,2023-09-04T08:58:47Z,,https://github.com/home-assistant/core/pull/87546,gmsoft-tuxicoman,False,ea1b196a3d27ef88962ddb013f9795b54d5dc611,Remove mock_coro dependency.
+,,,2023-09-04T09:09:09Z,,https://github.com/home-assistant/core/pull/87546,gmsoft-tuxicoman,False,43e51ae482b8b0388d32112a401443b517f74390,Fix tests.
+,,,2023-09-04T17:51:03Z,,https://github.com/home-assistant/core/pull/87546,gmsoft-tuxicoman,False,a9e63a769064bbc27395e924670a8ed885ec3bf7,Add unit test for new number entities.
+,,,2023-09-15T15:53:03Z,,https://github.com/home-assistant/core/pull/87546,gmsoft-tuxicoman,False,af1a76819c5c0813192e18023b5f53a62108ee42,Remove now useless check.
+,,,2023-10-06T07:00:03Z,,https://github.com/home-assistant/core/pull/87546,gmsoft-tuxicoman,False,6323c73721755b35a3bb9ce6f12d3d045da0e971,Use _attr_multiplier instead of custom method.
+,,,2023-10-06T07:00:13Z,,https://github.com/home-assistant/core/pull/87546,gmsoft-tuxicoman,False,77910d28b02d32353ca2cdde10bd00a8756ed43c,"Revert ""Add unit test for new number entities.""
+
+This reverts commit 5052f5e865dee9500a22840bcec43163a1c3ce3e.
+
+Those tests are now useless since the custom methods were removed."
+,,,2023-10-23T07:33:02Z,,https://github.com/home-assistant/core/pull/87546,gmsoft-tuxicoman,False,ae8f809b6b887e7bf5633771c7280ea4f0fc6a2b,Add translation and update to work with upstream.
+,,,2023-10-23T08:45:02Z,,https://github.com/home-assistant/core/pull/87546,gmsoft-tuxicoman,False,a9b567010eb2ea79cfc81d1d99d670e42fda78a9,Fix failing test.
+,,,2023-10-23T11:25:53Z,,https://github.com/home-assistant/core/pull/87546,gmsoft-tuxicoman,False,b690006962bde124de13b450de95814ec81c6468,Fix attribute names.
+,,,2023-11-27T09:27:39Z,,https://github.com/home-assistant/core/pull/87546,gmsoft-tuxicoman,False,78fff7eb11796f1f5b3d054016f7a330916fdbd3,Remove quirk_class changes.
+,,,2023-11-27T09:29:14Z,,https://github.com/home-assistant/core/pull/87546,gmsoft-tuxicoman,False,5f4c9c5def98003242c36b9c669370ab58b448e5,Add supported attributes
+,,,2023-12-04T10:21:04Z,,https://github.com/home-assistant/core/pull/87546,gmsoft-tuxicoman,False,1daefe3d4a0c01760c171fc0e03b9efa51a69088,Use quirk IDs.
+,,,2023-12-04T13:04:23Z,,https://github.com/home-assistant/core/pull/87546,gmsoft-tuxicoman,False,cb74fb87fa9db3302b255ff0ca30fdb698152c79,Fix translation for window_detection and use quirk ID for trusted clusters.
+,,,2024-01-22T13:11:36Z,,https://github.com/home-assistant/core/pull/87546,gmsoft-tuxicoman,False,9fad4b14da14f161a741ef94c96e92f5e571b5d4,Fix ruff.
+,,,2024-03-03T16:14:09Z,,https://github.com/home-assistant/core/pull/87546,gmsoft-tuxicoman,False,b8e6c8054a587342de196a704678a9fde830fb80,Use window device class to avoid additional string.
+,,,2024-03-03T16:19:55Z,,https://github.com/home-assistant/core/pull/87546,gmsoft-tuxicoman,False,2d98cc93d3f7d02456859435b5fc7293832b5029,Fix calibration offset to use Celsius and use local_temperature_calibration for the translation key.
+,,,2024-03-03T16:20:22Z,,https://github.com/home-assistant/core/pull/87546,gmsoft-tuxicoman,False,d253c7e11a6df88fddc51ff47eab1da88d33a218,Specify how long the boost is.
+Issue,home-assistant[bot],"
+Hey there @home-assistant/core, mind taking a look at this pull request as it has been labeled with an integration (`backup`) you are listed as a [code owner](https://github.com/home-assistant/core/blob/dev/CODEOWNERS#L181) for? Thanks!
+
+<details>
+<summary>Code owner commands</summary>
+
+
+Code owners of `backup` can trigger bot actions by commenting:
+
+- `@home-assistant close` Closes the pull request.
+- `@home-assistant rename Awesome new title` Renames the pull request.
+- `@home-assistant reopen` Reopen the pull request.
+- `@home-assistant unassign backup` Removes the current integration label and assignees on the pull request, add the integration domain after the command.
+- `@home-assistant add-label needs-more-information` Add a label (needs-more-information, problem in dependency, problem in custom component) to the pull request.
+- `@home-assistant remove-label needs-more-information` Remove a label (needs-more-information, problem in dependency, problem in custom component) on the pull request.
+
+</details>
+
+",2024-10-14T13:16:30Z,False,https://github.com/home-assistant/core/pull/128365,ludeeus,True,,
+Issue,ludeeus,"Thanks @MartinHjelmare; I _think_ I covered all of them; I left one `os` call (for listdir), because I found that a lot simpler to work with than the Path.walk alternative.",2024-10-14T17:16:23Z,True,https://github.com/home-assistant/core/pull/128365,ludeeus,True,,
+Issue,MartinHjelmare,I don't understand the test failure. The test looks ok to me.,2024-10-29T20:34:07Z,True,https://github.com/home-assistant/core/pull/128365,ludeeus,True,,
+Issue,MartinHjelmare,Why did it matter to move the patch of sys.exit?,2024-10-30T14:46:21Z,True,https://github.com/home-assistant/core/pull/128365,ludeeus,True,,
+Issue,ludeeus,"Because its not actually called directly here, `main()` returns an int (100) which when called as a script its passed to sys.exit",2024-10-30T15:03:45Z,True,https://github.com/home-assistant/core/pull/128365,ludeeus,True,,
+Issue,MartinHjelmare,Right. Do we still need to patch it then?,2024-10-30T15:09:57Z,True,https://github.com/home-assistant/core/pull/128365,ludeeus,True,,
+Issue,ludeeus,"It seems like it, but I do not see why yet.
+Currently working on testing the actual restoring, will look more at this one once that is done",2024-10-30T15:13:57Z,True,https://github.com/home-assistant/core/pull/128365,ludeeus,True,,
+Issue,ludeeus,"It exited with code 2 (pytest exit because of user interruption), due to ""wrong arguments"",  this commit <https://github.com/home-assistant/core/pull/128365/commits/8771a8c34d7e12e39f1b46f7de48731c20dc0487> solved that.",2024-10-31T18:44:58Z,True,https://github.com/home-assistant/core/pull/128365,ludeeus,True,,
+Review,ludeeus,""".HA_RESTORE"" is only here while testing, this will be removed.",2024-10-14T13:16:51Z,True,https://github.com/home-assistant/core/pull/128365,ludeeus,True,,
+Review,ludeeus,"The idea is to expand this to also support passwords in a follow-up PR, so while this is not needed as a dict now, it makes future enhancement simpler.",2024-10-14T13:17:41Z,True,https://github.com/home-assistant/core/pull/128365,ludeeus,True,,
+Review,ludeeus,Workaround to deal with the fact that the target directory will not be empty.,2024-10-14T13:18:16Z,True,https://github.com/home-assistant/core/pull/128365,ludeeus,True,,
+Review,MartinHjelmare,I'd make this a dataclass instead.,2024-10-14T15:26:42Z,True,https://github.com/home-assistant/core/pull/128365,ludeeus,True,,
+Review,MartinHjelmare,"```suggestion
+        instruction_content = instruction_path.read_text(encoding=""utf-8"")
+        backup_file_path = instruction_content.split("";"")[0]
+        return RestoreBackupFileContent(backup_file_path=backup_file_path)
+```",2024-10-14T15:29:28Z,True,https://github.com/home-assistant/core/pull/128365,ludeeus,True,,
+Review,MartinHjelmare,"```suggestion
+    instruction_path = Path(config_dir, RESTORE_BACKUP_FILE)
+    if instruction_path.exists():
+```",2024-10-14T15:30:25Z,True,https://github.com/home-assistant/core/pull/128365,ludeeus,True,,
+Review,MartinHjelmare,"```suggestion
+from pathlib import Path
+import shutil
+```",2024-10-14T15:31:14Z,True,https://github.com/home-assistant/core/pull/128365,ludeeus,True,,
+Review,MartinHjelmare,"Try to use `pathlib.Path` as much as possible instead of `os.path` and other related os module APIs. The former is higher level and often easier/nicer to use.
+
+https://docs.python.org/3/library/pathlib.html#corresponding-tools",2024-10-14T15:31:47Z,True,https://github.com/home-assistant/core/pull/128365,ludeeus,True,,
+Review,ludeeus,Was included in https://github.com/home-assistant/core/pull/128365/commits/2f9122a8fb1cfaef6fb753badb16b5cb7ac80b07,2024-10-14T17:15:26Z,True,https://github.com/home-assistant/core/pull/128365,ludeeus,True,,
+Review,MartinHjelmare,"```suggestion
+        [entry for entry in config_dir.iterdir() if entry not in KEEP_PATHS]
+```",2024-10-14T20:51:52Z,True,https://github.com/home-assistant/core/pull/128365,ludeeus,True,,
+Review,MartinHjelmare,"```suggestion
+        backup_meta_file = Path(tempdir, ""extracted"", ""backup.json"")
+        backup_meta = json.loads(backup_meta_file.read_text(encoding=""utf8""))
+```",2024-10-14T20:55:12Z,True,https://github.com/home-assistant/core/pull/128365,ludeeus,True,,
+Review,MartinHjelmare,"```suggestion
+            Path(
+                self.hass.config.path(RESTORE_BACKUP_FILE),
+            ).write_text(f""{backup.path.as_posix()};"", encoding=""utf-8"")
+```",2024-10-14T21:01:04Z,True,https://github.com/home-assistant/core/pull/128365,ludeeus,True,,
+Review,MartinHjelmare,"Does this work?
+
+https://docs.python.org/3/library/pathlib.html#pathlib.Path.iterdir",2024-10-14T21:03:29Z,True,https://github.com/home-assistant/core/pull/128365,ludeeus,True,,
+Review,ludeeus,It did 👍 ,2024-10-15T05:36:21Z,True,https://github.com/home-assistant/core/pull/128365,ludeeus,True,,
+Review,MartinHjelmare,"Generally, it's safer to try and open or read from the file and catch `FileNotFoundError` than checking first. The file can be removed after the check so checking doesn't completely safeguard the case that is checked.",2024-10-16T06:53:19Z,True,https://github.com/home-assistant/core/pull/128365,ludeeus,True,,
+Review,MartinHjelmare,Patch a `Path.read_text` operation instead and set a side effect `FileNotFoundError`.,2024-10-21T13:57:38Z,True,https://github.com/home-assistant/core/pull/128365,ludeeus,True,,
+Review,ludeeus,"So while the `.HA_RESTORE` file _can_ be manually added, I dont think that is something we should document.
+So the documentation requirement of this feature, IMO should not be triggered until this is implemented in the UI, or a service call is added.",2024-10-29T07:40:33Z,True,https://github.com/home-assistant/core/pull/128365,ludeeus,True,,
+Review,MartinHjelmare,"I'd change the test parameters instead to be the return value and side effect or just the side effect, to avoid encoding logic to the parameter.",2024-11-01T11:11:43Z,True,https://github.com/home-assistant/core/pull/128365,ludeeus,True,,
+Review,MartinHjelmare,"```suggestion
+    getmembers_mock = mock.MagicMock(
+```",2024-11-01T11:13:31Z,True,https://github.com/home-assistant/core/pull/128365,ludeeus,True,,
+Review,MartinHjelmare,"```suggestion
+    extractall_mock = mock.MagicMock()
+```",2024-11-01T11:14:06Z,True,https://github.com/home-assistant/core/pull/128365,ludeeus,True,,
+Review,MartinHjelmare,"```suggestion
+        mock.patch(""pathlib.Path.unlink"") as unlink_mock,
+```",2024-11-01T11:15:11Z,True,https://github.com/home-assistant/core/pull/128365,ludeeus,True,,
+,,,2024-10-14T13:15:14Z,,https://github.com/home-assistant/core/pull/128365,ludeeus,True,9efa5bd608c5fbd0876e876786aa56d4edb2b82c,Early pushout of restore handling for core/container
+,,,2024-10-14T13:22:56Z,,https://github.com/home-assistant/core/pull/128365,ludeeus,True,e880e26c25dc119497ac0f81bff5681a6e593384,Merge branch 'dev' into corebackuprestore
+,,,2024-10-14T13:26:56Z,,https://github.com/home-assistant/core/pull/128365,ludeeus,True,d5f700ccd3540c6063800a9eeaa0624d9b537a00,Adjust after rebase
+,,,2024-10-14T13:38:42Z,,https://github.com/home-assistant/core/pull/128365,ludeeus,True,6db3e723dd23f43b58f8d3db3096e4373406e75c,"Move logging definition, we should only do this if we go ahead with the restore"
+,,,2024-10-14T17:14:19Z,,https://github.com/home-assistant/core/pull/128365,ludeeus,True,2f9122a8fb1cfaef6fb753badb16b5cb7ac80b07,First round
+,,,2024-10-15T07:07:27Z,,https://github.com/home-assistant/core/pull/128365,ludeeus,True,125fd08e0e77271b7d65cbd37dd8948a70fa6329,Merge branch 'dev' of github.com:home-assistant/core into corebackuprestore
+,,,2024-10-15T07:09:38Z,,https://github.com/home-assistant/core/pull/128365,ludeeus,True,3813c6da3114cccb43f2be7bef44bb9644e07dca,More paths
+,,,2024-10-15T11:17:11Z,,https://github.com/home-assistant/core/pull/128365,ludeeus,True,67a1c1d58ff38b7c942b20a488f8788b88218ea0,Merge branch 'dev' of github.com:home-assistant/core into corebackuprestore
+,,,2024-10-15T11:21:57Z,,https://github.com/home-assistant/core/pull/128365,ludeeus,True,5b54276509b01e825948da691eda1e495a300405,Add async_restore_backup to base class
+,,,2024-10-15T12:48:39Z,,https://github.com/home-assistant/core/pull/128365,ludeeus,True,fe33ff5dd03fa2f1d5ae9d7ef022df39a2201674,Block restore of new backup files
+,,,2024-10-16T05:19:02Z,,https://github.com/home-assistant/core/pull/128365,ludeeus,True,961e4aced885a1a47c2cc0973391b38a618d148e,Merge branch 'dev' of github.com:home-assistant/core into corebackuprestore
+,,,2024-10-16T05:33:37Z,,https://github.com/home-assistant/core/pull/128365,ludeeus,True,9c52f2d058d336347e15b25b6a81332f7a3c85cb,manager tests
+,,,2024-10-16T05:39:07Z,,https://github.com/home-assistant/core/pull/128365,ludeeus,True,3b0545245569e748d00b9a1b123765340acb1844,Add websocket test
+,,,2024-10-16T05:57:22Z,,https://github.com/home-assistant/core/pull/128365,ludeeus,True,3d956c35ddd444df0067a2a88e38a6f4df5f5ad7,Add testing to main
+,,,2024-10-16T06:35:07Z,,https://github.com/home-assistant/core/pull/128365,ludeeus,True,1b4d6ea5eb56b7124682797f8695e8392275e3a0,Add coverage for missing backup file
+,,,2024-10-16T07:18:41Z,,https://github.com/home-assistant/core/pull/128365,ludeeus,True,5d9fdebdcb5a8e5e54397c0419fb503cad2d11a0,Catch FileNotFoundError instead
+,,,2024-10-29T07:33:55Z,,https://github.com/home-assistant/core/pull/128365,ludeeus,True,eb039c62d20fa20e995849b65f8cfcce41d2d976,Merge branch 'dev' of github.com:home-assistant/core into corebackuprestore
+,,,2024-10-29T07:35:46Z,,https://github.com/home-assistant/core/pull/128365,ludeeus,True,d316b991aef98f1170e8cb42b465035aa5a2af1b,Patch Path.read_text instead
+,,,2024-10-29T07:38:28Z,,https://github.com/home-assistant/core/pull/128365,ludeeus,True,171556eed1b31aa873e813ee60268fa4e8c42120,Remove HA_RESTORE from keep
+,,,2024-10-30T06:06:27Z,,https://github.com/home-assistant/core/pull/128365,ludeeus,True,059c355bd10a4eece6cbe992314d6729764679e3,Merge branch 'dev' of github.com:home-assistant/core into corebackuprestore
+,,,2024-10-30T10:57:40Z,,https://github.com/home-assistant/core/pull/128365,ludeeus,True,6f0a178ed468165bde697945ae5ce8fe8bc69df6,Use secure paths
+,,,2024-10-30T13:40:19Z,,https://github.com/home-assistant/core/pull/128365,ludeeus,True,5616fc374a4669038ebb6ea96af160333355d5a1,Fix restart test
+,,,2024-10-31T14:40:25Z,,https://github.com/home-assistant/core/pull/128365,ludeeus,True,60ef2c40e61c46169563774249dc2791de651111,extend coverage
+,,,2024-10-31T15:05:13Z,,https://github.com/home-assistant/core/pull/128365,ludeeus,True,8771a8c34d7e12e39f1b46f7de48731c20dc0487,Mock argv
+,,,2024-10-31T15:05:31Z,,https://github.com/home-assistant/core/pull/128365,ludeeus,True,00817723ca0a49644cac1693f636c19e51990aef,Merge branch 'dev' of github.com:home-assistant/core into corebackuprestore
+,,,2024-11-01T11:25:33Z,,https://github.com/home-assistant/core/pull/128365,ludeeus,True,511d040b7a6f7a00d69f3f5cd7dabfa94d094a51,Adjustments
+,,,2024-11-01T11:48:52Z,,https://github.com/home-assistant/core/pull/128365,ludeeus,True,fbdd83cedb6040734346c7a6465cdac7d22f6cfb,Merge branch 'dev' into corebackuprestore
+Issue,probot-home-assistant[bot],"Hey there @ottowinter, @jesserockz, mind taking a look at this pull request as it has been labeled with an integration (`esphome`) you are listed as a [code owner](https://github.com/home-assistant/core/blob/dev/CODEOWNERS#L272) for? Thanks!
+<sub><sup>(message by CodeOwnersMention)</sup></sub>",2022-01-31T03:47:19Z,False,https://github.com/home-assistant/core/pull/65280,kbickar,True,,
+Issue,jesserockz,@kbickar Could you add `homeassistant/components/esphome/lock.py` to `.coveragerc` so it gets excluded? (Unless you want to write tests :smile: ),2022-01-31T04:11:11Z,True,https://github.com/home-assistant/core/pull/65280,kbickar,True,,
+Review,OttoWinter,"Should be
+```suggestion
+    @esphome_state_property
+```
+
+To make it check first if state is set",2022-01-31T08:13:42Z,True,https://github.com/home-assistant/core/pull/65280,kbickar,True,,
+Review,OttoWinter,"Same
+```suggestion
+    @esphome_state_property
+```
+",2022-01-31T08:14:08Z,True,https://github.com/home-assistant/core/pull/65280,kbickar,True,,
+Review,OttoWinter,"```suggestion
+    @esphome_state_property
+```
+",2022-01-31T08:14:18Z,True,https://github.com/home-assistant/core/pull/65280,kbickar,True,,
+Review,OttoWinter,"```suggestion
+    @esphome_state_property
+```
+",2022-01-31T08:14:31Z,True,https://github.com/home-assistant/core/pull/65280,kbickar,True,,
+Review,MartinHjelmare,`None` is the default value returned if the key is missing in the dict.,2022-02-15T00:50:42Z,True,https://github.com/home-assistant/core/pull/65280,kbickar,True,,
+,,,2022-01-31T03:44:38Z,,https://github.com/home-assistant/core/pull/65280,kbickar,True,42a79cf13c8aab60a0d8db9a5af02b7c8abec146,Support for lock domain in esphome
+,,,2022-01-31T04:26:27Z,,https://github.com/home-assistant/core/pull/65280,kbickar,True,c7a2dc57d42048bd8cabb2c67a4e4ca77c1b3e88,Omit tests
+,,,2022-01-31T14:59:07Z,,https://github.com/home-assistant/core/pull/65280,kbickar,True,d923138868ff8e108cbe9ec1185206c7a49d45d6,Updated properties to esphome_state_property
+,,,2022-01-31T15:44:08Z,,https://github.com/home-assistant/core/pull/65280,kbickar,True,0a629e8757f506eb8d840094a0ef6b62dba11880,linter fix
+Issue,home-assistant[bot],"
+Hey there @einarhauks, mind taking a look at this pull request as it has been labeled with an integration (`tesla_wall_connector`) you are listed as a [code owner](https://github.com/home-assistant/core/blob/dev/CODEOWNERS#L1330) for? Thanks!
+
+<details>
+<summary>Code owner commands</summary>
+
+
+Code owners of `tesla_wall_connector` can trigger bot actions by commenting:
+
+- `@home-assistant close` Closes the pull request.
+- `@home-assistant rename Awesome new title` Renames the pull request.
+- `@home-assistant reopen` Reopen the pull request.
+- `@home-assistant unassign tesla_wall_connector` Removes the current integration label and assignees on the pull request, add the integration domain after the command.
+- `@home-assistant add-label needs-more-information` Add a label (needs-more-information, problem in dependency, problem in custom component) to the pull request.
+- `@home-assistant remove-label needs-more-information` Remove a label (needs-more-information, problem in dependency, problem in custom component) on the pull request.
+
+</details>
+
+",2024-01-12T21:34:02Z,False,https://github.com/home-assistant/core/pull/107909,piitaya,False,,
+Issue,jpbede,Should we mark this as a breaking change as someone may already be using the old sensor in their automations? Or has the sensor not yet been released?,2024-01-13T17:33:19Z,True,https://github.com/home-assistant/core/pull/107909,piitaya,False,,
+Issue,piitaya,The entity ID of the old sensor will not change because it's already created. And it will be only disabled for new integration setups. ,2024-01-13T18:46:08Z,False,https://github.com/home-assistant/core/pull/107909,piitaya,False,,
+Issue,home-assistant[bot],"<!-- ReviewDrafterComment -->
+Please take a look at the requested changes, and use the **Ready for review** button when you are done, thanks :+1:
+
+[_Learn more about our pull request process._](https://developers.home-assistant.io/docs/review-process#prs-are-being-drafted-when-changes-are-needed)
+",2024-01-14T10:23:06Z,False,https://github.com/home-assistant/core/pull/107909,piitaya,False,,
+Review,frenck,"If a state is unknown, we need to return `None`.",2024-01-14T10:22:59Z,True,https://github.com/home-assistant/core/pull/107909,piitaya,False,,
+Review,frenck,"```suggestion
+          ""not_connected"": ""Vehicle not connected"",
+          ""connected"": ""Vehicle connected"",
+```",2024-01-31T15:32:37Z,True,https://github.com/home-assistant/core/pull/107909,piitaya,False,,
+,,,2024-01-12T21:22:00Z,,https://github.com/home-assistant/core/pull/107909,piitaya,False,e07f260ba3f0baba24c7c13c58aaadc65031d851,Add readable state for tesla wall connector
+,,,2024-01-12T21:27:09Z,,https://github.com/home-assistant/core/pull/107909,piitaya,False,3e3c4e04605c6817804a258922a008f5dc8ac826,Add test
+,,,2024-01-12T21:31:00Z,,https://github.com/home-assistant/core/pull/107909,piitaya,False,9b6805bffb48a0e2dac21d08289c8e37fca80626,Display raw sensor by default
+,,,2024-01-14T12:00:53Z,,https://github.com/home-assistant/core/pull/107909,piitaya,False,90281646148c0d546b0ac23d7eb58778ec229b3c,Use none instead of unknown
+,,,2024-01-14T18:53:54Z,,https://github.com/home-assistant/core/pull/107909,piitaya,False,866d15c7aed5a2edcdfbb3986d0f29adec0bf870,Remove old state from tests
+,,,2024-01-14T18:57:03Z,,https://github.com/home-assistant/core/pull/107909,piitaya,False,d562104e557aa1325ffe5b9ee0f42060ceb2c729,Rename raw state to status code
+,,,2024-01-14T18:59:15Z,,https://github.com/home-assistant/core/pull/107909,piitaya,False,4fce389670109d7c326f342dd92312af3d5be5b2,Test unknown
+,,,2024-01-31T15:33:21Z,,https://github.com/home-assistant/core/pull/107909,piitaya,False,af366e7eabd0eece6d781a53c8f52d698afef18f,"Update homeassistant/components/tesla_wall_connector/strings.json
+
+Co-authored-by: Franck Nijhof <git@frenck.dev>"
+Issue,probot-home-assistant[bot],"Hey there @lawfulchaos, @z-wave-me, mind taking a look at this pull request as it has been labeled with an integration (`zwave_me`) you are listed as a [code owner](https://github.com/home-assistant/core/blob/dev/CODEOWNERS#L1204) for? Thanks!
+<sub><sup>(message by CodeOwnersMention)</sup></sub>",2022-04-09T22:04:45Z,False,https://github.com/home-assistant/core/pull/69768,PoltoS,True,,
+Issue,MartinHjelmare,Please remove the old commits that have already been merged from your branch.,2022-04-11T13:19:31Z,True,https://github.com/home-assistant/core/pull/69768,PoltoS,True,,
+Issue,PoltoS,@MartinHjelmare one test failed due to timeout. What shall we do with it?,2022-04-12T16:26:26Z,True,https://github.com/home-assistant/core/pull/69768,PoltoS,True,,
+Issue,PoltoS,We have introduced the same fix to the previously approved integrations: https://github.com/home-assistant/core/pull/70274,2022-04-19T11:40:47Z,True,https://github.com/home-assistant/core/pull/69768,PoltoS,True,,
+Review,MartinHjelmare,"```suggestion
+        fan = ZWaveMeFan(controller, new_device)
+```",2022-04-18T00:20:54Z,True,https://github.com/home-assistant/core/pull/69768,PoltoS,True,,
+Review,MartinHjelmare,"```suggestion
+                fan,
+```",2022-04-18T00:21:04Z,True,https://github.com/home-assistant/core/pull/69768,PoltoS,True,,
+Review,MartinHjelmare,Is the range 0-99 or 0-100?,2022-04-18T00:22:15Z,True,https://github.com/home-assistant/core/pull/69768,PoltoS,True,,
+Review,MartinHjelmare,"```suggestion
+            self.device.id, f""exact?level={min(percentage, 99)}""
+```",2022-04-18T00:23:12Z,True,https://github.com/home-assistant/core/pull/69768,PoltoS,True,,
+Review,PoltoS,Do you mean we should rescale out 0..99 to 0..100?,2022-04-18T17:30:20Z,True,https://github.com/home-assistant/core/pull/69768,PoltoS,True,,
+Review,MartinHjelmare,"If the level range is 0..99, maybe something like this:
+
+```py
+from homeassistant.util.percentage import ranged_value_to_percentage
+
+...
+
+    @property
+    def percentage(self) -> int:
+        """"""Return the current speed as a percentage.""""""
+        if (level := self.device.level) == 0:
+            return 0
+
+        return ranged_value_to_percentage((0, 99), level)
+```",2022-04-19T08:37:29Z,True,https://github.com/home-assistant/core/pull/69768,PoltoS,True,,
+,,,2022-04-12T09:49:47Z,,https://github.com/home-assistant/core/pull/69768,PoltoS,True,1d2098c744f7020d1b30c2e8ef289ac9b9a944cb,Fan entity
+,,,2022-04-12T09:51:19Z,,https://github.com/home-assistant/core/pull/69768,PoltoS,True,2500663501960f92f3ee0e4fbff8e074ef3b3bd3,Merge branch 'dev' into ZME-fan
+,,,2022-04-12T10:08:53Z,,https://github.com/home-assistant/core/pull/69768,PoltoS,True,3e3dc9c1de23c38085628388935f26373c1b16a3,Fix union
+,,,2022-04-12T10:08:53Z,,https://github.com/home-assistant/core/pull/69768,PoltoS,True,11334bbede455a9574b2602ff252bd80ad5f53ca,Fix union
+,,,2022-04-12T10:22:34Z,,https://github.com/home-assistant/core/pull/69768,PoltoS,True,fd9389dd2a4b0e8232be411dd3c5c8286820a78a,Merge remote-tracking branch 'origin/ZME-fan' into ZME-fan
+,,,2022-04-18T17:30:31Z,,https://github.com/home-assistant/core/pull/69768,PoltoS,True,e5f04929c1e7fc6930ac234fa40e291b2633fb3b,"Apply suggestions from code review
+
+Co-authored-by: Martin Hjelmare <marhje52@gmail.com>"
+,,,2022-04-19T10:15:31Z,,https://github.com/home-assistant/core/pull/69768,PoltoS,True,18bdcdd93fb7516acd64e2f07cac62f90428e9b7,Fix percentage scale
