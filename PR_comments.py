@@ -1,68 +1,117 @@
 import requests
 import pandas as pd
+import csv
+import os
+import time
+from datetime import datetime, timezone
+FIELDNAMES = [
+    "Comment Type", "User", "Comment", "Date", 
+    "Commit SHA", "Author", "Commit Message",  
+    "Pull Request URL", "Is Code Owner", "Author Is Code Owner"
+]
 
-# GitHub API configuration
-TOKEN = "" 
-headers = {
-    "Authorization": f"token {TOKEN}",
-    "Accept": "application/vnd.github.v3+json"
-}
+# List of tokens for rotation
+tokens = [
+]  # Replace with your tokens
+current_token_index = 0
 
-# Function to fetch comments
+# Buffer and batch size
+buffer = []  # Buffer for batching data
+BATCH_SIZE = 100  # Save every 100 items
+
+# Function to get headers with the current token
+def get_headers():
+    global current_token_index
+    return {
+        "Authorization": f"token {tokens[current_token_index]}",
+        "Accept": "application/vnd.github.v3+json"
+    }
+
+# Function to rotate token
+def rotate_token():
+    global current_token_index
+    current_token_index = (current_token_index + 1) % len(tokens)
+    print(f"Rotated to token {current_token_index + 1}")
+
+# Function to handle rate limits
+def handle_rate_limit(response):
+    if response.status_code == 403:  # Forbidden, likely due to rate limit
+        reset_time = int(response.headers.get("X-RateLimit-Reset", time.time()))
+        wait_time = max(0, reset_time - int(time.time()))
+        print(f"Rate limit exceeded. Waiting {wait_time} seconds.")
+        
+        # Rotate to the next token or wait if all are exhausted
+        if current_token_index == len(tokens) - 1:
+            time.sleep(wait_time)
+        else:
+            rotate_token()
+        return False  # Retry after token rotation or wait
+    return True  # Proceed if no rate limit
+
+# Save buffered data to CSV
+def save_buffered_data():
+    if buffer:  # Only save if there's data in the buffer
+        mode = 'a' if os.path.exists("pull_request_comments_commits_codeowners_integrations.csv") else 'w'
+        with open("pull_request_comments_commits_codeowners_integrations.csv", mode, newline="", encoding="utf-8") as file:
+            writer = csv.DictWriter(file, fieldnames=FIELDNAMES)
+            if mode == 'w':  # Write header if creating a new file
+                writer.writeheader()
+            
+            # Normalize dictionaries to match fieldnames
+            normalized_buffer = [{key: item.get(key, None) for key in FIELDNAMES} for item in buffer]
+            writer.writerows(normalized_buffer)  # Write all buffered rows
+        buffer.clear()  # Clear the buffer after saving
+        print("Checkpoint: Data saved.")
+
+
+# Fetch functions
 def fetch_comments(issue_url, review_url):
-    issue_comments = requests.get(issue_url, headers=headers)
-    review_comments = requests.get(review_url, headers=headers)
-    
     comments = []
-    if issue_comments.status_code == 200:
-        for comment in issue_comments.json():
-            comments.append({
-                "Comment Type": "Issue",
-                "User": comment["user"]["login"],
-                "Comment": comment["body"],
-                "Date": comment["created_at"]
-            })
-    else:
-        print(f"Failed to fetch issue comments: {issue_comments.status_code}")
-    
-    if review_comments.status_code == 200:
-        for comment in review_comments.json():
-            comments.append({
-                "Comment Type": "Review",
-                "User": comment["user"]["login"],
-                "Comment": comment["body"],
-                "Date": comment["created_at"]
-            })
-    else:
-        print(f"Failed to fetch review comments: {review_comments.status_code}")
-    
+    for url in [issue_url, review_url]:
+        while True:
+            response = requests.get(url, headers=get_headers())
+            if handle_rate_limit(response):
+                if response.status_code == 200:
+                    for comment in response.json():
+                        comments.append({
+                            "Comment Type": "Issue" if url == issue_url else "Review",
+                            "User": comment["user"]["login"],
+                            "Comment": comment["body"],
+                            "Date": comment["created_at"]
+                        })
+                else:
+                    print(f"Failed to fetch comments: {response.status_code}")
+                break  # Exit loop if successful
     return comments
 
-# Function to fetch basic commit details
 def fetch_commit_details(commit_url):
-    response = requests.get(commit_url, headers=headers)
-    commit_data = []
-    if response.status_code == 200:
-        for commit in response.json():
-            commit_data.append({
-                "Commit SHA": commit["sha"],
-                "Author": commit["commit"]["author"]["name"],
-                "Commit Message": commit["commit"]["message"],
-                "Date": commit["commit"]["author"]["date"]
-            })
-    else:
-        print(f"Failed to fetch commit details: {response.status_code}")
-    return commit_data
+    while True:
+        response = requests.get(commit_url, headers=get_headers())
+        if handle_rate_limit(response):
+            if response.status_code == 200:
+                return [
+                    {
+                        "Commit SHA": commit["sha"],
+                        "Author": commit["commit"]["author"]["name"],
+                        "Commit Message": commit["commit"]["message"],
+                        "Date": commit["commit"]["author"]["date"]
+                    } for commit in response.json()
+                ]
+            else:
+                print(f"Failed to fetch commit details: {response.status_code}")
+            break
+    return []
 
-# Function to fetch the author of the pull request
 def fetch_pr_author(pr_url):
-    response = requests.get(pr_url, headers=headers)
-    if response.status_code == 200:
-        pr_data = response.json()
-        return pr_data["user"]["login"]
-    else:
-        print(f"Failed to fetch PR author: {response.status_code}")
-        return None
+    while True:
+        response = requests.get(pr_url, headers=get_headers())
+        if handle_rate_limit(response):
+            if response.status_code == 200:
+                return response.json()["user"]["login"]
+            else:
+                print(f"Failed to fetch PR author: {response.status_code}")
+            break
+    return None
 
 # Load CODEOWNERS.txt file
 def load_codeowners(file_path):
@@ -82,10 +131,7 @@ codeowners_file = "CODEOWNERS.txt"  # Replace with the path to your CODEOWNERS.t
 codeowners = load_codeowners(codeowners_file)
 
 # Load pull requests from CSV
-df = pd.read_csv('pull_requests_complex_features.csv').head(30)
-
-# List to store all data
-all_data = []
+df = pd.read_csv('pull_requests_complex_integrations.csv')
 
 # Iterate through pull requests
 for url in df['URL']:
@@ -112,17 +158,18 @@ for url in df['URL']:
         comment["Pull Request URL"] = url
         comment["Author"] = author
         comment["Author Is Code Owner"] = author_is_code_owner
-        all_data.append(comment)
+        buffer.append(comment)
+        if len(buffer) >= BATCH_SIZE:
+            save_buffered_data()
 
     for commit in commits:
         commit["Pull Request URL"] = url
         commit["Author"] = author
         commit["Author Is Code Owner"] = author_is_code_owner
-        all_data.append(commit)
+        buffer.append(commit)
+        if len(buffer) >= BATCH_SIZE:
+            save_buffered_data()
 
-# Save to CSV
-all_data_df = pd.DataFrame(all_data)
-csv_file_path = "pull_request_comments_commits_codeowners.csv"
-all_data_df.to_csv(csv_file_path, index=False)
-
-print(f"Comments and commit details with code owner information saved to {csv_file_path}")
+# Save remaining data in the buffer
+save_buffered_data()
+print(f"Comments and commit details with code owner information saved to pull_request_comments_commits_codeowners.csv")
