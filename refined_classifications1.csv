@@ -1,0 +1,4 @@
+Pull Request URL,Bug-related,"Bug-related, Acknowledgment","Bug-related, Testing Feedback, Acknowledgment","Bug-related, Unsupported Changes",Cross-references,"Overlapping Work, Cross-references",Slow response times (default/other reasons),Top 3 Reasons
+https://github.com/home-assistant/core/pull/56299,0,0,0,0,0,0,8,Slow response times (default/other reasons)
+https://github.com/home-assistant/core/pull/66438,2,0,0,0,3,1,46,"Cross-references, Bug-related, Overlapping Work, Cross-references"
+https://github.com/home-assistant/core/pull/76575,10,3,2,2,5,1,67,"Bug-related, Cross-references, Bug-related, Acknowledgment"
