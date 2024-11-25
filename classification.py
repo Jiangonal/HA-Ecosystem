@@ -3,7 +3,7 @@ import re
 
 # Load the CSV file
 file_path = 'pull_request_comments_commits_codeowners.csv'  # Replace with your file path
-data = pd.read_csv(file_path)
+data = pd.read_csv(file_path).head(200)
 
 # Convert the 'Date' column to datetime for time gap analysis
 data['Date'] = pd.to_datetime(data['Date'], errors='coerce')
@@ -78,11 +78,11 @@ aligned_owner_data = pd.DataFrame({
 }).dropna()
 
 # Save the correlation data to CSV
-aligned_data.to_csv("review_comments_vs_time_gaps.csv", index=False)
-aligned_owner_data.to_csv("code_owner_comments_vs_review_comments.csv", index=False)
+aligned_data.to_csv("review_comments_vs_time_gaps0.csv", index=False)
+aligned_owner_data.to_csv("code_owner_comments_vs_review_comments0.csv", index=False)
 
 # Save refined classifications for user review
 refined_reason_counts.reset_index(inplace=True)
-refined_reason_counts.to_csv("refined_classifications.csv", index=False)
+refined_reason_counts.to_csv("refined_classifications0.csv", index=False)
 
 print("Refined classifications and correlation insights have been saved to CSV files.")
