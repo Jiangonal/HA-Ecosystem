@@ -70,7 +70,7 @@ def save_buffered_data():
         with open("pull_requests_all.csv", mode, newline="", encoding="utf-8") as file:
             writer = csv.writer(file)
             if mode == "w":
-                writer.writerow(["PR Number", "Title", "Created At", "Updated At", "State", 
+                writer.writerow(["PR Number", "Title", "Author", "Integration", "Created At", "Updated At", "State", 
                                  "Files Changed", "LOC Changed", "Total Comments", "Decision Time", "Closed Date", "URL"])
             writer.writerows(buffer)  # Write all buffered rows at once
         buffer.clear()  # Clear buffer after writing
@@ -107,7 +107,9 @@ def collect_pr_metadata():
             # Gather PR data
             pr_data = [
                 pr.number,
-                pr.title, 
+                pr.title,
+                pr.user.login,  # author
+                next((label.name.split(": ")[-1] for label in pr.labels if "integration:" in label.name), ""),  # integration name
                 pr.created_at, 
                 pr.updated_at, 
                 "merged" if pr.merged else "closed", 
