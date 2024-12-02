@@ -36,11 +36,14 @@ upper_limit = df['Decision Time'].quantile(0.95)
 df = df[df['Decision Time'] <= upper_limit]
 
 plt.figure(figsize=(10, 6))
-ax = sns.boxplot(x='Author is Codeowner', y='Decision Time', data=df, linewidth=1.2)
+ax = sns.boxplot(x='Author is Codeowner', y='Decision Time', data=df, linewidth=1.2, palette={True: 'skyblue', False: 'salmon'}, hue='Author is Codeowner', legend=False)
 
 medians = df.groupby('Author is Codeowner')['Decision Time'].median()
 for tick, median in zip(ax.get_xticks(), medians):
     ax.text(tick, median + 1.5, f'{int(median)}', horizontalalignment='center', size=10, color='white')
+
+counts = df['Author is Codeowner'].value_counts()
+plt.legend(title='Data Points', loc='upper left', labels=[counts.get(False), counts.get(True)])
 
 plt.xlabel('Author is Codeowner')
 plt.ylabel('Decision Time (days)')
