@@ -12,3 +12,6 @@ e.g. GITHUB_PAT="my_access_token"
    --> Run `python scrape_all_prs.py` to get all pull requests (can take multiple hours)
    --> Run `python scrape_pr_checkbox_data.py` to get associated checked boxes for each pull request (can take multiple hours)
    --> Run `python filter_prs.py` to filter down to integration related PRs
+
+
+N.B: If additional packages are installed from pip, update requirements.txt file by running `pip3 freeze > requirements.txt`   

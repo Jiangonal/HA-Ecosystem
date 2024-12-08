@@ -20,7 +20,7 @@ def save_buffered_data():
         with open("pull_requests_all_with_checkbox_data.csv", mode, newline="", encoding="utf-8") as file:
             writer = csv.writer(file)
             if mode == "w":
-                writer.writerow(["PR Number", "Title", "Created At", "Updated At", "State", 
+                writer.writerow(["PR Number", "Title", "Author", "Integration", "Created At", "Updated At", "State", 
                                  "Files Changed", "LOC Changed", "Total Comments", "Decision Time", "Closed Date", "URL", "Type of Change"])
             writer.writerows(buffer)  # Write all buffered rows at once
         buffer.clear()  # Clear buffer after writing
@@ -92,6 +92,8 @@ def add_checkbox_data():
                 pr_data = [
                     pr_number,
                     row["Title"],
+                    row["Author"],
+                    row["Integration"],
                     row["Created At"],
                     row["Updated At"],
                     row["State"],
