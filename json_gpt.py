@@ -1,5 +1,4 @@
 import pandas as pd
-import requests
 from openai import OpenAI
 from dotenv import load_dotenv
 from os import environ
@@ -34,30 +33,26 @@ if os.path.exists(output_file):
 # Process PRs
 batch_size = 5
 
-for start_idx in range(0, len(df_json), batch_size):
-    for idx in range(start_idx, min(start_idx + batch_size, len(df_json))):
-        test = df_json.iloc[idx]
-        pr_number = test['pull_request_url'].split('/')[-1]
+# Process PRs directly from the JSON file
+for idx, test in df_json.iterrows():
+    pr_number = test['pull_request_url'].split('/')[-1]
 
-        # Fetch issue comments
-        issue_comments_url = f"https://api.github.com/repos/home-assistant/core/issues/{pr_number}/comments"
-        response = requests.get(issue_comments_url, headers={"Authorization": f"Bearer {GITHUB_API_KEY}"})
-        issue_comment_data = response.json()
+    # Extract issue comments (excluding bots)
+    issue_comment_bodies = [
+        comment['comment'] for comment in test['comments']
+        if comment['comment_type'] == 'Issue' and 'bot' not in comment['user'].lower()
+    ]
 
-        # Filter out bot comments
-        issue_comment_bodies = [comment['body'] for comment in issue_comment_data if comment['user']['type'] != 'Bot']
+    # Extract review comments
+    review_comment_bodies = [
+        comment['comment'] for comment in test['comments']
+        if comment['comment_type'] == 'Review'
+    ]
 
-        # Fetch review comments
-        review_comments_url = f"https://api.github.com/repos/home-assistant/core/pulls/{pr_number}/comments"
-        response = requests.get(review_comments_url, headers={"Authorization": f"Bearer {GITHUB_API_KEY}"})
-        review_comment_data = response.json()
+    # Prepare the input for the OpenAI API
+    body = f"ISSUE COMMENT BODIES: \n{issue_comment_bodies}\n\nREVIEW COMMENT BODIES: \n{review_comment_bodies}"
 
-        # Extract review comment bodies
-        review_comment_bodies = [comment['body'] for comment in review_comment_data]
-
-        # Prepare the input for the OpenAI API
-        body = f"ISSUE COMMENT BODIES: \n{issue_comment_bodies}\n\nREVIEW COMMENT BODIES: \n{review_comment_bodies}"
-
+    try:
         # Send the request to the OpenAI API
         chat_response = client.beta.chat.completions.parse(
             model="gpt-4o-mini",
@@ -75,11 +70,19 @@ for start_idx in range(0, len(df_json), batch_size):
         for category in extracted_categories:
             category_totals[category] += 1
 
-    # Save progress to the CSV file every 5 PRs
-    totals_df = pd.DataFrame.from_dict(category_totals, orient='index', columns=['Total Count']).reset_index()
-    totals_df.columns = ['Category', 'Total Count']
-    totals_df.to_csv(output_file, index=False)
+    except Exception as e:
+        print(f"Error processing PR #{pr_number}: {e}")
 
-    print(f"Batch {start_idx // batch_size + 1} processed and saved to {output_file}.\n")
+    # Save progress to the CSV file every batch_size PRs
+    if (idx + 1) % batch_size == 0:
+        totals_df = pd.DataFrame.from_dict(category_totals, orient='index', columns=['Total Count']).reset_index()
+        totals_df.columns = ['Category', 'Total Count']
+        totals_df.to_csv(output_file, index=False)
+        print(f"Batch {idx // batch_size + 1} processed and saved to {output_file}.\n")
+
+# Final save after processing all PRs
+totals_df = pd.DataFrame.from_dict(category_totals, orient='index', columns=['Total Count']).reset_index()
+totals_df.columns = ['Category', 'Total Count']
+totals_df.to_csv(output_file, index=False)
 
 print(f"Processing completed. Results saved to {output_file}.")

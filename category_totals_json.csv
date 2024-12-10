@@ -1,33 +1,33 @@
 Category,Total Count
-Testing Issues,4
-Naming/ID Issues,4
-Code Structure Issues,4
-Unused Code Issues,1
+Testing Issues,8
+Naming/ID Issues,6
+Code Structure Issues,7
+Unused Code Issues,2
 Home Assistant Concepts Issues,1
 Sensor and Unit Issues,1
 API Communication Issues,1
-Communication Issues,4
-Review Process Issues,6
-Other,10
+Communication Issues,7
+Review Process Issues,11
+Other,20
 Code Review Challenges,1
 Unique ID/Naming Conventions,1
 Device Integration Issues,2
-Configuration Flow Issues,1
+Configuration Flow Issues,2
 Testing and Documentation,1
 Integration Platform Issues,1
-Configuration Issues,1
+Configuration Issues,3
 Authentication Issues,3
 Async Programming Issues,1
 Library/Client Structure Issues,1
 WebSocket Communication Issues,1
-Error Handling Issues,2
+Error Handling Issues,3
 Device Discovery Issues,1
 Error Handling and User Experience,1
 Integration Design Considerations,1
 Communication Protocols,1
 Smart Home Integration Challenges,1
 Code Review and Best Practices,1
-Integration Development Challenges,1
+Integration Development Challenges,3
 API and Data Handling,1
 Breaking Changes Concern,1
 Platform-specific Concerns,1
@@ -40,7 +40,7 @@ Webhook Implementation Issues,1
 Data Handling Issues,1
 Schema/Configuration Issues,1
 Code Quality Issues,1
-Internationalization Issues,1
+Internationalization Issues,2
 Entity Description Issues,1
 Entity Naming Issues,1
 Code Structure/Best Practices,1
@@ -48,3 +48,45 @@ API Key Management Issues,1
 Mypy Type Checking Issues,1
 Documentation Issues,1
 Review Process Clarity,1
+API Integration Issues,1
+Sensor and Unit Handling Issues,1
+Code Review Process,1
+Integration Setup Issues,1
+Configuration Flow,1
+Entity Registry and Unique ID Management,1
+Device Naming Conventions,1
+Testing Implementation,1
+Documentation and Communication,1
+Integration Limitations,1
+WebSocket Connection Issues,1
+Update Coordination Issues,1
+Device Discovery Challenges,1
+Error Handling Improvements,1
+Integration Design Suggestions,1
+User Experience Concerns,1
+Protocol and Communication Issues,1
+Testing and Validation Needs,1
+Documentation Requests,1
+Code Design Issues,1
+Naming/Domain Issues,1
+Platform-Specific Concerns,1
+Refactoring/Code Structure Issues,1
+Entity Type Definition,1
+PR Workflow Issues,1
+Coding Style Issues,1
+Integration Behavior Issues,1
+Device Communication Issues,1
+Entity Naming and Identification,1
+Webhook Functionality,1
+Code Structuring and Refactoring,1
+Review and Contribution Process,1
+Data Management and API Handling,1
+Validation Issues,1
+Integration Schema Issues,1
+Device Configuration Issues,1
+Entity Descriptions,1
+API Key Handling,1
+Naming/Localization Issues,1
+Code Quality/Structure,1
+Review Protocol,1
+Integration Challenges,1
