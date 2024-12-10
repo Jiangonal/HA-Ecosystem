@@ -1,0 +1,12 @@
+challenge,examples
+Testing Issues,"Testing Issues, Testing and Documentation"
+Naming and ID Issues,"Naming/ID Issues, Unique ID/Naming Conventions"
+Code Structure and Review Issues,"Code Structure Issues, Unused Code Issues, Code Review Challenges, Code Review and Best Practices"
+Home Assistant Specific Issues,"Home Assistant Concepts Issues, Integration Platform Issues"
+Device and Sensor Issues,"Sensor and Unit Issues, Device Integration Issues, Device Discovery Issues"
+Communication Issues,"API Communication Issues, Communication Issues, WebSocket Communication Issues, Communication Protocols"
+Review and Process Issues,Review Process Issues
+Configuration and Flow Issues,"Configuration Flow Issues, Configuration Issues"
+Authentication and Error Handling Issues,"Authentication Issues, Error Handling Issues, Error Handling and User Experience"
+API and Data Handling Issues,"API and Data Handling, Integration Design Considerations, Smart Home Integration Challenges, Integration Development Challenges"
+Other,"Other, Async Programming Issues, Library/Client Structure Issues"

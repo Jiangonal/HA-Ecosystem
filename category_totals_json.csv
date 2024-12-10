@@ -1,0 +1,50 @@
+Category,Total Count
+Testing Issues,4
+Naming/ID Issues,4
+Code Structure Issues,4
+Unused Code Issues,1
+Home Assistant Concepts Issues,1
+Sensor and Unit Issues,1
+API Communication Issues,1
+Communication Issues,4
+Review Process Issues,6
+Other,10
+Code Review Challenges,1
+Unique ID/Naming Conventions,1
+Device Integration Issues,2
+Configuration Flow Issues,1
+Testing and Documentation,1
+Integration Platform Issues,1
+Configuration Issues,1
+Authentication Issues,3
+Async Programming Issues,1
+Library/Client Structure Issues,1
+WebSocket Communication Issues,1
+Error Handling Issues,2
+Device Discovery Issues,1
+Error Handling and User Experience,1
+Integration Design Considerations,1
+Communication Protocols,1
+Smart Home Integration Challenges,1
+Code Review and Best Practices,1
+Integration Development Challenges,1
+API and Data Handling,1
+Breaking Changes Concern,1
+Platform-specific Concerns,1
+Entity Type Issues,1
+Device Connection Issues,1
+Translation and Localization Issues,1
+Time Management Issues,1
+Attribute Handling Issues,1
+Webhook Implementation Issues,1
+Data Handling Issues,1
+Schema/Configuration Issues,1
+Code Quality Issues,1
+Internationalization Issues,1
+Entity Description Issues,1
+Entity Naming Issues,1
+Code Structure/Best Practices,1
+API Key Management Issues,1
+Mypy Type Checking Issues,1
+Documentation Issues,1
+Review Process Clarity,1
