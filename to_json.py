@@ -2,7 +2,7 @@ import pandas as pd
 import json
 
 # Load CSV file
-file_path = 'pull_request_comments_commits_codeowners_integrations.csv'
+file_path = 'RQ2_FEAT_COMMENTS.csv'
 df = pd.read_csv(file_path)
 
 # Group by Pull Request URL
@@ -30,7 +30,7 @@ for url, group in df.groupby('Pull Request URL'):
     grouped_data.append(pull_request_data)
 
 # Save to JSON
-output_file = 'formatted_pull_requests_int.json'
+output_file = 'RQ2_FEAT.json'
 with open(output_file, 'w') as f:
     json.dump(grouped_data, f, indent=4)
 
