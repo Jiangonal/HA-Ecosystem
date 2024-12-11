@@ -1,0 +1,4275 @@
+Category,Total Count
+AC Control Functions,1
+ADB Command Customization,1
+API Availability Issues,2
+API Behavior Issues,1
+API Behavior Questions,1
+API Call Failures,1
+API Call Management,1
+API Call Structure Issues,1
+API Change Challenges,1
+API Changes,1
+API Communication Issues,2
+API Communication Problems,1
+API Compatibility Issues,3
+API Complexity Management,1
+API Concerns,1
+API Connectivity Issues,1
+API Constraints,2
+API Design,1
+API Design Challenges,2
+API Design Issues,8
+API Design and Dependency Issues,1
+API Development Challenges,1
+API Development and Integration Issues,1
+API Differences,1
+API Documentation Issues,5
+API Feature Check Issues,1
+API Handling Issues,4
+API Integration Challenges,12
+API Integration Concerns,1
+API Integration Issues,21
+API Integration Problems,1
+API Integration and Connection Issues,1
+API Interaction Issues,6
+API Issues,7
+API Key Handling Issues,1
+API Key Management,1
+API Key Management Issues,1
+API Limitations,22
+API Management Issues,1
+API Method Discussions,1
+API Rate Limit Issues,1
+API Rate Limiting,4
+API Rate Limiting Concerns,1
+API Request Management,1
+API Response Handling,2
+API Response Handling Issues,1
+API Response Inconsistencies,1
+API Response Issues,1
+API Response Parsing Issues,1
+API Return Value Issues,1
+API Semantics Issues,1
+API Simulator,1
+API Specification Ambiguity,1
+API Specificity Challenges,1
+API Stability Issues,2
+API Standards,1
+API Structure Issues,2
+API Support Issues,1
+API Time Zone Awareness,1
+API Token Issues,2
+API Token Management Issues,1
+API Usage,1
+API Usage Issues,4
+API Utilization,1
+API Versioning Issues,1
+API and Communication Issues,1
+API and Configuration Issues,1
+API and Integration Issues,2
+API and OAuth Issues,1
+API and Service Call Confusion,1
+API and Subscription Key Management,1
+API/Component Structure,1
+API/Endpoint Issues,1
+API/Integration Changes Concerns,1
+API/Logic Dependence,1
+Abstract Interface Concerns,1
+Abstraction Issues,1
+Abstraction and Code Structure,1
+Access Control Challenges,1
+Access Control Policies,1
+Access Token Management,1
+Accessing Configuration Data in Automations,1
+Accessing Device Attributes,1
+Accessory and Device Class Issues,1
+Accidental Approvals,1
+Acronym Clarity,1
+Action Definition Issues,1
+Action vs Mode Clarification,1
+Activity/Engagement Issues,1
+Adapter Connection Issues,1
+Adaptive Querying,1
+Add-on Management Issues,2
+Add-on Support Issues,2
+Add-on vs Integration Queries,1
+Advanced Configuration Challenges,1
+Advanced Configuration Concerns,1
+Advanced Mode Implementation,1
+Advanced Options Management,1
+Alarm Device Handling,1
+Alarm System Specifics,1
+Alert Management Issues,1
+Allowed Paths Awareness,1
+Application Credentials Management,1
+Application Icon Support,1
+Application Type Issues,1
+Approval Delays,5
+Approval Issues,1
+Approval Process,2
+Approval Process Challenges,1
+Approval Process Issues,1
+Approval and Review Process,1
+Approval and Review Process Delays,1
+Arch Discussion Requirements,1
+Architectural Changes,1
+Architectural Considerations,1
+Architectural Constraints,2
+Architectural Discussion,1
+Architectural Discussion Challenges,1
+Architectural Discussion Issues,1
+Architectural Discussion Needed,1
+Architectural Discussion Requirements,1
+Architectural Discussions,1
+Architectural Issues,1
+Architecture Approval Process,1
+Architecture Challenges,1
+Architecture Changes,1
+Architecture Concerns,2
+Architecture Decision Making,1
+Architecture Decision Record (ADR) Compliance,1
+Architecture Design,1
+Architecture Discussion,10
+Architecture Discussion Issues,1
+Architecture Discussion Needs,1
+Architecture Discussions,2
+Architecture Issues,1
+Architecture Review Process Issues,1
+Architecture and Code Organization,1
+Architecture and Design Challenges,1
+Architecture and Design Concerns,1
+Architecture and Design Issues,1
+Architecture and Guidelines Compliance,1
+Architecture/Design Discussion,1
+Area Context Issues,1
+Area ID Implementation Challenges,1
+Assets Management Issues,1
+Assistance/Support Need,1
+Assumed State Handling,1
+Assumed State and Simulation Challenges,1
+Assumption Risks,1
+Async Command Handling,1
+Async Configuration Issues,1
+Async Function Issues,1
+Async Functionality Concerns,1
+Async Functionality Issues,3
+Async Handling Issues,3
+Async Implementation Needs,1
+Async Implementation Problems,1
+Async Migration Implementation,1
+Async Operations,1
+Async Operations and State Management,1
+Async Programming Challenges,1
+Async Programming Issues,4
+Async Safety Concerns,1
+Async Structure Issues,1
+Async/Await Concerns,1
+Async/Await Handling,1
+Async/Await Handling Issues,1
+Async/Await Issues,1
+Async/Await Misuse,1
+Async/Await Usage Issues,1
+Async/Synchronous Compatibility Issues,1
+Asynchronous Communication Issues,1
+Asynchronous Design Issues,1
+Asynchronous Functionality,1
+Asynchronous Handling,1
+Asynchronous Handling Issues,1
+Asynchronous Method Naming,1
+Asynchronous Operations,2
+Asynchronous Operations Issues,1
+Asynchronous Processing Challenges,1
+Asynchronous Programming Challenges,5
+Asynchronous Programming Concerns,3
+Asynchronous Programming Issues,7
+Asynchronous Setup Issues,2
+Asynchronous vs Synchronous Design,1
+Attribute Configuration Issues,1
+Attribute Conflicts,1
+Attribute Control Issues,1
+Attribute Errors,2
+Attribute Exposure Issues,1
+Attribute Handling,3
+Attribute Handling Issues,6
+Attribute Management,5
+Attribute Management Issues,10
+Attribute Management and State Representation Issues,1
+Attribute Naming Issues,1
+Attribute Retrieval Issues,1
+Attribute Suggestions,1
+Attribute Visibility Issues,1
+Attributes Implementation Issues,1
+Attributes Management,1
+Attributes Management Issues,1
+Attributes Usage Concerns,1
+Attributes/ID Naming Issues,1
+Audio Metadata Issues,1
+Audio Processing Complexities,1
+Auth Handling Issues,1
+Auth/Authentication Issues,1
+Auth/Authorization Management,1
+Authentication Challenges,3
+Authentication Errors,1
+Authentication Flow Issues,1
+Authentication Handling Issues,1
+Authentication Integration,1
+Authentication Issues,25
+Authentication Scope Management,1
+Authentication Workflow Issues,1
+Authentication and Error Handling Issues,1
+Authentication and OAuth Issues,1
+Authentication/Authorization Issues,1
+Authentication/Reauthentication Issues,1
+Authentication/Token Management,1
+Auto Discovery Considerations,1
+Auto-detection Mechanism Issues,1
+Auto-detection of Protocols,1
+Autodiscovery Implementation Issues,1
+Automatic Address Detection,1
+Automatic Configuration Concerns,1
+Automatic Connection Management,1
+Automation Behavior Issues,1
+Automation Building Challenges,1
+Automation Concerns,2
+Automation Considerations,1
+Automation Implementation Issues,1
+Automation Initialization Issues,1
+Automation Integration,1
+Automation Integration Issues,1
+Automation Issues,3
+Automation Limitations,1
+Automation Refinement Suggestions,1
+Automation Requirements,1
+Automation Setup Issues,1
+Automation Support,1
+Automation Syntax Changes,1
+Automation Traces Issues,1
+Automation Troubleshooting,1
+Automation and Attribute Concerns,1
+Automation and Control Issues,1
+Automation and Entity Management,1
+Automation and Script Adjustments,1
+Automation and Script Issues,1
+Automation and Update Mechanism Issues,1
+Automation/Integration Logic Issues,1
+Automation/Script Configuration,1
+Automation/Scripting Validation Issues,1
+Automations,1
+Automations and Dashboard Compatibility,1
+Awaiting Review Issues,1
+BLE API Questions,1
+BLE Communication,1
+BLE Device Handling Issues,1
+Backend Development Issues,1
+Backend Integration Issues,1
+Backend Issues,1
+Backend Update Conflicts,1
+Backend and Dependency Management,1
+Backend and Frontend Architecture,1
+Backlog/Process Issues,1
+Backup Policy Decisions,1
+Backward Compatibility,2
+Backward Compatibility Concerns,1
+Backward Compatibility Issues,9
+Backwards Compatibility Concerns,1
+Backwards Compatibility Considerations,1
+Backwards Compatibility Issues,3
+Bad User Input Handling,1
+Bandwidth Management Issues,1
+Battery Control Logic Issues,1
+Battery Device Challenges,1
+Battery Management Issues,1
+Battery Monitoring,1
+Battery Monitoring Issues,1
+Battery-Powered Device Limitations,1
+Beginner Experience Issues,1
+Behavioral Issues,1
+Best Practice Guidance,2
+Best Practices,3
+Best Practices Issues,3
+Best Practices for Configurations,1
+Best Practices for Home Assistant Integrations,1
+Best Practices in Event Handling,1
+Best Practices in PRs Issues,1
+Best Practices/Configuration Handling Issues,1
+Beta Release Process,1
+Beta Release Processes,1
+Binary Sensor Class Structure,1
+Binary Sensor Design Issues,1
+Binary Sensor Handling,1
+Binary Sensor Implementation,1
+Binary Sensor Implementation Issues,1
+Binary Sensor Integration Challenges,1
+Binary Sensor Logic and Relationships,1
+Binary Sensor Specific Issues,1
+Binary Sensor Specifics,1
+Blocked or Dependent Issues,1
+Blocking Call Errors,1
+Blueprint Development,1
+Blueprint Handling Issues,1
+Blueprint Usage,1
+Blueprints Management,1
+Bluetooth & Device Management Challenges,1
+Bluetooth Configuration Issues,1
+Bluetooth Connectivity Issues,1
+Bluetooth Dependency Issues,1
+Bluetooth Implementation Issues,1
+Bluetooth Integration Challenges,3
+Bluetooth Integration Concerns,1
+Bluetooth Integration Issues,2
+Bluetooth Management Issues,1
+Bluetooth Proxy Issues,1
+Boolean Defaults Removal,1
+Boolean Logic in Sensor Attributes,1
+Boolean Value Handling,1
+Branch Management,2
+Branch Management Issues,11
+Branch Testing Issues,1
+Branching Challenges,1
+Branching Workflow Challenges,1
+Branching and Merge Strategy Issues,1
+Branching/Merging Issues,1
+Branching/PR Management Issues,1
+Brand Confusion,1
+Brand and Logo Management,1
+Branding/Device Identification Issues,1
+Branding/Identification Issues,1
+Breaking Change Communication Issues,1
+Breaking Change Concerns,2
+Breaking Change Considerations,1
+Breaking Change Management,1
+Breaking Changes,4
+Breaking Changes Handling,3
+Breaking Changes Impact,1
+Breaking Changes Management,2
+Bridge Device Configuration,1
+Brightness Control Issues,1
+Broker Connectivity Issues,1
+Buffer Size Constraints,1
+Bug Fixing,1
+Bug Reports,1
+Build Errors and Dependencies,1
+Build Issues,1
+Build Process Issues,1
+Built-in Functionality Issues,1
+Bump PR Requirements,1
+Business Logic Changes,1
+Button Entity Design,1
+Button Entity Implementation Issues,1
+Button Functionality Issues,1
+Button and Bypass Functionality,1
+CI Errors,1
+CI Testing Requirements,1
+CI Workflow Issues,1
+CI and Testing Issues,1
+CI/CD Challenges,2
+CI/CD Errors,1
+CI/CD Failure,1
+CI/CD Issues,10
+CI/CD Pipeline Issues,1
+CI/CD Problems,1
+CI/CD Process,1
+CI/CD Workflow Confusion,1
+CICD Issues,1
+CLA (Contributor License Agreement) Issues,1
+CLA Compliance,2
+CLA Compliance Issues,1
+CLA Issues,12
+CLA Process Issues,1
+CLA Signature Issues,1
+CLA Signing,10
+CLA Signing Issues,34
+CLA Signing Process,1
+CLA Submission Issues,1
+CLA and Compliance Issues,1
+CLA and Contribution Issues,6
+CLA and Contribution Process,4
+CLA and Contribution Process Issues,6
+CLA and Contribution Requirements,2
+CLA and Git Issues,1
+CLA and Legal Issues,2
+CLA/Contribution Issues,2
+CLA/Documentation Issues,1
+CLA/Legal Issues,13
+CLAs and Contribution Process,1
+Cache Management Issues,1
+Caching Behavior Issues,1
+Caching Issues,4
+Caching Results,1
+Caching/Performance Issues,1
+Calculation and Implementation Queries,1
+Calendar Event Handling,1
+Calendar Integration Challenges,1
+Calendar Integration Issues,2
+Calibration Issues,2
+Callback Management Issues,2
+Callback and Event Handling Issues,1
+Callback/State Management Issues,1
+Camera API Concerns,1
+Camera Compatibility Issues,1
+Camera Entity Functionality,1
+Camera Functionality Issues,1
+Camera Integration,1
+Camera Integration Challenges,1
+Camera Integration Issues,2
+Camera Integration Specifics,1
+Change Management,1
+Changelog Management,1
+Circular Import Issues,2
+Clarification Needed,1
+Clarification Needed on API Values,1
+Clarification Requests,2
+Clarity and Communication Issues,1
+Clarity and Documentation Issues,1
+Class Access Modifiers,1
+Class Hierarchy and Structure Issues,1
+Class Inheritance in Integrations,1
+Class Structure Issues,1
+Class Structure and Readability,1
+Class and Type Hierarchy Issues,1
+Client Connectivity Issues,1
+Client Construction Issues,1
+Client Coordination Issues,1
+Client/Entity Initialization Issues,1
+Client/Session Management Issues,1
+Climate Control Component Issues,1
+Climate Control Logic Issues,1
+Climate Device Functional Issues,1
+Climate Device Integration Challenges,1
+Climate Entity Issues,1
+Climate Integration Issues,1
+ClimateEntityFeature Concerns,1
+Cloud Account Linking Services,1
+Cloud Dependency Concerns,1
+Cloud Integration Challenges,1
+Cloud Integration Handling,1
+Cloud Integration Issues,2
+Cloud Service Interaction Issues,1
+Cloud Solution Issues,1
+Cloud vs Local Access Issues,1
+Cloud vs Local Integration,1
+Cloud vs Local Integration Issues,1
+Cluster Handler Issues,1
+Cluster Handling Issues,1
+Code Adjustments,1
+Code Architecture Issues,1
+Code Architecture and Organization,1
+Code Architecture and Organization Issues,1
+Code Assignment Practices,1
+Code Attribution Issues,1
+Code Behavior Mismatch,1
+Code Change Bundling,1
+Code Changes/Reverts,1
+Code Clarity Issues,5
+Code Clarity and Documentation Issues,1
+Code Clarity and Maintenance,1
+Code Clarity and Simplification,1
+Code Clarity and Structure,1
+Code Clarity and Structure Issues,1
+Code Clarity and Suggestions,1
+Code Clarity and Value Addition,1
+Code Cleaning Suggestions,1
+Code Cleanliness,1
+Code Cleanup,2
+Code Cleanup Issues,5
+Code Cleanup Needs,1
+Code Cleanup Opportunities,1
+Code Cleanup Requests,1
+Code Cleanup Suggestions,1
+Code Cleanup/Review Process,1
+Code Compatibility Issues,2
+Code Completion Issues,1
+Code Complexity Issues,5
+Code Complexity and Structure Issues,1
+Code Consistency Challenges,1
+Code Consistency Issues,5
+Code Consistency and Standards,1
+Code Consistency and Structure,1
+Code Contribution Issues,1
+Code Convention Issues,1
+Code Coverage Issues,6
+Code Design Issues,3
+Code Documentation,1
+Code Documentation Issues,3
+Code Duplication,3
+Code Duplication Issues,15
+Code Duplication in Integrations,1
+Code Duplication/Structure Issues,1
+Code Efficiency,1
+Code Efficiency Issues,4
+Code Efficiency and Structure,1
+Code Execution Issues,1
+Code Execution Setup,1
+Code Explanation Issues,1
+Code Fixes and Improvements,1
+Code Formatting,1
+Code Formatting Issues,3
+Code Implementation Challenges,2
+Code Implementation Guidelines,1
+Code Implementation Issues,8
+Code Implementation Suggestions,1
+Code Import Best Practices,1
+Code Improvement Suggestions,2
+Code Integration Challenges,1
+Code Integration Issues,1
+Code Integration/Conflict Issues,1
+Code Logic Clarification,1
+Code Logic Issues,5
+Code Maintainability,1
+Code Maintainability Issues,2
+Code Maintenance,2
+Code Maintenance Challenges,2
+Code Maintenance Issues,1
+Code Management Issues,1
+Code Modernization,1
+Code Naming Issues,1
+Code Optimization,2
+Code Optimization Issues,7
+Code Optimization Suggestions,3
+Code Organization,2
+Code Organization Issues,12
+Code Organization and Complexity,1
+Code Organization and Structure Issues,1
+Code Owner Management,1
+Code Owner Responsibilities,1
+Code Owners Management,1
+Code Ownership Clarification,1
+Code Ownership Issues,5
+Code Ownership and Contribution Process,1
+Code Ownership and Contribution Standards,1
+Code Ownership and Contributors,1
+Code Ownership and Maintenance,1
+Code Ownership and Responsibility,1
+Code Ownership/Contribution Practices,1
+Code Quality,1
+Code Quality & Review Process Issues,1
+"Code Quality Checks (pylint, mypy)",1
+Code Quality Concerns,1
+Code Quality Improvement,1
+Code Quality Improvements,3
+Code Quality Issues,68
+Code Quality Practices,1
+Code Quality Standards and Guidelines,1
+Code Quality Suggestions,2
+Code Quality and Best Practices Issues,1
+Code Quality and Coverage,1
+Code Quality and Efficiency,1
+Code Quality and Maintenance,1
+Code Quality and Maintenance Issues,2
+Code Quality and Readability,2
+Code Quality and Readability Issues,1
+Code Quality and Refactoring Issues,1
+Code Quality and Refactoring Requests,1
+Code Quality and Review Concerns,1
+Code Quality and Review Process Issues,1
+Code Quality and Standards,4
+Code Quality and Structure Issues,6
+Code Quality and Testing Standards,1
+Code Quality and Warnings,1
+Code Quality/Structure,1
+Code Readability Issues,3
+Code Readability Suggestions,1
+Code Readability and Structure,4
+Code Readability and Structure Issues,1
+Code Rebase Challenges,1
+Code Rebase Issues,2
+Code Redundancy,1
+Code Refactor Suggestions,1
+Code Refactoring,5
+Code Refactoring Issues,1
+Code Refactoring Needs,2
+Code Refactoring Requirements,1
+Code Refactoring Suggestions,3
+Code Refactoring and Cleanliness,1
+Code Refactoring and Organization,1
+Code Refactoring for Calendar Integration,1
+Code Refinement,1
+Code Repository Issues,1
+Code Requirements Issues,1
+Code Reusability,1
+Code Reusability Issues,4
+Code Reuse Issues,1
+Code Reuse and Integration Issues,1
+Code Reuse/DRY Principles,1
+Code Review Best Practices,2
+Code Review Challenges,4
+Code Review Communication Issues,2
+Code Review Concerns,3
+Code Review Discussions,1
+Code Review Feedback,8
+Code Review Feedback Issues,1
+Code Review Guidance,1
+Code Review Issues,10
+Code Review Practices,1
+Code Review Process,12
+Code Review Process Challenges,2
+Code Review Process Issues,14
+Code Review Processes,1
+Code Review Readiness,1
+Code Review Recommendations,1
+Code Review Standards,1
+Code Review Suggestions,16
+Code Review and Best Practices,1
+Code Review and Collaboration,2
+Code Review and Collaboration Issues,2
+Code Review and Improvement,1
+Code Review and Integration Challenges,1
+Code Review and Linter Issues,1
+Code Review and Maintenance,1
+Code Review and Quality Control,1
+Code Review and Quality Issues,1
+Code Review and Refactoring,1
+Code Review and Refactoring Issues,1
+Code Review and Standards,1
+Code Review and Structure Issues,2
+Code Review and Suggestions,5
+Code Review and Version Control Issues,1
+Code Review/Feedback,1
+Code Revisions and Requirements,1
+Code Simplicity Issues,1
+Code Simplification,3
+Code Simplification Issues,1
+Code Spelling/Grammar Issues,1
+Code Standards Issues,1
+Code Structure Challenges,1
+Code Structure Concerns,1
+Code Structure Improvement,3
+Code Structure Issues,440
+Code Structure Problems,1
+Code Structure Recommendations,1
+Code Structure Suggestions,1
+Code Structure and Architectural Considerations,1
+Code Structure and Architecture Issues,1
+Code Structure and Best Practices,7
+Code Structure and Best Practices Issues,1
+Code Structure and Clarity Issues,1
+Code Structure and Cleanup,3
+Code Structure and Cleanup Issues,1
+Code Structure and Dependency Issues,1
+Code Structure and Design Issues,5
+Code Structure and Design Patterns,1
+Code Structure and Duplication Issues,1
+Code Structure and Error Handling,1
+Code Structure and Logic Issues,3
+Code Structure and Naming Issues,2
+Code Structure and Optimization Issues,3
+Code Structure and Organization,4
+Code Structure and Organization Issues,8
+Code Structure and Organization Problems,1
+Code Structure and Platform Considerations,1
+Code Structure and Readability,1
+Code Structure and Readability Issues,2
+Code Structure and Refactoring,5
+Code Structure and Review Process Issues,1
+Code Structure and Standards,1
+Code Structure and Testing Issues,1
+Code Structure and Type Safety,1
+Code Structure and Typing Issues,2
+Code Structure/Best Practices,1
+Code Structure/Best Practices Issues,1
+Code Structure/Dependency Issues,1
+Code Structure/Organization Issues,1
+Code Structure/Refactoring Issues,1
+Code Structuring Issues,1
+Code Style & Structure Issues,1
+Code Style Issues,7
+Code Style/Convention Issues,1
+Code Submission Issues,1
+Code Suggestion,1
+Code Suggestion Improvements,1
+Code Suggestion Issues,2
+Code Suggestion and Improvements,1
+Code Suggestions,4
+Code Suggestions and Changes,1
+Code Suggestions and Clean-up,1
+Code Suggestions and Modifications,1
+Code Suggestions/Refactoring,1
+Code Testing Challenges,1
+Code Testing Issues,1
+Code Testing and Maintenance,1
+Code Updates for Unsubscribing,1
+Code Usage Recommendations,1
+Code Versioning Issues,1
+Code and Documentation Review Challenges,1
+Code and Feature Development Delays,1
+Code and Functionality Clarity,1
+Code/Functionality Implementation Issues,1
+Codebase Complexity,1
+Codeowner Issues,1
+Codeowners Management,1
+Codeowners/Ownership Issues,1
+Coding Standards,4
+Coding Standards Issues,2
+Coding Style Recommendations,1
+Collaboration & Communication Issues,1
+Collaboration Challenges,3
+Collaboration Issues,4
+Collaboration and Code Review Challenges,1
+Collaboration and Communication,1
+Collaboration and Communication Challenges,1
+Collaboration and Communication Issues,1
+Collaboration/Communication Issues,1
+Color Mode Handling,3
+Color Mode Implementation Issues,1
+Color Mode Issues,1
+Color Mode Management,1
+Color and Effect Handling,1
+Command Argument Issues,1
+Command Class Naming Issues,1
+Command Execution Issues,1
+Command Handling Issues,2
+Command Integration Issues,1
+Command Line Integration,1
+Command Requirements,1
+Command and Parameter Handling Issues,1
+Command/Integration Issues,1
+Commit Author Association Issues,1
+Commit Link Issues,1
+Commit Management Issues,1
+Commit Message Quality,1
+Commit References,1
+Commit Structuring,1
+Communication Challenges,13
+Communication Clarifications,1
+Communication Clarity,2
+Communication Clarity Issues,2
+Communication Confusion,1
+Communication Flow Challenges,1
+Communication Gaps,4
+Communication Issues,404
+Communication Protocol Challenges,1
+Communication Protocol Issues,5
+Communication Protocol Reliability,1
+Communication Protocols,1
+Communication Protocols Issues,1
+Communication about Changes,1
+Communication about Integration Approach,1
+Communication about Integration Management,1
+Communication and Clarification Issues,3
+Communication and Clarification Needs,1
+Communication and Clarity Issues,2
+Communication and Clarity in Reviews,1
+Communication and Collaboration,4
+Communication and Collaboration Challenges,1
+Communication and Collaboration Issues,24
+Communication and Coordination Challenges,1
+Communication and Coordination Issues,3
+Communication and Documentation Issues,2
+Communication and Guidance Issues,1
+Communication and Responses,1
+Communication and Review Issues,1
+Communication and Review Process,3
+Communication and Review Process Delays,1
+Communication and Review Process Issues,3
+Communication and Scope Issues,1
+Communication and suggestions between reviewers and developers,1
+Communication for Review,1
+Communication of Merge Readiness,1
+Communication on Development Process,1
+Communication on Integration Strategies,1
+Communication with API and Device Management Issues,1
+Communication with Devices,1
+Communication with External Libraries,1
+Communication with Hardware,1
+Communication with Maintainers,1
+Communication with Manufacturer,1
+Communication/Collaboration Issues,1
+Communication/Coordination Issues,1
+Communication/Feedback Issues,1
+Communication/Integration Issues,1
+Communications and Collaboration Issues,1
+Community Collaboration,1
+Community Communication,1
+Community Contribution Challenges,1
+Community Engagement,3
+Community Engagement Challenges,1
+Community Engagement Issues,1
+Community Guidelines Issues,1
+Community Interaction,1
+Community Involvement,1
+Community Standards Issues,1
+Community and Communication Challenges,2
+Compatibility,1
+Compatibility Concerns,1
+Compatibility Issues,8
+Compatibility Issues (Python 2 vs Python 3),1
+Compatibility and Integration Issues,1
+Compatibility with External Libraries,1
+Compatibility with Home Assistant Versions,1
+Compatibility with Legacy Systems,1
+Compatibility with Older Models,1
+Complex Code Refactoring,1
+Complex Integration Management,1
+Complex Logic Handling,1
+Complexity Concerns,1
+Complexity Issues,2
+Complexity Management,2
+Complexity Management Issues,1
+Complexity in Codebase,1
+Complexity of Device Integration,1
+Complexity of Grace Period Logic,1
+Complexity of Integration,1
+Complexity of PR Management,1
+Complexity of SQL Queries,1
+Compliance Issues,1
+Compliance and Scraping Concerns,1
+Complicated Integration Logic,1
+Component Behavior Clarification,1
+Component Change Issues,1
+Component Configuration Issues,2
+Component Dependencies,1
+Component Design Issues,2
+Component Development Best Practices,1
+Component Development Issues,2
+Component Integration Issues,3
+Component Loading Issues,1
+Component Naming and ID Handling,1
+Component Registration Issues,1
+Component Specific Limitations,1
+Component Specificity Issues,1
+Component State Issues,1
+Component Structure Issues,2
+Component-Specific Adaptation Issues,1
+Component/Integration Structure Issues,1
+Concept Clarification,1
+Concept/Feature Specification,1
+Conceptual Architecture Discussions,1
+Conceptual Clarity Issues,1
+Conceptual Issues,1
+Conceptual Understanding Issues,1
+Concurrency Issues,2
+Conditions and Actions,1
+Config Entry Handling,1
+Config Entry Issues,1
+Config Entry Management,3
+Config Entry Management Issues,4
+Config Entry Setup Issues,1
+Config Flow Best Practices,1
+Config Flow Design Issues,1
+Config Flow Development,2
+Config Flow Development Issues,1
+Config Flow Handling,1
+Config Flow Implementation,1
+Config Flow Implementation Issues,1
+Config Flow Issues,14
+Config Flow Management,3
+Config Flow Migration Challenges,1
+Config Flow Migration Issues,1
+Config Flow Requirement,1
+Config Flow Requirements,2
+Config Flow Support,1
+Config Flow Testing Issues,1
+Config Flow Transition,1
+Config Flow Updates,1
+Config Flow and GPS Support,1
+Config Flow and Unique ID Concerns,1
+Config Flow and User Experience Issues,1
+Config Flow/Device Configuration Issues,1
+Config Flows,1
+Config Management Issues,2
+Config Schema Issues,1
+Config/Authentication Issues,1
+Configuration Challenges,8
+Configuration Complexity,7
+Configuration Concerns,1
+Configuration Conflicts,1
+Configuration Entry Guidelines,1
+Configuration Entry Issues,3
+Configuration Entry Management,1
+Configuration Errors,3
+Configuration Files,1
+Configuration Flow,1
+Configuration Flow Challenges,1
+Configuration Flow Concerns,2
+Configuration Flow Disruption,1
+Configuration Flow Issues,55
+Configuration Flow Missing,1
+Configuration Flow Requirements,1
+Configuration Flow Standards,1
+Configuration Flows Issues,1
+Configuration Handling,3
+Configuration Handling Issues,4
+Configuration Issues,134
+Configuration Logic Issues,1
+Configuration Management,30
+Configuration Management Challenges,2
+Configuration Management Issues,48
+Configuration Migration Challenges,1
+Configuration Migration Issues,1
+Configuration Options,7
+Configuration Options Issues,2
+Configuration Parameter Management,1
+Configuration Parsing Issues,1
+Configuration Preferences,1
+Configuration Problems,2
+Configuration Process Issues,1
+Configuration Refactoring,1
+Configuration Requirements,1
+Configuration Schema Issues,4
+Configuration Schema Problems,1
+Configuration Service Queries,1
+Configuration Setting Issues,1
+Configuration Strategy,1
+Configuration Structure Issues,1
+Configuration Validation,2
+Configuration Validation Issues,3
+Configuration and Availability Issues,1
+Configuration and Code Flow Issues,1
+Configuration and Compatibility Issues,1
+Configuration and Config Flow Issues,1
+Configuration and Error Handling Issues,1
+Configuration and Integration Issues,1
+Configuration and Mapping,1
+Configuration and Migration Issues,1
+Configuration and Naming Issues,1
+Configuration and Platform Issues,1
+Configuration and Schema Design Issues,1
+Configuration and Service Handling,1
+Configuration and Setup Challenges,2
+Configuration and Setup Issues,7
+Configuration and Setup Queries,1
+Configuration and Setup Questions,1
+Configuration and State Issues,1
+Configuration and State Management,1
+Configuration and State Management Issues,1
+Configuration and Unit Measurement Issues,1
+Configuration and Validation Issues,1
+Configuration and YAML Issues,1
+Configuration/Attribute Issues,1
+Configuration/Customization Issues,1
+Configuration/Flow Issues,1
+Configuration/Naming Issues,1
+Configuration/Network Issues,1
+Configuration/Options Flow Issues,1
+Configuration/Setup Issues,1
+Configuration/UI Issues,1
+Confirmation of Features,1
+Conflict Resolution,3
+Conflict Resolution Issues,2
+Conflicting PRs,1
+Conflicts in Branching,1
+Confusion Over Functionality,1
+Connection Handling Issues,1
+Connection Issues,6
+Connection Logic Issues,2
+Connection Management Issues,5
+Connection Reliability Issues,1
+Connection Status Management,1
+Connection and State Management Issues,1
+Connection and Update Interval Issues,1
+Connection/Communication Issues,1
+Connectivity Challenges,1
+Connectivity Sensor Implementation,1
+Consistency and Naming Issues,1
+Consistency in Naming,1
+Constant Management Issues,1
+Constant Usage Issues,1
+Constant/Naming Issues,1
+Constants Management,3
+Constants Management Issues,1
+Constants Usage,3
+Constants Usage Issues,1
+Constants Use,1
+Constants and Code Efficiency,1
+Constants and Configurations,1
+Content Type Issues,1
+Context Passing Issues,1
+Continuous Integration (CI) Issues,3
+Continuous Integration Issues,15
+Contributing Guidelines,1
+Contribution Guidance,1
+Contribution Guidelines Issues,1
+Contribution Process,2
+Contribution Process Issues,13
+Contributions and Collaboration,1
+Contributions and Documentation Issues,1
+Contributor Agreement Issues,4
+Contributor Experience,1
+Contributor Guidance,1
+Contributor Guidelines,2
+Contributor Guidelines Issues,1
+Contributor Issues,1
+Contributor License Agreement (CLA) Issues,1
+Contributor Licensing Agreement (CLA) Issues,1
+Contributor Process (CLA) Issues,1
+Contributor Process Issues,1
+Control Interface Issues,1
+Control Logic Issues,1
+Control Point Representation,1
+Control vs Sensor Distinction Issues,1
+Controller ID Management,1
+Controller Identification Issues,1
+Controller State Tracking,1
+Controller/Actuator State Issues,1
+Conversation Agent Issues,1
+Conversation ID Management,1
+Conversion and Data Handling Issues,1
+Conversion and Unit Handling Issues,1
+Coordinated Scan Interval,1
+Coordination Issues,2
+Coordination and Collaboration Issues,1
+Coordination and Data Handling,1
+Coordinator Design Considerations,1
+Coordinator Design Issues,1
+Coordinator Issues,3
+Coordinator Logic Issues,1
+Coordinator Management,1
+Coordinator Management Issues,1
+Coordinator Setup Issues,1
+Coordinator Structure Issues,1
+Coordinator Typing Issues,1
+Coordinator Usage Challenges,1
+Coordinator Usage Issues,3
+CoordinatorEntity Issues,1
+Coordinators Implementation,1
+Coordinators and Data Fetching Issues,1
+Coordinators and Data Handling,1
+Core Implementation Issues,1
+Core Team Collaboration,1
+Core Team Decision,1
+Core Team Decisions,1
+Core and Supervisor Distinction,1
+Core vs Custom Integration Confusion,1
+Coroutine Usage Issues,1
+Cost Calculation Issues,1
+Countdown Behavior in Entities,1
+Countdown Functionality Challenges,1
+Coverage Reporting,1
+Credential Issues,1
+Credential Management,1
+Credential Management Issues,1
+Cron and Offset Conflicts,1
+Cross-Entity Functionality Issues,1
+Custom Attribute Management,1
+Custom Behavior Implementation,1
+Custom Card Development,1
+Custom Component Challenges,2
+Custom Component Considerations,1
+Custom Component Development,4
+Custom Component Development Issues,1
+Custom Component Discussions,1
+Custom Component Issues,5
+Custom Component Limitations,2
+Custom Component Requests,1
+Custom Component Setup Issues,1
+Custom Component Usage and HACS,1
+Custom Components Issues,2
+Custom Components Management,1
+Custom Device Classes,1
+Custom Forks Issues,1
+Custom Implementation Issues,1
+Custom Integration,1
+Custom Integration Challenges,1
+Custom Integration Handling,1
+Custom Integration Issues,2
+Custom Integrations,1
+Custom Integrations via HACS,1
+Custom Service Implementation,1
+Custom Services Implementation,1
+Custom Validators,1
+Custom vs Official Integrations,1
+Customizability Concerns,1
+Customization Features for Entities,1
+Customization Needs,1
+Customization vs Default Settings,1
+DHCP Discovery Challenges,1
+DLD Support Request,1
+DST Transition Challenges,1
+Dashboard Representation Issues,1
+Dashboard/Data Visualization,1
+Data Access Restrictions,1
+Data Accuracy Issues,1
+Data Accuracy Problems,1
+Data Aggregation and Comparisons,1
+Data Availability Issues,1
+Data Consistency Issues,1
+Data Coordination Issues,1
+Data Coordinator Implementation,1
+Data Coordinator Usage,1
+Data Duplication Concerns,1
+Data Fetching Issues,1
+Data Fetching and API Issues,1
+Data Fetching and Configuration,1
+Data Fetching and Polling Issues,1
+Data Filtering/Functionality Debate,1
+Data Handling,2
+Data Handling Challenges,1
+Data Handling Concerns,1
+Data Handling Discussions,1
+Data Handling Issues,42
+Data Handling and Aggregation,1
+Data Handling and Display Issues,1
+Data Handling and Error Management Issues,1
+Data Handling and Integration Logic Issues,1
+Data Handling and Modeling,1
+Data Handling/Optimization Issues,1
+Data Handling/Return Values Issues,1
+Data Import Issues,1
+Data Management Issues,16
+Data Object Issues,1
+Data Ordering Issues,1
+Data Parsing and Formatting Challenges,1
+Data Passing Challenges,1
+Data Persistence Issues,1
+Data Point Issues,1
+Data Privacy/Diagnostics Issues,1
+Data Representation Issues,3
+Data Representation/Classification Issues,1
+Data Retrieval Issues,2
+Data Schema Issues,1
+Data Scraping Concerns,1
+Data Security and Encryption Issues,1
+Data Serialization Issues,3
+Data Storage Issues,2
+Data Storage and Migration Issues,1
+Data Structure Concerns,1
+Data Structure Decisions,1
+Data Structure Issues,10
+Data Structure Normalization,1
+Data Structure Optimization,1
+Data Structure and Access Efficiency,1
+Data Structure and Entity Management,1
+Data Structure and Initialization Issues,1
+Data Structuring and Organization Issues,1
+Data Type Confusion,1
+Data Type Consistency Issues,1
+Data Type Decisions,1
+Data Type Handling,2
+Data Type Handling Issues,1
+Data Type Implementation for Home Automation,1
+Data Type Issues,2
+Data Update Coordination Issues,3
+Data Update Coordinator Implementation,1
+Data Update Coordinator Issues,1
+Data Update Coordinator Usage,1
+Data Validation,1
+Data Validation Issues,3
+Data and API Integration,1
+DataUpdateCoordinator Issues,1
+DataUpdateCoordinator Utilization,1
+Database Concerns,1
+Database Connectivity Issues,1
+Database Handling Issues,1
+Database Integration Challenges,1
+Database Management Issues,2
+Database Migration Issues,1
+Date Handling Issues,1
+Date Validation Issues,1
+Datetime Handling Issues,1
+Datetime Utility Usage,1
+Daylight Saving Time Considerations,1
+Deadlock Concerns,1
+Debouncing Mechanisms,1
+Debug Logging Issues,1
+Debugging Challenges,2
+Debugging Considerations,1
+Debugging Issues,6
+Debugging Requirements and Tooling,1
+Debugging and Handling Errors,1
+Debugging and Logging Issues,2
+Debugging and Testing Issues,1
+Debugging/Logging Issues,1
+Decision Making,1
+Decorator Issues,1
+Default Behavior Concerns,1
+Default Configuration Issues,1
+Default Mode Configuration,1
+Default Settings,1
+Default Settings and Behavior Issues,1
+Default Transition Confusion,1
+Default Value Handling,1
+Default Value Questions,1
+Default Values and Schema Management,1
+Dependence on Recent Updates/Versions,1
+Dependencies on Other PRs,1
+Dependency Compatibility Issues,1
+Dependency Concerns,1
+Dependency Conflicts,3
+Dependency Issues,9
+Dependency Management,27
+Dependency Management Issues,43
+Dependency Management Problems,1
+Dependency Version Issues,1
+Dependency and Integration Concerns,1
+Dependency on Device-Specific Translations,1
+Dependency on External Libraries,1
+Dependency on Official Components,1
+Dependency on Other PRs,1
+Dependency on Versioning,1
+Dependency on YAML Configuration,1
+Deployment Issues,1
+Deprecated Entities and Migration,1
+Deprecated Features,2
+Deprecated Features Handling,1
+Deprecated Integration Issues,1
+Deprecation Concerns,2
+Deprecation Handling,3
+Deprecation Issues,2
+Deprecation Management,3
+Deprecation Notices,3
+Deprecation Planning,1
+Deprecation Warnings,2
+Deprecation and Breaking Change Handling,1
+Deprecation and Breaking Changes,1
+Deprecation and Configuration Management,1
+Deprecation of Old Configs,1
+Design Decisions,1
+Design Issues,1
+Design Standards Issues,1
+Destructive Operations,1
+Developer Communication Issues,2
+Developer Documentation Reference,1
+Developer Experience,1
+Developer Experience Challenges,1
+Developer Experience Issues,2
+Development Activity Questions,1
+Development Best Practices,1
+Development Communication,1
+Development Environment Challenges,1
+Development Environment Issues,12
+Development Environment Setup,4
+Development Environment Setup Challenges,1
+Development Environment Setup Issues,5
+Development Focus Issues,1
+Development Guidelines Issues,1
+Development Practices,1
+Development Process,1
+Development Process Challenges,2
+Development Process Concerns,1
+Development Process Issues,14
+Development Process and Workflow,1
+Development Readiness,1
+Development Skills and Knowledge Issues,1
+Development Workflow,1
+Development Workflow Challenges,1
+Development Workflow Issues,8
+Device Abstraction and Design Issues,1
+Device Action Handling,1
+Device Action Implementation,1
+Device Addressing Challenges,1
+Device Addressing Issues,1
+Device Attribute Changes,1
+Device Attribute Handling,1
+Device Attribute Management,2
+Device Authentication Difficulties,1
+Device Automation Challenges,1
+Device Automation Design,1
+Device Automation Limitations,1
+Device Availability Issues,2
+Device Behavior Expectations,1
+Device Behavior Issues,3
+Device Behavior Logic Issues,1
+Device Capability Considerations,1
+Device Capability Issues,2
+Device Capability Limitations,2
+Device Capability Merging,1
+Device Capability Validation,1
+Device Category Confirmation,1
+Device Category Documentation Issues,1
+Device Category Management,1
+Device Characteristics and Compatibility Considerations,1
+Device Class Approval,1
+Device Class Assignment Issues,1
+Device Class Classification Issues,1
+Device Class Configuration Issues,3
+Device Class Definition,1
+Device Class Definitions,1
+Device Class Handling,3
+Device Class Integration,1
+Device Class Issues,19
+Device Class Management,3
+Device Class Placement,1
+Device Class Specification,3
+Device Class Specification Issues,2
+Device Class Translation Issues,1
+Device Class Usage,2
+Device Class Utilization Issues,2
+Device Class and Entity Issues,1
+Device Class and Icon Handling,1
+Device Class and Icon Issues,2
+Device Class and Icon Restrictions,1
+Device Class and State Class Definitions,1
+Device Class and Translatability Issues,1
+Device Class and Translation Issues,1
+Device Class/Functionality Issues,1
+Device Classification Issues,2
+Device Coexistence,1
+Device Command Class Issues,1
+Device Command Handling,1
+Device Command Issues,1
+Device Communication,3
+Device Communication Challenges,1
+Device Communication Errors,1
+Device Communication Issues,16
+Device Communication Limitations,1
+Device Communication Models,1
+Device Communication Protocols,1
+Device Compatability,1
+Device Compatibility,2
+Device Compatibility Issues,48
+Device Compatibility and Configuration,1
+Device Component Differentiation Issues,1
+Device Configuration Issues,21
+Device Configuration Problems,1
+Device Configuration and Compatibility,1
+Device Configuration and Hardware Dependencies,1
+Device Configuration and Setup,1
+Device Connectivity Challenges,1
+Device Connectivity Issues,4
+Device Consistency Issues,1
+Device Control Challenges,1
+Device Control Issues,3
+Device Control and Feedback Issues,1
+Device Coordination Issues,1
+Device Count Representation,1
+Device Credential Challenges,1
+Device Data Requirements,1
+Device Detection Issues,1
+Device Discovery,1
+Device Discovery Challenges,3
+Device Discovery Issues,18
+Device Discovery Problems,3
+Device Discovery and Setup Challenges,1
+Device Duplication Issues,1
+Device Enablement Issues,1
+Device Entity Management,2
+Device Entry Issues,1
+Device Entry Management Issues,1
+Device Event Disambiguation,1
+Device Explanation Requests,2
+Device Feature Support Issues,1
+Device Feature Understanding Issues,1
+Device Feature Variability,1
+Device Features Issues,1
+Device Functionality,1
+Device Functionality Challenges,1
+Device Functionality Clarification,1
+Device Functionality Issues,4
+Device Handling Issues,2
+Device ID Handling,1
+Device ID Issues,1
+Device ID Usage and Naming,1
+Device ID and Configuration Issues,1
+Device ID and System Entity Issues,1
+Device ID/Serial Handling Issues,1
+Device Identification,1
+Device Identification Issues,5
+Device Identification and Management,1
+Device Identification and Mapping,1
+Device Identification and Metadata,1
+Device Identification and Naming,1
+Device Identifier Issues,1
+Device Inclusion via QR Code,1
+Device Info Handling,1
+Device Info Implementation,1
+Device Info Management,4
+Device Information Assignment,1
+Device Information Disclosure Challenges,1
+Device Information Handling,1
+Device Information Issues,1
+Device Initialization Issues,1
+Device Integration Best Practices,1
+Device Integration Challenges,16
+Device Integration Clarity,1
+Device Integration Complexity,1
+Device Integration Concepts,1
+Device Integration Conflicts,1
+Device Integration Consistency,1
+Device Integration Features (Preset Modes),1
+Device Integration Functionality,1
+Device Integration Issues,39
+Device Integration Limitations,1
+Device Integration Logic,2
+Device Integration Patterns,1
+Device Integration Specific Issues,2
+Device Integration Support,1
+Device Integration Testing,1
+Device Integration via UI,1
+Device Interaction Challenges,2
+Device Interaction Issues,1
+Device Interface Issues,1
+Device Library and Abstraction Issues,1
+Device Lifecycle Management,1
+Device Management,3
+Device Management Issues,4
+Device Management and Registry Issues,2
+Device Manufacturer Handling,1
+Device Measurement Issues,1
+Device Memory Issues,1
+Device Mode Handling,1
+Device Mode Management,1
+Device Model Handling,1
+Device Model Issues,1
+Device Model Specifics,1
+Device Name Translation Issues,1
+Device Naming Conventions,1
+Device Naming Issues,6
+Device Naming and Configuration Issues,1
+Device Naming and ID Issues,1
+Device Naming and Stability Issues,1
+Device Naming/Identifier Issues,1
+Device Off States,1
+Device Pairing and Authentication Issues,1
+Device Platform Classification,1
+Device Platform Consistency,1
+Device Profile Configuration,1
+Device Property Issues,1
+Device Protocol Challenges,1
+Device Protocol Issues,1
+Device Provisioning Challenges,1
+Device Registration Challenges,1
+Device Registry Challenges,1
+Device Registry Issues,1
+Device Registry Management,3
+Device Registry Properties,1
+Device Removal Integration,1
+Device Removal/Integration Strategy,1
+Device Reporting Issues,1
+Device Reporting and Measurement Issues,1
+Device Representation Issues,1
+Device Separation Issues,1
+Device Signal/State Issues,1
+Device Specific Behavior,1
+Device Specific Integration Issues,2
+Device Specific Logic Issues,1
+Device Specification Issues,1
+Device Specificity Issues,1
+Device Standardization Issues,1
+Device State Communication,1
+Device State Management,4
+Device State Management Issues,12
+Device State Representation,1
+Device State Representation Challenges,1
+Device State Synchronization Issues,1
+Device State Update Issues,1
+Device Status Reporting,1
+Device Support,1
+Device Support Challenges,2
+Device Support Considerations,1
+Device Support Issues,1
+"Device Support Issues (CCT, RGB, RGBCCT)",1
+Device Support Limitations,1
+Device Support Requests,1
+Device Support Variability,1
+Device Tracker Identification,1
+Device Tracker Integration,1
+Device Tracker Issues,1
+Device Tracking Concerns,1
+Device Tracking Information,1
+Device Tracking Issues,2
+Device Trait Implementation Issues,1
+Device Trigger Errors,1
+Device Trigger Handling,1
+Device Trigger Implementation,1
+Device Trigger Issues,1
+Device Type Addition Challenges,1
+Device Type Clarification,1
+Device Type Classification,1
+Device Type Confusion,1
+Device Type Handling,2
+Device Type Issues,1
+Device Type Support Issues,2
+Device Unavailability Issues,1
+Device Update Challenges,1
+Device Update Issues,2
+Device Update Management Issues,1
+Device Use Case Concerns,1
+Device Variables Issues,1
+Device and Entity Management,1
+Device and Entity Relationship Clarifications,1
+Device and Sensor Integration,1
+Device and Sensor Limitations,1
+Device vs. Entity Confusion,1
+Device-Specific Behavior,1
+Device-Specific Challenges,3
+Device-Specific Configuration Issues,1
+Device-Specific Functionality,1
+Device-Specific Functionality Concerns,1
+Device-Specific Implementation,1
+Device-Specific Implementation Issues,1
+Device-Specific Implementations,1
+Device-Specific Integration Challenges,1
+Device-Specific Integration Issues,3
+Device-Specific Issues,3
+Device-specific Documentation Issues,1
+Device/Entity Management Issues,1
+Device/Platform Specific Issues,1
+Device/Sensor Relationships,1
+Diagnosis and Detection Issues,1
+Diagnostic Entity Categorization,1
+Diagnostic Testing,1
+Diagnostic vs. Statistical Data Handling,1
+Diagnostics Handling,1
+Diagnostics Implementation,1
+Diagnostics and Data Retrieval,1
+Diagnostics and Error Handling,1
+Diagnostics and Privacy Concerns,1
+Dictionary Key Management,1
+Discovery & Payload Issues,1
+Discovery Issues,7
+Discovery Mechanism Challenges,1
+Discovery Mechanism Issues,3
+Discovery Method Issues,1
+Discovery Methodology Concerns,1
+Discovery Process Issues,2
+Discovery Scheme Issues,1
+Discussion Initiation,1
+Discussion/Direction Issues,1
+Docker Environment Challenges,1
+Docker/Containerization Issues,1
+Documentation,3
+Documentation & Manifest Specification Issues,1
+Documentation Accuracy,1
+Documentation Alignment Issues,1
+Documentation Approval,1
+Documentation Challenges,6
+Documentation Clarity,4
+Documentation Clarity Issues,2
+Documentation Compliance Issues,1
+Documentation Concerns,3
+Documentation Feedback,1
+Documentation Gaps,49
+Documentation Improvement,2
+Documentation Improvement Issues,1
+Documentation Improvement Needs,1
+Documentation Improvement Requests,1
+Documentation Improvements,2
+Documentation Inquiry,1
+Documentation Issues,182
+Documentation Missing,1
+Documentation Needs,27
+Documentation Needs and Clarity Issues,1
+Documentation Oversights,1
+Documentation Queries,1
+Documentation Reference,1
+Documentation Requirements,10
+Documentation Standards,1
+Documentation Standards Issues,1
+Documentation Suggestions,1
+Documentation Updates,9
+Documentation and API Design,1
+Documentation and CI Activation Requests,1
+Documentation and Clarification Needs,1
+Documentation and Clarifications,1
+Documentation and Clarity Issues,3
+Documentation and Code Examples,1
+Documentation and Code Quality Issues,1
+Documentation and Comments,1
+Documentation and Comments Inconsistencies,1
+Documentation and Comments Issues,1
+Documentation and Communication,2
+Documentation and Communication Challenges,1
+Documentation and Communication Gaps,1
+Documentation and Communication Issues,6
+Documentation and Contribution Issues,1
+Documentation and Deprecation Questions,1
+Documentation and Explanation Issues,1
+Documentation and Feedback Requests,1
+Documentation and Guidance Issues,1
+Documentation and Integration Issues,1
+Documentation and Knowledge Gaps,1
+Documentation and Learning Curve Issues,1
+Documentation and Platform Specification Needs,1
+Documentation and Reference Issues,1
+Documentation and Review Process,1
+Documentation and Review Process Issues,1
+Documentation and Schema Issues,1
+Documentation and Standards,2
+Documentation and Support Challenges,1
+Documentation and Testing,1
+Documentation and Translation Issues,1
+Documentation and Translation Needs,1
+Documentation and Translation Support,1
+Documentation and Type Hinting Issues,1
+Documentation and Understanding,1
+Documentation and User Experience,1
+Documentation and User Guidance,2
+Documentation and User Guidance Issues,2
+Documentation/Clarification Issues,1
+Documentation/Clarification Needs,1
+Documentation/Clarification Requests,1
+Documentation/Clarity Issues,2
+Documentation/Description Needs,1
+Documentation/Guidance Issues,4
+Documentation/Guideline Issues,1
+Documentation/Guidelines,1
+Documentation/Instruction Needs,1
+Documentation/Reference Issues,2
+Documentation/Specification Gaps,1
+Documenting Changes,1
+Documenting and Commenting Code,1
+Domain Context Confusion,1
+Domain Definitions,1
+Domain Name Issues,1
+Domain Naming Considerations,1
+Domain/Naming Issues,1
+Downstream Library Issues,1
+Draft Communication Issues,1
+Draft Management,1
+Draft Management Issues,2
+Draft PR Clarity Issues,1
+Draft Pull Request Management,1
+Draft Pull Request Monitoring,1
+Draft Review Process,1
+Draft Status,1
+Draft Status Adjustments,1
+Draft Status and CI Failures,1
+Draft Submission Process,1
+Draft and Review Process Issues,1
+Drafting Issues,3
+Drafting and Dependency Management,1
+Drafting/Improvement Issues,1
+Drafts and Readiness for Review,1
+Driver/Hardware Issues,1
+Dual Setup Consideration,1
+Duplicate Data Issues,1
+Duplicate Device Handling,1
+Duplicate Entities,1
+Duplicate Entity Issues,1
+Duplicate Issues,1
+Duplicate PR Issues,2
+Duplicate Provisioning Handling,1
+Duplicate Work,1
+Duplicate/Conflicted PR Issues,1
+Duplication Issues,3
+Dynamic Behavior,1
+Dynamic Behavior Management,1
+Dynamic Configuration Needs,1
+Dynamic Configuration of Devices,1
+Dynamic Content Handling,1
+Dynamic Feature Management,1
+Dynamic Generation Issues,1
+Dynamic Icon Restrictions,1
+Dynamic Location Challenges,1
+Dynamic Options Implementation,1
+Dynamic Sensor Creation Issues,1
+Dynamic Service Handling,1
+Dynamic States and Code Logic,1
+Dynamic Subscription Management Issues,1
+Dynamic Template Concerns,1
+Dynamic Updates,1
+Dynamic versus Static Configuration,1
+Dynamic vs Static Configuration Handling,1
+Dynamic vs Static Sensor Definitions,1
+Ebus Integration Challenges,1
+Effect Index Management Issues,1
+Effect Management Challenges,1
+Efficiency Considerations,1
+Efficiency and Code Standards Issues,1
+Elmax Device Issues,1
+Email Linking Issues,1
+Email Notification Issues,1
+Email Service Integration Issues,1
+Endpoint Configuration Issues,1
+Endpoint Exposure Challenges,1
+Energy Consumption Features,1
+Energy Dashboard Integration,1
+Energy Dashboard Specifics,1
+Energy Efficiency Considerations,1
+Energy Management Considerations,1
+Energy Management Issues,1
+Energy Monitoring Challenges,1
+Energy Monitoring Issues,1
+Energy Sensor Functionality,1
+Energy Sensor Integration,1
+Energy vs Power Mismatch,1
+Enhancement Requests,2
+Enhancement Suggestions,1
+Enhancements and Updates,1
+Enigma2 Device Specific Issues,1
+Entities Picker Challenge,1
+Entity & Device Management Issues,1
+Entity Association Issues,2
+Entity Attribute Configuration,1
+Entity Attribute Issues,3
+Entity Attributes,1
+Entity Attributes Issues,1
+Entity Availability Handling,1
+Entity Availability Issues,2
+Entity Availability Logic,1
+Entity Behavior Issues,2
+Entity Behavior and State Management,1
+Entity Behavior and Testing Issues,1
+Entity Categorization,1
+Entity Categorization Issues,1
+Entity Category Configuration Issues,1
+Entity Class Handling,1
+Entity Class Structure,1
+Entity Class Usage Issues,1
+Entity Classification Issues,1
+Entity Combination Rules,1
+Entity Compatibility Issues,1
+Entity Component Development,1
+Entity Component Issues,1
+Entity Configuration,2
+Entity Configuration Challenges,1
+Entity Configuration Issues,11
+Entity Configuration Options,1
+Entity Coordination Issues,3
+Entity Count Concerns,1
+Entity Creation,2
+Entity Creation Issues,4
+Entity Definition Concerns,1
+Entity Description Confusion,1
+Entity Description Implementation,3
+Entity Description Issues,15
+"Entity Description Issues (Tuya, SensorEntity, etc.)",1
+Entity Description Management,2
+Entity Description Standards,2
+Entity Description Structure Issues,1
+Entity Description and Coordination,1
+Entity Description and Model Design Issues,1
+Entity Description and Naming Issues,2
+Entity Descriptions,2
+Entity Descriptions and Constants Usage,1
+Entity Design Issues,3
+Entity Design Standards,1
+Entity Detection Issues,1
+Entity Domain Misclassification,1
+Entity Duplication Issues,1
+Entity Exposure Issues,1
+Entity Functionality Issues,2
+Entity Grouping and Relationship Issues,1
+Entity Handling,1
+Entity Handling Issues,4
+Entity Handling Practices,1
+Entity Handling in Services,1
+Entity ID Generation,1
+Entity ID Issues,1
+Entity ID Management,6
+Entity ID Validation,1
+Entity ID and Naming Issues,4
+Entity ID vs Device ID Confusion,1
+Entity ID/Naming Issues,2
+Entity ID/Registry Issues,1
+Entity Identification Issues,2
+Entity Implementation Issues,1
+Entity Initialization Issues,2
+Entity Integration Challenges,1
+Entity Integration Issues,1
+Entity Lifecycle Management,2
+Entity Management,25
+Entity Management (Covers),1
+Entity Management Challenges,4
+Entity Management Issues,90
+Entity Management Problems,1
+Entity Management and Naming Issues,1
+Entity Management and State Handling,1
+Entity Management in Code,1
+Entity Mapping Issues,1
+Entity Method and Service Issues,1
+Entity Mode/Mode Selection Issues,1
+Entity Model Challenges,2
+Entity Model Change,1
+Entity Model Changes,2
+Entity Model Issues,5
+Entity Naming,1
+Entity Naming Challenges,2
+Entity Naming Conflicts,1
+Entity Naming Consistency,1
+Entity Naming Convention Issues,1
+Entity Naming Issues,33
+Entity Naming Logic,1
+Entity Naming Requirements,1
+Entity Naming Rules,1
+Entity Naming Style Changes,1
+Entity Naming Style Issues,1
+Entity Naming and ID Issues,1
+Entity Naming and Translation,1
+Entity Naming/Definition Issues,1
+Entity Platform Changes,1
+Entity Platform Misplacement,1
+Entity Property Missing,1
+Entity Registration Issues,4
+Entity Registry Challenges,1
+Entity Registry Compliance Issues,1
+Entity Registry Control Issues,1
+Entity Registry Issues,6
+Entity Registry Limitations,1
+Entity Registry Management,1
+Entity Relations and Attributes,1
+Entity Relationship Issues,2
+Entity Representation,1
+Entity Representation Issues,8
+Entity Requirement Clarifications,1
+Entity Restoration Issues,1
+Entity Selector Limitations,1
+Entity Separation,1
+Entity Service Issues,1
+Entity Services,2
+Entity Services Management,1
+Entity Services Migration,1
+Entity Services Usage,1
+Entity Setup,1
+Entity Setup Issues,1
+Entity State Issues,3
+Entity State Management,4
+Entity State Management Issues,3
+Entity State Restoration,1
+Entity Structure Issues,2
+Entity Structuring Issues,2
+Entity Targeting Issues,1
+Entity Tracking Issues,1
+Entity Translation Concerns,1
+Entity Type Classification Issues,1
+Entity Type Confusion,4
+Entity Type Decisions,1
+Entity Type Definition Issues,1
+Entity Type Issues,8
+Entity Type Suggestions,1
+Entity Types Challenges,1
+Entity Uniqueness Challenges,1
+Entity Update Handling,1
+Entity Update Issues,3
+Entity Usage,1
+Entity Usage Issues,1
+Entity and Attribute Handling Issues,1
+Entity and Attribute Issues,1
+Entity and Coordinator Management,1
+Entity and Device Management Issues,1
+Entity and Device Relationship,1
+Entity and Integration Design Issues,1
+Entity and Naming Issues,1
+Entity and Sensor Class Issues,1
+Entity and Sensor Configuration Issues,1
+Entity and Sensor Issues,1
+Entity and State Management,1
+Entity vs Device Services,1
+Entity vs Service Confusion,1
+Entity-Device Configuration Management,1
+Entity/Attribute Design,1
+Entity/ID Usage Issues,1
+Entry Data Management,1
+Entry Option Changes,1
+Entry Point Management,1
+Entry Setup Mocking,1
+Enum Handling Issues,5
+Enum Usage,1
+Enum Usage Issues,2
+Enum Usage Questions,1
+Enum Usage and State Value Issues,1
+Enum Value Management,1
+Enum and Mode Handling Issues,1
+Environment Setup Issues,3
+Envy Device Specific Issues,1
+Equipment Profile Comparison,1
+Error Code Handling,1
+Error Handling,41
+Error Handling Challenges,2
+Error Handling Concepts,1
+Error Handling Concerns,2
+Error Handling Conventions,1
+Error Handling Improvements,1
+Error Handling Issues,91
+Error Handling Practices,2
+Error Handling Suggestions,1
+Error Handling Techniques,1
+Error Handling and Coverage,1
+Error Handling and Debugging,1
+Error Handling and Debugging Issues,1
+Error Handling and Exception Handling Issues,1
+Error Handling and Exception Management,3
+Error Handling and Input Validation,1
+Error Handling and Logging Issues,5
+Error Handling and Notifications,1
+Error Handling and Uncertainty,1
+Error Handling and User Feedback,1
+Error Handling and Validation,1
+Error Handling and Validation Issues,1
+Error Handling in API Communication,1
+Error Handling in Config Flow,1
+Error Handling in Integrations,1
+Error Handling in Listeners,1
+Error Management and Reliability,1
+Error Messaging Issues,1
+Error Typing and Handling,1
+Error/Failure Handling Issues,1
+Event Bus Usage,1
+Event Coordination Issues,1
+Event Data Filtering Issues,1
+Event Handling,1
+Event Handling Challenges,2
+Event Handling Difficulties,1
+Event Handling Issues,16
+Event Handling in Restores,1
+Event Listener Management,1
+Event Listener Management Issues,1
+Event Loop Discussion Issues,1
+Event Loop Management,1
+Event Loop Management Issues,1
+Event Loop and Async Concerns,1
+Event Naming Issues,1
+Event Permissions,1
+Event Triggering Issues,1
+Event Validation Issues,1
+Event and State Handling,1
+Event and Trigger Mechanisms,1
+Exception Handling Challenges,1
+Exception Handling Issues,9
+Exception Handling Practices,1
+Exception Handling and Cleanup,1
+Exception Handling and Error Management,1
+Excess Complexity Issues,1
+Exemption of Architecture Guidelines,1
+Existing Integration Update Discussions,1
+Existing Users Impact,1
+Expertise/Knowledge Gaps,1
+External API Dependency,1
+External API Handling,1
+External ID Issues,1
+External Library Concerns,1
+External Library Requirement,1
+External Service Integration,1
+Extra State Attributes Issues,1
+F/C Conversion Issues,1
+Fallback Mechanisms,1
+Fallback to Custom Components,1
+False Positives / Actionable Issues,1
+Familiarity with Contribution Process,1
+Feature Access Issues,1
+Feature Addition,1
+Feature Addition Issues,1
+Feature Availability,1
+Feature Classification Issues,1
+Feature Complexity Issues,1
+Feature Connectivity,1
+Feature Control,1
+Feature Creep,1
+Feature Design Considerations,1
+Feature Development,1
+Feature Development Challenges,3
+Feature Development Issues,2
+Feature Development Timeline,1
+Feature Development and Custom Integration Issues,1
+Feature Enhancement Requests,1
+Feature Enhancements,1
+Feature Expansion,1
+Feature Expansion Discussion,1
+Feature Extension Issues,1
+Feature Flag Implementation,1
+Feature Flagging,1
+Feature Gaps,2
+Feature Goals,1
+Feature Implementation,1
+Feature Implementation Challenges,8
+Feature Implementation Difficulties,1
+Feature Implementation Guidance,1
+Feature Implementation Issues,3
+Feature Implementation Problems,2
+Feature Implementation Queries,1
+Feature Inconsistencies,1
+Feature Integration,2
+"Feature Integration (min_max, statistics)",1
+Feature Integration Challenges,1
+Feature Maintenance Concerns,1
+Feature Mapping Issues,1
+Feature Redundancy Issues,1
+Feature Reimplementation Considerations,1
+Feature Release Timeline Concerns,1
+Feature Release Timelines,1
+Feature Release Timing,2
+Feature Replacement Concerns,1
+Feature Request,1
+Feature Request Backlog Issues,1
+Feature Request Discussion,1
+Feature Request Issues,2
+Feature Request Management,1
+Feature Request Reference,1
+Feature Request and Considerations,1
+Feature Request for Integration,1
+Feature Requests,11
+Feature Requests/Discussions,1
+Feature Support Challenges,1
+Feature Support Issues,3
+Feature Support Specification,1
+Feature Understanding,1
+Feature and Compatibility Concerns,1
+Feature and Documentation Suggestions,1
+Feature/Configuration Requests,1
+Feedback Loop Issues,1
+Feedback Mechanism,1
+Feedback Request Issues,1
+Feedback and Collaboration Problems,1
+Feedback and Communication,2
+Feedback and Communication Challenges,1
+Feedback and Consensus Building,1
+Feedback and Error Handling,1
+Feedback and Example Issues,1
+Feedback and Review Process Issues,2
+Feedback on Pull Requests,1
+Field Management Issues,1
+File Access Issues,1
+File Handling Issues,2
+File I/O Management,1
+File Management Issues,2
+File/Code Generation Issues,1
+Filter Logic Issues,1
+Filtering Issues,1
+Firmware Compatibility Issues,2
+Firmware Dependency Issues,1
+Firmware Handling,1
+Firmware Issues,1
+Firmware Management,1
+Firmware Update Handling,1
+Firmware Update Management,1
+Firmware Update Procedures,1
+Firmware and Update Handling Issues,1
+First-time Contributor Challenges,1
+First-time Contributor Workflows,1
+Fixed Update Intervals,1
+Flaky Tests,2
+Flexibility in Configuration,1
+Floor Integration Issues,1
+Flow Control and Execution Order Issues,1
+Flow Handling Issues,1
+Flow Management,1
+Flow Management Issues,3
+Flow Progress Handling Issues,1
+Flow and State Management Challenges,1
+Follow-Up and Review Process Issues,1
+Forecast Support Issues,1
+Forecasting Clarifications,1
+Forecasting Logic Issues,1
+Forecasting System Design,1
+Formatting Issues,1
+Formatting Issues / Code Style (black),1
+Frequency Regulation Concepts,1
+Frontend Behavior Issues,1
+Frontend Bug Reports,1
+Frontend Dependencies,2
+Frontend Dependency Issues,1
+Frontend Development,2
+Frontend Development Challenges,1
+Frontend Development Issues,2
+Frontend Development Needs,1
+Frontend Display Issues,2
+Frontend Feedback,1
+Frontend Filtering Issues,1
+Frontend Integration,1
+Frontend Integration Concerns,1
+Frontend Integration Issues,6
+Frontend Interaction,1
+Frontend Issues,2
+Frontend Issues (Lovelace),1
+Frontend Representation and Usability,1
+Frontend Sorting Issues,1
+Frontend vs Backend Concerns,1
+Function Behavior Clarifications,1
+Function Definition Limitations,1
+Function Design Issues,1
+Function Ordering,1
+Function Signature Changes,1
+Function Signature Issues,1
+Function Structure Issues,1
+Function Wrapping Logic,1
+Functional Requirements,1
+Functionality Clarifications,1
+Functionality Clarity Issues,1
+Functionality Comparison,1
+Functionality Concerns,4
+Functionality Design,1
+Functionality Explanation Issues,1
+Functionality Improvement,3
+Functionality Issues,4
+Functionality Limitations,3
+Functionality Review Issues,1
+Functionality Scope,1
+Functionality Separation Issues,1
+Functionality Testing Issues,2
+Functionality Understanding,1
+Functionality Validation Issues,1
+Functionality and Implementation Challenges,1
+Functionality and Structure Issues,1
+Functionality of Entities,1
+Functionality/Integration Issues,1
+Future Development Considerations,1
+Future Enhancement Considerations,1
+Future Features,1
+Future-proofing Challenges,1
+GA Integration Issues,1
+Garbage Collection Issues,1
+Gateway Implementation Issues,1
+General Acknowledgment,1
+General Clarity and Communication Issues,1
+General Code Review Issues,1
+General Code Review Process Issues,1
+General Code Structure Issues,2
+General Communication,1
+General Communication Issues,6
+General Communication and Guidance,1
+General Design Questions,1
+General Development Challenges,2
+General Development and Code Structure Issues,1
+General Feedback,1
+General Feedback/Communication Issues,1
+General Improvement Suggestions,1
+General Integration Status Queries,1
+General Interest,1
+General Queries and Clarifications,1
+General Review Feedback,2
+General Review Process Issues,2
+General Workflow Issues,1
+Generalization Issues,1
+Generator Default Value Issues,1
+Generic Implementation Challenges,1
+Ghost Entities / Cleanup Issues,1
+Git Configuration Issues,1
+Git Integration Issues,1
+Git Issues,1
+Git Management Issues,1
+Git Workflow Issues,2
+Git and Version Control Issues,2
+Git/Rebase Issues,1
+GitHub Account Linking Issues,1
+GitHub Issues,1
+Glances Integration Issues,1
+Global vs Case-by-Case Solutions,1
+Google Assistant Integration,1
+Group Entity Issues,1
+Group Management Issues,2
+Group Sensor Concept Issues,1
+Grouping Configuration Issues,1
+Guest Tracking Implementation,1
+Guidance and Support Needs,1
+Guidelines Compliance Issues,1
+HACS (Home Assistant Community Store),1
+HACS (Home Assistant Community Store) Issues,1
+HACS Integration,1
+HACS Integration Challenges,1
+HACS Integration Conflicts,1
+HACS Integration Considerations,1
+HACS Integration Issues,1
+HACS Issues,1
+HACS Management,1
+HACS Plugin Discussions,1
+HAP Specification Compliance,1
+HTTP/REST API Integration,1
+HVAC Configuration Issues,1
+HVAC Control Logic Issues,1
+HVAC Functionality Issues,2
+HVAC Integration Challenges,2
+HVAC Mode Handling Issues,1
+HVAC Mode Logic Issues,1
+HVAC Mode Management Issues,4
+HVACMode Management,1
+HVAC_MODE Configuration and Mapping,1
+Handler Issues,2
+Handling Configurations,1
+Handling Named States,1
+Hardcoding Issues,1
+Hardware Interaction Issues,1
+Hardware Testing Challenges,1
+Harmonization of Data Sources,1
+Hass Configurations,1
+Hass Instance Availability,1
+Hass Integration Concerns,1
+Hass Job Execution,1
+Hassfest Dependencies,1
+Helper Utilization Issues,1
+Historical Data Handling,1
+Home Assistant Architecture Decisions,1
+Home Assistant Communication Issues,1
+Home Assistant Component Issues,1
+Home Assistant Configuration Issues,1
+Home Assistant Configuration and User Experience,1
+Home Assistant Core Integration Challenges,1
+Home Assistant Development Practices,1
+Home Assistant Entity Management,1
+Home Assistant Exception Handling,1
+Home Assistant Functionalities Issues,1
+Home Assistant Integration Challenges,1
+Home Assistant Integration Concepts,3
+Home Assistant Integration Governance,1
+Home Assistant Integration Issues,3
+Home Assistant Integration Specifics,1
+"Home Assistant Integration Specifics (e.g., command_line, template integrations)",1
+Home Assistant Integration Standards,1
+Home Assistant Lifecycle Management,1
+Home Assistant Platform Integration Issues,1
+Home Assistant Specific Concepts,8
+Home Assistant Specific Concepts and Integrations,1
+Home Assistant Specific Errors,1
+Home Assistant Specific Functionality,1
+Home Assistant Specific Integration,1
+Home Assistant Specific Integration Challenges,3
+Home Assistant Specific Issues,1
+Home Assistant Specific Requirements,1
+Home Assistant Specifics,1
+Home Assistant Unique ID Management,1
+Home Assistant Workflow Process,1
+Home Automation Concepts,1
+Home Automation Protocol Challenges,1
+Home Management Issues,1
+HomeAssistantError Handling,1
+HomeAssistantError Raising,1
+HomeKit Integration Issues,3
+HomeKit Integration Specificity,1
+Hub/Device Linking Issues,1
+I/O Management,1
+I2C/Hardware Integration Issues,1
+ID Generation Issues,1
+ID Mapping Issues,1
+ID Uniqueness Issues,1
+ID and Label Conventions,1
+ID and Slot Management Issues,1
+ID and Uniqueness Issues,1
+IP Address and Networking Issues,1
+IPv6 Support,1
+Icon Handling Issues,1
+Icon Management,1
+Icon Management Issues,1
+Icon Representation Issues,1
+Icon Translation Issues,1
+Icon and Naming Conventions,1
+Icon and Template Usage Issues,1
+Icon/Visual Representation Issues,1
+Iconography/Visual Representation Issues,1
+Identifier Handling,1
+Identifier Issues,1
+Identifier Management,1
+Identifier Usage,1
+Idiomatic Code Practices,1
+Image Handling Challenges,2
+Image Handling Issues,1
+Impact on Existing Automations,1
+Implementation Challenges,2
+Implementation Clarity Issues,1
+Implementation Complexity,1
+Implementation Concerns,1
+Implementation Consistency,1
+Implementation Discussions,1
+Implementation Errors,1
+Implementation Guidance,1
+Implementation Issues,4
+Implementation of Storage Collections,1
+Implementation/Code Suggestions,1
+Import and Type Hints,1
+Importers and Downloaders,1
+Improper Handling of User Input,1
+Improper Use of Entity Types,1
+Improperly Structured Code,1
+Inadequate PR Descriptions,1
+Incompatibility and Merge Readiness Issues,1
+Incomplete Device Support,1
+Inconsistencies in Device Support,1
+Inconsistency in Device Properties,1
+Inefficiency in Code Execution,1
+Inefficient API Usage,1
+InfluxDB Integration Issues,1
+Inheritance and Class Structure,1
+Inheritance and Code Reuse Questions,1
+Initial Setup Issues,1
+Initialization Issues,1
+Initialization Logic,1
+Initialization and Structure Issues,1
+Input Handling Issues,1
+Input Validation Issues,2
+Inspection and Review Issues,1
+Installation Issues,1
+Instance Configuration Issues,1
+Instance Limitations,1
+Integration & Connectivity Issues,1
+Integration Abstraction Challenges,1
+Integration Acceptance Issues,1
+Integration Access Issues,1
+Integration Approach Issues,1
+Integration Approval Challenges,1
+Integration Approval Issues,1
+Integration Architecture,1
+Integration Architecture Issues,6
+Integration Architecture and Design,1
+Integration Availability,1
+Integration Availability Concerns,1
+Integration Availability Issues,1
+Integration Behavior Concerns,1
+Integration Behavior Issues,8
+Integration Best Practices,1
+Integration Branch/Merge Conflicts,1
+Integration Branding Issues,1
+Integration Challenges,44
+Integration Change Requests,1
+Integration Changes,1
+Integration Clarity Issues,1
+Integration Classification Issues,1
+Integration Collaboration,1
+Integration Communication,1
+Integration Communication Issues,2
+Integration Compatibility,3
+Integration Compatibility Issues,21
+Integration Completeness,1
+Integration Completeness Issues,2
+Integration Completion,1
+Integration Completion Challenges,1
+Integration Completion/Review,1
+Integration Complexity,26
+Integration Complexity (RFXtrx and DSMR),1
+Integration Complexity Issues,3
+Integration Complexity and Maintenance,1
+Integration Complexity with External Devices,1
+Integration Concept Discussions,1
+Integration Concepts,1
+Integration Concerns,1
+Integration Configuration,1
+Integration Configuration Challenges,1
+Integration Configuration Flow Issues,1
+Integration Configuration Issues,23
+Integration Conflicts,5
+Integration Conflicts and Competition,1
+Integration Consistency,2
+Integration Consistency Issues,11
+Integration Consolidation Challenges,1
+Integration Constraints,2
+Integration Creation Guidance,1
+Integration Data Requirements,1
+Integration Deadlines,1
+Integration Debugging Challenges,1
+Integration Definition Issues,1
+Integration Delays,2
+Integration Dependencies,2
+Integration Dependencies Issues,1
+Integration Dependency Issues,1
+Integration Description Issues,1
+Integration Design Challenges,6
+Integration Design Decisions,5
+Integration Design Issues,28
+Integration Design Principles,1
+Integration Design Standards,1
+Integration Development,1
+Integration Development Challenges,25
+Integration Development Concerns,1
+Integration Development Guidance,1
+Integration Development Issues,13
+Integration Development Process,1
+Integration Development Process Issues,1
+Integration Development Strategy Issues,1
+Integration Differentiation,1
+Integration Discovery Issues,1
+Integration Documentation,1
+Integration Documentation Issues,4
+Integration Domain Confusion,1
+Integration Domain or Label Issues,1
+Integration Duplication Concerns,1
+Integration Duplication/Redundancy,1
+Integration Eligibility and Filtering,1
+Integration Errors,2
+Integration Examples,1
+Integration Examples Request,1
+Integration Flow Challenges,1
+Integration Flow Issues,5
+Integration Flow Management,1
+Integration Foundation Issues,1
+Integration Functionality,3
+Integration Functionality Concerns,1
+Integration Functionality Issues,8
+Integration Gaps,1
+Integration Guidelines,1
+Integration Guidelines and Documentation,1
+Integration Handling,1
+Integration Handling Issues,1
+Integration Implementation,1
+Integration Implementation Challenges,2
+Integration Implementation Issues,6
+Integration Improvements,1
+Integration Independence Issues,1
+Integration Initialization Issues,2
+Integration Instance Management,1
+Integration Interface Issues,1
+Integration Issues,64
+Integration Issues (WLED with Home Assistant),1
+"Integration Issues (e.g., Areas, Groups)",1
+Integration Issues and Behavior,1
+Integration Key Usage,1
+Integration Lifecycle Challenges,1
+Integration Lifecycle Issues,1
+Integration Limitations,12
+Integration Linking Challenges,1
+Integration Logic,1
+Integration Logic Concerns,1
+Integration Logic Issues,18
+Integration Logic and Structure Issues,1
+Integration Maintenance,1
+Integration Maintenance Issues,2
+Integration Management,10
+Integration Management Issues,7
+Integration Merging Challenges,1
+Integration Merging Issues,1
+Integration Metrics Concerns,1
+Integration Migration,2
+Integration Migration Challenges,2
+Integration Migration Issues,2
+Integration Naming,1
+Integration Naming Issues,9
+Integration Naming Standards,1
+Integration Naming and Branding,1
+Integration Naming and Deprecation Issues,1
+Integration Naming and Structuring,1
+Integration Naming/Description Issues,1
+Integration Naming/ID Issues,1
+Integration Optimization,1
+Integration Options,1
+Integration Overlap,1
+Integration Overlap/Redundancy,1
+Integration Ownership Issues,3
+Integration Performance Issues,2
+Integration Preferences,1
+Integration Problems,2
+Integration Process Challenges,2
+Integration Process Issues,5
+Integration Protocols,1
+Integration Protocols Issues,1
+Integration Purpose Clarity,1
+Integration Quality,1
+Integration Quality Concerns,1
+Integration Quality Scale,1
+Integration Quality Scale Issues,1
+Integration Readiness,5
+Integration Readiness Issues,4
+Integration Readiness Questions,1
+Integration Recovery Concerns,1
+Integration Redundancy,1
+Integration Redundancy Issues,1
+Integration Refactoring,2
+Integration Refactoring Challenges,2
+Integration Refactoring Issues,1
+Integration Refactoring Needs,2
+Integration Reference Issues,1
+Integration Relationship Clarity,1
+Integration Release Timing Issues,1
+Integration Reliability,1
+Integration Reload Challenges,1
+Integration Reload Issues,2
+Integration Removal,1
+Integration Repair Mechanisms,1
+Integration Replacement Challenges,1
+Integration Replacement Issues,3
+Integration Requests,1
+Integration Requirement Issues,1
+Integration Requirements,2
+Integration Requirements Issues,2
+Integration Requirements and Standards,1
+Integration Review Challenges,1
+Integration Review Delays,1
+Integration Review Issues,1
+Integration Review Process,2
+Integration Review Requests,1
+Integration Rewrites,1
+Integration Rewriting Concerns,1
+Integration Robustness,1
+Integration Schema Issues,1
+Integration Scope Issues,1
+Integration Scope Limitations,1
+Integration Service Calls,1
+Integration Service Development,1
+Integration Setup,1
+Integration Setup Challenges,1
+Integration Setup Issues,18
+Integration Setup Optimization Issues,1
+Integration Setup Requirements,1
+Integration Setup and Configuration,1
+Integration Setup and Documentation Challenges,1
+Integration Simplification,1
+Integration Size/Complexity Issues,1
+Integration Specific Challenges,1
+Integration Specific Concerns,2
+Integration Specific Errors,1
+Integration Specific Issues,9
+"Integration Specific Issues (e.g., range extenders, zeroconf)",1
+Integration Specific Suggestions,1
+Integration Specifics,7
+Integration Splitting,1
+Integration Stability Challenges,1
+Integration Stability Issues,3
+Integration Standards,1
+Integration Standards Issues,2
+Integration Standards and Features,1
+Integration Standards and Rules,1
+Integration Startup Behavior,1
+Integration State Management,1
+Integration Status Issues,1
+Integration Status/Processing Delays,1
+Integration Strategy,1
+Integration Structure Issues,14
+Integration Structure and Design,1
+Integration Stuck Issues,1
+Integration Support,1
+Integration Support Challenges,1
+Integration Support Concerns,1
+Integration Support Issues,3
+Integration Support Limitations,1
+Integration Support Queries,1
+Integration Testing,4
+Integration Testing Challenges,4
+Integration Testing Delays,1
+Integration Testing Issues,19
+Integration Testing and Functionality Issues,1
+Integration Timelines,1
+Integration Timelines and Requests,1
+Integration Timing Issues,2
+Integration Transition Issues,1
+Integration Type Challenges,1
+Integration Type Decisions,1
+Integration Type Issues,3
+Integration Update Challenges,1
+Integration Updates,2
+Integration Updates and Deprecation,1
+Integration Usability Issues,1
+Integration Usage Statistics,1
+Integration Utility Issues,1
+Integration Validation,1
+Integration Validation Issues,1
+Integration Versioning Issues,2
+Integration Viability,1
+Integration Visibility,1
+Integration Workflow Challenges,1
+Integration Workflow Issues,7
+Integration YAML Structure,1
+Integration and API Issues,1
+Integration and Companion Protocol Concerns,1
+Integration and Compatibility Challenges,1
+Integration and Compatibility Issues,3
+Integration and Component Design Issues,2
+Integration and Component Issues,1
+Integration and Component Structure,1
+Integration and Config Entry Management Issues,1
+Integration and Config Flow Issues,1
+Integration and Configuration Challenges,2
+Integration and Configuration Conflicts,1
+Integration and Configuration Issues,4
+Integration and Dependency Management Issues,1
+Integration and Device Discovery Issues,1
+Integration and Device Specificity,1
+Integration and Discovery Issues,1
+Integration and Entity Registry Issues,1
+Integration and Local Control Challenges,1
+Integration and Platform Issues,2
+Integration and Platform Specific Challenges,1
+Integration and Sensor Data Issues,1
+Integration and Sensor Issues,1
+Integration and Service Load Issues,1
+Integration and Setup Issues,1
+Integration vs Entity Service Confusion,1
+Integration with Device APIs,1
+Integration with Existing Code,1
+Integration with Existing Entities,1
+Integration with Existing Services,1
+Integration with External APIs,1
+Integration with External Libraries,1
+Integration with External Services,1
+Integration with HA Components,1
+Integration with Home Assistant,2
+Integration with Home Assistant Concepts,1
+Integration with Home Assistant Core,1
+Integration with Home Assistant Platform,1
+Integration with Home Automation Concepts,1
+Integration with HomeKit,1
+Integration with Media Players,1
+Integration with Media Services,1
+Integration with Merged Features,1
+"Integration with New Protocols (e.g., Matter)",1
+Integration with OpenAI,1
+Integration with Other PRs,1
+Integration with Other Tools,1
+Integration with Telegram,1
+Integration with Third-party APIs,1
+Integration with Tuya Platform,1
+Integration with existing devices,1
+Integration-Specific Challenges,1
+Integration-Specific Concerns,1
+Integration-Specific Issues,1
+Integration-Specific Logic,1
+Integration-Specific Technical Issues,1
+Integration/API Challenges,1
+Integration/Architecture Issues,1
+Integration/Component Issues,1
+Integration/Device Interaction Challenges,1
+Integration/Entity Design Issues,1
+Integration/Entity Issues,1
+Integration/Merging Concerns,1
+Integration/Setup Issues,1
+Intent Handling Issues,2
+Intent Management Issues,1
+Intent Naming Issues,1
+Intercom-Specific Issues,1
+Interest and Feedback,1
+Interface Usability Issues,1
+Interface and User Interaction Concerns,1
+Intermittent Device Handling,1
+Internal Communication,1
+Internal Integration Handling,1
+Internationalization Issues,4
+Internationalization and Localization Issues,1
+Internationalization/Localization Issues,1
+Internationalization/Translation Issues,1
+Invalid System Handling,1
+IoT Class Definitions,1
+IoT Class Structure Issues,1
+Issue Management,1
+Issue Tracking,2
+Issue Tracking and Merging,1
+JSON Object Support Issues,1
+JSON Parsing,1
+JSON Serialization Issues,1
+JWT Token Expiration Issues,1
+Jinja2 Support Issues,1
+KNX Integration Issues,1
+Key/Parameter Naming Issues,1
+KeyError Handling,1
+Knowledge Gaps,1
+LLM Integration Challenges,1
+Label Management,1
+Labeling Issues,2
+Lack of Activity/Timeout Issues,1
+Lack of Communication,2
+Lack of Contextual Focus,1
+Lack of Device Access for Testing,1
+Lack of Device Knowledge,1
+Lack of Documentation or Examples,1
+Lack of Documentation or Guidance,1
+Lack of Feedback,1
+Lack of Frontend Skills,1
+Lack of Testing Coverage,1
+Lack of Time for Integration Development,1
+Lack of Time to Implement Changes,1
+Lambda Usage Issues,1
+Language Consistency Issues,1
+Language Proficiency Issues,1
+Language Support Issues,2
+Language Translation Issues in Integrations,1
+Language and Spelling Standards,1
+Language/Naming Issues,1
+Language/Translation Issues,1
+Last Reset Handling,1
+Latitude/Longitude Handling,1
+Launch Timeline Concerns,1
+Learning Curve Issues,1
+Learning Curve for New Contributors,1
+Legacy Behavior Follow-up,1
+Legacy Code Issues,3
+Legacy Code Reference,1
+Legacy Support Issues,3
+Legal Agreements (CLA) Issues,1
+Legal Compliance Issues,1
+Legal Issues (CLA Signing),1
+Legal Issues (CLA),1
+Legal and Administrative Issues,1
+Legal and Compliance Issues,2
+Legal/Administrative Issues,3
+Legal/Compliance Issues,7
+Legal/Documentation Issues,1
+Library Compatibility Issues,2
+Library Configuration Issues,1
+Library Dependencies,1
+Library Dependency,1
+Library Dependency Issues,3
+Library Dependency Management,1
+Library Improvement Issues,1
+Library Integration,1
+Library Integration Challenges,1
+Library Maintenance Issues,4
+Library Management,1
+Library Management Issues,1
+Library Patching Issues,2
+Library Refactoring Challenges,2
+Library Structure Issues,2
+Library Support Challenges,1
+Library Update Issues,1
+Library Updates and Dependency Management,1
+Library Usage,1
+Library Usage Issues,2
+Library Version Changes,1
+Library Version Requirements,1
+Library Version Updates,1
+Library Versioning Issues,3
+Library and Code Structure Issues,1
+Library and Dependency Management Issues,1
+Library and Documentation Gaps,1
+Library/API Interaction Issues,1
+Library/Dependency Issues,1
+Library/Dependency Management,1
+Library/Fixture Issues,1
+Library/Framework Limitations,1
+Library/Integration Compatibility Issues,1
+Library/Method Availability Issues,1
+Library/Package Compatibility Issues,1
+License Compliance,1
+Licensing Issues,1
+Lifecycle Management Issues,2
+Light Control Behavior Issues,1
+Light Control Issues,1
+Limited Template Functionality,1
+Linter Issues,1
+Linter and Formatting Issues,1
+Linting Issues,6
+Listener Management for Data Refresh,1
+Load Management Concerns,1
+Local vs CI Environment Issues,1
+Local vs Cloud Communication Issues,1
+Local vs Cloud Functionality,1
+Local vs Cloud Integration Issues,2
+Local vs Global Integration Challenges,1
+Local vs. External Configuration Challenges,1
+Locale Handling Issues,1
+Localization Challenges,2
+Localization Concerns,1
+Localization Issues,5
+Localization and Translation Issues,1
+Localization/I18N Issues,1
+Localization/Translation Issues,1
+Location Access Issues,1
+Location Handling Issues,1
+Lock Behavior Configuration,1
+Lock State Management,1
+Logger Integration Issues,1
+Logging Best Practices,1
+Logging Configuration Issues,1
+Logging Issues,12
+Logging Levels in Development,1
+Logging Practices,4
+Logging Practices Issues,1
+Logging and Debugging Issues,2
+Logging and Error Handling Issues,1
+Logging and Namespace Issues,1
+Logging and Performance Issues,1
+Logging and Security Concerns,1
+Logging and User Communication,1
+Logging and Warning Conditions,1
+Logic Errors,1
+Logic Flow and Control Issues,1
+Logic Issues,2
+Logic Placement Issues,1
+Logic Simplification,1
+Logic and Flow Issues,2
+Logic/Calculation Issues,1
+Logic/Condition Issues,1
+Login Management Challenges,1
+Login/Authentication Issues,1
+Logo Addition Issues,1
+Long Review Times,1
+Lovelace UI Integration,1
+MQTT Command/State Topics Management,1
+MQTT Integration,1
+MQTT Integration Challenges,2
+MQTT Integration Issues,2
+MQTT Load Issues,1
+MQTT Usage Concerns,1
+MQTT-related Issues,1
+Magic Number Issues,1
+Magic Numbers Issues,1
+Maintainer Responsibilities,1
+Maintenance Concerns,1
+Maintenance Issues,1
+Managing Attributes in Home Assistant,1
+Manifest Changes,1
+Manifest Configuration Issues,1
+Manifest File Updates,1
+Manifest Management,1
+Manifest/Configuration Issues,1
+Manual Configuration Issues,2
+Manual Control Issues,1
+Map Visibility Considerations,1
+Mapping Issues,1
+Mapping Proxy Issues,1
+Mapping and Value Transformation Issues,1
+Market Demand Uncertainty,1
+Match Handling in Smart Home Queries,1
+Measurement Clarification Issues,1
+Measurement Issues,1
+Measurement Types,1
+Measurement Unit Specification,1
+Measurement and State Class Issues,2
+Measurement and State Concept Conflicts,1
+Measurement and Unit Issues,1
+Measurement vs Setting Definitions,1
+Media Browser Functionality,1
+Media Browser Functionality Issues,1
+Media Content Type Issues,2
+Media Format Handling Issues,1
+Media Format Support Issues,1
+Media Playback Issues,1
+Media Player Entity Structure,1
+Media Player Integration Challenges,1
+Media Player Integration Issues,1
+Media Source Management,1
+Media Type Issues,1
+Memory Management,1
+Memory Management Issues,1
+Merge Conflict Issues,5
+Merge Conflicts,46
+Merge Delay Issues,1
+Merge Issues,1
+Merge Process Conflicts,1
+Merge Process Delays,1
+Merge Process Issues,1
+Merge Readiness Issues,1
+Merge Requests and Timeliness Issues,1
+Merge Strategy Issues,2
+Merge Timing Issues,1
+Merge and Conflict Resolution Issues,1
+Merge and Review Delays,2
+Merge and Review Process,1
+Merge and Review Process Issues,1
+Merge/Conflict Issues,1
+Merge/Release Process Questions,1
+Merge/Review Issues,1
+Merging Process Issues,1
+Merging/Release Timing Issues,1
+Message Handling Issues,1
+Metadata Handling,1
+Metadata Handling Issues,1
+Metadata and API Documentation Issues,1
+Method Implementation Issues,1
+Method Naming Clarity,1
+Method Naming Confusion,1
+Method Simplification Issues,1
+Method Specification,1
+Method Structure Issues,1
+Metric Definition Issues,1
+Metric Management,1
+Micro Issues,1
+Microsecond Precision Issues,1
+Migration Concerns,3
+Migration Issues,6
+Migration Paths Issues,1
+Migration Strategy Concerns,1
+Migration Strategy Issues,1
+Migration to Custom Components,1
+Milestone Management,1
+Missing Device Attributes,1
+Missing Documentation,1
+Missing Documentation Issues,1
+Missing Features/Documentation,1
+Missing Typing/Type Hinting,1
+Mixin Dataclass Implementation,1
+Mobile App Changes,1
+Mobile App Integration Challenges,1
+Mobile App Integration Issues,1
+Mock API Testing,1
+Mock Configuration in Tests,1
+Mock Object Suggestions,1
+Mocking Issues,8
+Mocking Practices,1
+Mocking and Patching Issues,1
+Mocking/HTTP Client Issues,1
+Modbus Communication Challenges,1
+Modbus Integration Challenges,1
+Modbus Integration Issues,3
+Modbus Specific Challenges,1
+Modbus Specific Issues,1
+Mode Definitions,1
+Mode Management Issues,1
+Model Compatibility Issues,1
+Model Impact Issues,1
+Model Updates,1
+Modeling Issues,1
+Module Metadata Issues,1
+Monitored Conditions,1
+Monitored Conditions vs Standard Attributes,1
+Monitoring and Usability Improvements,1
+Motion Detection Integration,1
+Multi-Device Support Issues,1
+Multicast Communication Issues,1
+Multiple Account Handling Issues,1
+Multiple Config Entry Management Issues,1
+Multiple Configuration Entries,1
+Multiple Configuration Handling,1
+Multiple Targets Specification Issues,1
+Mypy Issues,1
+NVR Specific Issues,1
+Name Handling,1
+Name Handling Issues,1
+Name and ID Handling Issues,1
+"Named Entities/Identifiers (e.g., MyBMWVehicle, BMW API)",1
+Named Speeds vs Presets,1
+Naming & Identification Problems,1
+Naming Confusion,1
+Naming Consistency,2
+Naming Consistency Issues,1
+Naming Convention Issues,5
+Naming Conventions,11
+Naming Guidelines,1
+Naming Issues,1
+Naming and Design Standards Issues,1
+Naming and Functionality Clarity,1
+Naming and ID Management,1
+Naming and Identification Issues,1
+Naming and Structure Concerns,1
+Naming and Translation Standards,1
+Naming/Attribute Issues,1
+Naming/Branding Conflicts,1
+Naming/Constant Management,1
+Naming/Documentation Issues,1
+Naming/ID Assignment Issues,1
+Naming/ID Conflict Issues,1
+Naming/ID Conflicts,5
+Naming/ID Confusion,3
+Naming/ID Consistency Issues,1
+Naming/ID Issues,254
+Naming/ID Management Issues,1
+Naming/ID and Unique Identifier Issues,1
+Naming/Id Issues,2
+Naming/Identification Issues,1
+Naming/Identifier Considerations,1
+Naming/Identifier Issues,1
+Naming/Labeling Challenges,1
+Naming/Labeling Issues,1
+Naming/Property Clarity,1
+Naming/Standardization Issues,1
+Naming/Styling Conventions,1
+Naming/Terminology Consistency,1
+Naming/Terminology Issues,3
+Naming/Translation Issues,2
+Naming/Typographical Issues,1
+Namings/ID Issues,1
+Need for Documentation,1
+Nested Data Handling,1
+Network Configuration Concerns,1
+Network Discovery Issues,2
+Network Sensor Integration Issues,1
+Network and Connectivity Issues,1
+Networking/Proxy URL Handling Issues,1
+New Contributor Support Issues,1
+New User Guidance,1
+Non-Supported Features,1
+Notification Handling Issues,6
+Notification Management,1
+Notification Management Issues,2
+Notification Platform Integration Issues,1
+Notification Service Issues,3
+Notification Spam Issues,1
+Notify Platform Functionality Issues,1
+Notify Platform Issues,1
+Number Entity Usage,1
+OAuth Implementation Challenges,1
+OAuth Implementation Issues,1
+OAuth Integration Issues,1
+OAuth Support Issues,1
+Old Solution Remnants,1
+Older Device Support Issues,1
+Onboarding Complexity,1
+Onboarding/Collaboration,1
+Open Hardware Integration,1
+Operation Mode Issues,1
+Opt-out Features,1
+Optimistic Updates,1
+Optimistic Updates Issues,1
+Optimization Challenges,2
+Optimization and Code Structure,1
+Optimization of Entity Calls,1
+Option Handling Issues,1
+Optional Data Decisions,1
+Options Flow,1
+Options Flow Challenges,1
+Options Flow Configuration,1
+Options Flow Considerations,1
+Options Flow Implementation,1
+Options Flow Issues,5
+Options Flow Management,1
+Options Flow Testing,1
+OptionsFlow Configuration,1
+OptionsFlow Design Issues,1
+Other,1491
+Over-Complexity in Conditions,1
+Overall Communication Issues,1
+Overall Framework Consistency,1
+Overflow Handling Issues,1
+Override Functionality,1
+Ownership and Responsibility Issues,1
+PR Conflicts,1
+PR Description Issues,1
+PR Management,1
+PR Management Issues,4
+PR Readiness Issues,1
+PR Review Delays,1
+PR Review Process,2
+PR Review Process Issues,2
+PR Review Requests,1
+PR Size Management,2
+PR Structure Issues,3
+PR Title/Naming Issues,1
+PR/Platform Management Issues,1
+Package Management Issues,2
+Parameter Definition Issues,1
+Parameter Handling,1
+Parameter Handling Issues,3
+Parameter Management Issues,1
+Parameter Mapping Issues,1
+Parameter Naming Issues,1
+Parameter Parsing Issues,1
+Parameter Retrieval Issues,1
+Parameter Usage Issues,1
+Parameter Validation and Defaults Issues,1
+Parameterization Issues,3
+Password Handling,1
+Pattern Consistency Issues,1
+Payload Decoding Challenges,1
+Payload Validation Issues,1
+Peer Review Process Issues,1
+Pending Changes,1
+Pending Responses,1
+Pending Review Issues,1
+Pending Review Process,1
+Performance Concerns,8
+Performance Concerns with Entity Management,1
+Performance Considerations,4
+Performance Issues,11
+Performance Optimization,2
+Performance Optimization Challenges,1
+Performance Optimization Issues,3
+Performance Optimization Suggestions,1
+Permission Issues,1
+Persistence Configuration Challenges,1
+Persistent Notifications Issues,1
+Persistent Storage Issues,1
+Ping Interval Configuration Issues,1
+Pipeline Failures,1
+Placeholder Issues,1
+Platform Addition Requirements,1
+Platform Compatibility Issues,3
+Platform Confirmation Queries,1
+Platform Consistency,1
+Platform Consolidation Issues,1
+Platform Constraints,1
+Platform Dependency Issues,1
+Platform Design Decisions,1
+Platform Design Issues,1
+Platform Entity Management,1
+Platform Fit Issues,1
+Platform Handling Issues,1
+Platform Implementation Issues,1
+Platform Integration,2
+Platform Integration Challenges,1
+Platform Integration Issues,6
+Platform Issues,1
+Platform Limitation Concerns,1
+Platform Limitation Issues,2
+Platform Limitations,3
+Platform Limitations for Integrations,1
+Platform Management,3
+Platform Management Issues,1
+Platform Management and Structure Issues,1
+Platform Selection,1
+Platform Selection Issues,1
+Platform Setup Challenges,1
+Platform Setup Issues,2
+Platform Size Issues,1
+Platform Specific Concerns,1
+Platform Specific Design Issues,1
+Platform Specific Issues,4
+Platform Specific Limitations,1
+Platform Specific Recommendations,1
+Platform Specification Issues,1
+Platform Specificity Issues,1
+Platform Specificity in Testing,1
+Platform Support Differences,1
+Platform Usage Issues,1
+Platform vs Entity Setup Confusion,1
+Platform-Specific Design,1
+Platform-Specific Guidelines,2
+Platform-Specific Implementations,1
+Platform-Specific Integration Constraints,1
+Platform-Specific Issues,3
+Platform-Specific Limitations,2
+Platform-Specific Restrictions,1
+Platform-Specific Support Issues,1
+Platform-specific Architectural Decisions,1
+Platform-specific Challenges,1
+Platform/Entity Design Challenges,1
+Platform/Entity Structure Issues,1
+Platform/System Compatibility Issues,1
+Polarity in Configuration,1
+Poll Interval Management,1
+Poll vs. Push Functionality Issues,1
+Polling & Timing Issues,1
+Polling Behavior Concerns,1
+Polling Configuration Issues,4
+Polling Frequency,1
+Polling Frequency Issues,1
+Polling Frequency Management,1
+Polling Frequency Recommendations,1
+Polling Issues,4
+Polling Logic Issues,1
+Polling Mechanism Issues,5
+Polling and Automation Configuration Issues,1
+Polling and Data Update Strategies,1
+Polling and Interval Management,1
+Polling and Performance Issues,2
+Polling and Refresh Logic,1
+Polling and Throttling Issues,1
+Polling and Update Mechanism,1
+Polling and Update Mechanism Concerns,1
+Polling and Update Mechanisms,1
+Polling vs Push Method Issues,1
+Polling vs Pushing Mechanisms,1
+Polling vs Streaming Data Handling,1
+Polling vs. Push Updates,1
+Polling vs. WebSocket Communication,1
+Polling/State Update Issues,1
+Polling/Update Frequency Issues,1
+Port Forwarding Issues,1
+Position Validation Issues,1
+Potential Add-On Questions,1
+Power Management Issues,1
+Practical Implementation Challenges,1
+Pre-commit and Development Environment Issues,1
+Precision Handling Issues,1
+Precision and Accuracy Issues,1
+Preliminary PRs and Documentation,1
+Presence Semantics Issues,1
+Preset Management Issues,1
+Preview Handling Issues,1
+Price Calculation Issues,1
+Privacy Concerns,2
+Private Attribute Naming,1
+Process Understanding Issues,1
+Profile Management,1
+Project Management Challenges,1
+Project Management Issues,1
+Project Status Updates,1
+Project Structure Issues,1
+Property Deprecation Issues,1
+Property Management within Coordinator,1
+Property Method Implementation,1
+Property Usage Issues,2
+Property and Functionality Clarity,1
+Protobuf Compatibility Issues,1
+Protocol Communication,1
+Protocol Compatibility,1
+Protocol Compatibility Issues,2
+Protocol Complexity,1
+Protocol Handling,1
+Protocol Handling Issues,1
+Protocol Implementation Issues,2
+Protocol Integration,1
+Protocol Management Issues,1
+Protocol Support,1
+Protocol Support Challenges,1
+Protocol Transition Issues,1
+Protocol Understanding Issues,1
+Protocol and Communication Issues,1
+Protocol/Connection Issues,1
+Protocol/Integration Complexity,1
+Protocol/Technology Concerns,1
+Proximity Integration Complexity,1
+Pruning for Readability,1
+Pull Request Approval Process,2
+Pull Request Connection Issues,1
+Pull Request Management,15
+Pull Request Management Issues,6
+Pull Request Organization,2
+Pull Request Process Issues,6
+Pull Request Processing,1
+Pull Request Review,1
+Pull Request Review Complexity,1
+Pull Request Review Process,5
+Pull Request Size Management,2
+Pull Request Size and Structure Issues,1
+Pull Request Template Compliance,1
+Pull Request Updates,1
+Pulled Request and Review Comments,1
+Push Notification Challenges,1
+Pydantic Compatibility,1
+Pylint Compliance,1
+Pypi and Release Tag Issues,1
+Quality Assurance and Standards,1
+Query Language Specification,1
+Quirk Development,1
+Quirk Matching Issues,1
+Quirks Handling,1
+Race Conditions,1
+Raising ConfigEntryNotReady Exceptions,1
+Rate Limiting Issues,3
+Rate Limiting and Performance Issues,1
+Re-authentication Concerns,1
+Re-authentication Issues,1
+Re-configuration Challenges,1
+Readability Issues,2
+Real-time Notifications,1
+Real-time Update Challenges,1
+Reauth Flow,1
+Reauth Flow Considerations,1
+Reauth Flow Issues,3
+Reauthentication Challenges,1
+Reauthentication Flow,1
+Reauthentication Flow Challenges,1
+Reauthentication Flow Issues,5
+Reauthentication Issues,1
+Reauthentication Process,1
+Rebase Challenges,1
+Rebase Issues,4
+Rebase and Conflict Resolution,1
+Rebase and Feature Implementation Issues,1
+Rebase and Integration Challenges,1
+Rebase and Merge Challenges,2
+Rebase and Merge Conflicts,2
+Rebase and Merge Issues,2
+Rebase and Merge Process,1
+Rebase and Sync Issues,1
+Rebase and Version Control Issues,1
+Rebase/Conflict Management,1
+Rebase/Integration Issues,1
+Rebase/Merge Conflicts,1
+Rebase/Merge Issues,1
+Rebase/Review Requests,1
+Rebase/Update Issues,1
+Rebasing Challenges,2
+Rebasing Issues,12
+Rebasing and Code Cleanup Issues,1
+Rebasing and Draft Management,1
+Rebasing and Merge Conflicts,2
+Rebasing and Merge Difficulty,1
+Rebasing and Merging Issues,2
+Rebasing and Versioning Issues,1
+Rebasing/Branching Issues,1
+Rebasing/Merge Conflicts,1
+Recommendation for Code Simplification,1
+Reconfiguration Interface Issues,1
+Reconfiguration Issues,1
+Reconfiguration Logic,1
+Reconfiguration Process Issues,1
+Recorder Filter Functionality,1
+Recorder Setup Issues,1
+Redesign/Refactoring Needs,1
+Redundancy Issues,3
+Redundancy Issues in HVAC Integration,1
+Redundant Authentication Issues,1
+Redundant Code Issues,1
+Redundant Implementation Issues,1
+Redundant or Unnecessary Code,1
+Refactoring Challenges,6
+Refactoring Considerations,1
+Refactoring Issues,4
+Refactoring Needs,4
+Refactoring Requirements,1
+Refactoring Suggestions,3
+Refactoring and Code Quality,1
+Refactoring and Code Structure Issues,1
+Refactoring for Correctness,1
+Refactoring/Code Quality Issues,1
+Reference Correction Issues,1
+Refresh Logic Challenges,1
+Regional Support,1
+Registry Management Issues,1
+Registry and State Management Issues,1
+Release Management,3
+Release Management Issues,4
+Release Planning Issues,1
+Release Timing Issues,1
+Reloading Issues,1
+Remote Command Limitations,1
+Remote Version Retrieval Challenges,1
+Reopening Issues,1
+Reopening/Staleness Issues,1
+Repair Flow Issues,1
+Repair Issues,1
+Repair System Integration Issues,1
+Repetition in Service Design,1
+Request Handling Issues,1
+Request Optimization Issues,1
+Required Attributes Management,1
+Required Fields Issues,1
+Resource Management Issues,6
+Response Handling Issues,1
+Response Time Concerns,1
+Retention Management,1
+Retry Logic,1
+Return Value Clarification,1
+Return Value Handling Issues,1
+Return Value Issues,1
+Reusability of Components,1
+Reusability of Integrations,1
+Reversion Issues,1
+Review Blockers,1
+Review Collaboration Issues,1
+Review Communication Issues,1
+Review Complexity and Workflow,1
+Review Delays,1
+Review Feedback,1
+Review Feedback Issues,1
+Review Feedback Process,1
+Review Feedback and Approval Process,1
+Review Latency,1
+Review Process Bottlenecks,1
+Review Process Challenges,16
+Review Process Clarifications,1
+Review Process Concerns,4
+Review Process Delays,6
+Review Process Difficulties,1
+Review Process Issues,513
+Review Process Length and Transparency Issues,1
+Review Process and Approval Delays,1
+Review Process and Code Style Issues,1
+Review Process and Collaboration Issues,1
+Review Process and Communication,2
+Review Process and Communication Issues,3
+Review Process and Feedback,2
+Review Process and Feedback Issues,1
+Review Process and Response Issues,1
+Review Recommendations,1
+Review Request Delays,1
+Review Request Issues,1
+Review Request Process,1
+Review Request and Approval,1
+Review Requests,1
+Review Suggestions,3
+Review Thanks and Requests,1
+Review Timeframes,1
+Review and Approval Delays,1
+Review and Approval Issues,1
+Review and Approval Process,1
+Review and Approval Process Clarifications,1
+Review and Approval Process Issues,2
+Review and Code Structure Improvements,1
+Review and Collaboration Issues,1
+Review and Communication Issues,3
+Review and Communication Process Issues,2
+Review and Documentation Communication Issues,1
+Review and Feedback Communication,1
+Review and Feedback Issues,1
+Review and Merge Conflicts,1
+Review and Merge Process Issues,1
+Review and Stale PR Management,1
+Review/Feedback Process Issues,1
+Reviewing and Feedback Process,1
+Room Targeting and Mapping Issues,1
+Runtime Behavior Queries,1
+Runtime Data Usage,1
+Runtime Expectations,1
+SIP Specific Issues,1
+SSDP Discovery Issues,1
+SSDP Support,1
+SSL Configuration Issues,1
+SSL Verification Concerns,1
+SSL/Port Handling Issues,1
+SVG Format Compatibility Issues,1
+Scaffolding Tools,1
+Scaffolding and Template Usage,1
+Scalability Issues,1
+Scan Interval Issues,1
+Scene Handling in Integrations,1
+Scheduling Issues,1
+Scheduling Logic Issues,1
+Schema Change Discussions,1
+Schema Configuration Issues,1
+Schema Definition Issues,6
+Schema Design Challenges,1
+Schema Differentiation,1
+Schema Generation Issues,1
+Schema Issues,4
+Schema Management Issues,2
+Schema Migration,1
+Schema Requirements,1
+Schema Validation Issues,6
+Schema and Registration Issues,1
+Schema and Validation Issues,1
+Schema/Data Structure Issues,1
+Schemas and Configuration Logic Problems,1
+Scope Issues,1
+Scope Limitation Issues,1
+Scope Management,1
+Scoping Issues,1
+Screen Organization,1
+Script Entity Access,1
+Script Execution Issues,1
+Security Class Validation,1
+Security Concerns,4
+Security Considerations,1
+Security Management,1
+Security Vulnerabilities,1
+Select Entity Issues,1
+Selector Configuration Issues,1
+Selector Implementation Issues,1
+Semantic Versioning Issues,1
+Sensitive Data Management,1
+Sensor Addition and Modification,1
+Sensor Attributes Management,1
+Sensor Availability Challenges,1
+Sensor Availability and Defaults,1
+Sensor Behavior Issues,3
+Sensor Calculation Issues,1
+Sensor Categorization Issues,1
+Sensor Category Management,1
+Sensor Changes,1
+Sensor Class Issues,1
+Sensor Class Usage Issues,1
+Sensor Classification Issues,2
+Sensor Configuration Issues,8
+Sensor Configuration and Naming,1
+Sensor Creation Issues,1
+Sensor Data Accuracy Issues,1
+Sensor Data Handling,1
+Sensor Data Issues,1
+Sensor Data Management,2
+Sensor Data Representation,1
+Sensor Data Representation Issues,1
+Sensor Definition Issues,1
+Sensor Development,1
+Sensor Device Class Issues,1
+Sensor Duplication Concerns,2
+Sensor Entities,1
+Sensor Entity Challenges,1
+Sensor Entity Design,1
+Sensor Entity Issues,1
+Sensor Entity Management,1
+Sensor Functionality,1
+Sensor Functionality Discussion,1
+Sensor Handling,1
+Sensor Handling Difficulties,1
+Sensor Identification Issues,2
+Sensor Implementation Challenges,1
+Sensor Implementation Issues,2
+Sensor Indexing and Naming,1
+Sensor Integration,3
+Sensor Integration Challenges,4
+Sensor Integration Issues,6
+Sensor Integration and Representation Issues,1
+Sensor Logic Challenges,1
+Sensor Management,4
+Sensor Management Issues,5
+Sensor Management and Attributes Handling,1
+Sensor Management and Design,1
+Sensor Management and Performance Concerns,1
+Sensor Measurement Issues,2
+Sensor Naming Issues,3
+Sensor Platform Implementation,1
+Sensor Reporting Issues,1
+Sensor Representation Issues,1
+Sensor Stability Concerns,1
+Sensor State Handling,1
+Sensor State Management,2
+Sensor State Representation Issues,1
+Sensor Status Management,1
+Sensor Type Classification,1
+Sensor Types Limitations,1
+Sensor Types and Attributes,1
+Sensor Updates and State Management,1
+Sensor Utility Issues,1
+Sensor Value Interpretation,1
+Sensor Value Representation Issues,1
+Sensor and Attribute Management,1
+Sensor and Device Attribute Issues,1
+Sensor and Entity Management,1
+Sensor and Media Player Management,1
+Sensor and Status Reporting,1
+Sensor and Switch Relationship Issues,1
+Sensor vs Weather Entity Confusion,1
+Sensor vs. Attribute Issues,1
+Sensor/ Switch Configuration Issues,1
+Sensor/Data Reporting Issues,1
+SensorEntityDescription Usage,2
+SensorStateClass Usage Issues,1
+Separation of Concerns,1
+Separation of Concerns Issues,1
+Sequential PR Approach,1
+Server Communication and Health Checks,1
+Service Action Mapping Issues,1
+Service Architecture Issues,1
+Service Availability Issues,1
+Service Call Behavior,1
+Service Call Challenges,2
+Service Call Dependencies,1
+Service Call Discoverability,1
+Service Call Errors,2
+Service Call Handling,1
+Service Call Issues,4
+Service Call Limitations,1
+Service Call Management,1
+Service Call Restrictions,1
+Service Call Result Structuring,1
+Service Call Standardization,1
+Service Calling Issues,1
+Service Calls,2
+Service Check Issues,1
+Service Configuration Issues,6
+Service Data Handling,1
+Service Definition Issues,2
+Service Deprecation Issues,2
+Service Description Clarity,1
+Service Description Updates,1
+Service Design Issues,5
+Service Discovery Challenges,1
+Service Duplication Issues,1
+Service Error Handling,2
+Service Exposing Proposals,1
+Service Exposure Issues,1
+Service Handler Error Standards,1
+Service Handling Challenges,1
+Service Handling Issues,1
+Service Implementation,1
+Service Implementation Challenges,1
+Service Implementation Complexity,1
+Service Implementation Discussions,1
+Service Implementation Issues,5
+Service Implementation Queries,1
+Service Integration,1
+Service Integration Challenges,1
+Service Integration Issues,5
+Service Limitations,1
+Service Logic Issues,1
+Service Management,1
+Service Management Issues,4
+Service Mapping Issues,1
+Service Naming Issues,3
+Service Naming and Configuration Issues,1
+Service Naming/ID Issues,1
+Service Overwriting Issues,1
+Service Parameter Management,1
+Service Provider Changes,1
+Service Registration Issues,7
+Service Registration Practices,1
+Service Removal Communication,1
+Service Response Compatibility Issues,1
+Service Response Management,1
+Service Return Value Limitations,1
+Service Schema Discrepancies,1
+Service Schema Issues,1
+Service Schema Validation,1
+Service Structure Issues,1
+Service Testing Issues,2
+Service Usage,1
+Service Validation,1
+Service Validation Errors,1
+Service Validation Issues,1
+Service and Function Design Issues,1
+Service and Method Handling,1
+Service vs Device Confusion,1
+Service vs Entity Confusion,2
+Service vs. Button Entity Design,1
+Service vs. Entity Design,2
+Service/Command Implementation Issues,1
+Service/Component Functionality,1
+Service/Device Confusion,1
+Session Management Issues,3
+Session Management and Authentication,1
+Setup Issues,1
+Setup and Initialization Concerns,1
+Setup/Configuration Issues,1
+Sign CLA Issues,1
+Sign Off/Legal Issues,1
+Signal Management Issues,1
+Signal Reading Issues,1
+Signal/Event Handling Issues,1
+Significant Code Changes,1
+Signing CLA Issues,1
+Single Configuration Entry Issues,1
+Single Entity Representation,1
+Single Instance Support Issues,1
+Single Platform Requirement,1
+Slot Schema Complexity,1
+Smart Appliance Control,1
+Smart Device Discovery Issues,1
+Smart Home Concept Challenges,1
+Smart Home Concepts,2
+Smart Home Conceptual Challenges,1
+Smart Home Configuration Issues,1
+Smart Home Device Class Issues,1
+Smart Home Device Configuration,1
+Smart Home Device Handling Issues,1
+Smart Home Device Integration,1
+Smart Home Device Integration Issues,3
+Smart Home Device Limitations,1
+Smart Home Device Specific Issues,1
+Smart Home Device Variability,1
+Smart Home Event Handling,1
+Smart Home Feature Implementation Challenges,1
+Smart Home Functionality,1
+Smart Home Integration Challenges,2
+Smart Home Integration Concepts,1
+Smart Home Integration Issues,3
+Smart Home Logic Issues,1
+Smart Home Protocol Issues,1
+Smart Home Protocols Issues,1
+Smart Home Schema Issues,1
+Smart Home Specific Concepts,4
+Smart Home Specific Issues,1
+Snapshot Management Issues,1
+Snapshot Testing,1
+Snapshot Testing Issues,1
+Snapshot Usage,1
+Snapshot/Data Versioning Issues,1
+Snooze Functionality Development,1
+Software Compatibility,1
+Software Version Handling,1
+Sorting/Filtering Issues,1
+Sound Mode Formatting,1
+Specific Feature Implementation,1
+Specific Use Case Limitations,1
+Specification Completeness,1
+Specification Compliance Issues,4
+Speed of Review and Integration,1
+Stale PR Handling,1
+Stale PR Issues,2
+Stale PR Management,10
+Stale PRs,2
+Stale Pull Request,1
+Stale Pull Request Issues,1
+Stale Pull Request Management,5
+Stale Pull Requests,2
+Stale Reviews,1
+Staleness of Pull Requests,1
+Staleness/Review Delay,1
+Standard Compliance,1
+State Abstraction Issues,1
+State Attribute Management,2
+State Attributes Management,1
+State Class Assignments,1
+State Class Issues,5
+State Class Management,2
+State Determination Issues,1
+State Handling Issues,3
+State Machine Concerns,1
+State Machine Design,1
+State Machine Issues,1
+State Machine Management,1
+State Machine Optimization,1
+State Management,5
+State Management Challenges,2
+State Management Issues,54
+State Management and Advertising,1
+State Management and Logic,1
+State Management in Automations,1
+State Management in Home Assistant,1
+State Mapping Issues,1
+State Monitoring Mechanism Decisions,1
+State Reporting Issues,2
+State Representation Issues,4
+State Restoration,1
+State Restoration Issues,1
+State Synchronization Issues,1
+State Update Issues,1
+State Update Timing Issues,2
+Stateless Device Challenges,1
+Stateless vs. Stateful Devices,1
+Static Attribute Issues,1
+Static Configuration Handling,1
+Static Descriptions,1
+Static Type Checking Issues,1
+Static Values Importance,1
+Static vs Dynamic Attributes,1
+Static vs Dynamic Options,1
+Statistical Data Exposure,1
+Statistical Precision Issues,1
+Status Message Complexity,1
+Step Handling Issues,1
+Storage Collection Issues,1
+Storage and Performance Concerns,1
+String Formatting Issues,1
+String Management Issues,1
+Stuck CI Process,1
+Style Guide Issues,1
+Subscription Management Issues,1
+Subscription Plan Restrictions,1
+Subscriptions and Unsubscriptions,1
+Supervisor Integration Issues,2
+Support and Maintenance Issues,1
+Support for Multiple Device Types,1
+Support for Multiple Instances,1
+Support for New Device Types,1
+Support for RGB/RGBW Devices,1
+Supported Features Limitations,1
+Switch Entity Issues,1
+Switch vs. Sensor Decisions,1
+Syntax and Schema Issues,1
+System Architecture Challenges,1
+System Compatibility Issues,1
+System Configuration and Management Issues,1
+System Integration Challenges,1
+Teardown Behavior Issues,1
+Technical Constraints,1
+Technical Debt & Code Structure Issues,1
+Technical Debt (Stale PRs),1
+Technical Implementation Challenges,1
+Technical Issues,2
+Technical Support Needs,1
+Telnet Connection Issues,1
+Temperature Control Issues,1
+Temperature Conversion Issues,1
+Temperature Limitations,1
+Temperature Precision Issues,1
+Template Binding Limitations,1
+Template Complexity Issues,1
+Template Engine Issues,1
+Template Entities,1
+Template Evaluation Issues,1
+Template Function Conventions,1
+Template Function Design,1
+Template Functionality Issues,2
+Template Handling Issues,4
+Template Helper Reuse,1
+Template Initialization Issues,1
+Template Integration Issues,1
+Template Issues,1
+Template Limitations,1
+Template Management Issues,1
+Template Rendering Issues,3
+Template Security Issues,1
+Template Sensor Issues,1
+Template Sensor Usage,1
+Template Usage,1
+Template Usage Issues,2
+Template Variables,1
+Template and Automation Configuration Issues,1
+Template/Variable Handling Issues,1
+Temporal Issues,1
+Terminology Issues,1
+Terminology/Naming Conventions,1
+Terms of Service Compliance,1
+Test Coverage,1
+Test Coverage Issues,3
+Test Failures,1
+Test Framework Limitations,1
+Test Structure Issues,1
+Testability Concerns,1
+Testing,1
+Testing & Mocking Challenges,1
+Testing API Responses,1
+Testing Cases,1
+Testing Challenges,11
+Testing Challenges with Patching,1
+Testing Complexity,1
+Testing Configurations Issues,1
+Testing Considerations,1
+Testing Coordination,1
+Testing Coverage,1
+Testing Coverage Challenges,1
+Testing Coverage Issues,9
+Testing Data Requirements,1
+Testing Device Integrations,1
+Testing Documentation,1
+Testing Failures,2
+Testing Feedback,1
+Testing Framework Concerns,1
+Testing Framework Issues,5
+Testing Functionality,2
+Testing Improvements,1
+Testing Integration,1
+Testing Integration Flows,1
+Testing Interface Issues,1
+Testing Issues,539
+Testing Knowledge Gaps,1
+Testing Limitations,5
+Testing Limitations Due to Device Ownership,1
+Testing Methodology,1
+Testing Methodology Issues,4
+Testing Needs,1
+Testing Pipeline Issues,1
+Testing Practices,3
+Testing Practices Issues,1
+Testing Protocols,1
+Testing Requirements,13
+Testing Scenarios,2
+Testing Setup Issues,1
+Testing Strategy,1
+Testing Strategy Issues,1
+Testing Strategy Suggestions,1
+Testing Suggestions,1
+Testing and Assertion Issues,2
+Testing and Authentication Issues,1
+Testing and Automation Issues,1
+Testing and Bug Fixes,1
+Testing and CI Challenges,1
+Testing and CI Process Issues,1
+Testing and CI Workflow Issues,1
+Testing and CI/CD Issues,1
+Testing and Code Coverage Issues,2
+Testing and Code Coverage Requirements,1
+Testing and Code Review,1
+Testing and Code Review Process,1
+Testing and Compatibility Issues,5
+Testing and Configuration Issues,3
+Testing and Connection Stability Issues,1
+Testing and Coverage,1
+Testing and Coverage Challenges,1
+Testing and Coverage Issues,4
+Testing and Coverage Requirements,4
+Testing and Debugging,4
+Testing and Debugging Challenges,2
+Testing and Debugging Issues,4
+Testing and Development Concerns,1
+Testing and Discovery Issues,1
+Testing and Documentation,2
+Testing and Documentation Issues,1
+Testing and Error Handling,2
+Testing and Error Handling Issues,1
+Testing and Failing Tests,1
+Testing and Mocking Challenges,1
+Testing and Mocking Concerns,1
+Testing and Mocking Issues,1
+Testing and Performance Concerns,1
+Testing and Quality Assurance Challenges,1
+Testing and Race Conditions,1
+Testing and Requirements Issues,1
+Testing and Review Process,1
+Testing and Review Process Issues,1
+Testing and Review Requests,1
+Testing and Setup Concerns,1
+Testing and Setup Issues,3
+Testing and State Management Issues,1
+Testing and Stream Handling Issues,1
+Testing and Test Coverage,1
+Testing and Test Coverage Concerns,1
+Testing and Test Coverage Issues,1
+Testing and Testing Framework Discussions,1
+Testing and Timing Issues,1
+Testing and Validation,8
+Testing and Validation Challenges,4
+Testing and Validation Difficulties,1
+Testing and Validation Issues,22
+Testing and Validation Needs,1
+Testing and Validation Problems,1
+Testing and Validation Requirements,1
+Testing and Verification Challenges,2
+Testing and Version Bumping Issues,1
+Testing and Virtual Device Issues,1
+Testing and Workflow Processes,1
+Testing with Live Devices,1
+Testing/Assertion Issues,1
+Testing/CI Concerns,1
+Testing/Validation Concerns,1
+Testing/Validation Issues,1
+Thermocouple Integration Issues,1
+Thermostat Control Issues,1
+Thermostat Functionality and Support,1
+Third Party Integration Concerns,1
+Third-Party Integration Requests,1
+Third-party Library Dependency Issues,1
+Thread Safety Issues,2
+Threading Errors,1
+Threading/Race Condition Issues,1
+Throttling Issues in State Updates,1
+Time Constraints,3
+Time Entity Issues,1
+Time Handling Issues,1
+Time Management Challenges,1
+Time Management Issues,3
+Time Management/Responsibility Challenges,1
+Time Zone Handling Issues,2
+Timeline Concerns,1
+Timeout Errors,1
+Timeout Issues,2
+Timeout Management,1
+Timeout and DND Functionality,1
+Timer Logic Issues,1
+Timer Management Issues,1
+Timezone Data Issues,1
+Timezone Handling Issues,1
+Title Formatting Issues,1
+Token Expiration Issues,1
+Token Management Issues,3
+Token Storage Concerns,1
+Tool and API Support Issues,1
+Total Increasing vs Measurement Clarity,1
+Traditions/Localization Issues,1
+Training/Experience Gaps,1
+Trait Implementation Challenges,1
+Transient Failure Handling,1
+Transitional Changes Management,1
+Transitioning Attributes Structure,1
+Translatability Issues,2
+Translatability for Entities and Services,1
+Translatability of Options,1
+Translatable Options in Services,1
+Translation Compilation Issues,1
+Translation Handling Concerns,1
+Translation Implementation Challenges,1
+Translation Implementation Issues,1
+Translation Issues,29
+Translation Key Formatting Issues,1
+Translation Key Issues,1
+Translation Management,10
+Translation Management Issues,6
+Translation State Management Issues,1
+Translation Support Issues,2
+Translation and Localization,1
+Translation and Localization Issues,15
+Translation/Localization Issues,9
+Translation/Localization Requirements,1
+Translations and Localizations Issues,1
+Trigger Configuration,1
+Trigger Configuration Issues,1
+Trigger Entities,1
+Trigger Handling Issues,1
+Trigger Management Issues,1
+Trigger and Condition Handling,1
+Triggers Behavior Issues,1
+Troubleshooting Device Commands,1
+Troubleshooting Errors,1
+Tuple Handling in Code,1
+Type Annotation Issues,4
+Type Annotations,1
+Type Annotations Issues,1
+Type Annotations/Typing Issues,1
+Type Casting Issues,1
+Type Checking (mypy Errors),1
+Type Checking Issues,13
+Type Checking Issues (mypy),1
+Type Checking and Annotations Issues,1
+Type Checking and Validation Issues,1
+Type Checking/Static Analysis Issues,1
+Type Checking/Typing Issues,1
+Type Clarity Issues,1
+Type Compatibility Issues,1
+Type Errors and Mypy Issues,1
+Type Handling Issues,3
+Type Handling in Integrations,1
+Type Hint Issues,1
+Type Hinting Issues,9
+Type Hinting/Missing Typing,1
+Type Hinting/Typing,1
+Type Hints and Code Documentation Issues,1
+Type Mismatches,1
+Type and Data Handling Issues,1
+Type and Structure Issues,1
+Type and Typing Issues,1
+Typed Dict Usage,1
+Typedef and Type Issues,1
+Typing Issues,4
+Typing and Code Quality Issues,1
+Typing and Description Issues,1
+Typing and Documentation Issues,1
+Typing and Linting Issues,1
+Typing and Specificity Issues,1
+Typing and Type Hints,1
+Typing/Static Analysis Issues,1
+Typing/Type Safety Issues,1
+Typings and Type Annotations,1
+Typographical Issues,1
+UI Configuration Issues,1
+UI Consistency Issues,1
+UI Feedback Issues,1
+UI Issues,1
+UI Rendering Issues,1
+UI Update Efficiency,1
+UI/Frontend Issues,1
+UI/Presentation Issues,1
+UI/UX Concerns,1
+UI/UX Consistency and Errors,1
+UI/UX Design Considerations,1
+UI/UX Design Issues,1
+UI/UX Issues,2
+UI/UX Visualization Issues,1
+UPB Device Specific Issues,1
+UPnP Issues,1
+URL Configuration Issues,1
+URL Handling Issues,1
+URL Validation Issues,1
+UUID Usage,1
+UUID and Identification Issues,1
+UUID/ID Management Issues,1
+Uncertainty in Release Timeline,1
+Unclear Specifications,1
+Understanding Coordinator Behavior,1
+Understanding Device Behavior,1
+Understanding Home Assistant Architecture,1
+Understanding Integration Status,1
+Understanding Smart Home Concepts,1
+Understanding of Smart Home Protocols/Enums,1
+Unexpected Behavior,1
+Unique ID Challenges,1
+Unique ID Conflicts,1
+Unique ID Convention,1
+Unique ID Generation,1
+Unique ID Generation Challenges,1
+Unique ID Handling,5
+Unique ID Handling Issues,3
+Unique ID Implementation,1
+Unique ID Issues,6
+Unique ID Management,18
+Unique ID Management Issues,2
+Unique ID Migration,1
+Unique ID Requirement,1
+Unique ID Requirements,1
+Unique ID Validation,1
+Unique ID and Migration Issues,1
+Unique ID and Naming Conflicts,1
+Unique ID and Naming Issues,1
+Unique ID vs Entry ID Issues,1
+Unique ID/Naming Issues,1
+Unique Identification Issues,1
+Unique Identifier Issues,4
+Unique Identifier Management,1
+Unique Identifier/Naming Issues,1
+Unique Integration Features,1
+Unit Additions,1
+Unit Conversion Issues,2
+Unit Handling Issues,2
+Unit Measurement Confusion,1
+Unit Measurement Issues,3
+Unit Measurement Specification,1
+Unit Specification Issues,1
+Unit Testing,1
+Unit Testing Challenges,1
+Unit Testing Issues,2
+Unit of Measure (UOM) Challenges,1
+Unit of Measurement (UoM) Issues,1
+Unit of Measurement Issues,5
+Unit of Measurement Issues (uom),1
+Unit of Measurement Standardization,1
+Unit/Measurement Issues,1
+Unknown Factor in Device Behavior,1
+Unofficial Solutions,1
+Unrelated Changes,1
+Unrelated Changes Management,1
+Unrelated Code Concerns,1
+Unrelated Commits,1
+Unrelated Test Failures,1
+Unresolved Discussions,1
+Unsupported Device Features,1
+Unsupported Features,1
+Unsupported Features Issues,1
+Unused Code,1
+Unused Code Issues,3
+Unused Code and Cleanup Issues,1
+Unused Variables,1
+Update Coordination Issues,1
+Update Coordinator,1
+Update Interval Constraints,1
+Update Logic Issues,1
+Update Management Issues,2
+Update and Release Challenges,1
+Upstream Dependency Changes,1
+Upstream Dependency Issues,2
+Usability Concerns,1
+Usability Issues,1
+Usability and Security Concerns,1
+Usage of Constants in Code,1
+Usage of Home Assistant Standards,1
+Use Case Clarification,1
+Use Case Considerations,1
+Use Case Discussions,1
+Use Case Identification,2
+Use Case Specificity,1
+Use of Async Functions,1
+Use of Attributes vs Entities,1
+Use of Automations/Bluetooth Alternatives,1
+Use of Coding Standards and Idioms,1
+Use of Coordinator,1
+Use of Entity Descriptions,1
+Use of Home Assistant Constants,1
+User Accessibility,1
+User Account Management Issues,1
+User Authentication,1
+User Authentication Concerns,1
+User Authentication Issues,3
+User Automation Complexity,1
+User Code Management,1
+User Communication,4
+User Communication Issues,3
+User Configuration Challenges,2
+User Configuration Concerns,1
+User Configuration Difficulties,1
+User Configuration Issues,2
+User Configuration and Experience,1
+User Confirmation Requirement,1
+User Contribution Challenges,1
+User Contributions,1
+User Control and Automation,1
+User Customization Capabilities,1
+User Documentation Issues,1
+User Experience,4
+User Experience (UI/UX),1
+User Experience (UX) Issues,2
+User Experience / Options Flow,1
+User Experience Challenges,9
+User Experience Concerns,23
+User Experience Considerations,16
+User Experience Design Issues,2
+User Experience Improvement,1
+User Experience Improvements,1
+User Experience Issues,87
+User Experience Problems,1
+User Experience Requirements,1
+User Experience and Accessibility Challenges,1
+User Experience and Authentication,1
+User Experience and Choice,1
+User Experience and Intuition,1
+User Experience in Naming and Entity Management,1
+User Experience in UI,1
+User Experience/Documentation Concerns,1
+User Experience/UI Considerations,1
+User Experience/Usability Issues,1
+User Feedback,1
+User Feedback Handling,1
+User Feedback Issues,1
+User Feedback Requirements,1
+User Feedback and Feature Requests,1
+User Flow Issues,1
+User Guidance Issues,2
+User Guidance Problems,1
+User Guidance Requirements,1
+User Input Guidance Issues,1
+User Input Handling,2
+User Input Handling Issues,5
+User Input Handling and Validation,1
+User Input Issues,1
+User Input Management,1
+User Input Management Issues,1
+User Input Validation,1
+User Input Validation Issues,2
+User Interaction Challenges,2
+User Interaction Issues,5
+User Interface (UI) Concerns,1
+User Interface (UI) Design,1
+User Interface (UI) Issues,1
+User Interface Behavior Issues,1
+User Interface Challenges,3
+User Interface Clarity,1
+User Interface Concerns,7
+User Interface Confusion,1
+User Interface Considerations,3
+User Interface Design,1
+User Interface Design Challenges,1
+User Interface Design Issues,2
+User Interface Feedback,1
+User Interface Implementation,1
+User Interface Improvements,1
+User Interface Integration,2
+User Interface Issues,12
+User Interface Limitations,1
+User Interface and Experience,1
+User Interface/Display Issues,1
+User Interface/Experience,1
+User Interface/Experience Concerns,1
+User Interface/Experience Issues,1
+User Interface/UX Improvements,1
+User Interface/UX Issues,1
+User Management Issues,1
+User Messaging/Communication Issues,1
+User Needs and Feature Requests,1
+User Permission Concerns,1
+User Preferences and Options Handling,1
+User Preferences in Smart Home Data,1
+User Role/Permissions Issues,1
+User Safety and Misuse Risks,1
+User Settings Management,1
+User Step Management Issues,1
+User Support and Donations,1
+User-Friendly Options,1
+Utility Function Suggestions,1
+Utility Meter Configuration,1
+Vacuum Integration Challenges,1
+Valdiation Logic Issues,1
+Validation Challenges,1
+Validation Concerns,1
+Validation Issues,6
+Validation Logic Issues,3
+Validation Process,1
+Validation and Error Handling,1
+Validation/Testing Issues,1
+Value Handling,1
+Value Handling Issues,1
+Value Passing Issues,1
+Value Retrieval Issues,1
+Variable Handling Issues,1
+Variable Management,1
+Variable Management Issues,3
+Variable Naming Issues,3
+Variable Scope and Usage,1
+Variable and Naming Issues,1
+Variable and Property Management,1
+Vendor Identification Issues,1
+Verbose Logging Issues,1
+Version Compatibility,1
+Version Compatibility Issues,1
+Version Control Challenges,1
+Version Control Issues,8
+Version Control Problems,1
+Version Management Issues,1
+Version Release Delays,1
+Version Release Management,1
+Version Release Timing,1
+Version Upgrade Issues,1
+Versioning Issues,12
+Versioning Policy,1
+Versioning and Breaking Changes,1
+Versioning and Migration,1
+Virtual Device Testing,1
+Virtual Entity Limitations,1
+Virtual Environment Issues,1
+Virtual Integration Concerns,1
+Virtual Integrations Issues,1
+Voice Activity Detection (VAD) Options,1
+Voice Assistant Integration Issues,1
+Voice Command Handling,1
+Voice Integration Challenges,1
+Voice and Model Handling Issues,1
+Volume Control Consistency,1
+Volume Control Functionality,1
+Volume Control Strategies,1
+Waiting for Review,1
+Wake Word Detection Issues,1
+Wake Word Management,1
+Wake-on-LAN (WoL) Implementation Challenges,1
+Warning Management,1
+Warnings and Errors,1
+Weather Data Integration,1
+Weather Integration Issues,1
+Web Scraping Limitations,1
+WebRTC and Audio/Video Integration,1
+WebRTC vs HLS Support,1
+WebSocket API Usage,1
+WebSocket Command Issues,1
+WebSocket Communication Issues,2
+WebSocket Event Handling,1
+WebSocket Handling,1
+WebSocket Implementation,1
+WebSocket Integration Challenges,1
+WebSocket Issues,1
+WebSocket Management,1
+Webhook Functionality,1
+Webhook Implementation,1
+Webhook Integration Challenges,2
+Webhook Integration Issues,1
+Webhook Issues,2
+Webhook Management,1
+Websocket API Concerns,1
+Websocket API Usage,1
+Websocket Integration Challenges,1
+Websocket and API Issues,1
+WiFi Connectivity Concerns,1
+Wiz Light Integration Issues,1
+Work Area Management,1
+Work in Progress,1
+Work in Progress Management,1
+WorkState Configuration Issues,1
+Workaround Concerns,1
+Workaround Issues,1
+Workaround versus Fix Philosophy,1
+Workflow Approval,1
+Workflow Approval Issues,1
+Workflow Issues,1
+Workflow and Approval Delays,1
+Workflow and Testing Challenges,1
+YAML Change Constraints,1
+YAML Configuration Challenges,1
+YAML Configuration Changes,1
+YAML Configuration Deprecation,2
+YAML Configuration Issues,9
+YAML Configuration Limitations,1
+YAML Configuration Management,2
+YAML Configuration Restrictions,2
+YAML Deprecation,1
+YAML Deprecation Issues,1
+YAML Migration Challenges,1
+YAML Structure Issues,1
+YAML Support Issues,1
+YAML Usage Issues,1
+YAML vs Config Flow Issues,1
+Yaml-Schema Issues,1
+Z-Wave Integration,1
+Z-Wave Integration Issues,1
+Z-Wave JS Specific Issues,1
+Z-Wave Specific Challenges,1
+Z-Wave Specific Issues,1
+Z-Wave Specification Compliance,1
+ZHA Device Management,1
+ZHA Light Group Functionality,1
+Zeroconf Compatibility,1
+Zeroconf Integration Challenges,1
+Zeroconf Issues,1
+Zeroconf Management Issues,1
+Zeroconf Usage,1
+Zeroconf and Device Discovery,1
+Zigbee Cluster Limitations,1
+Zigbee/Z-Wave Integration Issues,1
+Zigpy Integration Issues,1
+Zone Validation,1
