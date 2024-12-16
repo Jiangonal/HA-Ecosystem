@@ -1,0 +1,506 @@
+PR Number,Category
+100110,Code Structure/Design Issues
+100110,Logic Issues
+101731,Code Structure/Design Issues
+101731,Slow Response
+101786,Code Structure/Design Issues
+101786,Testing/Validation Issues
+101786,Communication/Collaboration Issues
+101786,Slow Response
+102190,Code Structure/Design Issues
+102190,Logic Issues
+102190,Testing/Validation Issues
+102190,Communication/Collaboration Issues
+102190,Slow Response
+102361,Code Structure/Design Issues
+102361,Logic Issues
+102361,Communication/Collaboration Issues
+102371,Dependency Management Issues
+102371,Code Structure/Design Issues
+102371,Testing/Validation Issues
+102371,Communication/Collaboration Issues
+102542,Code Structure/Design Issues
+102542,Dependency Management
+102542,Testing/Validation Issues
+102542,Communication/Collaboration Issues
+102542,Slow Response
+103073,Documentation Issues
+103073,Code Structure/Design Issues
+103073,Testing/Validation Issues
+103073,Communication/Collaboration Issues
+103073,Slow Response
+103683,Testing/Validation Issues
+103683,Code Structure/Design Issues
+103683,Communication/Collaboration Issues
+103683,Slow Response
+104725,UI/UX Issues
+104725,Slow Response
+104725,Code Structure/Design Issues
+104725,Logic Issues
+104725,Testing/Validation Issues
+105474,Slow Response
+105474,Testing/Validation Issues
+105474,Code Structure/Design Issues
+105474,Logic Issues
+105474,Communication/Collaboration Issues
+106449,Code Structure/Design Issues
+106449,Testing/Validation Issues
+106449,Slow Response
+107094,Code Structure/Design Issues
+107094,API Usage Issues
+107094,Data Handling Issues
+107094,Testing/Validation Issues
+107094,Communication/Collaboration Issues
+107094,Slow Response
+107749,Code Structure/Design Issues
+107749,Logic Issues
+107749,Communication/Collaboration Issues
+107749,Slow Response
+108326,Communication/Collaboration Issues
+108326,Testing/Validation Issues
+108326,Code Structure/Design Issues
+108326,Slow Response
+108326,Other
+108336,Code Structure/Design Issues
+108336,Testing/Validation Issues
+108336,Logic Issues
+108336,Communication/Collaboration Issues
+109335,Documentation Issues
+109335,Code Structure/Design Issues
+109335,Logic Issues
+109335,Testing/Validation Issues
+109335,Communication/Collaboration Issues
+112511,Testing/Validation Issues
+112511,Slow Response
+112511,Communication/Collaboration Issues
+112511,Code Structure/Design Issues
+113065,Documentation Issues
+113065,Code Structure/Design Issues
+113065,Logic Issues
+113065,Testing/Validation Issues
+113065,Communication/Collaboration Issues
+113065,Slow Response
+118012,Communication/Collaboration Issues
+44779,Testing/Validation Issues
+44779,Code Structure/Design Issues
+44779,Communication/Collaboration Issues
+44779,Slow Response
+44929,CLA Issues
+44929,Bug-Related
+44929,Logic Issues
+44929,Code Structure/Design Issues
+44929,Communication/Collaboration Issues
+44929,Slow Response
+45071,Code Structure/Design Issues
+45071,Logic Issues
+45071,Testing/Validation Issues
+45071,Communication/Collaboration Issues
+45071,Other
+45274,Documentation Issues
+45274,Code Structure/Design Issues
+45274,Testing/Validation Issues
+45274,Communication/Collaboration Issues
+45274,Slow Response
+45314,Code Structure/Design Issues
+45314,Communication/Collaboration Issues
+45314,Slow Response
+45749,Documentation Issues
+45749,Testing/Validation Issues
+45749,Code Structure/Design Issues
+45749,Communication/Collaboration Issues
+45749,Slow Response
+45866,Slow Response
+45866,Code Structure/Design Issues
+45866,Testing/Validation Issues
+45866,Communication/Collaboration Issues
+45915,Code Structure/Design Issues
+45915,Testing/Validation Issues
+45915,Communication/Collaboration Issues
+45915,Slow Response
+46332,Testing/Validation Issues
+46332,Communication/Collaboration Issues
+46332,Slow Response
+46332,Code Structure/Design Issues
+46582,Slow Response
+46582,Testing/Validation Issues
+46582,Code Structure/Design Issues
+46582,Communication/Collaboration Issues
+46662,Dependency Management Issues
+46662,Testing/Validation Issues
+46662,Code Structure/Design Issues
+46662,Logic Issues
+48346,Code Structure/Design Issues
+48346,Logic Issues
+48346,Testing/Validation Issues
+48346,Communication/Collaboration Issues
+48346,Slow Response
+50284,Code Structure/Design Issues
+50284,Documentation Issues
+50284,Communication/Collaboration Issues
+50284,Testing/Validation Issues
+50284,Slow Response
+50913,Code Structure/Design Issues
+50913,Communication/Collaboration Issues
+50913,Slow Response
+53430,Documentation Issues
+53430,Dependency Issues
+53430,Code Structure/Design Issues
+53430,Testing/Validation Issues
+53430,Communication/Collaboration Issues
+53430,Slow Response
+53552,Code Structure/Design Issues
+53552,Communication/Collaboration Issues
+53552,Testing/Validation Issues
+53552,Slow Response
+53801,Code Structure/Design Issues
+53801,Logic Issues
+53801,Communication/Collaboration Issues
+53801,Slow Response
+54280,Communication/Collaboration Issues
+54280,Slow Response
+54280,Testing/Validation Issues
+54280,Code Structure/Design Issues
+54859,Code Structure/Design Issues
+54859,Testing/Validation Issues
+54859,Communication/Collaboration Issues
+54859,Slow Response
+55270,Code Structure/Design Issues
+55620,Code Structure/Design Issues
+55620,Documentation Issues
+55812,Documentation Issues
+55812,Testing/Validation Issues
+55812,Code Structure/Design Issues
+55812,Communication/Collaboration Issues
+55812,Feature Request
+55812,Slow Response
+55954,Documentation Issues
+55954,Code Structure/Design Issues
+55954,Testing/Validation Issues
+55954,Slow Response
+55954,Communication/Collaboration Issues
+56039,Code Structure/Design Issues
+56039,Dependency Issues
+56039,Communication/Collaboration Issues
+56039,Other
+56094,Code Structure/Design Issues
+56094,Logic Issues
+56094,Testing/Validation Issues
+56094,Communication/Collaboration Issues
+56094,Slow Response
+56357,Slow Response
+56357,Code Structure/Design Issues
+56357,Logic Issues
+56357,Testing/Validation Issues
+58053,Slow Response
+58053,Communication/Collaboration Issues
+58053,Code Structure/Design Issues
+60413,CLA Issues
+60413,Code Quality Issues
+60413,Testing/Validation Issues
+60413,Slow Response
+60520,Code Structure/Design Issues
+60520,Slow Response
+60520,Communication/Collaboration Issues
+60541,Code Structure/Design Issues
+60541,Testing/Validation Issues
+60541,Slow Response
+62451,Code Structure/Design Issues
+62451,Testing/Validation Issues
+62451,Communication/Collaboration Issues
+62451,Slow Response
+62801,Code Structure/Design Issues
+62801,Logic Issues
+62801,Testing/Validation Issues
+63155,Documentation/Instructions Issues
+63155,Review Process Delays
+63155,Code Structure/Design Issues
+63155,Testing/Validation Issues
+63155,Communication/Collaboration Issues
+63155,Slow Response
+63671,Testing/Validation Issues
+63671,Code Structure/Design Issues
+63671,Communication/Collaboration Issues
+63671,Slow Response
+63736,Code Structure/Design Issues
+63736,Testing/Validation Issues
+63736,Communication/Collaboration Issues
+63736,Slow Response
+65000,Code Structure/Design Issues
+65000,Testing/Validation Issues
+65000,Slow Response
+65000,Communication/Collaboration Issues
+66130,CLA Issues
+66130,Slow Response
+66130,Code Structure/Design Issues
+66130,Testing/Validation Issues
+66431,Code Structure/Design Issues
+66431,Testing/Validation Issues
+66431,Communication/Collaboration Issues
+66431,Slow Response
+68526,Code Structure/Design Issues
+68526,Testing/Validation Issues
+68526,Communication/Collaboration Issues
+68526,Slow Response
+68992,Communication/Collaboration Issues
+68992,Slow Response
+68992,Testing/Validation Issues
+68992,Code Structure/Design Issues
+70080,Code Structure/Design Issues
+70080,Logic Issues
+70080,Testing/Validation Issues
+70080,Communication/Collaboration Issues
+70080,Slow Response
+70201,Documentation Issues
+70201,Testing/Validation Issues
+70201,Development Environment Setup
+70201,Code Structure/Design Issues
+70201,Communication/Collaboration Issues
+70201,Slow Response
+70361,Code Structure/Design Issues
+70361,Logic Issues
+70361,Testing/Validation Issues
+70361,Communication/Collaboration Issues
+70365,Code Structure/Design Issues
+70365,Logic Issues
+70365,Communication/Collaboration Issues
+70365,Slow Response
+71113,Code Structure/Design Issues
+71113,Testing/Validation Issues
+71113,Communication/Collaboration Issues
+71113,Slow Response
+71526,Documentation Issues
+71526,Testing/Validation Issues
+71526,Code Structure/Design Issues
+71526,Communication/Collaboration Issues
+71526,Slow Response
+72235,Documentation Issues
+72235,Testing/Validation Issues
+72235,Communication/Collaboration Issues
+72235,Slow Response
+72235,Code Structure/Design Issues
+72982,CLA/License Issues
+75530,Slow Response
+75530,Communication/Collaboration Issues
+75530,Testing/Validation Issues
+75530,Code Structure/Design Issues
+76190,Code Structure/Design Issues
+76190,Communication/Collaboration Issues
+76190,Testing/Validation Issues
+76190,Slow Response
+77091,Documentation Issues
+77091,Testing/Validation Issues
+77091,Code Structure/Design Issues
+77091,Communication/Collaboration Issues
+77091,Slow Response
+77188,Testing/Validation Issues
+77188,Code Structure/Design Issues
+77188,Communication/Collaboration Issues
+77188,Slow Response
+77249,Code Structure/Design Issues
+77249,Dependency Management
+77249,Communication/Collaboration Issues
+78839,Testing/Validation Issues
+78839,Slow Response
+78839,Communication/Collaboration Issues
+78839,Code Structure/Design Issues
+78839,Other
+80061,Code Structure/Design Issues
+80061,Testing/Validation Issues
+80061,Communication/Collaboration Issues
+80061,Slow Response
+80326,Slow Response
+80326,Communication/Collaboration Issues
+80326,Code Structure/Design Issues
+80326,Logic Issues
+81149,Code Structure/Design Issues
+81149,Logic Issues
+81149,Testing/Validation Issues
+81149,Communication/Collaboration Issues
+81149,Slow Response
+81670,Code Structure/Design Issues
+81670,Logic Issues
+81670,Testing/Validation Issues
+81670,Slow Response
+81724,Testing/Validation Issues
+81724,Code Structure/Design Issues
+81724,Communication/Collaboration Issues
+81724,Slow Response
+82483,Code Structure/Design Issues
+82483,Logic Issues
+82483,Other
+82850,Bluetooth Integration Issues
+82850,Code Structure/Design Issues
+82850,Testing/Validation Issues
+82850,Communication/Collaboration Issues
+82850,Slow Response
+82959,Dependency Issues
+82959,Testing/Validation Issues
+82959,Logic Issues
+82959,Code Structure/Design Issues
+82959,Naming/Terminology Issues
+82959,Performance Issues
+82959,Communication/Collaboration Issues
+82959,Slow Response
+83069,Code Structure/Design Issues
+83069,Testing/Validation Issues
+83069,Communication/Collaboration Issues
+83069,Slow Response
+84748,Code Structure/Design Issues
+84748,Testing/Validation Issues
+84748,Communication/Collaboration Issues
+84748,Slow Response
+85029,Code Structure/Design Issues
+85029,Testing/Validation Issues
+85029,Communication/Collaboration Issues
+85029,Slow Response
+85893,Code Structure/Design Issues
+85893,Logic Issues
+85893,Testing/Validation Issues
+85893,Communication/Collaboration Issues
+85893,Slow Response
+85969,Code Structure/Design Issues
+85969,Logic Issues
+85969,Testing/Validation Issues
+85969,Communication/Collaboration Issues
+86084,Dependency Management Issues
+86084,Code Structure/Design Issues
+86084,Integration Duplication
+86084,Performance Issues
+86084,Communication/Collaboration Issues
+86084,Slow Response
+86522,Code Structure/Design Issues
+86522,Testing/Validation Issues
+86522,Communication/Collaboration Issues
+86522,Slow Response
+86551,Code Structure/Design Issues
+86551,Logic Issues
+86551,Communication/Collaboration Issues
+86551,Slow Response
+86636,Code Structure/Design Issues
+86636,Communication/Collaboration Issues
+86636,Slow Response
+86930,Code Structure/Design Issues
+86930,Testing/Validation Issues
+86930,Slow Response
+86930,Communication/Collaboration Issues
+87681,Code Structure/Design Issues
+87681,Documentation Issues
+87681,Logic Issues
+87681,Slow Response
+87748,Code Structure/Design Issues
+87748,Logic Issues
+87748,Testing/Validation Issues
+87748,Communication/Collaboration Issues
+87748,Slow Response
+87807,Code Structure/Design Issues
+87807,Testing/Validation Issues
+87807,Documentation Issues
+87807,Communication/Collaboration Issues
+87807,Slow Response
+88272,Code Structure/Design Issues
+88272,Logic Issues
+88272,Testing/Validation Issues
+88272,Communication/Collaboration Issues
+88540,Code Structure/Design Issues
+88540,Logic Issues
+88540,Testing/Validation Issues
+88540,Communication/Collaboration Issues
+88540,Slow Response
+89504,Code Structure/Design Issues
+89504,Logic Issues
+89504,Testing/Validation Issues
+89504,Communication/Collaboration Issues
+89504,Slow Response
+90056,Slow Response
+90056,Testing/Validation Issues
+90056,Code Structure/Design Issues
+90056,Logic Issues
+90056,Translation/Internationalization
+90056,Error Handling
+90056,Other
+91436,Code Structure/Design Issues
+91436,Logic Issues
+91436,Testing/Validation Issues
+91436,Other
+93462,Code Structure/Design Issues
+93462,Slow Response
+93580,Testing/Validation Issues
+93580,Authentication/Authorization Issues
+93580,Authentication/Authorization Issues
+93580,Testing/Validation Issues
+93580,Testing/Validation Issues
+93580,Communication/Collaboration Issues
+93580,Slow Response
+93580,Slow Response
+93580,Code Structure/Design Issues
+93580,Code Structure/Design Issues
+93580,Code Structure/Design Issues
+93580,Code Structure/Design Issues
+93580,Code Structure/Design Issues
+93580,Code Structure/Design Issues
+93580,Code Structure/Design Issues
+93580,Code Structure/Design Issues
+93580,Code Structure/Design Issues
+93580,Code Structure/Design Issues
+93580,Code Structure/Design Issues
+93580,Code Structure/Design Issues
+93580,Code Structure/Design Issues
+93580,Code Structure/Design Issues
+93580,Code Structure/Design Issues
+93580,Code Structure/Design Issues
+93580,Code Structure/Design Issues
+93580,Code Structure/Design Issues
+93580,Code Structure/Design Issues
+93580,Code Structure/Design Issues
+93580,Code Structure/Design Issues
+93580,Code Structure/Design Issues
+93580,Code Structure/Design Issues
+93580,Code Structure/Design Issues
+93580,Code Structure/Design Issues
+93580,Code Structure/Design Issues
+93604,Code Structure/Design Issues
+93604,Communication/Collaboration Issues
+93604,Slow Response
+93750,Slow Response
+93750,Communication/Collaboration Issues
+93750,Code Structure/Design Issues
+93750,Testing/Validation Issues
+94438,Code Structure/Design Issues
+94438,Testing/Validation Issues
+94438,Communication/Collaboration Issues
+94438,Slow Response
+94824,Slow Response
+94824,Code Structure/Design Issues
+94824,Testing/Validation Issues
+94824,Communication/Collaboration Issues
+95093,Code Structure/Design Issues
+95093,Logic Issues
+95093,Communication/Collaboration Issues
+95093,Testing/Validation Issues
+95093,Slow Response
+95146,Code Structure/Design Issues
+95146,Slow Response
+95613,Code Structure/Design Issues
+95613,Logic Issues
+95613,Testing/Validation Issues
+95613,Communication/Collaboration Issues
+95722,Slow Response
+95722,Communication/Collaboration Issues
+95722,Code Structure/Design Issues
+95722,Testing/Validation Issues
+96722,Code Structure/Design Issues
+96722,Testing/Validation Issues
+96722,Communication/Collaboration Issues
+96722,Slow Response
+98136,Code Structure/Design Issues
+98136,Communication/Collaboration Issues
+98136,Slow Response
+98136,Testing/Validation Issues
+98703,Code Structure/Design Issues
+98703,Logic Issues
+98703,Testing/Validation Issues
+98703,Communication/Collaboration Issues
+99573,Code Structure/Design Issues
+99573,Testing/Validation Issues
+99573,Communication/Collaboration Issues
+99573,Slow Response

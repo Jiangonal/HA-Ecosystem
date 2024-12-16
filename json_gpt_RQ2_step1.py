@@ -9,12 +9,10 @@ import os
 # Load environment variables
 load_dotenv()
 
-# Set up API keys
-GITHUB_API_KEY = environ.get("GITHUB_PAT_2")
 client = OpenAI()  # Automatically loads OPENAI_API_KEY from .env
 
 # Read the JSON file
-df_json = pd.read_json('RQ2_FEAT.json')
+df_json = pd.read_json('RQ2_DEV_WORKING.json')
 pd.set_option('display.max_colwidth', None)
 
 # Define response model
@@ -23,12 +21,15 @@ class CommentCategoriesExtraction(BaseModel):
 
 # Initialize totals dictionary
 category_totals = defaultdict(int)
-output_file = 'category_totals_feats_json.csv'
+pr_labels_file = 'DEV_PR_LABELS.csv'
+category_counts_file = 'DEV_CATEGORY_COUNTS.csv'
 
-# If the CSV exists, load it to resume progress
-if os.path.exists(output_file):
-    existing_df = pd.read_csv(output_file)
-    category_totals.update(existing_df.set_index('Category')['Total Count'].to_dict())
+# Initialize CSV files if not exist
+if not os.path.exists(pr_labels_file):
+    pd.DataFrame(columns=['PR Number', 'Category']).to_csv(pr_labels_file, index=False)
+
+if not os.path.exists(category_counts_file):
+    pd.DataFrame(columns=['Category', 'Total Count']).to_csv(category_counts_file, index=False)
 
 # Process PRs
 batch_size = 10
@@ -55,34 +56,39 @@ for idx, test in df_json.iterrows():
     try:
         # Send the request to the OpenAI API
         chat_response = client.beta.chat.completions.parse(
-            model="gpt-4o-mini",
+            model="gpt-4o",
+            temperature=0.1,
             messages=[
-                {"role": "system", "content": "You are a helpful assistant that analyzes pull request comments within the Home Assistant repository to categorize challenges faced when developing device integrations, and returns a list of them. If not categorizable, use 'Other'."},
-                {"role": "user", "content": f"{body}"},
-                {"role": "assistant", "content": "categories=['Testing Issues', 'Naming/ID Issues', 'Code Structure Issues', 'Communication Issues', 'Review Process Issues', 'Other']"},
-                {"role": "user", "content": f"Can you make sure any Home Assistant/Smart home specific concepts are captured: {body}"}
+                {"role": "system", "content": "You are a helpful assistant that analyzes pull request comments within the Home Assistant repository to categorize challenges faced when developing device integrations, and returns PR numbers with corresponding challenge categories. Normalize similar terms/challenges to avoid duplicates and similar entries. Consider timestamps to identify slow response time. If a pull request is marked as stale, count it as a response time challenge. Use 'Other' only if no specific category applies."},
+
+                {"role": "assistant", "content": "categories=['Bug-Related', 'Logic Issues', 'Testing/Validation Issues', 'Code Structure/Design Issues', 'Communication/Collaboration Issues', 'Slow Response', 'Other']"},
+
+                {"role": "user", "content": f"Here are the pull requests: {body}"}
             ],
             response_format=CommentCategoriesExtraction
         )
 
-        # Update category totals
+        # Extract and save categories
         extracted_categories = chat_response.choices[0].message.parsed.categories
-        for category in extracted_categories:
-            category_totals[category] += 1
+
+        with open(pr_labels_file, 'a', newline='') as file:
+            for category in extracted_categories:
+                file.write(f"{pr_number},{category}\n")
+                category_totals[category] += 1
 
     except Exception as e:
         print(f"Error processing PR #{pr_number}: {e}")
 
-    # Save progress to the CSV file every batch_size PRs
+    # Save progress every batch_size PRs
     if (idx + 1) % batch_size == 0:
         totals_df = pd.DataFrame.from_dict(category_totals, orient='index', columns=['Total Count']).reset_index()
         totals_df.columns = ['Category', 'Total Count']
-        totals_df.to_csv(output_file, index=False)
-        print(f"Batch {idx // batch_size + 1} processed and saved to {output_file}.\n")
+        totals_df.to_csv(category_counts_file, index=False)
+        print(f"Batch {idx // batch_size + 1} processed and saved.\n")
 
 # Final save after processing all PRs
 totals_df = pd.DataFrame.from_dict(category_totals, orient='index', columns=['Total Count']).reset_index()
 totals_df.columns = ['Category', 'Total Count']
-totals_df.to_csv(output_file, index=False)
+totals_df.to_csv(category_counts_file, index=False)
 
-print(f"Processing completed. Results saved to {output_file}.")
+print(f"Processing completed. Results saved to {pr_labels_file} and {category_counts_file}.")

@@ -1,0 +1,213 @@
+,PR URL,PR Title,SO Title,Keyword Score,Author Match
+0,https://github.com/home-assistant/core/pull/93580,Add Trello integration,Attach files on Trello using c#,0.1707761131901165,False
+1,https://github.com/home-assistant/core/pull/93580,Add Trello integration,Downloading an attachment from Trello cards,0.1707761131901165,False
+2,https://github.com/home-assistant/core/pull/93580,Add Trello integration,Flet Trello Clone has an issue,0.17077611319011649,False
+3,https://github.com/home-assistant/core/pull/93580,Add Trello integration,getting trello API authentication without a PowerUp,0.15064018498706508,False
+4,https://github.com/home-assistant/core/pull/93580,Add Trello integration,Trello get cards API corrupts links in the text,0.1362763414390864,False
+5,https://github.com/home-assistant/core/pull/93580,Add Trello integration,How to Validate Trello Webhook Signatures in Golang Fiber?,0.1362763414390864,False
+6,https://github.com/home-assistant/core/pull/93580,Add Trello integration,Auto Adding a google sheet to a new trello card,0.12536693798731732,False
+7,https://github.com/home-assistant/core/pull/93580,Add Trello integration,How to activate a Trello export CSV URL in C#,0.15064018498706508,False
+8,https://github.com/home-assistant/core/pull/93580,Add Trello integration,How to drag and drop card between RecyclerViews like trello,0.1362763414390864,False
+9,https://github.com/home-assistant/core/pull/93580,Add Trello integration,Creating SDLC and Requirement Board for Uber Development on Trello Body:,0.11671773546032796,False
+10,https://github.com/home-assistant/core/pull/93580,Add Trello integration,Infinite family of subtasks for a kanban board like in Trello,0.12536693798731732,False
+11,https://github.com/home-assistant/core/pull/93580,Add Trello integration,How can I make a PUT request to Trello API in rails project?,0.1362763414390864,False
+12,https://github.com/home-assistant/core/pull/93580,Add Trello integration,How to download the Trello card attachment to a Google Drive folder using Zapier. The app returned “unauthorized permission requested”,0.0870123495045196,False
+13,https://github.com/home-assistant/core/pull/93580,Add Trello integration,I&#39;m trying to edit a board in Trello using Postman and I don&#39;t know how to change some variables in the JSON file,0.09042421401858962,False
+14,https://github.com/home-assistant/core/pull/76190,Add Aqara,Smart home Aqara API integration,0.19431434016858148,False
+15,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,Azure data explorer Concurrent queries,0.5101490193104813,False
+16,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,Azure Data Explorer dashboard automation,0.5101490193104813,False
+17,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,Azure data explorer kusto regex,0.5101490193104813,False
+18,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,LightIngest to Azure Data Explorer,0.6029748160380572,False
+19,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,Azure Data Explorer cluster Migration,0.5101490193104813,False
+20,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,Kusto Caching (Azure Data Explorer),0.5101490193104813,False
+21,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,Azure Data Explorer not storing json,0.5101490193104813,False
+22,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,Azure Data Explorer SubQuery KQL GeoJson,0.4501755023269898,False
+23,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,Limiting Azure data explorer update policy input,0.4073526042885674,False
+24,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,Azure Data Explorer - Prevent duplicate data ingestion,0.5192800188031971,False
+25,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,PowerShell function to query Azure Data Explorer,0.4501755023269898,False
+26,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,Azure data explorer- Restrict table and records,0.4501755023269898,False
+27,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,Azure Data Explorer (ADX) Associated Blob Stores,0.4073526042885674,False
+28,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,Azure Data Explorer ODBC External Tables - Tableau,0.4073526042885674,False
+29,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,Azure Data Explorer Event Grid Data Connection,0.5192800188031971,False
+30,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,Azure Data Explorer: RLS using external metadata,0.4073526042885674,False
+31,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,Azure Data Explorer storage cost estimate calculation,0.4073526042885674,False
+32,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,Azure Data Explorer - Problem with Generated Sample,0.4501755023269898,False
+33,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,azure kusto query using azure data explorer,0.5192800188031971,False
+34,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,Identify bad data in azure data explorer,0.5684901084069616,False
+35,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,Azure Data Explorer - Projecting columns using parameters,0.4073526042885674,False
+36,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,Azure Data Explorer - Could not connect to cluster,0.5101490193104813,False
+37,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,import query from Azure Data Explorer to PowerBI,0.4501755023269897,False
+38,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,Azure Data Explorer: Continuous Export with Managed Identity,0.4073526042885674,False
+39,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,Authorization Error with LightIngest in Azure Data Explorer,0.4501755023269898,False
+40,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,Kusto / Azure Data Explorer - Distinct count in kusto queries,0.3278707471841718,False
+41,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,What is Azure Data Explorer? A Datalake? A datawarehouse?,0.5101490193104813,False
+42,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,OpenTelemetry Collector not exporting data to Azure Data Explorer,0.5192800188031971,False
+43,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,Azure Data Explorer command activity in Azure Data Factory,0.5802127872568956,False
+44,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,How to properly pause ingestion in Azure Data Explorer?,0.4501755023269898,False
+45,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,Azure Data Explorer Minimum Permissions to View Function Output,0.3748077700589727,False
+46,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,How to monitor Kusto / Azure Data Explorer query result?,0.4073526042885674,False
+47,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,Azure Data Explorer oneclick Ingest from blob container (UI),0.3748077700589727,False
+48,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,Azure Data Explorer Unable to Move Extents/Ingestion Failure,0.4501755023269898,False
+49,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,Remove Rows Based On Condition on Azure Data Explorer,0.40735260428856745,False
+50,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,Unable to Attach Database in Azure Data Explorer Cluster,0.4073526042885674,False
+51,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,How to write json object to Azure Data Explorer,0.4501755023269898,False
+52,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,Azure Data Explorer - clear table data before drop table?,0.42442953389263327,False
+53,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,Azure data explorer deal with duplicates and deleted records,0.4073526042885674,False
+54,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,Convert DateTime to Epoch timestamp in Azure Data Explorer,0.40735260428856745,False
+55,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,Azure data explorer ingestionbatching policy is not working as expected,0.4073526042885674,False
+56,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,Connect Az managed Grafana instance to Azure Data Explorer cluster,0.3489939079552687,False
+57,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,change Azure Data Explorer table folder when renaming multiple tables,0.3489939079552687,False
+58,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,Lazy loading Azure Data Explorer data into a Databricks workspace,0.48097310796014436,False
+59,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,Embedding Azure Data Explorer to SaaS app without AAD authentication,0.3748077700589727,False
+60,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,Methods for Validating Payloads in Azure Data Explorer Update Policies,0.3748077700589727,False
+61,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,Azure Data Explorer ingest text Log Files with custom delimiter,0.3489939079552687,False
+62,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,Can potly graph objects be used with Azure Data Explorer?,0.40735260428856745,False
+63,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,Adding properties to output of current_principal_details() in Azure Data Explorer,0.40735260428856745,False
+64,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,How to deal with duplicate insertion in Azure Data Explorer,0.4501755023269898,False
+65,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,Connect Azure data explorer cluster to an application Insight cluster,0.3278707471841718,False
+66,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,User role based access control in Kusto Azure Data Explorer Dashboards,0.3278707471841718,False
+67,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,Azure Data Explorer: How do Partitioning Policy and Merge Policy work?,0.3278707471841718,False
+68,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,Unable to turn ON python extension in azure data explorer cluster,0.3748077700589727,False
+69,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,How to ingest inline into Azure Data Explorer Table from PowerShell?,0.4073526042885674,False
+70,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,Why Microsoft invented KQL rather than using SQL for Azure Data Explorer,0.3748077700589727,False
+71,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,How to automate deployment of event hub and azure data explorer,0.40735260428856745,False
+72,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,Azure Data Explorer Change Data Capture for tables &amp; materialized view,0.4244295338926332,False
+73,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,How to use dashboard parameters in management command Azure Data Explorer?,0.3748077700589727,False
+74,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,External table in Azure Data Explorer using Azure SQL DB view?,0.4244295338926332,False
+75,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,Creating a heatmap in Grafana using Kusto from Azure Data Explorer,0.3748077700589727,False
+76,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,Creating materialized view from a query in Azure Data Explorer (Kusto),0.3748077700589727,False
+77,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,Azure Data Explorer Create a new column based on 2 columns,0.3748077700589727,False
+78,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,How to apply retention policy on specific data in azure data explorer?,0.48097310796014436,False
+79,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,How to create azure data explorer function which deletes data from table?,0.48097310796014436,False
+80,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,How to effectively deal with late events in Azure Data Explorer (Kusto)?,0.3748077700589727,False
+81,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,Can I ingest data into tables in azure data explorer through Databricks?,0.5192800188031971,False
+82,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,How do to auth for free Azure Data Explorer for Ubuntu server,0.4073526042885674,False
+83,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,how to convert the rows into columns in Azure Data Explorer (Kusto),0.4073526042885674,False
+84,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,How to truncate values after 6th decimal in Azure Data Explorer kusto,0.3748077700589727,False
+85,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,How query data use offset in kusto (Azure Data Explorer) KQL for paging,0.4244295338926332,False
+86,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,How to Upgrade Azure Data Explorer Python Plugin Sandbox Anaconda and Python Version?,0.2950587190413172,False
+87,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,How can I ingest data from Apache Avro into the Azure Data Explorer?,0.5192800188031971,False
+88,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,How do I get a field from json object in Azure Data Explorer,0.4501755023269898,False
+89,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,Querying Azure Data Explorer with On-Behalf-Token using only application&#39;s database-permission,0.3748077700589727,False
+90,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,"How to Store common query statements (Kusto.Explorer, KQL, Kusto, Azure Data Explorer, ADX)",0.3101705771795043,False
+91,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,Get maximal value per Azure Data Explorer table from tables with same schema,0.3748077700589727,False
+92,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,How to find the partition metadata of an extent in Azure Data Explorer,0.4501755023269898,False
+93,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,How can I access elements in the make_list() array in Azure Data Explorer,0.40735260428856745,False
+94,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,How do I render the count of multiple rows in Azure Data Explorer?,0.40735260428856745,False
+95,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,Query table to show the max date in Kusto KQL Azure Data Explorer,0.3489939079552687,False
+96,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,Azure Data Explorer - HowTo ingest source URI for blob when ingesting CSV data,0.4027326928782305,False
+97,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,How to handle deletions or updates for records read into Azure Data Explorer?,0.3748077700589727,False
+98,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,Azure Data Explorer - Kusto query: unauthorized error querying from an Azure AD application,0.4027326928782305,False
+99,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,Azure Data Factory Java SDK build dataset with Azure Data Explorer (Kusto) query,0.46917131431434195,False
+100,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,How do you see the availabilty zones of an Azure Data Explorer Cluster?,0.4501755023269897,False
+101,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,How to create Kusto function for getting delta records in azure data explorer,0.3489939079552687,False
+102,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,Data is not visible in Azure data explorer after ingestion from Event hub,0.48097310796014436,False
+103,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,CreationTimePattern is not setting correct creation date with Azure Data Explorer LightIngest tool,0.3278707471841718,False
+104,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,How to route Azure IoT Hub data to different Azure Data Explorer tables,0.515936647417777,False
+105,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,Is it possible to modify data in the ingestion mapping using Azure Data Explorer?,0.45005891304534623,False
+106,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,"Create Date Ranges based on sum of record count (KQL, Azure Data Explorer, Kusto)",0.29505871904131714,False
+107,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,Run KQL on data in spark without writing the data to azure data explorer,0.5155998670558108,False
+108,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,Kusto / Azure Data Explorer - using ipv4_is_in_any_range to get WHICH range an IP is in,0.3748077700589727,False
+109,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,Exporting query from Azure Data Explorer to Power BI fails for Application Insights Cluster,0.3101705771795043,False
+110,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,Azure Data Explorer (ADX) : how much extents tags is &quot;excessive&quot; ? + drop by extents tags,0.2704643173798548,False
+111,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,How can I make a query request for Azure Data Explorer (Kusto) using curl?,0.3489939079552687,False
+112,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,Achieving transactionality with huge data in Apache Nifi custom processor for Azure Data Explorer,0.4027326928782305,False
+113,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,Why is extents with the same partition metadata not merging in Azure Data Explorer,0.40735260428856745,False
+114,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,KustoAuthenticationError when ingesting data into azure data explorer using azure-kusto-ingest nodejs client,0.4244295338926332,False
+115,https://github.com/home-assistant/core/pull/46662,Add new Binance integration,Binance OCO Order -&gt; MIN_NOTIONAL | python-binance,0.11521554337793122,False
+116,https://github.com/home-assistant/core/pull/46662,Add new Binance integration,Converting cryptocurrencies on Binance with python-binance api,0.1273595297947935,False
+117,https://github.com/home-assistant/core/pull/46662,Add new Binance integration,How To Get BTC Price on Binance from Binance API,0.24121360667506986,False
+118,https://github.com/home-assistant/core/pull/46662,Add new Binance integration,binance orderbook management,0.17077611319011649,False
+119,https://github.com/home-assistant/core/pull/46662,Add new Binance integration,About Binance API,0.22028815056182968,False
+120,https://github.com/home-assistant/core/pull/46662,Add new Binance integration,Binance PHP API,0.17077611319011649,False
+121,https://github.com/home-assistant/core/pull/46662,Add new Binance integration,Consuming Binance API,0.17077611319011649,False
+122,https://github.com/home-assistant/core/pull/46662,Add new Binance integration,Binance Paper Trading Api?,0.1443835552773867,False
+123,https://github.com/home-assistant/core/pull/46662,Add new Binance integration,Issues with Binance Package,0.17077611319011649,False
+124,https://github.com/home-assistant/core/pull/46662,Add new Binance integration,Binance API: How to get an Order ID in binance using python,0.20400761299949288,False
+125,https://github.com/home-assistant/core/pull/46662,Add new Binance integration,Binance Smart Chain Payments,0.1443835552773867,False
+126,https://github.com/home-assistant/core/pull/46662,Add new Binance integration,CCXT Binance Future Order,0.1443835552773867,False
+127,https://github.com/home-assistant/core/pull/46662,Add new Binance integration,binance python get api,0.17077611319011649,False
+128,https://github.com/home-assistant/core/pull/46662,Add new Binance integration,Binance Websocket for futures,0.17077611319011649,False
+129,https://github.com/home-assistant/core/pull/46662,Add new Binance integration,Binance bot trade quantities,0.1443835552773867,False
+130,https://github.com/home-assistant/core/pull/46662,Add new Binance integration,Binance Api Python setup,0.1443835552773867,False
+131,https://github.com/home-assistant/core/pull/46662,Add new Binance integration,Using Binance API Results,0.1443835552773867,False
+132,https://github.com/home-assistant/core/pull/46662,Add new Binance integration,Binance Filter failure: PRICE_FILTER,0.1443835552773867,False
+133,https://github.com/home-assistant/core/pull/46662,Add new Binance integration,Ring + api binance + curl,0.14438355527738672,False
+134,https://github.com/home-assistant/core/pull/46662,Add new Binance integration,CCXT binance fetch_ohlcv function,0.1443835552773867,False
+135,https://github.com/home-assistant/core/pull/46662,Add new Binance integration,Binance API place order,0.1443835552773867,False
+136,https://github.com/home-assistant/core/pull/46662,Add new Binance integration,Cheerio Binance Leaderboard scrape,0.1443835552773867,False
+137,https://github.com/home-assistant/core/pull/46662,Add new Binance integration,Flutter binance api signature,0.1443835552773867,False
+138,https://github.com/home-assistant/core/pull/46662,Add new Binance integration,Binance Extract Futures Prices,0.1443835552773867,False
+139,https://github.com/home-assistant/core/pull/46662,Add new Binance integration,binance Order would immediately trigger,0.1443835552773867,False
+140,https://github.com/home-assistant/core/pull/46662,Add new Binance integration,Token conversion with Binance API,0.14438355527738672,False
+141,https://github.com/home-assistant/core/pull/46662,Add new Binance integration,Binance Delivery Futures Historical Prices,0.1273595297947935,False
+142,https://github.com/home-assistant/core/pull/46662,Add new Binance integration,bracket order binance futures api,0.1273595297947935,False
+143,https://github.com/home-assistant/core/pull/46662,Add new Binance integration,Binance api python ema calculation,0.1273595297947935,False
+144,https://github.com/home-assistant/core/pull/46662,Add new Binance integration,Get historical data from binance,0.17077611319011649,False
+145,https://github.com/home-assistant/core/pull/46662,Add new Binance integration,OCO SELL MAX PYTHON BINANCE,0.1273595297947935,False
+146,https://github.com/home-assistant/core/pull/46662,Add new Binance integration,Binance websocket stream no response,0.1443835552773867,False
+147,https://github.com/home-assistant/core/pull/46662,Add new Binance integration,Binance websocket sending duplicate data,0.1273595297947935,False
+148,https://github.com/home-assistant/core/pull/46662,Add new Binance integration,Time Difference with Binance Server,0.14438355527738672,False
+149,https://github.com/home-assistant/core/pull/46662,Add new Binance integration,Binance API futures adjust leverage,0.1273595297947935,False
+150,https://github.com/home-assistant/core/pull/46662,Add new Binance integration,Binance API ETHUSDT wrong value,0.1273595297947935,False
+151,https://github.com/home-assistant/core/pull/46662,Add new Binance integration,Python Binance market order issues,0.1273595297947935,False
+152,https://github.com/home-assistant/core/pull/46662,Add new Binance integration,"Automatic API call Binance, please :)",0.17077611319011649,False
+153,https://github.com/home-assistant/core/pull/46662,Add new Binance integration,Buy USD with binance USD,0.11521554337793122,False
+154,https://github.com/home-assistant/core/pull/46662,Add new Binance integration,Binance how get account information?,0.17077611319011649,False
+155,https://github.com/home-assistant/core/pull/46662,Add new Binance integration,Get info from binance blockchain,0.17077611319011649,False
+156,https://github.com/home-assistant/core/pull/46662,Add new Binance integration,Issue on running binance api,0.14438355527738672,False
+157,https://github.com/home-assistant/core/pull/46662,Add new Binance integration,Generate new deposit address in Binance,0.29121941856368966,False
+158,https://github.com/home-assistant/core/pull/46662,Add new Binance integration,Failed to connect binance WebSocket api,0.1273595297947935,False
+159,https://github.com/home-assistant/core/pull/46662,Add new Binance integration,How to create Binance test API key,0.1273595297947935,False
+160,https://github.com/home-assistant/core/pull/46662,Add new Binance integration,Get data from Binance in Python,0.17077611319011649,False
+161,https://github.com/home-assistant/core/pull/46662,Add new Binance integration,Binance API GET request multiple values,0.1273595297947935,False
+162,https://github.com/home-assistant/core/pull/46662,Add new Binance integration,Convert Binance timestamp into valid datetime,0.1273595297947935,False
+163,https://github.com/home-assistant/core/pull/46662,Add new Binance integration,Link binance balance and coingecko info,0.1273595297947935,False
+164,https://github.com/home-assistant/core/pull/46662,Add new Binance integration,Binance API C++ - Compilation and usage,0.1443835552773867,False
+165,https://github.com/home-assistant/core/pull/46662,Add new Binance integration,How to cancel futures binance order?,0.14438355527738672,False
+166,https://github.com/home-assistant/core/pull/46662,Add new Binance integration,Binance API time value refers to...?,0.1273595297947935,False
+167,https://github.com/home-assistant/core/pull/46662,Add new Binance integration,Error while connecting to Binance websocket,0.14438355527738672,False
+168,https://github.com/home-assistant/core/pull/46662,Add new Binance integration,Get all binance coins via API,0.17077611319011649,False
+169,https://github.com/home-assistant/core/pull/46662,Add new Binance integration,Binance API get Spot asset balances,0.1273595297947935,False
+170,https://github.com/home-assistant/core/pull/46662,Add new Binance integration,XCHANGE Apache Camel connect to Binance,0.1273595297947935,False
+171,https://github.com/home-assistant/core/pull/46662,Add new Binance integration,Post request does not pass Binance,0.1273595297947935,False
+172,https://github.com/home-assistant/core/pull/46662,Add new Binance integration,Binance get_historical_klines end_str is not working,0.1443835552773867,False
+173,https://github.com/home-assistant/core/pull/46662,Add new Binance integration,python: Binance error of using get_account(),0.1273595297947935,False
+174,https://github.com/home-assistant/core/pull/46662,Add new Binance integration,Binance API answers from the future,0.1443835552773867,False
+175,https://github.com/home-assistant/core/pull/46662,Add new Binance integration,Binance ccxt fetch ohlcv exceeding 1000 limit,0.1059921313509325,False
+176,https://github.com/home-assistant/core/pull/46662,Add new Binance integration,Cannot connect to binance testnet API,0.1443835552773867,False
+177,https://github.com/home-assistant/core/pull/46662,Add new Binance integration,WebSocket to Binance: Connection closed error,0.1273595297947935,False
+178,https://github.com/home-assistant/core/pull/46662,Add new Binance integration,Binance price history to the nearest second,0.1273595297947935,False
+179,https://github.com/home-assistant/core/pull/46662,Add new Binance integration,Binance API error on quantity within range,0.1273595297947935,False
+180,https://github.com/home-assistant/core/pull/46662,Add new Binance integration,&quot;Timestamp ahead 1000ms&quot; error on binance api?,0.11521554337793122,False
+181,https://github.com/home-assistant/core/pull/46662,Add new Binance integration,Get Binance Fees into Spreadsheets (Google Sheets),0.1273595297947935,False
+182,https://github.com/home-assistant/core/pull/46662,Add new Binance integration,"Binance futures with python, requests and signature",0.1273595297947935,False
+183,https://github.com/home-assistant/core/pull/46662,Add new Binance integration,Binance Futures API: Signature is not valid,0.1273595297947935,False
+184,https://github.com/home-assistant/core/pull/46662,Add new Binance integration,Binance API &#39;allOrders&#39; (HMAC sha256) error 1022,0.1059921313509325,False
+185,https://github.com/home-assistant/core/pull/46662,Add new Binance integration,Python Binance request blocked by internet provider,0.11521554337793122,False
+186,https://github.com/home-assistant/core/pull/46662,Add new Binance integration,Error when accesing binance API with Delphi,0.1273595297947935,False
+187,https://github.com/home-assistant/core/pull/46662,Add new Binance integration,binance websocket not working in aws instance,0.1273595297947935,False
+188,https://github.com/home-assistant/core/pull/46662,Add new Binance integration,Binance Api - buying and selling functions - python,0.11521554337793122,False
+189,https://github.com/home-assistant/core/pull/46662,Add new Binance integration,Crypto: Store Binance API key &amp; secret,0.1059921313509325,False
+190,https://github.com/home-assistant/core/pull/46662,Add new Binance integration,VB.NET order binance keep getting error 400,0.11521554337793122,False
+191,https://github.com/home-assistant/core/pull/46662,Add new Binance integration,"OCO order Binance, &#39;symbol&#39; was not sent",0.1273595297947935,False
+192,https://github.com/home-assistant/core/pull/46662,Add new Binance integration,Issue with Binance API fetch In Chrome,0.1273595297947935,False
+193,https://github.com/home-assistant/core/pull/46662,Add new Binance integration,What is RAW_REQUESTS in Binance API rate limit,0.1273595297947935,False
+194,https://github.com/home-assistant/core/pull/46662,Add new Binance integration,Binance Multithread Sockets - functions not called concurrently,0.11521554337793122,False
+195,https://github.com/home-assistant/core/pull/46662,Add new Binance integration,Binance Websocket client stops after a while,0.1443835552773867,False
+196,https://github.com/home-assistant/core/pull/46662,Add new Binance integration,How to use incoming Binance WebSocket data?,0.1273595297947935,False
+197,https://github.com/home-assistant/core/pull/46662,Add new Binance integration,Get Bitcoin value from Binance by HTMLagilitypack,0.14438355527738672,False
+198,https://github.com/home-assistant/core/pull/46662,Add new Binance integration,Nest JS resolving promises from Binance API,0.11521554337793122,False
+199,https://github.com/home-assistant/core/pull/46662,Add new Binance integration,PancakeSwap API / Swaping BNB with Binance Smart Chain&#39;s API,0.08768681980142445,False
+200,https://github.com/home-assistant/core/pull/46662,Add new Binance integration,Binance WebSocket Order Book - depths change every time,0.1059921313509325,False
+201,https://github.com/home-assistant/core/pull/46662,Add new Binance integration,Binance Futures API Giving wrong quarterly price,0.1059921313509325,False
+202,https://github.com/home-assistant/core/pull/46662,Add new Binance integration,import binance api data into google sheet,0.11521554337793122,False
+203,https://github.com/home-assistant/core/pull/46662,Add new Binance integration,What is the Binance web socket connection URL?,0.1273595297947935,False
+204,https://github.com/home-assistant/core/pull/46662,Add new Binance integration,Binance python api query for global account balance,0.1059921313509325,False
+205,https://github.com/home-assistant/core/pull/46662,Add new Binance integration,Place Binance Future Order using python-binance wrapper. Error: APIError(code=-1102): Mandatory parameter &#39;5e-05&#39; was not sent,0.07644962318959062,False
+206,https://github.com/home-assistant/core/pull/46662,Add new Binance integration,AttributeError: &#39;NoneType&#39; object has no attribute &#39;encode&#39; (Binance),0.11521554337793122,False
+207,https://github.com/home-assistant/core/pull/46662,Add new Binance integration,Binance API - Several symbols/pairs in a code,0.1443835552773867,False
+208,https://github.com/home-assistant/core/pull/46662,Add new Binance integration,Binance futures ACCOUNT_UPDATE stream trade via websocket problem?,0.1059921313509325,False
+209,https://github.com/home-assistant/core/pull/46662,Add new Binance integration,Binance - &#39;Account has insufficient balance for requested action.&#39;,0.11521554337793122,False
+210,https://github.com/home-assistant/core/pull/46662,Add new Binance integration,How to use TAKE_PROFIT property in binance api,0.12735952979479354,False
+211,https://github.com/home-assistant/core/pull/45274,Add Barry,Laravel 5.4 Create PDF File barry,0.1757860783933462,False
