@@ -1,0 +1,69 @@
+Unnamed: 0,PR URL,PR Title,SO Title,Keyword Score,Author Match
+15,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,Azure data explorer Concurrent queries,0.5101490193104813,False
+16,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,Azure Data Explorer dashboard automation,0.5101490193104813,False
+17,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,Azure data explorer kusto regex,0.5101490193104813,False
+18,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,LightIngest to Azure Data Explorer,0.6029748160380572,False
+19,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,Azure Data Explorer cluster Migration,0.5101490193104813,False
+20,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,Kusto Caching (Azure Data Explorer),0.5101490193104813,False
+21,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,Azure Data Explorer not storing json,0.5101490193104813,False
+22,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,Azure Data Explorer SubQuery KQL GeoJson,0.4501755023269898,False
+23,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,Limiting Azure data explorer update policy input,0.4073526042885674,False
+24,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,Azure Data Explorer - Prevent duplicate data ingestion,0.5192800188031971,False
+25,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,PowerShell function to query Azure Data Explorer,0.4501755023269898,False
+26,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,Azure data explorer- Restrict table and records,0.4501755023269898,False
+27,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,Azure Data Explorer (ADX) Associated Blob Stores,0.4073526042885674,False
+28,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,Azure Data Explorer ODBC External Tables - Tableau,0.4073526042885674,False
+29,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,Azure Data Explorer Event Grid Data Connection,0.5192800188031971,False
+30,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,Azure Data Explorer: RLS using external metadata,0.4073526042885674,False
+31,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,Azure Data Explorer storage cost estimate calculation,0.4073526042885674,False
+32,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,Azure Data Explorer - Problem with Generated Sample,0.4501755023269898,False
+33,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,azure kusto query using azure data explorer,0.5192800188031971,False
+34,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,Identify bad data in azure data explorer,0.5684901084069616,False
+35,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,Azure Data Explorer - Projecting columns using parameters,0.4073526042885674,False
+36,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,Azure Data Explorer - Could not connect to cluster,0.5101490193104813,False
+37,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,import query from Azure Data Explorer to PowerBI,0.4501755023269897,False
+38,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,Azure Data Explorer: Continuous Export with Managed Identity,0.4073526042885674,False
+39,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,Authorization Error with LightIngest in Azure Data Explorer,0.4501755023269898,False
+41,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,What is Azure Data Explorer? A Datalake? A datawarehouse?,0.5101490193104813,False
+42,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,OpenTelemetry Collector not exporting data to Azure Data Explorer,0.5192800188031971,False
+43,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,Azure Data Explorer command activity in Azure Data Factory,0.5802127872568956,False
+44,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,How to properly pause ingestion in Azure Data Explorer?,0.4501755023269898,False
+46,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,How to monitor Kusto / Azure Data Explorer query result?,0.4073526042885674,False
+48,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,Azure Data Explorer Unable to Move Extents/Ingestion Failure,0.4501755023269898,False
+49,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,Remove Rows Based On Condition on Azure Data Explorer,0.4073526042885674,False
+50,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,Unable to Attach Database in Azure Data Explorer Cluster,0.4073526042885674,False
+51,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,How to write json object to Azure Data Explorer,0.4501755023269898,False
+52,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,Azure Data Explorer - clear table data before drop table?,0.4244295338926332,False
+53,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,Azure data explorer deal with duplicates and deleted records,0.4073526042885674,False
+54,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,Convert DateTime to Epoch timestamp in Azure Data Explorer,0.4073526042885674,False
+55,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,Azure data explorer ingestionbatching policy is not working as expected,0.4073526042885674,False
+58,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,Lazy loading Azure Data Explorer data into a Databricks workspace,0.4809731079601443,False
+62,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,Can potly graph objects be used with Azure Data Explorer?,0.4073526042885674,False
+63,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,Adding properties to output of current_principal_details() in Azure Data Explorer,0.4073526042885674,False
+64,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,How to deal with duplicate insertion in Azure Data Explorer,0.4501755023269898,False
+69,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,How to ingest inline into Azure Data Explorer Table from PowerShell?,0.4073526042885674,False
+71,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,How to automate deployment of event hub and azure data explorer,0.4073526042885674,False
+72,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,Azure Data Explorer Change Data Capture for tables &amp; materialized view,0.4244295338926332,False
+74,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,External table in Azure Data Explorer using Azure SQL DB view?,0.4244295338926332,False
+78,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,How to apply retention policy on specific data in azure data explorer?,0.4809731079601443,False
+79,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,How to create azure data explorer function which deletes data from table?,0.4809731079601443,False
+81,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,Can I ingest data into tables in azure data explorer through Databricks?,0.5192800188031971,False
+82,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,How do to auth for free Azure Data Explorer for Ubuntu server,0.4073526042885674,False
+83,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,how to convert the rows into columns in Azure Data Explorer (Kusto),0.4073526042885674,False
+85,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,How query data use offset in kusto (Azure Data Explorer) KQL for paging,0.4244295338926332,False
+87,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,How can I ingest data from Apache Avro into the Azure Data Explorer?,0.5192800188031971,False
+88,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,How do I get a field from json object in Azure Data Explorer,0.4501755023269898,False
+92,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,How to find the partition metadata of an extent in Azure Data Explorer,0.4501755023269898,False
+93,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,How can I access elements in the make_list() array in Azure Data Explorer,0.4073526042885674,False
+94,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,How do I render the count of multiple rows in Azure Data Explorer?,0.4073526042885674,False
+96,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,Azure Data Explorer - HowTo ingest source URI for blob when ingesting CSV data,0.4027326928782305,False
+98,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,Azure Data Explorer - Kusto query: unauthorized error querying from an Azure AD application,0.4027326928782305,False
+99,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,Azure Data Factory Java SDK build dataset with Azure Data Explorer (Kusto) query,0.4691713143143419,False
+100,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,How do you see the availabilty zones of an Azure Data Explorer Cluster?,0.4501755023269897,False
+102,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,Data is not visible in Azure data explorer after ingestion from Event hub,0.4809731079601443,False
+104,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,How to route Azure IoT Hub data to different Azure Data Explorer tables,0.515936647417777,False
+105,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,Is it possible to modify data in the ingestion mapping using Azure Data Explorer?,0.4500589130453462,False
+107,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,Run KQL on data in spark without writing the data to azure data explorer,0.5155998670558108,False
+112,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,Achieving transactionality with huge data in Apache Nifi custom processor for Azure Data Explorer,0.4027326928782305,False
+113,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,Why is extents with the same partition metadata not merging in Azure Data Explorer,0.4073526042885674,False
+114,https://github.com/home-assistant/core/pull/68992,Add Azure data explorer,KustoAuthenticationError when ingesting data into azure data explorer using azure-kusto-ingest nodejs client,0.4244295338926332,False
