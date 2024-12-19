@@ -1,0 +1,12 @@
+PR Number,Title,Created At,Updated At,State,Files Changed,Total Comments,Decision Time,URL,Type of Change,LOC Changed,Closed Date
+63671,New integration for Invoxia™ GPS Trackers,2022-01-08 11:48:40+00:00,2024-07-06 19:01:57+00:00,closed,23,59,909,https://github.com/home-assistant/core/pull/63671,New integration (thank you!),1005,2024-07-05T18:08:24Z
+108336,Add SimpleFIN integration,2024-01-19 01:13:22+00:00,2024-07-11 11:01:48+00:00,merged,19,142,173,https://github.com/home-assistant/core/pull/108336,New integration (thank you!),1307,2024-07-10T10:44:04Z
+87748,Add Southern company integration,2023-02-09 03:52:58+00:00,2023-09-12 14:01:38+00:00,closed,17,34,214,https://github.com/home-assistant/core/pull/87748,New integration (thank you!),1192,2023-09-11T13:56:15Z
+71113,Add elro_connects integration,2022-04-30 13:40:19+00:00,2022-11-10 08:02:11+00:00,closed,20,5,192,https://github.com/home-assistant/core/pull/71113,New integration (thank you!),1273,2022-11-09T07:46:17Z
+104725,Add Epic Games Store integration,2023-11-29 14:53:18+00:00,2024-04-23 10:01:44+00:00,merged,26,31,144,https://github.com/home-assistant/core/pull/104725,New integration (thank you!),5125,2024-04-22T07:54:47Z
+86522,Add myUplink integration,2023-01-24 12:21:34+00:00,2024-01-13 12:02:08+00:00,merged,21,60,352,https://github.com/home-assistant/core/pull/86522,New integration (thank you!),480,2024-01-12T11:17:07Z
+70365,Add OSO Energy integration,2022-04-21 10:38:49+00:00,2024-01-30 14:02:16+00:00,merged,14,111,595,https://github.com/home-assistant/core/pull/70365,New integration (thank you!),522,2023-12-08T07:51:59Z
+72982,New integration: Poolstation,2022-06-03 13:50:45+00:00,2022-11-03 04:13:18+00:00,closed,20,0,151,https://github.com/home-assistant/core/pull/72982,New integration (thank you!),1024,2022-11-02T03:47:10Z
+85969,Add Dremel 3D Printer integration,2023-01-15 20:56:37+00:00,2023-06-01 22:01:44+00:00,merged,21,14,135,https://github.com/home-assistant/core/pull/85969,New integration (thank you!),910,2023-05-31T20:55:57Z
+103683,Add new integration for Leviosa zone,2023-11-09 02:56:33+00:00,2024-06-27 17:01:37+00:00,closed,14,149,230,https://github.com/home-assistant/core/pull/103683,New integration (thank you!),621,2024-06-26T16:04:57Z
+53552,Add Aussie Broadband integration,2021-07-27 11:51:35+00:00,2022-02-03 13:05:50+00:00,merged,15,70,177,https://github.com/home-assistant/core/pull/53552,New integration (thank you!),952,2022-01-21T05:34:25Z

@@ -1,0 +1,65 @@
+software_development_issues = {
+    "Bug-Related Issues": {
+        "Subcategories": {
+            "UI/UX Bugs": "Issues related to user interface glitches or user experience inconsistencies.",
+            "Functional Bugs": "Problems where the software does not perform its intended functions.",
+            "Regression Bugs": "New bugs introduced after changes or updates to the software.",
+            "Intermittent Bugs": "Bugs that occur sporadically and are difficult to reproduce.",
+            "Critical Bugs": "Severe issues that cause system crashes or data loss."
+        }
+    },
+    "Integration and Compatibility": {
+        "Subcategories": {
+            "API Integration": "Challenges in connecting and communicating with external APIs.",
+            "Cross-Platform Compatibility": "Ensuring software works across different operating systems and devices.",
+            "Third-Party Library Conflicts": "Issues arising from using external libraries that conflict with each other.",
+            "Version Compatibility": "Problems ensuring compatibility between different software versions.",
+            "Hardware Compatibility": "Ensuring software functions correctly on various hardware configurations."
+        }
+    },
+    "Documentation and Support": {
+        "Subcategories": {
+            "User Documentation": "Creating comprehensive guides and manuals for end-users.",
+            "Developer Documentation": "Providing detailed technical documentation for developers.",
+            "API Documentation": "Ensuring clear and accurate documentation for APIs.",
+            "Knowledge Base Management": "Organizing and maintaining a repository of support articles and FAQs.",
+            "Community Support": "Building and managing a community for user and developer support."
+        }
+    },
+    "Performance and Optimization": {
+        "Subcategories": {
+            "Load Testing": "Assessing software performance under heavy load conditions.",
+            "Memory Optimization": "Reducing memory usage and preventing memory leaks.",
+            "Algorithm Efficiency": "Improving the efficiency of algorithms to enhance performance.",
+            "Database Optimization": "Enhancing database queries and indexing for better performance.",
+            "Latency Reduction": "Minimizing delays in data processing and transmission."
+        }
+    },
+    "Security and Compliance": {
+        "Subcategories": {
+            "Data Encryption": "Implementing encryption to protect sensitive data.",
+            "Vulnerability Management": "Identifying and mitigating security vulnerabilities.",
+            "Access Control": "Ensuring proper authentication and authorization mechanisms.",
+            "Compliance Auditing": "Ensuring adherence to industry standards and regulations.",
+            "Secure Coding Practices": "Implementing coding practices to prevent security flaws."
+        }
+    },
+    "Feature Requests and Enhancements": {
+        "Subcategories": {
+            "User Feedback Integration": "Incorporating user feedback into product development.",
+            "Feature Prioritization": "Determining the priority of new features and enhancements.",
+            "UI/UX Improvements": "Enhancing the user interface and experience based on feedback.",
+            "Scalability Enhancements": "Improving the software's ability to scale with increased demand.",
+            "Localization and Internationalization": "Adapting software for different languages and regions."
+        }
+    },
+    "Other": {
+        "Subcategories": {
+            "Technical Debt Management": "Addressing accumulated technical debt in the codebase.",
+            "Project Management Challenges": "Overcoming obstacles in managing software projects.",
+            "Team Collaboration Issues": "Improving communication and collaboration within development teams.",
+            "Legacy System Integration": "Integrating new software with outdated legacy systems.",
+            "Innovation and R&D": "Fostering innovation and research within the development process."
+        }
+    }
+}

@@ -1,0 +1,65 @@
+software_development_issues = {
+    "Bug-Related Issues": {
+        "Subcategories": [
+            "Critical Bugs",
+            "Minor Bugs",
+            "Regression Bugs",
+            "Intermittent Bugs",
+            "UI/UX Bugs"
+        ]
+    },
+    "Integration and Compatibility": {
+        "Subcategories": [
+            "API Integration",
+            "Third-Party Library Compatibility",
+            "Cross-Platform Compatibility",
+            "Version Conflicts",
+            "Backward Compatibility"
+        ]
+    },
+    "Documentation and Support": {
+        "Subcategories": [
+            "User Documentation",
+            "API Documentation",
+            "Code Comments",
+            "Technical Support",
+            "Knowledge Base Articles"
+        ]
+    },
+    "Performance and Optimization": {
+        "Subcategories": [
+            "Load Testing",
+            "Memory Optimization",
+            "CPU Optimization",
+            "Network Performance",
+            "Database Optimization"
+        ]
+    },
+    "Security and Compliance": {
+        "Subcategories": [
+            "Data Encryption",
+            "Vulnerability Assessment",
+            "Access Control",
+            "Compliance Audits",
+            "Secure Coding Practices"
+        ]
+    },
+    "Feature Requests and Enhancements": {
+        "Subcategories": [
+            "New Feature Requests",
+            "Feature Improvements",
+            "User Interface Enhancements",
+            "Accessibility Improvements",
+            "Localization and Internationalization"
+        ]
+    },
+    "Other": {
+        "Subcategories": [
+            "Technical Debt",
+            "Project Management",
+            "Team Collaboration",
+            "DevOps and CI/CD",
+            "Legacy System Maintenance"
+        ]
+    }
+}

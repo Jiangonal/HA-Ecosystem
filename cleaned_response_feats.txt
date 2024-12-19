@@ -1,0 +1,65 @@
+software_development_issues = {
+    "Bug-Related Issues": {
+        "Subcategories": [
+            "UI/UX Bugs",
+            "Functional Bugs",
+            "Regression Bugs",
+            "Crash/Hang Bugs",
+            "Data Corruption Bugs"
+        ]
+    },
+    "Integration and Compatibility": {
+        "Subcategories": [
+            "API Integration Issues",
+            "Third-Party Library Compatibility",
+            "Cross-Browser Compatibility",
+            "Operating System Compatibility",
+            "Hardware Compatibility"
+        ]
+    },
+    "Documentation and Support": {
+        "Subcategories": [
+            "User Documentation Gaps",
+            "API Documentation Issues",
+            "Internal Documentation Needs",
+            "Support Response Time",
+            "Knowledge Base Completeness"
+        ]
+    },
+    "Performance and Optimization": {
+        "Subcategories": [
+            "Memory Usage Optimization",
+            "CPU Usage Optimization",
+            "Load Time Reduction",
+            "Scalability Issues",
+            "Network Performance"
+        ]
+    },
+    "Security and Compliance": {
+        "Subcategories": [
+            "Data Encryption Issues",
+            "Authentication and Authorization",
+            "Vulnerability Management",
+            "Compliance with Standards",
+            "Security Audits"
+        ]
+    },
+    "Feature Requests and Enhancements": {
+        "Subcategories": [
+            "New Feature Requests",
+            "Feature Improvement Suggestions",
+            "User Experience Enhancements",
+            "Accessibility Enhancements",
+            "Localization and Internationalization"
+        ]
+    },
+    "Other": {
+        "Subcategories": [
+            "Project Management Issues",
+            "Team Collaboration Challenges",
+            "Technical Debt Management",
+            "Legacy System Integration",
+            "Innovation and R&D"
+        ]
+    }
+}

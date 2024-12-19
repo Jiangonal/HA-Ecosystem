@@ -1,0 +1,1409 @@
+Category,Total Count
+Testing Issues,133
+Naming/ID Issues,71
+Code Structure Issues,128
+Integration Issues,14
+Communication Issues,94
+Review Process Issues,136
+Other,373
+Integration Limitations,3
+Configuration Handling,3
+WebSocket Communication Issues,2
+Library Structure Issues,1
+User Experience Issues,27
+Home Assistant Specific Concepts,3
+Error Handling,14
+Device Discovery Issues,3
+Integration Logic Issues,4
+Configuration Issues,55
+Protocol and Communication Issues,1
+Testing and Error Handling Issues,1
+Integration Structure Issues,8
+API Usage Issues,1
+Platform Integration Issues,3
+Code Simplicity Issues,1
+Entity Type Classification Issues,1
+Device Communication Issues,7
+Error Handling Issues,38
+Internationalization Issues,1
+Integration Delays,2
+Entity Naming Issues,10
+External API Dependency,1
+Webhook Functionality,1
+Code Quality Improvements,2
+Initialization and Structure Issues,1
+Reauth Flow,1
+Data Representation/Classification Issues,1
+Use of Home Assistant Constants,1
+Debugging Issues,3
+Translatability Issues,1
+Schema Definition Issues,1
+Service Integration Issues,1
+Entity Description Issues,1
+Name Handling Issues,1
+API Key Handling Issues,1
+Attribute Handling Issues,1
+Code Quality Issues,21
+Documentation Issues,63
+Device Compatibility Issues,4
+API Integration Challenges,3
+Configuration Problems,1
+Documentation Gaps,5
+Integration Migration,2
+HACS (Home Assistant Community Store),1
+Configuration Files,1
+Fixed Update Intervals,1
+Device Management,2
+Custom Integrations,1
+Translation Management,4
+API Rate Limiting,2
+Code Review Process,4
+Integration Errors,1
+IoT Class Definitions,1
+Service Configuration Issues,1
+Code Structure and Cleanup Issues,1
+Communication and Collaboration Issues,8
+Feedback and Review Process Issues,1
+CLA Issues,4
+CI/CD Challenges,2
+Integration Naming Standards,1
+Entity Naming Requirements,1
+Logging and Debugging Issues,1
+State Management,1
+Zeroconf and Device Discovery,1
+Code Structure and Organization,1
+External Library Requirement,1
+Modbus Integration Challenges,1
+Config Flow Testing Issues,1
+Unit Testing Challenges,1
+Hassfest Dependencies,1
+Raising ConfigEntryNotReady Exceptions,1
+Data Update Coordinator Usage,1
+Documentation Improvements,1
+Typing Issues,2
+Device Naming Conventions,1
+Improperly Structured Code,1
+Communication Protocol Issues,2
+Integration Foundation Issues,1
+CI/CD Issues,1
+Dependency Management,8
+Feature Creep,1
+Protocol Communication,1
+Bluetooth Integration Issues,2
+Unused Code Issues,3
+Configuration Flow Issues,25
+Built-in Functionality Issues,1
+Integration Type Issues,3
+Data Management Issues,11
+YAML Usage Issues,1
+Testing Practices,2
+Code Cleanup Needs,1
+Documentation and Communication Issues,1
+Dependency Management Issues,10
+Library Compatibility Issues,1
+Developer Experience Issues,1
+Library Maintenance Issues,1
+Integration Best Practices,1
+Platform Setup Issues,2
+Integration Design Principles,1
+Entity Management Issues,22
+Webhook Implementation,1
+Authentication Challenges,2
+Coordinator Setup Issues,1
+Config Flow Issues,3
+Token Management Issues,2
+Unique ID Management,7
+Device-Specific Integration Issues,2
+Integration Documentation,1
+Understanding Device Behavior,1
+Coordination and Data Handling,1
+Translatability for Entities and Services,1
+Error Handling and Coverage,1
+Functionality Issues,2
+Service Testing Issues,1
+Notification Handling Issues,2
+General Workflow Issues,1
+Integration Testing Issues,7
+Configuration and Service Handling,1
+Entity Management and Naming Issues,1
+Code Structure and Best Practices,5
+Authentication Flow Issues,1
+Data Handling Issues,17
+Zeroconf Issues,1
+Event Listener Management,1
+Data Update Coordinator Issues,1
+Entity Descriptions,1
+Asynchronous Functionality,1
+Integration Flow Issues,4
+User Authentication Issues,2
+State Management Issues,10
+Beginner Experience Issues,1
+Device State Management Issues,2
+Integration Quality Concerns,1
+Device Identifier Issues,1
+Discovery Mechanism Issues,3
+Stateless Device Challenges,1
+Continuous Integration Issues,5
+Configuration and Setup Issues,3
+Localization Issues,4
+Code Quality and Readability Issues,1
+API Semantics Issues,1
+Entity and Naming Issues,1
+Device Integration Challenges,8
+PR Size Management,2
+Integration Instance Management,1
+Integration Complexity,8
+Error Messaging Issues,1
+Device Functionality,1
+Device Support,1
+Device Off States,1
+Reauthentication Process,1
+Entity Management,7
+Discovery & Payload Issues,1
+MQTT Integration Issues,1
+Code Style & Structure Issues,1
+Sensor Class Issues,1
+Draft Management Issues,1
+Linter Issues,1
+Development Process Issues,4
+UI/UX Issues,1
+Entity Naming Conflicts,1
+Integration Specific Errors,1
+Data Handling Concerns,1
+Coordinator Usage Issues,3
+Service Implementation Queries,1
+Internationalization and Localization Issues,1
+Testing and Debugging Issues,2
+Documentation Challenges,1
+Device Integration Issues,12
+Integration Design Challenges,1
+Onboarding Complexity,1
+API Differences,1
+Configuration Management Issues,17
+Data Handling and Aggregation,1
+Translation and Localization Issues,6
+Integration Development Challenges,11
+SIP Specific Issues,1
+Notify Platform Issues,1
+Zeroconf Management Issues,1
+Device Addressing Challenges,1
+Enum Usage and State Value Issues,1
+Code Structure and Architectural Considerations,1
+Review and Feedback Communication,1
+Integration-Specific Concerns,1
+Pydantic Compatibility,1
+Integration Specific Issues,3
+Device Naming/Identifier Issues,1
+Integration Completeness Issues,2
+Connection Management Issues,3
+Controller Identification Issues,1
+Integration Deadlines,1
+Backward Compatibility Issues,1
+Code Review Recommendations,1
+API Token Issues,2
+Data Structure and Initialization Issues,1
+Naming Conventions,2
+Testing and Validation Challenges,1
+Refactoring Suggestions,1
+Git Management Issues,1
+Integration and Dependency Management Issues,1
+Testing and Validation Issues,8
+Entity Description and Model Design Issues,1
+Configuration and State Management Issues,1
+Naming/ID and Unique Identifier Issues,1
+Code Structure and Best Practices Issues,1
+String Management Issues,1
+Sensor Configuration Issues,3
+Code Review Suggestions,4
+Testing/Validation Concerns,1
+User Input Handling,2
+Async/Await Concerns,1
+Integration Requirements Issues,1
+Branching/Merging Issues,1
+Code Naming Issues,1
+Functionality and Structure Issues,1
+Device Management and Registry Issues,1
+API Integration Issues,5
+Data Scraping Concerns,1
+Data Parsing and Formatting Challenges,1
+Device Authentication Difficulties,1
+Documentation and Feedback Requests,1
+Device Naming and Configuration Issues,1
+Testing and Debugging Challenges,1
+Constants Usage Issues,1
+Integration Design Issues,12
+Merge Timing Issues,1
+Authentication Errors,1
+Integration Configuration Issues,8
+Device Registration Challenges,1
+Coordinators and Data Handling,1
+Error Management and Reliability,1
+User Experience Concerns,5
+Integration Naming Issues,8
+Local vs Cloud Integration Issues,1
+Device Identification Issues,2
+Pending Responses,1
+Code Cleanliness,1
+Microsecond Precision Issues,1
+Best Practices in Event Handling,1
+Smart Home Integration Issues,1
+Collaboration & Communication Issues,1
+Integration & Connectivity Issues,1
+Bluetooth & Device Management Challenges,1
+Code Quality & Review Process Issues,1
+Testing & Mocking Challenges,1
+Entity & Device Management Issues,1
+Technical Debt & Code Structure Issues,1
+Sensor Management,2
+Reauth Flow Issues,1
+User Communication,1
+Testing and Debugging,2
+Sensor Data Representation,1
+API and Configuration Issues,1
+Icon Representation Issues,1
+Platform Management,1
+Test Coverage,1
+Code Refactoring,2
+Configuration Validation,2
+Frontend Bug Reports,1
+API Handling Issues,4
+Device Configuration Issues,3
+Polling Mechanism Issues,1
+Debugging and Logging Issues,1
+Integration Development Issues,10
+Entity ID Management,4
+Data Fetching Issues,1
+Learning Curve for New Contributors,1
+Add-on Support Issues,1
+Translation Issues,6
+Release Management Issues,1
+PR Review Process Issues,2
+Entity Structure Issues,1
+Measurement Clarification Issues,1
+Downstream Library Issues,1
+Service Management Issues,1
+Integration Process Issues,1
+Connection Logic Issues,2
+Callback and Event Handling Issues,1
+BLE Device Handling Issues,1
+Code Organization Issues,4
+Naming Convention Issues,1
+Type Checking and Annotations Issues,1
+Entity Configuration Issues,3
+Identifier Handling,1
+Polling Frequency,1
+Integration Configuration,1
+License Compliance,1
+Documentation and Code Examples,1
+Data Update Coordination Issues,2
+Stuck CI Process,1
+Config Entry Issues,1
+Zeroconf Integration Challenges,1
+Async Handling Issues,1
+Device Discovery Problems,1
+Pypi and Release Tag Issues,1
+General Communication Issues,1
+Timeout Issues,2
+Sensor Measurement Issues,1
+Configuration Validation Issues,2
+Sensor Entity Issues,1
+Integration Communication Issues,1
+Pull Request Review Process,4
+Launch Timeline Concerns,1
+Device Information Disclosure Challenges,1
+Device Characteristics and Compatibility Considerations,1
+Code Architecture and Organization Issues,1
+Testing and Quality Assurance Challenges,1
+Data Handling and Error Management Issues,1
+Asynchronous Handling,1
+Validation Issues,2
+Polling vs. Push Updates,1
+Async Functionality Issues,1
+Client/Entity Initialization Issues,1
+Library Dependency Issues,2
+Voice and Model Handling Issues,1
+Review Process Clarifications,1
+Error Handling and Logging Issues,4
+Version Control Problems,1
+Testing and Discovery Issues,1
+Function Behavior Clarifications,1
+Code Structure and Naming Issues,2
+Runtime Data Usage,1
+Configuration and Integration Issues,1
+General Review Process Issues,1
+HACS Issues,1
+API Design Issues,1
+WebSocket Implementation,1
+Event Handling Issues,4
+Coordinator Usage Challenges,1
+Unique ID Issues,1
+Library and Dependency Management Issues,1
+Custom Component Limitations,2
+Integration Availability Concerns,1
+Entity Representation Issues,1
+OAuth Integration Issues,1
+Testing Setup Issues,1
+Code Management Issues,1
+Device Capability Issues,1
+Typing and Linting Issues,1
+Testing Framework Issues,1
+Pull Request Process Issues,2
+Authentication Issues,14
+Integration Challenges,6
+API Issues,2
+PR Description Issues,1
+Functionality Explanation Issues,1
+Code Repository Issues,1
+Integration Setup Issues,5
+Entity and Attribute Handling Issues,1
+Unique ID Management Issues,2
+Pull Request Management,7
+Logging Issues,6
+Code Review Best Practices,2
+Platform-Specific Issues,3
+Integration Functionality Issues,4
+Concept Clarification,1
+Enhancements and Updates,1
+Device Connectivity Challenges,1
+User Interface Considerations,1
+Device Configuration and Setup,1
+Code Quality and Review Concerns,1
+Device Type Clarification,1
+Code Review Issues,3
+Platform Management Issues,1
+Communication Challenges,2
+Package Management Issues,2
+Pre-commit and Development Environment Issues,1
+Device Library and Abstraction Issues,1
+BLE API Questions,1
+Sensor Category Management,1
+Measurement and Unit Issues,1
+Zeroconf Usage,1
+Bridge Device Configuration,1
+Device Discovery Challenges,2
+BLE Communication,1
+Testing and CI Challenges,1
+Code Review and Collaboration Issues,1
+Understanding Integration Status,1
+First-time Contributor Workflows,1
+Communication and Responses,1
+Integration Reload Issues,1
+Trigger Management Issues,1
+Property and Functionality Clarity,1
+Entity Naming and Translation,1
+Device Protocol Issues,1
+User Interaction Issues,2
+Integration Complexity Issues,3
+Protocol Handling,1
+Integration Concerns,1
+Terms of Service Compliance,1
+Integration Consolidation Challenges,1
+Breaking Changes Impact,1
+User Safety and Misuse Risks,1
+Integration Readiness Issues,4
+Mobile App Changes,1
+Name and ID Handling Issues,1
+Communication and Clarification Issues,1
+Configuration Management,6
+Logging and Namespace Issues,1
+API Request Management,1
+Device Management Issues,1
+Token Expiration Issues,1
+Re-authentication Concerns,1
+API Integration and Connection Issues,1
+Library and Documentation Gaps,1
+Code Structure and Design Issues,1
+Authentication and OAuth Issues,1
+Add-on Management Issues,1
+Naming/Branding Conflicts,1
+Code Maintainability Issues,1
+Compatibility Issues,2
+Code Rebase Issues,1
+Version Control Challenges,1
+Code Contribution Issues,1
+Integration Requirements and Standards,1
+Development Process and Workflow,1
+Technical Implementation Challenges,1
+Code Quality and Best Practices Issues,1
+Community and Communication Challenges,1
+Testing and Validation Requirements,1
+Wiz Light Integration Issues,1
+Unique Integration Features,1
+Speed of Review and Integration,1
+YAML Deprecation Issues,1
+Communication and Collaboration Challenges,1
+CLA Signing Issues,10
+Integration Relationship Clarity,1
+API Development and Integration Issues,1
+Integration Rewriting Concerns,1
+Device Type Addition Challenges,1
+Existing Integration Update Discussions,1
+Contributor Process Issues,1
+API Communication Issues,1
+Integration Scope Issues,1
+Code Clarity Issues,1
+Ghost Entities / Cleanup Issues,1
+User Experience / Options Flow,1
+Code Documentation Issues,1
+Testing Requirements,5
+Review Process Length and Transparency Issues,1
+Code Refactoring and Organization,1
+Integration Naming and Deprecation Issues,1
+Config Flow and User Experience Issues,1
+Branching and Merge Strategy Issues,1
+Notification Platform Integration Issues,1
+Entity Registry Issues,1
+CLA Submission Issues,1
+Integration Duplication/Redundancy,1
+Testing Failures,2
+Entity Identification Issues,1
+Integration Support Limitations,1
+Error Handling and Exception Management,1
+Async Functionality Concerns,1
+Code Ownership and Contributors,1
+Code Quality Standards and Guidelines,1
+Code Formatting Issues,2
+Platform-Specific Guidelines,2
+Bluetooth Integration Concerns,1
+Logging Practices,1
+Development Workflow Issues,2
+Reauthentication Flow,1
+Asynchronous Setup Issues,1
+SSL Verification Concerns,1
+Config Entry Management,1
+Options Flow Configuration,1
+Domain Context Confusion,1
+Entity ID and Naming Issues,1
+Device Class and Icon Restrictions,1
+Unit of Measurement Standardization,1
+Customization vs Default Settings,1
+Sensor Management and Attributes Handling,1
+Connection Issues,4
+Sensor Types and Attributes,1
+Setup Issues,1
+Component Structure Issues,2
+Cloud Service Interaction Issues,1
+Entity Registration Issues,2
+Attribute Errors,1
+Duplicate Entity Issues,1
+Testing and Compatibility Issues,1
+Code Structure and Logic Issues,1
+Contributor Licensing Agreement (CLA) Issues,1
+Testing Integration Flows,1
+Build Issues,1
+Draft Review Process,1
+Lack of Communication,1
+Integration Approval Challenges,1
+Rebasing and Versioning Issues,1
+CLA/Legal Issues,6
+HVAC Control Logic Issues,1
+Integration Behavior Concerns,1
+Naming/Typographical Issues,1
+Review Process Challenges,2
+Rebasing and Merge Conflicts,1
+Typing and Code Quality Issues,1
+Integration Naming/ID Issues,1
+Code Structure and Organization Issues,3
+Documentation and Clarifications,1
+Home Assistant Integration Specifics,1
+Translation Management Issues,4
+Review Process and Feedback,1
+Automation Concerns,1
+Conflict Resolution Issues,1
+Configuration Entry Issues,1
+Testing Methodology Issues,1
+Single Instance Support Issues,1
+Documentation Clarity Issues,1
+Integration Workflow Issues,2
+Optimistic Updates Issues,1
+Integration Status/Processing Delays,1
+Testing and CI Workflow Issues,1
+Naming/ID Management Issues,1
+Code and Documentation Review Challenges,1
+Device Integration Specific Issues,1
+Dynamic Behavior Management,1
+Code Structure and Refactoring,2
+Sign CLA Issues,1
+API and Subscription Key Management,1
+Integration and Configuration Issues,1
+Naming and Design Standards Issues,1
+Data Validation Issues,2
+Integration Rewrites,1
+Integration Development Concerns,1
+Local vs Global Integration Challenges,1
+Merge Conflicts,5
+Script Entity Access,1
+Add-on vs Integration Queries,1
+Device Use Case Concerns,1
+Reauthentication Flow Issues,1
+Sensor Utility Issues,1
+Update Logic Issues,1
+General Code Structure Issues,1
+Improper Handling of User Input,1
+Integration/API Challenges,1
+Code Consistency and Standards,1
+Version Release Management,1
+Pull Request Connection Issues,1
+Type Checking/Typing Issues,1
+Dependency Version Issues,1
+Logging and Security Concerns,1
+System Compatibility Issues,1
+Code Quality and Standards,3
+Service Registration Issues,2
+Device Registry Management,1
+Sensor Management and Design,1
+Custom Component Development,2
+Integration Lifecycle Challenges,1
+Entity Registry Compliance Issues,1
+Camera Integration Specifics,1
+User Authentication Concerns,1
+Platform-specific Architectural Decisions,1
+Integration/Architecture Issues,1
+Service Call Challenges,1
+Integration Functionality,1
+Client Connectivity Issues,1
+Testing Limitations,1
+Component Integration Issues,2
+Testing Challenges,2
+Code Duplication,1
+Communication Gaps,1
+Documentation Concerns,1
+CLA/Contribution Issues,1
+Constant Usage Issues,1
+Device Class Issues,2
+Integration/Setup Issues,1
+Platform Limitation Issues,2
+Device Interface Issues,1
+Coding Standards Issues,2
+Code Review Communication Issues,1
+Type Checking Issues,3
+CLA Signing,3
+Issue Tracking,1
+Code Formatting,1
+Linting Issues,2
+Integration Scope Limitations,1
+Git Integration Issues,1
+Branching Challenges,1
+Rebasing Issues,1
+Asynchronous Programming Issues,1
+Unofficial Solutions,1
+Type Checking and Validation Issues,1
+Contributor Issues,1
+Redundant Code Issues,1
+Translations and Localizations Issues,1
+API Connectivity Issues,1
+Home Assistant Platform Integration Issues,1
+Thermostat Control Issues,1
+HVAC Mode Management Issues,1
+Attribute Management Issues,3
+Hardware Interaction Issues,1
+Manual Control Issues,1
+Code Design Issues,2
+Assistance/Support Need,1
+File Management Issues,1
+Code Completion Issues,1
+Training/Experience Gaps,1
+Merge/Conflict Issues,1
+Static Type Checking Issues,1
+Media Player Integration Challenges,1
+Configuration Flow Concerns,2
+Naming/Terminology Consistency,1
+WebSocket Integration Challenges,1
+Integration Management,4
+Developer Experience Challenges,1
+HACS Integration Issues,1
+Migration Issues,2
+Code Review Processes,1
+Integration Setup and Configuration,1
+Custom Integration Handling,1
+Configuration and YAML Issues,1
+Brand and Logo Management,1
+Code Structure and Design Patterns,1
+Error Handling and Input Validation,1
+Testing and Setup Concerns,1
+Integration Quality Scale Issues,1
+Data Handling/Optimization Issues,1
+Code Review and Suggestions,4
+Entity Availability Issues,1
+Testing and Mocking Challenges,1
+Integration with Home Assistant Core,1
+UI/UX Consistency and Errors,1
+State Management and Logic,1
+Unique ID Handling Issues,1
+Localization and Translation Issues,1
+Exception Handling Issues,5
+Integration Behavior Issues,1
+Component-Specific Adaptation Issues,1
+Integration Replacement Issues,2
+Deprecation Notices,1
+Technical Support Needs,1
+Commit Link Issues,1
+Contributor Guidelines,1
+Collaboration and Code Review Challenges,1
+Pull Request Processing,1
+Development Environment Setup,2
+Library Dependencies,1
+Legal/Compliance Issues,4
+Energy Management Issues,1
+YAML Configuration Deprecation,2
+Multiple Configuration Entries,1
+User Input Management Issues,1
+Integration Setup Optimization Issues,1
+YAML Configuration Issues,1
+Configuration Flow,1
+Integration Refactoring,1
+Testing Documentation,1
+Home Assistant Architecture Decisions,1
+Polling Issues,2
+Timeout Errors,1
+Upstream Dependency Changes,1
+Platform Selection,1
+CLA and Contribution Issues,5
+Platform Setup Challenges,1
+Integration and Service Load Issues,1
+Service Naming and Configuration Issues,1
+Review and Stale PR Management,1
+Documentation and CI Activation Requests,1
+Custom Component Development Issues,1
+Config Flow and Unique ID Concerns,1
+Communication with External Libraries,1
+Incompatibility and Merge Readiness Issues,1
+Testing and Review Requests,1
+Contribution Process Issues,8
+Integration Implementation Issues,2
+Device Tracking Issues,1
+Device Naming and ID Issues,1
+Resource Management Issues,1
+Integration and Compatibility Challenges,1
+Exception Handling and Cleanup,1
+User Interface Concerns,1
+Review Process and Communication Issues,2
+Legal and Compliance Issues,2
+Stale PRs,1
+Integration Standards and Features,1
+Entity Relations and Attributes,1
+User Interface and Experience,1
+Dependency Compatibility Issues,1
+Documentation Requirements,3
+Integration Conflicts,1
+User Experience Design Issues,1
+Testing and Mocking Concerns,1
+Event Loop and Async Concerns,1
+Integration Architecture Issues,4
+Persistent Notifications Issues,1
+Client Construction Issues,1
+Assets Management Issues,1
+Sensor Management Issues,1
+Rebase and Feature Implementation Issues,1
+Deprecated Integration Issues,1
+Integration Replacement Challenges,1
+Device Credential Challenges,1
+Migration Paths Issues,1
+Documentation Needs,4
+Testing Coverage Issues,3
+I2C/Hardware Integration Issues,1
+Architecture Discussion,3
+Excess Complexity Issues,1
+Legal Issues (CLA Signing),1
+CLA and Contribution Process,1
+Integration Review Process,2
+Testing and Configuration Issues,1
+Device-Specific Functionality,1
+User Interface/Experience Issues,1
+Integration Issues and Behavior,1
+Communication and Documentation Issues,1
+Branch Management,1
+Development Workflow,1
+Communication and Collaboration,2
+Merge Conflict Issues,1
+Testing and Coverage Issues,3
+Platform Specific Issues,2
+Code Review Feedback,2
+Constants Usage,1
+Device Class Specification,1
+General Improvement Suggestions,1
+API Usage,1
+Sensor Naming Issues,1
+Testing Methodology,1
+Documentation Accuracy,1
+Custom Component Challenges,1
+Merge Process Conflicts,1
+Domain Naming Considerations,1
+Coding Style Recommendations,1
+Code Readability Suggestions,1
+Integration Architecture,1
+Review Process Delays,4
+Config Flow Requirements,2
+Documentation Reference,1
+Scaffolding Tools,1
+Documentation and Integration Issues,1
+Hardware Testing Challenges,1
+Integration Naming and Branding,1
+Feature Request Management,1
+CLA and Contribution Requirements,1
+Platform Limitations for Integrations,1
+Integration Testing,2
+Variable and Naming Issues,1
+Home Assistant Unique ID Management,1
+Communication and Review Process,1
+Session Management and Authentication,1
+User Experience in Naming and Entity Management,1
+Library/Integration Compatibility Issues,1
+API Complexity Management,1
+YAML Configuration Restrictions,1
+Integration Complexity with External Devices,1
+Polling/State Update Issues,1
+Configuration/Options Flow Issues,1
+Persistent Storage Issues,1
+Connection Handling Issues,1
+Contributing Guidelines,1
+Initial Setup Issues,1
+Integration Differentiation,1
+Component Development Best Practices,1
+Functionality Concerns,1
+Device Variables Issues,1
+Code Logic Issues,1
+Integration Protocols Issues,1
+Protocol/Technology Concerns,1
+Peer Review Process Issues,1
+Best Practices,1
+Legal Compliance Issues,1
+Code Ownership Issues,2
+Integration Versioning Issues,2
+Refactoring Needs,1
+Ebus Integration Challenges,1
+Configuration and Availability Issues,1
+Project Management Issues,1
+Feature Development Issues,1
+Network Sensor Integration Issues,1
+API Compatibility Issues,2
+Integration Completion/Review,1
+Deprecation Warnings,1
+Bluetooth Implementation Issues,1
+Unique ID Generation,1
+Communication with API and Device Management Issues,1
+Testing Strategy,1
+Integration Performance Issues,1
+Cloud vs Local Integration,1
+Sensor Categorization Issues,1
+Connection and Update Interval Issues,1
+Testing and Workflow Processes,1
+Code Structure and Readability Issues,2
+Asynchronous Programming Concerns,1
+Data Handling and Integration Logic Issues,1
+API Documentation Issues,1
+Integration Process Challenges,1
+Device Communication Challenges,1
+Customizability Concerns,1
+Platform Limitations,1
+Testing Coordination,1
+Integration Development Process,1
+Smart Home Specific Concepts,1
+Developer Experience,1
+CLA Compliance,1
+Entity Configuration,1
+Code Quality Practices,1
+Naming/Id Issues,2
+Project Structure Issues,1
+Integration Independence Issues,1
+User Experience Challenges,1
+UI Feedback Issues,1
+Server Communication and Health Checks,1
+Support for Multiple Instances,1
+General Development and Code Structure Issues,1
+Integration Migration Issues,1
+Device Registry Challenges,1
+Entity Registry Challenges,1
+Platform Consolidation Issues,1
+Service Duplication Issues,1
+HACS Integration Conflicts,1
+Code Quality and Structure Issues,2
+Workflow and Testing Challenges,1
+Communication and Coordination Issues,1
+Entity State Management,1
+Unit Testing Issues,1
+Configuration Logic Issues,1
+Device Behavior Issues,1
+Smart Home Concepts,1
+Efficiency Considerations,1
+CLA and Git Issues,1
+Integration Documentation Issues,2
+Code Cleanup Issues,1
+Smart Home Conceptual Challenges,1
+Integration Availability Issues,1
+Installation Issues,1
+Merge Requests and Timeliness Issues,1
+Platform Size Issues,1
+Custom Component Issues,2
+Code Quality Suggestions,1
+Platform Integration Challenges,1
+Documentation/Guidance Issues,2
+Review Delays,1
+CI/CD Failure,1
+Contributor Agreement Issues,2
+Integration and Configuration Challenges,1
+Async Programming Issues,3
+Unique ID Handling,2
+Polling vs. WebSocket Communication,1
+Code Quality and Efficiency,1
+Development Workflow Challenges,1
+Understanding Smart Home Concepts,1
+Cloud Account Linking Services,1
+Usage of Constants in Code,1
+Identifier Management,1
+Integration Compatibility Issues,1
+Device Support Limitations,1
+Communication about Integration Approach,1
+Development Environment Issues,1
+Merge Process Issues,1
+Code Style Issues,1
+Return Value Handling Issues,1
+Logging Practices Issues,1
+Testing Pipeline Issues,1
+Device Integration Testing,1
+Device Class and Icon Issues,1
+Entity Uniqueness Challenges,1
+Code Review and Structure Issues,1
+Configuration/Network Issues,1
+Home Assistant Core Integration Challenges,1
+Device Info Implementation,1
+Home Assistant Communication Issues,1
+Integration Quality,1
+Contribution Process,2
+Integration Development,1
+Platform/Entity Design Challenges,1
+Auth/Authentication Issues,1
+Documentation Standards Issues,1
+Integration Setup and Documentation Challenges,1
+Approval and Review Process Delays,1
+Code Review and Standards,1
+Exception Handling and Error Management,1
+Asynchronous Programming Challenges,1
+Home Assistant Specific Concepts and Integrations,1
+Web Scraping Limitations,1
+Device Support Issues,1
+Exception Handling Practices,1
+Polling and Data Update Strategies,1
+User Input Management,1
+CLA and Legal Issues,1
+Data Structure and Entity Management,1
+Integration Domain or Label Issues,1
+Configuration and Setup Questions,1
+Polling and Update Mechanism,1
+Error Handling and Debugging,1
+Communications and Collaboration Issues,1
+API Response Inconsistencies,1
+Modbus Communication Challenges,1
+Customization Needs,1
+User Interface Integration,1
+Home Assistant Specific Integration,1
+Code Review Process Issues,4
+Platform Specific Concerns,1
+Integration Description Issues,1
+Code Explanation Issues,1
+Asynchronous Handling Issues,1
+Device Connectivity Issues,2
+Feedback on Pull Requests,1
+Testing and Test Coverage,1
+Community Interaction,1
+Review Process and Approval Delays,1
+API Management Issues,1
+Best Practices Issues,2
+Branch Management Issues,3
+Review and Feedback Issues,1
+Sensor/Data Reporting Issues,1
+Entity Description and Naming Issues,1
+Testing and Code Coverage Issues,1
+CLA Signature Issues,1
+Integration Readiness,3
+Device Integration Functionality,1
+Configuration Options Issues,1
+Entity Structuring Issues,1
+Code Readability Issues,1
+Logging and Performance Issues,1
+OptionsFlow Configuration,1
+Smart Home Protocols Issues,1
+Code Quality and Maintenance,1
+Dependency Issues,1
+Feature Implementation Challenges,1
+Protocol/Integration Complexity,1
+Legal/Documentation Issues,1
+Coding Standards,1
+Integration Specifics,2
+YAML Support Issues,1
+Git Issues,1
+Mocking Issues,1
+User Configuration Issues,1
+Entity Attribute Issues,1
+User Input Issues,1
+Hardcoding Issues,1
+Discovery Issues,1
+Integration Maintenance Issues,1
+Licensing Issues,1
+Device Availability Issues,1
+Use Case Clarification,1
+Integration Duplication Concerns,1
+Integration Functionality Concerns,1
+Design Decisions,1
+Integration Timing Issues,1
+Enhancement Requests,1
+Authentication and Error Handling Issues,1
+Device/Entity Management Issues,1
+Codeowners/Ownership Issues,1
+API Key Management,1
+Feature Implementation Problems,1
+Release Timing Issues,1
+Client/Session Management Issues,1
+Device/Platform Specific Issues,1
+CLA and Contribution Process Issues,2
+CI and Testing Issues,1
+Development Environment Setup Challenges,1
+Integration-Specific Technical Issues,1
+Config Flow/Device Configuration Issues,1
+Documentation Needs and Clarity Issues,1
+Code Quality,1
+User Feedback,1
+Approval Process Challenges,1
+Functionality Limitations,1
+Bluetooth Connectivity Issues,1
+HACS Integration Considerations,1
+Discovery Mechanism Challenges,1
+Testing and Coverage Requirements,3
+Device Communication Limitations,1
+Code Quality and Refactoring Requests,1
+Development Environment Setup Issues,1
+Testing and Requirements Issues,1
+Integration Creation Guidance,1
+Sensor Platform Implementation,1
+Custom Integrations via HACS,1
+Unique Identifier Issues,1
+Protocol Support Challenges,1
+Code Structure and Architecture Issues,1
+Async/Await Usage Issues,1
+Device Interaction Challenges,1
+Contributions and Documentation Issues,1
+Language Consistency Issues,1
+Integration and Platform Issues,1
+Typographical Issues,1
+Retry Logic,1
+Config Flow Best Practices,1
+Sensor Identification Issues,1
+Platform/Entity Structure Issues,1
+Configuration Flow Requirements,1
+Documentation Alignment Issues,1
+Logo Addition Issues,1
+Code Structure Suggestions,1
+Entity Naming Style Issues,1
+Legal Agreements (CLA) Issues,1
+Device State Management,1
+API Interaction Issues,1
+Git and Version Control Issues,1
+Contributor Guidance,1
+Legal/Administrative Issues,1
+Integration Readiness Questions,1
+Sensor Value Representation Issues,1
+Unique ID and Naming Conflicts,1
+Diagnostic vs. Statistical Data Handling,1
+Device Class and State Class Definitions,1
+Testing and Test Coverage Concerns,1
+Code Refactoring Suggestions,1
+Battery Management Issues,1
+Project Status Updates,1
+Communication/Integration Issues,1
+Rebase and Sync Issues,1
+Notification Spam Issues,1
+Integration/Component Issues,1
+Documentation Compliance Issues,1
+Device State Update Issues,1
+Platform Specificity Issues,1
+Login/Authentication Issues,1
+Bluetooth Integration Challenges,2
+CI/CD Problems,1
+Flow and State Management Challenges,1
+Data Serialization Issues,1
+Code Review and Best Practices,1
+Integration Support,1
+Integration Availability,1
+Code Ownership Clarification,1
+Integration Metrics Concerns,1
+Sensor Types Limitations,1
+Custom Device Classes,1
+CI/CD Workflow Confusion,1
+Code Quality and Readability,1
+Review Communication Issues,1
+Custom Component Requests,1
+Integration Quality Scale,1
+Polling and Performance Issues,1
+Device ID and Configuration Issues,1
+Integration Conflicts and Competition,1
+Integration Status Issues,1
+Module Metadata Issues,1
+Unclear Specifications,1
+Code Changes/Reverts,1
+Interface and User Interaction Concerns,1
+Device Class Configuration Issues,1
+Boolean Defaults Removal,1
+Calibration Issues,1
+Integration Overlap/Redundancy,1
+Bluetooth Dependency Issues,1
+Architecture Concerns,1
+Code Submission Issues,1
+Workflow Approval Issues,1
+User Feedback and Feature Requests,1
+Cost Calculation Issues,1
+Sensor Attributes Management,1
+Code Implementation Guidelines,1
+State Management and Advertising,1
+Command Handling Issues,1
+Code Structure and Optimization Issues,2
+Pulled Request and Review Comments,1
+API and Integration Issues,1
+User Input Handling Issues,2
+Custom Integration Issues,1
+Sensor Calculation Issues,1
+Configuration Schema Issues,1
+Data Type Issues,1
+Platform Design Issues,1
+Database Management Issues,1
+Frontend Development,1
+Entity Attributes,1
+Internal Communication,1
+Rebasing and Merging Issues,1
+Inspection and Review Issues,1
+Integration and Device Discovery Issues,1
+Translation/Localization Requirements,1
+Integration Type Challenges,1
+Service/Device Confusion,1
+API and OAuth Issues,1
+Sensor Configuration and Naming,1
+Testing and Code Review,1
+Feedback and Communication Challenges,1
+Community Guidelines Issues,1
+Custom Components Issues,1
+Code Review and Quality Issues,1
+Type Annotation Issues,2
+HACS (Home Assistant Community Store) Issues,1
+Code Optimization,1
+Assumption Risks,1
+Device Tracker Integration,1
+Library/API Interaction Issues,1
+Integration Reliability,1
+Component Design Issues,1
+Sensor and Entity Management,1
+Timezone Handling Issues,1
+DST Transition Challenges,1
+Service Call Handling,1
+Integration Design Decisions,2
+User Interface Limitations,1
+State Attributes Management,1
+Entity Component Development,1
+Service Implementation,1
+Code Cleaning Suggestions,1
+Rebase/Review Requests,1
+Documentation and Translation Needs,1
+Development Process,1
+Missing Device Attributes,1
+Consistency and Naming Issues,1
+Testing and Validation,2
+Service and Method Handling,1
+Platform Implementation Issues,1
+Config/Authentication Issues,1
+Data Structure Issues,2
+Pull Request Management Issues,2
+Code Cleanup Suggestions,1
+Integration Dependency Issues,1
+Device Specific Logic Issues,1
+Code Duplication Issues,2
+Architectural Issues,1
+Options Flow Challenges,1
+Device Class Specification Issues,1
+Integration Refactoring Needs,1
+Developer Documentation Reference,1
+Significant Code Changes,1
+Community Involvement,1
+Device Command Handling,1
+Protobuf Compatibility Issues,1
+Multiple Configuration Handling,1
+Authentication Scope Management,1
+Code Structure/Organization Issues,1
+Code Style/Convention Issues,1
+Signal/Event Handling Issues,1
+API Token Management Issues,1
+Naming/Terminology Issues,1
+Email Service Integration Issues,1
+Thread Safety Issues,1
+Best Practices/Configuration Handling Issues,1
+Access Token Management,1
+Notify Platform Functionality Issues,1
+Multiple Config Entry Management Issues,1
+Cloud vs Local Integration Issues,1
+Testing and CI Process Issues,1
+Code Structure and Standards,1
+Naming and ID Management,1
+Reauthentication Challenges,1
+Entity Management Problems,1
+Communication and Review Process Delays,1
+Environment Setup Issues,1
+File/Code Generation Issues,1
+Error Handling and Validation Issues,1
+Integration Development Process Issues,1
+Best Practices in PRs Issues,1
+Reviewing and Feedback Process,1
+Entity Description Standards,1
+Device Unavailability Issues,1
+Library Integration,1
+Class Structure and Readability,1
+Coordinator Issues,1
+Data Availability Issues,1
+Date Handling Issues,1
+Optional Data Decisions,1
+Measurement Unit Specification,1
+Code Readability and Structure Issues,1
+General Queries and Clarifications,1
+Dependency Conflicts,1
+Device Identification and Naming,1
+Code Structure and Readability,1
+Device Compatibility and Configuration,1
+Entity and Sensor Class Issues,1
+Config Management Issues,2
+Data Update Coordinator Implementation,1
+Device Naming Issues,2
+Error Handling Concerns,1
+Code Optimization Suggestions,1
+Automation and Update Mechanism Issues,1
+Documentation and User Guidance Issues,1
+Configuration Entry Guidelines,1
+Home Assistant Integration Standards,1
+Configuration Flow Standards,1
+User Experience Improvements,1
+Unique ID Convention,1
+Time Handling Issues,1
+Code Clarity and Value Addition,1
+Helper Utilization Issues,1
+Integration Review Requests,1
+Credential Issues,1
+Duplicate/Conflicted PR Issues,1
+Platform Specification Issues,1
+Language/Translation Issues,1
+Code Maintenance,1
+Device Compatability,1
+Performance Concerns,1
+Feature Requests,2
+Integration Management Issues,1
+Device Specific Integration Issues,1
+Library Configuration Issues,1
+Pending Review Issues,1
+API Availability Issues,1
+Polling Behavior Concerns,1
+Development Guidelines Issues,1
+Protocol Compatibility Issues,1
+Stale Pull Request Management,1
+Integration Viability,1
+Support and Maintenance Issues,1
+Async Structure Issues,1
+API Structure Issues,1
+Security Considerations,1
+Value Passing Issues,1
+Single Platform Requirement,1
+Translation Support Issues,1
+Scaffolding and Template Usage,1
+Integration Requirements,1
+MQTT Integration,1
+Library Usage,1
+Style Guide Issues,1
+Communication and Review Process Issues,1
+Virtual Integration Concerns,1
+Time Management/Responsibility Challenges,1
+Testing and Authentication Issues,1
+Service vs Device Confusion,1
+Waiting for Review,1
+Domain/Naming Issues,1
+Connection/Communication Issues,1
+Integration Standards Issues,1
+Sensor Behavior Issues,1
+Merge Issues,1
+Configuration/Flow Issues,1
+Integration Approval Issues,1
+Configuration Challenges,1
+Bluetooth Proxy Issues,1
+Custom Component Setup Issues,1
+Data Handling and Display Issues,1
+Cloud Dependency Concerns,1
+Testing/Validation Issues,1
+Code Suggestions,1
+Entity Naming Rules,1
+Data Object Issues,1
+Breaking Changes,1
+Integration Visibility,1
+Long Review Times,1
+Error Typing and Handling,1
+Documentation and Comments Issues,1
+Smart Home Device Specific Issues,1
+Library Management Issues,1
+Error Handling Challenges,1
+Integration Redundancy,1
+Functionality Comparison,1
+Home Assistant Integration Concepts,1
+Pull Request Size Management,1
+Async Implementation Problems,1
+Local vs Cloud Communication Issues,1
+Config Flow Design Issues,1
+Device Discovery and Setup Challenges,1
+Library/Package Compatibility Issues,1
+Review Feedback and Approval Process,1
+Platform-Specific Integration Constraints,1
+Documentation & Manifest Specification Issues,1
+Naming Consistency Issues,1
+Testing and Mocking Issues,1
+Unused Code and Cleanup Issues,1
+Integration Merging Issues,1
+Core vs Custom Integration Confusion,1
+Feedback Request Issues,1
+Setup and Initialization Concerns,1
+General Code Review Issues,1
+Type and Data Handling Issues,1
+Device-Specific Challenges,1
+Integration Requirement Issues,1
+Entity Handling Issues,1
+Sensor Integration Issues,1
+Custom Component Considerations,1
+Input Handling Issues,1
+Integration Support Issues,1
+Device Entry Issues,1
+Entity Type Confusion,1
+Image Handling Challenges,1
+Naming/Property Clarity,1
+Platform Addition Requirements,1
+API Stability Issues,1
+Integration Acceptance Issues,1
+Update Interval Constraints,1
+Real-time Notifications,1
+YAML Configuration Changes,1
+Config Flow Requirement,1
+Data Handling Discussions,1
+Single Entity Representation,1
+Naming Guidelines,1
+Unique ID Requirement,1
+Mock Configuration in Tests,1
+Error Handling in Config Flow,1
+Git Workflow Issues,2
+CI/CD Errors,1
+Inadequate PR Descriptions,1
+Platform Specific Recommendations,1
+Integration Structure and Design,1
+Communication with Devices,1
+Entity Coordination Issues,1
+Non-Supported Features,1
+Redundant Authentication Issues,1
+Inefficient API Usage,1
+Code Refactoring Needs,1
+Integration Specific Concerns,1
+Polling Frequency Recommendations,1
+Constants and Configurations,1
+Error Handling Improvements,1
+Integration Review Challenges,1
+Event Loop Management Issues,1
+Documentation/Clarification Requests,1
+UI Configuration Issues,1
+Entity and Attribute Issues,1
+Integration Size/Complexity Issues,1
+Websocket Integration Challenges,1
+Options Flow Management,1
+Data Storage Issues,1
+Code Reusability Issues,1
+Logging Best Practices,1
+OAuth Support Issues,1
+Third-Party Integration Requests,1
+Entity and Coordinator Management,1
+Feature Support Issues,1
+Unsupported Features Issues,1
+Integration and Component Design Issues,1
+Logging Configuration Issues,1
+System Integration Challenges,1
+Use Case Specificity,1
+Development Communication,1
+Review Process and Feedback Issues,1
+Entity Naming Challenges,1
+Testing and Coverage Challenges,1
+Transient Failure Handling,1
+Code Structure Improvement,1
+Configuration Handling Issues,1
+Stale PR Management,2
+Config Flow Implementation,1
+Integration Setup Requirements,1
+Code Execution Setup,1
+Integration Support Queries,1
+Compliance and Scraping Concerns,1
+Code Suggestions and Clean-up,1
+Signal Management Issues,1
+External Library Concerns,1
+Content Type Issues,1
+Authentication/Authorization Issues,1
+Entity Behavior and Testing Issues,1
+API and Communication Issues,1
+Configuration and Validation Issues,1
+Device-Specific Issues,1
+Integration Branding Issues,1
+Options Flow Issues,1
+URL Validation Issues,1
+Translation Key Issues,1
+Auth Handling Issues,1
+DataUpdateCoordinator Issues,1
+Entity Usage Issues,1
+Unique ID/Naming Issues,1
+Flow Management Issues,1
+Review Request Issues,1
+Integration Development Strategy Issues,1
+Development Best Practices,1
+Sensor Logic Challenges,1
+Request Optimization Issues,1
+Backlog/Process Issues,1
+Climate Entity Issues,1
+HVAC Configuration Issues,1
+Branding/Device Identification Issues,1
+Code Optimization Issues,1
+Asynchronous Design Issues,1
+Message Handling Issues,1
+Domain Name Issues,1
+Wake Word Detection Issues,1
+Audio Metadata Issues,1
+Voice Activity Detection (VAD) Options,1
+Teardown Behavior Issues,1
+Understanding Coordinator Behavior,1
+Entity Creation,1
+Method Structure Issues,1
+Testing Interface Issues,1
+Potential Add-On Questions,1
+API Key Management Issues,1
+Config Flow Migration Issues,1
+Device Pairing and Authentication Issues,1
+Firmware Compatibility Issues,1
+Version Control Issues,1
+Device Communication Models,1
+Enhancement Suggestions,1
+Data Type Handling,1
+Integration-Specific Logic,1
+Entity Services Usage,1
+Polling vs Push Method Issues,1
+Entity Representation,1
+Documentation and Communication,1
+Code Efficiency and Structure,1
+MQTT Usage Concerns,1
+Device Manufacturer Handling,1
+Payload Decoding Challenges,1
+Clarification Requests,1
+Library/Dependency Management,1
+Communication Protocols,1
+Collaboration Issues,1
+Autodiscovery Implementation Issues,1
+Coordination Issues,1
+Selector Implementation Issues,1
+Entity Model Issues,1
+Platform Specific Design Issues,1
+Architectural Discussion Issues,1
+Naming/Identifier Considerations,1
+Testability Concerns,1
+User Experience Considerations,1
+Entity Naming/Definition Issues,1
+Typing and Documentation Issues,1
+Handler Issues,1

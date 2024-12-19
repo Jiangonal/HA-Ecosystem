@@ -1,0 +1,65 @@
+software_development_issues = {
+    "Bug-Related Issues": {
+        "Subcategories": {
+            "Reproducibility": "Challenges in consistently reproducing bugs for debugging.",
+            "Intermittent Bugs": "Issues that occur sporadically, making them hard to track.",
+            "Regression Bugs": "New bugs introduced after changes or updates to the codebase.",
+            "Environment-Specific Bugs": "Bugs that appear only in certain environments or configurations.",
+            "UI/UX Bugs": "Issues related to user interface or user experience inconsistencies."
+        }
+    },
+    "Integration and Compatibility": {
+        "Subcategories": {
+            "API Integration": "Challenges in integrating with third-party APIs due to changes or limitations.",
+            "Cross-Platform Compatibility": "Ensuring software works across different operating systems and devices.",
+            "Version Conflicts": "Issues arising from dependencies on different library versions.",
+            "Backward Compatibility": "Maintaining functionality with older versions of software or systems.",
+            "Data Migration": "Challenges in migrating data between different systems or formats."
+        }
+    },
+    "Documentation and Support": {
+        "Subcategories": {
+            "Incomplete Documentation": "Lack of comprehensive documentation for users or developers.",
+            "Outdated Documentation": "Documentation that is not updated to reflect current software state.",
+            "User Support Challenges": "Difficulties in providing timely and effective user support.",
+            "Knowledge Transfer": "Challenges in transferring knowledge within teams or to new team members.",
+            "Localization and Internationalization": "Issues in adapting documentation for different languages and regions."
+        }
+    },
+    "Performance and Optimization": {
+        "Subcategories": {
+            "Memory Leaks": "Issues related to improper memory management leading to increased usage.",
+            "Slow Response Times": "Challenges in reducing latency and improving software responsiveness.",
+            "Scalability": "Ensuring software can handle increased loads and user demands.",
+            "Resource Utilization": "Optimizing the use of CPU, memory, and other resources.",
+            "Algorithm Efficiency": "Improving the efficiency of algorithms to enhance performance."
+        }
+    },
+    "Security and Compliance": {
+        "Subcategories": {
+            "Data Breaches": "Preventing unauthorized access to sensitive data.",
+            "Vulnerability Management": "Identifying and mitigating security vulnerabilities.",
+            "Compliance with Regulations": "Ensuring software meets legal and industry standards.",
+            "Authentication and Authorization": "Implementing secure user authentication and access controls.",
+            "Encryption and Data Protection": "Securing data through encryption and other protective measures."
+        }
+    },
+    "Feature Requests and Enhancements": {
+        "Subcategories": {
+            "Prioritization": "Challenges in determining the priority of new features or enhancements.",
+            "User Feedback Integration": "Incorporating user feedback into the development process.",
+            "Feature Creep": "Managing the scope of features to prevent project bloat.",
+            "Innovation vs. Stability": "Balancing new features with maintaining software stability.",
+            "Prototyping and Testing": "Developing and testing prototypes for potential new features."
+        }
+    },
+    "Other": {
+        "Subcategories": {
+            "Technical Debt": "Managing and reducing accumulated technical debt in the codebase.",
+            "Team Collaboration": "Improving communication and collaboration within development teams.",
+            "Project Management": "Challenges in planning, executing, and monitoring software projects.",
+            "Remote Work Challenges": "Addressing issues related to remote work setups and coordination.",
+            "Tooling and Infrastructure": "Selecting and maintaining the right tools and infrastructure for development."
+        }
+    }
+}

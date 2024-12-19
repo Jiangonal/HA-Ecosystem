@@ -1,0 +1,95 @@
+,PR URL,PR Title,SO Title,Keyword Score,Author Match
+0,https://github.com/home-assistant/core/pull/69996,Add label support,Label Encoder unseen label,0.31878402175377923,False
+1,https://github.com/home-assistant/core/pull/69996,Add label support,Count sub-label based on label,0.1707761131901165,False
+2,https://github.com/home-assistant/core/pull/69996,Add label support,Align line annotation label and label annotation,0.22576484600261604,False
+3,https://github.com/home-assistant/core/pull/69996,Add label support,Placing a label in another label tkinter,0.31878402175377923,False
+4,https://github.com/home-assistant/core/pull/69996,Add label support,&lt;mat-label&gt; Label Text is disappearing randomly,0.15064018498706508,False
+5,https://github.com/home-assistant/core/pull/69996,Add label support,Align sub label below the main label,0.28530619098136084,False
+6,https://github.com/home-assistant/core/pull/69996,Add label support,Need Variable Label in GOTO Label statement and/or alternative to GOTO Label,0.2605556710562624,False
+7,https://github.com/home-assistant/core/pull/69996,Add label support,My input label is overlapping the other label,0.31878402175377923,False
+8,https://github.com/home-assistant/core/pull/69996,Add label support,Changing x-label values to x- label names,0.1506401849870651,False
+9,https://github.com/home-assistant/core/pull/69996,Add label support,VB.NET Dynamically created Label does not have Label properties,0.24129913647238907,False
+10,https://github.com/home-assistant/core/pull/69996,Add label support,label every other tick with ggplot ggh4x nested label,0.2605556710562624,False
+11,https://github.com/home-assistant/core/pull/69996,Add label support,Change the multi-label X-axis label in R,0.1707761131901165,False
+12,https://github.com/home-assistant/core/pull/69996,Add label support,trigger label when I clicked label children in React.js,0.2605556710562624,False
+13,https://github.com/home-assistant/core/pull/69996,Add label support,Multi-label Image Classification along with the label position,0.1506401849870651,False
+14,https://github.com/home-assistant/core/pull/69996,Add label support,How can I add metrics label to alert label,0.5029292651136352,False
+15,https://github.com/home-assistant/core/pull/69996,Add label support,Label a whole numpy array with one label on matplotlib,0.28530619098136084,False
+16,https://github.com/home-assistant/core/pull/69996,Add label support,Label Encoding for Categorical Features: Preserving Label Consistency Across Runs,0.22576484600261604,False
+17,https://github.com/home-assistant/core/pull/69996,Add label support,Prometheus Count unique label with all the other label combinations,0.2605556710562624,False
+18,https://github.com/home-assistant/core/pull/69996,Add label support,Vaadin Label CSS,0.20199309249791833,False
+19,https://github.com/home-assistant/core/pull/69996,Add label support,Add sensitivity label,0.5031026124151314,False
+20,https://github.com/home-assistant/core/pull/69996,Add label support,matplotlib modify outer x label and keep inner x label,0.2605556710562624,False
+21,https://github.com/home-assistant/core/pull/69996,Add label support,Change label from Newrelic &quot;MySQL (subquery) select&quot; to custom label,0.22576484600261604,False
+22,https://github.com/home-assistant/core/pull/69996,Add label support,SwiftUI Picker label,0.20199309249791833,False
+23,https://github.com/home-assistant/core/pull/69996,Add label support,Matplotlib: how to fix label width independent of label content,0.24129913647238913,False
+24,https://github.com/home-assistant/core/pull/69996,Add label support,Text overlapping in label whenever updating the label in kivy,0.2605556710562624,False
+25,https://github.com/home-assistant/core/pull/69996,Add label support,.quad $label in AT&amp;T syntax: undefined reference to [label-name],0.12536693798731732,False
+26,https://github.com/home-assistant/core/pull/69996,Add label support,"Customize ListItem contains colorful label, colorful label background not show?",0.20199309249791833,False
+27,https://github.com/home-assistant/core/pull/69996,Add label support,Button subtitle label,0.20199309249791833,False
+28,https://github.com/home-assistant/core/pull/69996,Add label support,Promtail label config,0.20199309249791833,False
+29,https://github.com/home-assistant/core/pull/69996,Add label support,ResNet50 base model for multi-label classification predicting only label,0.12536693798731732,False
+30,https://github.com/home-assistant/core/pull/69996,Add label support,tflite inference only predicts one label despite multiclass label training,0.22576484600261604,False
+31,https://github.com/home-assistant/core/pull/69996,Add label support,Remove specific label,0.20199309249791833,False
+32,https://github.com/home-assistant/core/pull/69996,Add label support,Find details of only first label from each &quot;label category&quot;,0.17077611319011649,False
+33,https://github.com/home-assistant/core/pull/69996,Add label support,Hightcharts label alignment,0.20199309249791833,False
+34,https://github.com/home-assistant/core/pull/69996,Add label support,"Contours, inline label",0.20199309249791833,False
+35,https://github.com/home-assistant/core/pull/69996,Add label support,Javascript - Label selector,0.20199309249791833,False
+36,https://github.com/home-assistant/core/pull/69996,Add label support,Animate form&#39;s label,0.20199309249791833,False
+37,https://github.com/home-assistant/core/pull/69996,Add label support,ASP.NET label expression,0.20199309249791833,False
+38,https://github.com/home-assistant/core/pull/69996,Add label support,Woocommerce price label,0.20199309249791833,False
+39,https://github.com/home-assistant/core/pull/69996,Add label support,Pine script label,0.20199309249791833,False
+40,https://github.com/home-assistant/core/pull/69996,Add label support,stat_compare_means label overlapping,0.20199309249791833,False
+41,https://github.com/home-assistant/core/pull/69996,Add label support,Sendcloud return label,0.20199309249791833,False
+42,https://github.com/home-assistant/core/pull/69996,Add label support,"Perl: LABEL defined inside the foreach loop, and issue coming on jumping to the LABEL using &quot;goto LABEL&quot;",0.1772106108390943,False
+43,https://github.com/home-assistant/core/pull/69996,Add label support,Print Label by using Bluetooth Label printer and Delphi 11 FMX,0.2128899507490235,False
+44,https://github.com/home-assistant/core/pull/69996,Add label support,Chart.js hover over label,0.20199309249791833,False
+45,https://github.com/home-assistant/core/pull/69996,Add label support,CSS - Set Width of all label based on larger label width,0.20199309249791833,False
+46,https://github.com/home-assistant/core/pull/69996,Add label support,"Mapbox, create area, label that area, then search for the label",0.21288995074902353,False
+47,https://github.com/home-assistant/core/pull/69996,Add label support,How to label axes in Swift Charts?,0.17077611319011649,False
+48,https://github.com/home-assistant/core/pull/69996,Add label support,PowerApps: Filter Text Label or Input Label by dropdown menu selection,0.2128899507490235,False
+49,https://github.com/home-assistant/core/pull/69996,Add label support,"CanvasJS, show different values on x-axis label and datapoint label",0.24129913647238913,False
+50,https://github.com/home-assistant/core/pull/69996,Add label support,Why is there spacing between my location label and temperature label,0.28530619098136084,False
+51,https://github.com/home-assistant/core/pull/69996,Add label support,"&#39;DataFrame&#39; object has no attribute &#39;label&#39;,how can I add label?",0.3187840217537793,False
+52,https://github.com/home-assistant/core/pull/69996,Add label support,"Oracle Apex 22 Problem with Label Button, Label Items, Float Menu",0.20199309249791833,False
+53,https://github.com/home-assistant/core/pull/69996,Add label support,cAdvisor metrics are missing container label when pod label is defined,0.22576484600261604,False
+54,https://github.com/home-assistant/core/pull/69996,Add label support,Label file of yolov7,0.20199309249791833,False
+55,https://github.com/home-assistant/core/pull/69996,Add label support,Chart.js: Label each dataset,0.20199309249791833,False
+56,https://github.com/home-assistant/core/pull/69996,Add label support,Custom tkinter label background,0.1707761131901165,False
+57,https://github.com/home-assistant/core/pull/69996,Add label support,Updating Label text tkinter,0.17077611319011649,False
+58,https://github.com/home-assistant/core/pull/69996,Add label support,change TextField label position,0.1707761131901165,False
+59,https://github.com/home-assistant/core/pull/69996,Add label support,Position label of colorbar,0.20199309249791833,False
+60,https://github.com/home-assistant/core/pull/69996,Add label support,Bound label to Image,0.20199309249791833,False
+61,https://github.com/home-assistant/core/pull/69996,Add label support,How to make one label value refer another label values in grafana,0.24129913647238913,False
+62,https://github.com/home-assistant/core/pull/69996,Add label support,Label for Geopandas Choropleth,0.20199309249791833,False
+63,https://github.com/home-assistant/core/pull/69996,Add label support,Detect Label in ThreeJS,0.20199309249791833,False
+64,https://github.com/home-assistant/core/pull/69996,Add label support,Django zebra label printing,0.1707761131901165,False
+65,https://github.com/home-assistant/core/pull/69996,Add label support,Python Tkinter label printing,0.1707761131901165,False
+66,https://github.com/home-assistant/core/pull/69996,Add label support,`ColorPicker` with active label?,0.20199309249791833,False
+67,https://github.com/home-assistant/core/pull/69996,Add label support,swiftui picker label visualization,0.1707761131901165,False
+68,https://github.com/home-assistant/core/pull/69996,Add label support,CSS for label printer,0.20199309249791833,False
+69,https://github.com/home-assistant/core/pull/69996,Add label support,"Schema mismatch for label column &#39;Label&#39;: expected Single, got Vector&lt;Single&gt; (Parameter &#39;labelCol&#39;)",0.09865621511919304,False
+70,https://github.com/home-assistant/core/pull/69996,Add label support,Django admin label style,0.1707761131901165,False
+71,https://github.com/home-assistant/core/pull/69996,Add label support,Difference between One hot encoding and Label Encoding of target/output label,0.21288995074902353,False
+72,https://github.com/home-assistant/core/pull/69996,Add label support,(parameter) label: any Binding element &#39;label&#39; implicitly has an &#39;any&#39; type.ts(7031),0.11671773546032795,False
+73,https://github.com/home-assistant/core/pull/69996,Add label support,"style label of checked checkbox, the label is nesteed in another div",0.24129913647238913,False
+74,https://github.com/home-assistant/core/pull/69996,Add label support,How to add icon in label or label text in flutter textformfield,0.4189067161570913,False
+75,https://github.com/home-assistant/core/pull/69996,Add label support,Change Label Caption Color,0.17077611319011649,False
+76,https://github.com/home-assistant/core/pull/69996,Add label support,MatSnackBar default action label,0.1707761131901165,False
+77,https://github.com/home-assistant/core/pull/69996,Add label support,Detect Link in Label,0.20199309249791833,False
+78,https://github.com/home-assistant/core/pull/69996,Add label support,Concatenate level label R,0.20199309249791833,False
+79,https://github.com/home-assistant/core/pull/69996,Add label support,Legend label Heatmap Plotly,0.17077611319011649,False
+80,https://github.com/home-assistant/core/pull/69996,Add label support,Adding missing label line,0.1707761131901165,False
+81,https://github.com/home-assistant/core/pull/69996,Add label support,Metric with changing label,0.20199309249791833,False
+82,https://github.com/home-assistant/core/pull/69996,Add label support,Flutter chip with label text have changes the label positioning of TextFormField,0.22576484600261604,False
+83,https://github.com/home-assistant/core/pull/69996,Add label support,X-axis label positioning,0.20199309249791833,False
+84,https://github.com/home-assistant/core/pull/69996,Add label support,JavaScript jump to label,0.20199309249791833,False
+85,https://github.com/home-assistant/core/pull/69996,Add label support,RMWC Select label issue,0.1707761131901165,False
+86,https://github.com/home-assistant/core/pull/69996,Add label support,Hide border of label,0.20199309249791833,False
+87,https://github.com/home-assistant/core/pull/69996,Add label support,VBA ActiveX Label Transparency,0.1707761131901165,False
+88,https://github.com/home-assistant/core/pull/69996,Add label support,showing label with ggalluvium,0.20199309249791833,False
+89,https://github.com/home-assistant/core/pull/69996,Add label support,Label axis in plot_ly(),0.20199309249791833,False
+90,https://github.com/home-assistant/core/pull/69996,Add label support,Function can&#39;t access Label,0.1707761131901165,False
+91,https://github.com/home-assistant/core/pull/69996,Add label support,Tkinter Label Widget Justify,0.17077611319011649,False
+92,https://github.com/home-assistant/core/pull/69996,Add label support,PrimeNg remove multiselect label,0.1707761131901165,False
+93,https://github.com/home-assistant/core/pull/69996,Add label support,OutlinedTextField Label always top,0.2605556710562624,False
